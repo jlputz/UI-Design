@@ -74,6 +74,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewClient.Designer.vb">
+      <DependentUpon>AddNewClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BeverageService.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddNewClient.resx">
+      <DependentUpon>AddNewClient.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BeverageService.resx">
       <DependentUpon>BeverageService.vb</DependentUpon>
     </EmbeddedResource>

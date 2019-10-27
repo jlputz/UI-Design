@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmDashboard
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmDashboard
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDashboard))
         Me.tbpCustomer = New System.Windows.Forms.TabControl()
@@ -155,6 +155,12 @@ Partial Class frmDashboard
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlButtonMover = New System.Windows.Forms.Panel()
+        Me.btnClient = New System.Windows.Forms.Button()
+        Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -168,10 +174,12 @@ Partial Class frmDashboard
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpMiscInfo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'tbpCustomer
         '
+        Me.tbpCustomer.CausesValidation = False
         Me.tbpCustomer.Controls.Add(Me.tpCustomerInfo)
         Me.tbpCustomer.Controls.Add(Me.tpEventInfo)
         Me.tbpCustomer.Controls.Add(Me.tpTimeline)
@@ -179,15 +187,16 @@ Partial Class frmDashboard
         Me.tbpCustomer.Controls.Add(Me.tpAudioLighting)
         Me.tbpCustomer.Controls.Add(Me.tpDrinkService)
         Me.tbpCustomer.Controls.Add(Me.tpMiscInfo)
-        Me.tbpCustomer.Location = New System.Drawing.Point(0, 105)
+        Me.tbpCustomer.Location = New System.Drawing.Point(215, 166)
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(856, 690)
+        Me.tbpCustomer.Size = New System.Drawing.Size(856, 599)
         Me.tbpCustomer.TabIndex = 4
         '
         'tpCustomerInfo
         '
+        Me.tpCustomerInfo.BackColor = System.Drawing.Color.White
         Me.tpCustomerInfo.Controls.Add(Me.cmdCancel)
         Me.tpCustomerInfo.Controls.Add(Me.cmdEnterCustomerInfo)
         Me.tpCustomerInfo.Controls.Add(Me.mtbCustomerAlternatePhone)
@@ -207,31 +216,35 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(848, 664)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(848, 573)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
-        Me.tpCustomerInfo.UseVisualStyleBackColor = True
         '
         'cmdCancel
         '
-        Me.cmdCancel.BackColor = System.Drawing.Color.Coral
+        Me.cmdCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCancel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCancel.ForeColor = System.Drawing.Color.Wheat
         Me.cmdCancel.Location = New System.Drawing.Point(213, 315)
         Me.cmdCancel.Name = "cmdCancel"
-        Me.cmdCancel.Size = New System.Drawing.Size(199, 44)
+        Me.cmdCancel.Size = New System.Drawing.Size(199, 35)
         Me.cmdCancel.TabIndex = 29
         Me.cmdCancel.Text = "Cancel"
         Me.cmdCancel.UseVisualStyleBackColor = False
         '
         'cmdEnterCustomerInfo
         '
-        Me.cmdEnterCustomerInfo.BackColor = System.Drawing.Color.Gold
+        Me.cmdEnterCustomerInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdEnterCustomerInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdEnterCustomerInfo.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdEnterCustomerInfo.ForeColor = System.Drawing.Color.Wheat
         Me.cmdEnterCustomerInfo.Location = New System.Drawing.Point(8, 315)
         Me.cmdEnterCustomerInfo.Name = "cmdEnterCustomerInfo"
-        Me.cmdEnterCustomerInfo.Size = New System.Drawing.Size(199, 44)
+        Me.cmdEnterCustomerInfo.Size = New System.Drawing.Size(199, 35)
         Me.cmdEnterCustomerInfo.TabIndex = 28
         Me.cmdEnterCustomerInfo.Text = "Enter Customer Info"
+        Me.cmdEnterCustomerInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdEnterCustomerInfo.UseVisualStyleBackColor = False
         '
         'mtbCustomerAlternatePhone
@@ -279,7 +292,10 @@ Partial Class frmDashboard
         '
         'txtCustomerName
         '
+        Me.txtCustomerName.BackColor = System.Drawing.Color.White
+        Me.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtCustomerName.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCustomerName.ForeColor = System.Drawing.Color.Black
         Me.txtCustomerName.Location = New System.Drawing.Point(140, 57)
         Me.txtCustomerName.Name = "txtCustomerName"
         Me.txtCustomerName.Size = New System.Drawing.Size(192, 26)
@@ -339,6 +355,7 @@ Partial Class frmDashboard
         '
         Me.lblCustomerName.AutoSize = True
         Me.lblCustomerName.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCustomerName.ForeColor = System.Drawing.Color.Black
         Me.lblCustomerName.Location = New System.Drawing.Point(8, 60)
         Me.lblCustomerName.Name = "lblCustomerName"
         Me.lblCustomerName.Size = New System.Drawing.Size(126, 18)
@@ -349,6 +366,7 @@ Partial Class frmDashboard
         '
         Me.lblCustomerInfo.AutoSize = True
         Me.lblCustomerInfo.Font = New System.Drawing.Font("Franklin Gothic Medium", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCustomerInfo.ForeColor = System.Drawing.Color.Black
         Me.lblCustomerInfo.Location = New System.Drawing.Point(4, 2)
         Me.lblCustomerInfo.Name = "lblCustomerInfo"
         Me.lblCustomerInfo.Size = New System.Drawing.Size(320, 37)
@@ -357,6 +375,7 @@ Partial Class frmDashboard
         '
         'tpEventInfo
         '
+        Me.tpEventInfo.BackColor = System.Drawing.Color.White
         Me.tpEventInfo.Controls.Add(Me.Button5)
         Me.tpEventInfo.Controls.Add(Me.cmdEnterEventInfo)
         Me.tpEventInfo.Controls.Add(Me.dtpRehearsalDate)
@@ -373,10 +392,9 @@ Partial Class frmDashboard
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(848, 664)
+        Me.tpEventInfo.Size = New System.Drawing.Size(848, 573)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
-        Me.tpEventInfo.UseVisualStyleBackColor = True
         '
         'Button5
         '
@@ -499,6 +517,7 @@ Partial Class frmDashboard
         '
         'tpTimeline
         '
+        Me.tpTimeline.BackColor = System.Drawing.Color.White
         Me.tpTimeline.Controls.Add(Me.Button6)
         Me.tpTimeline.Controls.Add(Me.cmdUpdateTimeline)
         Me.tpTimeline.Controls.Add(Me.txtTimelineInfo)
@@ -506,10 +525,9 @@ Partial Class frmDashboard
         Me.tpTimeline.Location = New System.Drawing.Point(4, 22)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(837, 758)
+        Me.tpTimeline.Size = New System.Drawing.Size(848, 573)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
-        Me.tpTimeline.UseVisualStyleBackColor = True
         '
         'Button6
         '
@@ -557,6 +575,8 @@ Partial Class frmDashboard
         '
         'tpFoodSelection
         '
+        Me.tpFoodSelection.AutoScroll = True
+        Me.tpFoodSelection.BackColor = System.Drawing.Color.White
         Me.tpFoodSelection.Controls.Add(Me.Label9)
         Me.tpFoodSelection.Controls.Add(Me.TextBox5)
         Me.tpFoodSelection.Controls.Add(Me.Button8)
@@ -584,10 +604,9 @@ Partial Class frmDashboard
         Me.tpFoodSelection.Location = New System.Drawing.Point(4, 22)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(837, 758)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(848, 566)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
-        Me.tpFoodSelection.UseVisualStyleBackColor = True
         '
         'Label9
         '
@@ -831,6 +850,7 @@ Partial Class frmDashboard
         '
         'tpAudioLighting
         '
+        Me.tpAudioLighting.BackColor = System.Drawing.Color.White
         Me.tpAudioLighting.Controls.Add(Me.cmdAVNextPage)
         Me.tpAudioLighting.Controls.Add(Me.Button7)
         Me.tpAudioLighting.Controls.Add(Me.cmdAddAV)
@@ -854,10 +874,9 @@ Partial Class frmDashboard
         Me.tpAudioLighting.Location = New System.Drawing.Point(4, 22)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(837, 758)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(848, 566)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
-        Me.tpAudioLighting.UseVisualStyleBackColor = True
         '
         'cmdAVNextPage
         '
@@ -1057,6 +1076,7 @@ Partial Class frmDashboard
         '
         'tpDrinkService
         '
+        Me.tpDrinkService.BackColor = System.Drawing.Color.White
         Me.tpDrinkService.Controls.Add(Me.cmdAddStationSelections)
         Me.tpDrinkService.Controls.Add(Me.Button1)
         Me.tpDrinkService.Controls.Add(Me.Label11)
@@ -1082,10 +1102,9 @@ Partial Class frmDashboard
         Me.tpDrinkService.Location = New System.Drawing.Point(4, 22)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(837, 758)
+        Me.tpDrinkService.Size = New System.Drawing.Size(848, 566)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
-        Me.tpDrinkService.UseVisualStyleBackColor = True
         '
         'cmdAddStationSelections
         '
@@ -1307,6 +1326,7 @@ Partial Class frmDashboard
         '
         'tpMiscInfo
         '
+        Me.tpMiscInfo.BackColor = System.Drawing.Color.White
         Me.tpMiscInfo.Controls.Add(Me.cmdPreviousPageAdditionalItems)
         Me.tpMiscInfo.Controls.Add(Me.cmdCancelAdditionalItems)
         Me.tpMiscInfo.Controls.Add(Me.cmdAddAdditionalItems)
@@ -1333,13 +1353,13 @@ Partial Class frmDashboard
         Me.tpMiscInfo.Controls.Add(Me.MaskedTextBox7)
         Me.tpMiscInfo.Controls.Add(Me.Label27)
         Me.tpMiscInfo.Controls.Add(Me.Label28)
+        Me.tpMiscInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.tpMiscInfo.Location = New System.Drawing.Point(4, 22)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(837, 758)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(848, 566)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Additional Items"
-        Me.tpMiscInfo.UseVisualStyleBackColor = True
         '
         'cmdPreviousPageAdditionalItems
         '
@@ -1605,12 +1625,78 @@ Partial Class frmDashboard
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.pnlButtonMover)
+        Me.Panel1.Controls.Add(Me.btnClient)
+        Me.Panel1.Controls.Add(Me.btnHome)
+        Me.Panel1.Location = New System.Drawing.Point(0, 106)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(100, 702)
+        Me.Panel1.TabIndex = 6
+        '
+        'pnlButtonMover
+        '
+        Me.pnlButtonMover.BackColor = System.Drawing.Color.Wheat
+        Me.pnlButtonMover.Location = New System.Drawing.Point(0, 3)
+        Me.pnlButtonMover.Name = "pnlButtonMover"
+        Me.pnlButtonMover.Size = New System.Drawing.Size(5, 87)
+        Me.pnlButtonMover.TabIndex = 9
+        '
+        'btnClient
+        '
+        Me.btnClient.FlatAppearance.BorderSize = 0
+        Me.btnClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClient.ForeColor = System.Drawing.Color.White
+        Me.btnClient.Location = New System.Drawing.Point(0, 91)
+        Me.btnClient.Name = "btnClient"
+        Me.btnClient.Size = New System.Drawing.Size(103, 86)
+        Me.btnClient.TabIndex = 8
+        Me.btnClient.Text = "Clients"
+        Me.btnClient.UseVisualStyleBackColor = True
+        '
+        'btnHome
+        '
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.ForeColor = System.Drawing.Color.White
+        Me.btnHome.Image = CType(resources.GetObject("btnHome.Image"), System.Drawing.Image)
+        Me.btnHome.Location = New System.Drawing.Point(0, 3)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(100, 86)
+        Me.btnHome.TabIndex = 7
+        Me.btnHome.Text = "Home"
+        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnHome.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.ForeColor = System.Drawing.Color.Wheat
+        Me.btnExit.Location = New System.Drawing.Point(1174, 12)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(23, 23)
+        Me.btnExit.TabIndex = 9
+        Me.btnExit.Text = "X"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Wheat
+        Me.Panel2.Location = New System.Drawing.Point(0, 105)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1210, 5)
+        Me.Panel2.TabIndex = 30
+        '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(867, 808)
+        Me.ClientSize = New System.Drawing.Size(1209, 900)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.tbpCustomer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -1637,6 +1723,7 @@ Partial Class frmDashboard
         Me.tpMiscInfo.ResumeLayout(False)
         Me.tpMiscInfo.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1772,4 +1859,10 @@ Partial Class frmDashboard
     Friend WithEvents cmdCancelAdditionalItems As Button
     Friend WithEvents cmdAddAdditionalItems As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnHome As Button
+    Friend WithEvents btnClient As Button
+    Friend WithEvents btnExit As Button
+    Friend WithEvents pnlButtonMover As Panel
+    Friend WithEvents Panel2 As Panel
 End Class
