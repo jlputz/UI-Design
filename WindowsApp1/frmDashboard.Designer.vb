@@ -84,7 +84,6 @@ Partial Class frmDashboard
         Me.lblCateringCompany = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.tpAudioLighting = New System.Windows.Forms.TabPage()
-        Me.cmdAVNextPage = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.cmdAddAV = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -155,13 +154,16 @@ Partial Class frmDashboard
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.pnlButtonMover = New System.Windows.Forms.Panel()
-        Me.btnExit = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnLayout = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.pnlButtonMover = New System.Windows.Forms.Panel()
         Me.btnClient = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.lblDate = New System.Windows.Forms.Label()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -192,7 +194,7 @@ Partial Class frmDashboard
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(1141, 691)
+        Me.tbpCustomer.Size = New System.Drawing.Size(946, 691)
         Me.tbpCustomer.TabIndex = 4
         '
         'tpCustomerInfo
@@ -217,7 +219,7 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(1133, 663)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(938, 663)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
@@ -404,11 +406,11 @@ Partial Class frmDashboard
         Me.tpEventInfo.Controls.Add(Me.chkCeremonyEvent)
         Me.tpEventInfo.Controls.Add(Me.lblEventType)
         Me.tpEventInfo.Controls.Add(Me.lblEventInfo)
-        Me.tpEventInfo.Location = New System.Drawing.Point(4, 22)
+        Me.tpEventInfo.Location = New System.Drawing.Point(4, 24)
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(1133, 665)
+        Me.tpEventInfo.Size = New System.Drawing.Size(938, 663)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
@@ -550,10 +552,10 @@ Partial Class frmDashboard
         Me.tpTimeline.Controls.Add(Me.cmdUpdateTimeline)
         Me.tpTimeline.Controls.Add(Me.txtTimelineInfo)
         Me.tpTimeline.Controls.Add(Me.lblAVLightingSelection)
-        Me.tpTimeline.Location = New System.Drawing.Point(4, 22)
+        Me.tpTimeline.Location = New System.Drawing.Point(4, 24)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(1133, 665)
+        Me.tpTimeline.Size = New System.Drawing.Size(938, 663)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
@@ -632,10 +634,10 @@ Partial Class frmDashboard
         Me.tpFoodSelection.Controls.Add(Me.lblCateringCompanyName)
         Me.tpFoodSelection.Controls.Add(Me.lblCateringCompany)
         Me.tpFoodSelection.Controls.Add(Me.Label10)
-        Me.tpFoodSelection.Location = New System.Drawing.Point(4, 22)
+        Me.tpFoodSelection.Location = New System.Drawing.Point(4, 24)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(1133, 665)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(938, 663)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
         '
@@ -906,7 +908,6 @@ Partial Class frmDashboard
         'tpAudioLighting
         '
         Me.tpAudioLighting.BackColor = System.Drawing.Color.White
-        Me.tpAudioLighting.Controls.Add(Me.cmdAVNextPage)
         Me.tpAudioLighting.Controls.Add(Me.Button7)
         Me.tpAudioLighting.Controls.Add(Me.cmdAddAV)
         Me.tpAudioLighting.Controls.Add(Me.Label8)
@@ -926,24 +927,12 @@ Partial Class frmDashboard
         Me.tpAudioLighting.Controls.Add(Me.Label1)
         Me.tpAudioLighting.Controls.Add(Me.ComboBox1)
         Me.tpAudioLighting.Controls.Add(Me.Label7)
-        Me.tpAudioLighting.Location = New System.Drawing.Point(4, 22)
+        Me.tpAudioLighting.Location = New System.Drawing.Point(4, 24)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(1133, 665)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(938, 663)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
-        '
-        'cmdAVNextPage
-        '
-        Me.cmdAVNextPage.BackColor = System.Drawing.Color.Coral
-        Me.cmdAVNextPage.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAVNextPage.Location = New System.Drawing.Point(715, 400)
-        Me.cmdAVNextPage.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdAVNextPage.Name = "cmdAVNextPage"
-        Me.cmdAVNextPage.Size = New System.Drawing.Size(341, 51)
-        Me.cmdAVNextPage.TabIndex = 52
-        Me.cmdAVNextPage.Text = "Next Page"
-        Me.cmdAVNextPage.UseVisualStyleBackColor = False
         '
         'Button7
         '
@@ -1157,10 +1146,10 @@ Partial Class frmDashboard
         Me.tpDrinkService.Controls.Add(Me.Label17)
         Me.tpDrinkService.Controls.Add(Me.ComboBox3)
         Me.tpDrinkService.Controls.Add(Me.Label18)
-        Me.tpDrinkService.Location = New System.Drawing.Point(4, 22)
+        Me.tpDrinkService.Location = New System.Drawing.Point(4, 24)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(1133, 665)
+        Me.tpDrinkService.Size = New System.Drawing.Size(938, 663)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
         '
@@ -1413,10 +1402,10 @@ Partial Class frmDashboard
         Me.tpMiscInfo.Controls.Add(Me.Label27)
         Me.tpMiscInfo.Controls.Add(Me.Label28)
         Me.tpMiscInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.tpMiscInfo.Location = New System.Drawing.Point(4, 22)
+        Me.tpMiscInfo.Location = New System.Drawing.Point(4, 24)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(1133, 665)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(938, 663)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Additional Items"
         '
@@ -1684,11 +1673,45 @@ Partial Class frmDashboard
         Me.Panel1.Controls.Add(Me.pnlButtonMover)
         Me.Panel1.Controls.Add(Me.btnClient)
         Me.Panel1.Controls.Add(Me.btnHome)
+        Me.Panel1.Controls.Add(Me.btnLayout)
         Me.Panel1.Location = New System.Drawing.Point(0, 122)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(133, 810)
+        Me.Panel1.Size = New System.Drawing.Size(133, 914)
         Me.Panel1.TabIndex = 6
+        '
+        'btnLayout
+        '
+        Me.btnLayout.FlatAppearance.BorderSize = 0
+        Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLayout.ForeColor = System.Drawing.Color.White
+        Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
+        Me.btnLayout.Location = New System.Drawing.Point(0, 209)
+        Me.btnLayout.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnLayout.Name = "btnLayout"
+        Me.btnLayout.Size = New System.Drawing.Size(137, 99)
+        Me.btnLayout.TabIndex = 11
+        Me.btnLayout.Text = "Layout"
+        Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnLayout.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.Location = New System.Drawing.Point(0, 321)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(137, 99)
+        Me.Button2.TabIndex = 10
+        Me.Button2.Text = "Settings"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'pnlButtonMover
         '
@@ -1698,43 +1721,6 @@ Partial Class frmDashboard
         Me.pnlButtonMover.Name = "pnlButtonMover"
         Me.pnlButtonMover.Size = New System.Drawing.Size(7, 100)
         Me.pnlButtonMover.TabIndex = 9
-        '
-        'btnExit
-        '
-        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnExit.ForeColor = System.Drawing.Color.Wheat
-        Me.btnExit.Location = New System.Drawing.Point(1565, 14)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(31, 27)
-        Me.btnExit.TabIndex = 9
-        Me.btnExit.Text = "X"
-        Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Wheat
-        Me.Panel2.Location = New System.Drawing.Point(0, 121)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1613, 6)
-        Me.Panel2.TabIndex = 30
-        '
-        'Button2
-        '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(0, 707)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(137, 99)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "Settings"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'btnClient
         '
@@ -1768,22 +1754,72 @@ Partial Class frmDashboard
         Me.btnHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnHome.UseVisualStyleBackColor = True
         '
+        'btnExit
+        '
+        Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.ForeColor = System.Drawing.Color.Wheat
+        Me.btnExit.Location = New System.Drawing.Point(1240, 14)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(31, 27)
+        Me.btnExit.TabIndex = 9
+        Me.btnExit.Text = "X"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.BackColor = System.Drawing.Color.Wheat
+        Me.Panel2.Location = New System.Drawing.Point(0, 121)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1288, 6)
+        Me.Panel2.TabIndex = 30
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(133, 115)
+        Me.PictureBox1.Size = New System.Drawing.Size(109, 115)
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
+        '
+        'Button3
+        '
+        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.ForeColor = System.Drawing.Color.Wheat
+        Me.Button3.Location = New System.Drawing.Point(1201, 14)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(31, 27)
+        Me.Button3.TabIndex = 31
+        Me.Button3.Text = "[ ]"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'lblDate
+        '
+        Me.lblDate.AutoSize = True
+        Me.lblDate.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDate.ForeColor = System.Drawing.Color.Wheat
+        Me.lblDate.Location = New System.Drawing.Point(135, 46)
+        Me.lblDate.Name = "lblDate"
+        Me.lblDate.Size = New System.Drawing.Size(22, 32)
+        Me.lblDate.TabIndex = 30
+        Me.lblDate.Text = " "
         '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1612, 1038)
+        Me.ClientSize = New System.Drawing.Size(1287, 977)
+        Me.Controls.Add(Me.lblDate)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Panel1)
@@ -1816,6 +1852,7 @@ Partial Class frmDashboard
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents tbpCustomer As TabControl
@@ -1922,7 +1959,6 @@ Partial Class frmDashboard
     Friend WithEvents Label18 As Label
     Friend WithEvents cmdAddStationSelections As Button
     Friend WithEvents tpMiscInfo As TabPage
-    Friend WithEvents cmdAVNextPage As Button
     Friend WithEvents Label19 As Label
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents CheckBox9 As CheckBox
@@ -1957,4 +1993,7 @@ Partial Class frmDashboard
     Friend WithEvents pnlButtonMover As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents btnLayout As Button
+    Friend WithEvents lblDate As Label
 End Class
