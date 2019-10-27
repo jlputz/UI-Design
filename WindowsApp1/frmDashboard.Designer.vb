@@ -22,6 +22,7 @@ Partial Class frmDashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDashboard))
         Me.tbpCustomer = New System.Windows.Forms.TabControl()
         Me.tpCustomerInfo = New System.Windows.Forms.TabPage()
         Me.cmdCancel = New System.Windows.Forms.Button()
@@ -153,6 +154,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -165,6 +167,7 @@ Partial Class frmDashboard
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpMiscInfo.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbpCustomer
@@ -176,11 +179,11 @@ Partial Class frmDashboard
         Me.tbpCustomer.Controls.Add(Me.tpAudioLighting)
         Me.tbpCustomer.Controls.Add(Me.tpDrinkService)
         Me.tbpCustomer.Controls.Add(Me.tpMiscInfo)
-        Me.tbpCustomer.Location = New System.Drawing.Point(11, 11)
+        Me.tbpCustomer.Location = New System.Drawing.Point(0, 105)
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(845, 784)
+        Me.tbpCustomer.Size = New System.Drawing.Size(856, 690)
         Me.tbpCustomer.TabIndex = 4
         '
         'tpCustomerInfo
@@ -204,7 +207,7 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(837, 758)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(848, 664)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         Me.tpCustomerInfo.UseVisualStyleBackColor = True
@@ -213,7 +216,7 @@ Partial Class frmDashboard
         '
         Me.cmdCancel.BackColor = System.Drawing.Color.Coral
         Me.cmdCancel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCancel.Location = New System.Drawing.Point(207, 398)
+        Me.cmdCancel.Location = New System.Drawing.Point(213, 315)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(199, 44)
         Me.cmdCancel.TabIndex = 29
@@ -370,7 +373,7 @@ Partial Class frmDashboard
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(837, 758)
+        Me.tpEventInfo.Size = New System.Drawing.Size(848, 664)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         Me.tpEventInfo.UseVisualStyleBackColor = True
@@ -1593,12 +1596,24 @@ Partial Class frmDashboard
         Me.Label28.TabIndex = 39
         Me.Label28.Text = "Additional Items"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(867, 808)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.tbpCustomer)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmDashboard"
         Me.Text = "The Treasury"
@@ -1621,6 +1636,7 @@ Partial Class frmDashboard
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tpMiscInfo.ResumeLayout(False)
         Me.tpMiscInfo.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1755,4 +1771,5 @@ Partial Class frmDashboard
     Friend WithEvents cmdPreviousPageAdditionalItems As Button
     Friend WithEvents cmdCancelAdditionalItems As Button
     Friend WithEvents cmdAddAdditionalItems As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
