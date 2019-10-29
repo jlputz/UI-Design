@@ -11,7 +11,7 @@
 
 
     Private Sub btnClient_Click(sender As Object, e As EventArgs) Handles btnClient.Click
-        tbpCustomer.Visible = True
+        btnNewClient.Visible = True
         pnlButtonMover.Height = btnClient.Height
         pnlButtonMover.Top = btnClient.Top
     End Sub
@@ -37,6 +37,7 @@
 
     Sub hideClientMenu()
         tbpCustomer.Visible = False
+        btnNewClient.Visible = False
     End Sub
 
 
@@ -44,5 +45,9 @@
         hideClientMenu()
         pnlButtonMover.Height = btnLayout.Height
         pnlButtonMover.Top = btnLayout.Top
+    End Sub
+
+    Private Sub btnNewClient_Click(sender As Object, e As EventArgs) Handles btnNewClient.Click
+        tbpCustomer.Visible = True
     End Sub
 End Class

@@ -154,16 +154,19 @@ Partial Class frmDashboard
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnLayout = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.pnlButtonMover = New System.Windows.Forms.Panel()
         Me.btnClient = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnLayout = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.lblDate = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.MaskedTextBox8 = New System.Windows.Forms.MaskedTextBox()
+        Me.btnNewClient = New System.Windows.Forms.Button()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -182,6 +185,8 @@ Partial Class frmDashboard
         '
         'tbpCustomer
         '
+        Me.tbpCustomer.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tbpCustomer.CausesValidation = False
         Me.tbpCustomer.Controls.Add(Me.tpCustomerInfo)
         Me.tbpCustomer.Controls.Add(Me.tpEventInfo)
@@ -190,16 +195,18 @@ Partial Class frmDashboard
         Me.tbpCustomer.Controls.Add(Me.tpAudioLighting)
         Me.tbpCustomer.Controls.Add(Me.tpDrinkService)
         Me.tbpCustomer.Controls.Add(Me.tpMiscInfo)
-        Me.tbpCustomer.Location = New System.Drawing.Point(287, 192)
+        Me.tbpCustomer.Location = New System.Drawing.Point(173, 227)
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(946, 691)
+        Me.tbpCustomer.Size = New System.Drawing.Size(992, 691)
         Me.tbpCustomer.TabIndex = 4
         '
         'tpCustomerInfo
         '
         Me.tpCustomerInfo.BackColor = System.Drawing.Color.White
+        Me.tpCustomerInfo.Controls.Add(Me.MaskedTextBox8)
+        Me.tpCustomerInfo.Controls.Add(Me.Label29)
         Me.tpCustomerInfo.Controls.Add(Me.cmdCancel)
         Me.tpCustomerInfo.Controls.Add(Me.cmdEnterCustomerInfo)
         Me.tpCustomerInfo.Controls.Add(Me.mtbCustomerAlternatePhone)
@@ -219,7 +226,7 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(938, 663)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(984, 663)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
@@ -229,7 +236,7 @@ Partial Class frmDashboard
         Me.cmdCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCancel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdCancel.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdCancel.Location = New System.Drawing.Point(284, 363)
+        Me.cmdCancel.Location = New System.Drawing.Point(284, 455)
         Me.cmdCancel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(265, 40)
@@ -243,7 +250,7 @@ Partial Class frmDashboard
         Me.cmdEnterCustomerInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdEnterCustomerInfo.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdEnterCustomerInfo.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdEnterCustomerInfo.Location = New System.Drawing.Point(11, 363)
+        Me.cmdEnterCustomerInfo.Location = New System.Drawing.Point(11, 456)
         Me.cmdEnterCustomerInfo.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.cmdEnterCustomerInfo.Name = "cmdEnterCustomerInfo"
         Me.cmdEnterCustomerInfo.Size = New System.Drawing.Size(265, 40)
@@ -255,7 +262,7 @@ Partial Class frmDashboard
         'mtbCustomerAlternatePhone
         '
         Me.mtbCustomerAlternatePhone.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mtbCustomerAlternatePhone.Location = New System.Drawing.Point(261, 303)
+        Me.mtbCustomerAlternatePhone.Location = New System.Drawing.Point(214, 351)
         Me.mtbCustomerAlternatePhone.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbCustomerAlternatePhone.Mask = "(999) 000-0000"
         Me.mtbCustomerAlternatePhone.Name = "mtbCustomerAlternatePhone"
@@ -265,7 +272,7 @@ Partial Class frmDashboard
         'mtbCustomerPhone
         '
         Me.mtbCustomerPhone.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mtbCustomerPhone.Location = New System.Drawing.Point(187, 254)
+        Me.mtbCustomerPhone.Location = New System.Drawing.Point(214, 298)
         Me.mtbCustomerPhone.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbCustomerPhone.Mask = "(999) 000-0000"
         Me.mtbCustomerPhone.Name = "mtbCustomerPhone"
@@ -275,7 +282,7 @@ Partial Class frmDashboard
         'txtCustomerEmail
         '
         Me.txtCustomerEmail.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCustomerEmail.Location = New System.Drawing.Point(187, 205)
+        Me.txtCustomerEmail.Location = New System.Drawing.Point(214, 246)
         Me.txtCustomerEmail.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCustomerEmail.Name = "txtCustomerEmail"
         Me.txtCustomerEmail.Size = New System.Drawing.Size(255, 26)
@@ -284,7 +291,7 @@ Partial Class frmDashboard
         'mtbZipCode
         '
         Me.mtbZipCode.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mtbZipCode.Location = New System.Drawing.Point(187, 159)
+        Me.mtbZipCode.Location = New System.Drawing.Point(211, 160)
         Me.mtbZipCode.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbZipCode.Mask = "00000"
         Me.mtbZipCode.Name = "mtbZipCode"
@@ -294,7 +301,7 @@ Partial Class frmDashboard
         'txtCustomerAddress
         '
         Me.txtCustomerAddress.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCustomerAddress.Location = New System.Drawing.Point(187, 112)
+        Me.txtCustomerAddress.Location = New System.Drawing.Point(211, 111)
         Me.txtCustomerAddress.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCustomerAddress.Name = "txtCustomerAddress"
         Me.txtCustomerAddress.Size = New System.Drawing.Size(255, 26)
@@ -306,7 +313,7 @@ Partial Class frmDashboard
         Me.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtCustomerName.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCustomerName.ForeColor = System.Drawing.Color.Black
-        Me.txtCustomerName.Location = New System.Drawing.Point(187, 66)
+        Me.txtCustomerName.Location = New System.Drawing.Point(211, 66)
         Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCustomerName.Name = "txtCustomerName"
         Me.txtCustomerName.Size = New System.Drawing.Size(255, 26)
@@ -316,7 +323,7 @@ Partial Class frmDashboard
         '
         Me.lblAlternatePhone.AutoSize = True
         Me.lblAlternatePhone.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAlternatePhone.Location = New System.Drawing.Point(8, 308)
+        Me.lblAlternatePhone.Location = New System.Drawing.Point(3, 355)
         Me.lblAlternatePhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAlternatePhone.Name = "lblAlternatePhone"
         Me.lblAlternatePhone.Size = New System.Drawing.Size(182, 18)
@@ -327,7 +334,7 @@ Partial Class frmDashboard
         '
         Me.lblPhoneNumber.AutoSize = True
         Me.lblPhoneNumber.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPhoneNumber.Location = New System.Drawing.Point(8, 260)
+        Me.lblPhoneNumber.Location = New System.Drawing.Point(69, 302)
         Me.lblPhoneNumber.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPhoneNumber.Name = "lblPhoneNumber"
         Me.lblPhoneNumber.Size = New System.Drawing.Size(116, 18)
@@ -338,7 +345,7 @@ Partial Class frmDashboard
         '
         Me.lblEmailAddress.AutoSize = True
         Me.lblEmailAddress.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEmailAddress.Location = New System.Drawing.Point(8, 211)
+        Me.lblEmailAddress.Location = New System.Drawing.Point(66, 250)
         Me.lblEmailAddress.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEmailAddress.Name = "lblEmailAddress"
         Me.lblEmailAddress.Size = New System.Drawing.Size(119, 18)
@@ -349,7 +356,7 @@ Partial Class frmDashboard
         '
         Me.lblZipCode.AutoSize = True
         Me.lblZipCode.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblZipCode.Location = New System.Drawing.Point(11, 164)
+        Me.lblZipCode.Location = New System.Drawing.Point(108, 164)
         Me.lblZipCode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblZipCode.Name = "lblZipCode"
         Me.lblZipCode.Size = New System.Drawing.Size(77, 18)
@@ -360,7 +367,7 @@ Partial Class frmDashboard
         '
         Me.lblStreetAddress.AutoSize = True
         Me.lblStreetAddress.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStreetAddress.Location = New System.Drawing.Point(11, 115)
+        Me.lblStreetAddress.Location = New System.Drawing.Point(66, 115)
         Me.lblStreetAddress.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStreetAddress.Name = "lblStreetAddress"
         Me.lblStreetAddress.Size = New System.Drawing.Size(116, 18)
@@ -372,7 +379,7 @@ Partial Class frmDashboard
         Me.lblCustomerName.AutoSize = True
         Me.lblCustomerName.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCustomerName.ForeColor = System.Drawing.Color.Black
-        Me.lblCustomerName.Location = New System.Drawing.Point(11, 69)
+        Me.lblCustomerName.Location = New System.Drawing.Point(56, 69)
         Me.lblCustomerName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomerName.Name = "lblCustomerName"
         Me.lblCustomerName.Size = New System.Drawing.Size(126, 18)
@@ -410,7 +417,7 @@ Partial Class frmDashboard
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(938, 663)
+        Me.tpEventInfo.Size = New System.Drawing.Size(984, 663)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
@@ -555,7 +562,7 @@ Partial Class frmDashboard
         Me.tpTimeline.Location = New System.Drawing.Point(4, 24)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(938, 663)
+        Me.tpTimeline.Size = New System.Drawing.Size(984, 663)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
@@ -637,7 +644,7 @@ Partial Class frmDashboard
         Me.tpFoodSelection.Location = New System.Drawing.Point(4, 24)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(938, 663)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(984, 663)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
         '
@@ -930,7 +937,7 @@ Partial Class frmDashboard
         Me.tpAudioLighting.Location = New System.Drawing.Point(4, 24)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(938, 663)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(984, 663)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
         '
@@ -1149,7 +1156,7 @@ Partial Class frmDashboard
         Me.tpDrinkService.Location = New System.Drawing.Point(4, 24)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(938, 663)
+        Me.tpDrinkService.Size = New System.Drawing.Size(984, 663)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
         '
@@ -1405,7 +1412,7 @@ Partial Class frmDashboard
         Me.tpMiscInfo.Location = New System.Drawing.Point(4, 24)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(938, 663)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(984, 663)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Additional Items"
         '
@@ -1680,22 +1687,6 @@ Partial Class frmDashboard
         Me.Panel1.Size = New System.Drawing.Size(133, 914)
         Me.Panel1.TabIndex = 6
         '
-        'btnLayout
-        '
-        Me.btnLayout.FlatAppearance.BorderSize = 0
-        Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLayout.ForeColor = System.Drawing.Color.White
-        Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
-        Me.btnLayout.Location = New System.Drawing.Point(0, 209)
-        Me.btnLayout.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnLayout.Name = "btnLayout"
-        Me.btnLayout.Size = New System.Drawing.Size(137, 99)
-        Me.btnLayout.TabIndex = 11
-        Me.btnLayout.Text = "Layout"
-        Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnLayout.UseVisualStyleBackColor = True
-        '
         'Button2
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Left
@@ -1753,6 +1744,22 @@ Partial Class frmDashboard
         Me.btnHome.Text = "Home"
         Me.btnHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnHome.UseVisualStyleBackColor = True
+        '
+        'btnLayout
+        '
+        Me.btnLayout.FlatAppearance.BorderSize = 0
+        Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLayout.ForeColor = System.Drawing.Color.White
+        Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
+        Me.btnLayout.Location = New System.Drawing.Point(0, 209)
+        Me.btnLayout.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnLayout.Name = "btnLayout"
+        Me.btnLayout.Size = New System.Drawing.Size(137, 99)
+        Me.btnLayout.TabIndex = 11
+        Me.btnLayout.Text = "Layout"
+        Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnLayout.UseVisualStyleBackColor = True
         '
         'btnExit
         '
@@ -1812,12 +1819,49 @@ Partial Class frmDashboard
         Me.lblDate.TabIndex = 30
         Me.lblDate.Text = " "
         '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(136, 214)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(49, 18)
+        Me.Label29.TabIndex = 30
+        Me.Label29.Text = "State:"
+        '
+        'MaskedTextBox8
+        '
+        Me.MaskedTextBox8.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaskedTextBox8.Location = New System.Drawing.Point(211, 210)
+        Me.MaskedTextBox8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.MaskedTextBox8.Mask = "  "
+        Me.MaskedTextBox8.Name = "MaskedTextBox8"
+        Me.MaskedTextBox8.Size = New System.Drawing.Size(65, 26)
+        Me.MaskedTextBox8.TabIndex = 31
+        '
+        'btnNewClient
+        '
+        Me.btnNewClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnNewClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNewClient.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNewClient.ForeColor = System.Drawing.Color.Wheat
+        Me.btnNewClient.Location = New System.Drawing.Point(173, 157)
+        Me.btnNewClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnNewClient.Name = "btnNewClient"
+        Me.btnNewClient.Size = New System.Drawing.Size(265, 40)
+        Me.btnNewClient.TabIndex = 32
+        Me.btnNewClient.Text = "New Client"
+        Me.btnNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnNewClient.UseVisualStyleBackColor = False
+        '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1287, 977)
+        Me.Controls.Add(Me.btnNewClient)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel2)
@@ -1996,4 +2040,7 @@ Partial Class frmDashboard
     Friend WithEvents Button3 As Button
     Friend WithEvents btnLayout As Button
     Friend WithEvents lblDate As Label
+    Friend WithEvents MaskedTextBox8 As MaskedTextBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents btnNewClient As Button
 End Class
