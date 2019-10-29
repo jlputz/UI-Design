@@ -12,6 +12,8 @@
 
     Private Sub btnClient_Click(sender As Object, e As EventArgs) Handles btnClient.Click
         btnNewClient.Visible = True
+        DataGridView1.Visible = True
+        tbpCustomer.Visible = True
         pnlButtonMover.Height = btnClient.Height
         pnlButtonMover.Top = btnClient.Top
     End Sub
@@ -38,6 +40,7 @@
     Sub hideClientMenu()
         tbpCustomer.Visible = False
         btnNewClient.Visible = False
+        DataGridView1.Visible = False
     End Sub
 
 
@@ -49,5 +52,7 @@
 
     Private Sub btnNewClient_Click(sender As Object, e As EventArgs) Handles btnNewClient.Click
         tbpCustomer.Visible = True
+        tbpCustomer.Top = DataGridView1.Top
+        DataGridView1.Visible = False
     End Sub
 End Class

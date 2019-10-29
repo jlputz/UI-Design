@@ -167,6 +167,15 @@ Partial Class frmDashboard
         Me.Label29 = New System.Windows.Forms.Label()
         Me.MaskedTextBox8 = New System.Windows.Forms.MaskedTextBox()
         Me.btnNewClient = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.fName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.pPhone = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.sPhone = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.address = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EventType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EventDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -181,6 +190,7 @@ Partial Class frmDashboard
         Me.tpMiscInfo.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbpCustomer
@@ -195,7 +205,7 @@ Partial Class frmDashboard
         Me.tbpCustomer.Controls.Add(Me.tpAudioLighting)
         Me.tbpCustomer.Controls.Add(Me.tpDrinkService)
         Me.tbpCustomer.Controls.Add(Me.tpMiscInfo)
-        Me.tbpCustomer.Location = New System.Drawing.Point(173, 227)
+        Me.tbpCustomer.Location = New System.Drawing.Point(173, 380)
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
@@ -1855,12 +1865,65 @@ Partial Class frmDashboard
         Me.btnNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnNewClient.UseVisualStyleBackColor = False
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fName, Me.lName, Me.pPhone, Me.sPhone, Me.email, Me.address, Me.EventType, Me.EventDate})
+        Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.DataGridView1.Location = New System.Drawing.Point(171, 209)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(843, 150)
+        Me.DataGridView1.TabIndex = 32
+        '
+        'fName
+        '
+        Me.fName.HeaderText = "First Name"
+        Me.fName.Name = "fName"
+        '
+        'lName
+        '
+        Me.lName.HeaderText = "Last Name"
+        Me.lName.Name = "lName"
+        '
+        'pPhone
+        '
+        Me.pPhone.HeaderText = "Primary Phone"
+        Me.pPhone.Name = "pPhone"
+        '
+        'sPhone
+        '
+        Me.sPhone.HeaderText = "Secondary Phone"
+        Me.sPhone.Name = "sPhone"
+        '
+        'email
+        '
+        Me.email.HeaderText = "Email"
+        Me.email.Name = "email"
+        '
+        'address
+        '
+        Me.address.HeaderText = "Address"
+        Me.address.Name = "address"
+        '
+        'EventType
+        '
+        Me.EventType.HeaderText = "Event Type"
+        Me.EventType.Name = "EventType"
+        '
+        'EventDate
+        '
+        Me.EventDate.HeaderText = "Event Date"
+        Me.EventDate.Name = "EventDate"
+        '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1287, 977)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.ClientSize = New System.Drawing.Size(1287, 1100)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnNewClient)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.Button3)
@@ -1895,6 +1958,7 @@ Partial Class frmDashboard
         Me.tpMiscInfo.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2043,4 +2107,13 @@ Partial Class frmDashboard
     Friend WithEvents MaskedTextBox8 As MaskedTextBox
     Friend WithEvents Label29 As Label
     Friend WithEvents btnNewClient As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents fName As DataGridViewTextBoxColumn
+    Friend WithEvents lName As DataGridViewTextBoxColumn
+    Friend WithEvents pPhone As DataGridViewTextBoxColumn
+    Friend WithEvents sPhone As DataGridViewTextBoxColumn
+    Friend WithEvents email As DataGridViewTextBoxColumn
+    Friend WithEvents address As DataGridViewTextBoxColumn
+    Friend WithEvents EventType As DataGridViewTextBoxColumn
+    Friend WithEvents EventDate As DataGridViewTextBoxColumn
 End Class
