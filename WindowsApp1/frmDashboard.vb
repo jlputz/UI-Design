@@ -1,9 +1,10 @@
 ﻿Public Class frmDashboard
     Private Sub frmDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hideClientMenu()
+        hideSettings()
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
-        lblDate.Text = Date.Now().DayOfWeek.ToString() & "," & MonthName(Date.Now().Month) & " " & Date.Now.Day
+        lblDate.Text = Date.Now().DayOfWeek.ToString() & ", " & MonthName(Date.Now().Month) & " " & Date.Now.Day
 
     End Sub
 
@@ -14,7 +15,7 @@
         btnNewClient.Visible = True
         DataGridView1.Visible = True
         tbpCustomer.Visible = True
-
+        pnlSettings.Visible = False
         tbpCustomer.Top = DataGridView1.Bottom + 5
         pnlButtonMover.Height = btnClient.Height
         pnlButtonMover.Top = btnClient.Top
@@ -34,6 +35,7 @@
 
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         hideClientMenu()
+        hideSettings()
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
     End Sub
@@ -44,10 +46,13 @@
         btnNewClient.Visible = False
         DataGridView1.Visible = False
     End Sub
-
+    Sub hideSettings()
+        pnlSettings.Visible = False
+    End Sub
 
     Private Sub btnLayout_Click(sender As Object, e As EventArgs) Handles btnLayout.Click
         hideClientMenu()
+        hideSettings()
         pnlButtonMover.Height = btnLayout.Height
         pnlButtonMover.Top = btnLayout.Top
     End Sub
@@ -56,5 +61,13 @@
         tbpCustomer.Visible = True
         tbpCustomer.Top = DataGridView1.Top
         DataGridView1.Visible = False
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+    End Sub
+
+    Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+        pnlSettings.Visible = True
     End Sub
 End Class
