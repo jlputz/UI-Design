@@ -209,7 +209,7 @@ Partial Class frmDashboard
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(992, 691)
+        Me.tbpCustomer.Size = New System.Drawing.Size(992, 656)
         Me.tbpCustomer.TabIndex = 4
         '
         'tpCustomerInfo
@@ -236,7 +236,7 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(984, 663)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(984, 628)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '

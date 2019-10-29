@@ -14,6 +14,8 @@
         btnNewClient.Visible = True
         DataGridView1.Visible = True
         tbpCustomer.Visible = True
+
+        tbpCustomer.Top = DataGridView1.Bottom + 5
         pnlButtonMover.Height = btnClient.Height
         pnlButtonMover.Top = btnClient.Top
     End Sub
