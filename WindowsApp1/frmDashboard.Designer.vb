@@ -1969,7 +1969,7 @@ Partial Class frmDashboard
         Me.lblNotifs.AutoSize = True
         Me.lblNotifs.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNotifs.ForeColor = System.Drawing.Color.Wheat
-        Me.lblNotifs.Location = New System.Drawing.Point(202, 71)
+        Me.lblNotifs.Location = New System.Drawing.Point(205, 68)
         Me.lblNotifs.Name = "lblNotifs"
         Me.lblNotifs.Size = New System.Drawing.Size(224, 22)
         Me.lblNotifs.TabIndex = 35
