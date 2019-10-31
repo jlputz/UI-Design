@@ -153,12 +153,17 @@ Partial Class frmDashboard
         Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
+        Me.tpLayout = New System.Windows.Forms.TabPage()
+        Me.btnChoseFloor = New System.Windows.Forms.Button()
+        Me.AxDrawingControl1 = New AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnLayout = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.pnlButtonMover = New System.Windows.Forms.Panel()
         Me.btnClient = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnLayout = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -176,6 +181,8 @@ Partial Class frmDashboard
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpMiscInfo.SuspendLayout()
+        Me.tpLayout.SuspendLayout()
+        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -190,11 +197,12 @@ Partial Class frmDashboard
         Me.tbpCustomer.Controls.Add(Me.tpAudioLighting)
         Me.tbpCustomer.Controls.Add(Me.tpDrinkService)
         Me.tbpCustomer.Controls.Add(Me.tpMiscInfo)
-        Me.tbpCustomer.Location = New System.Drawing.Point(287, 192)
+        Me.tbpCustomer.Controls.Add(Me.tpLayout)
+        Me.tbpCustomer.Location = New System.Drawing.Point(147, 132)
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(946, 691)
+        Me.tbpCustomer.Size = New System.Drawing.Size(1008, 680)
         Me.tbpCustomer.TabIndex = 4
         '
         'tpCustomerInfo
@@ -215,11 +223,11 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Controls.Add(Me.lblStreetAddress)
         Me.tpCustomerInfo.Controls.Add(Me.lblCustomerName)
         Me.tpCustomerInfo.Controls.Add(Me.lblCustomerInfo)
-        Me.tpCustomerInfo.Location = New System.Drawing.Point(4, 24)
+        Me.tpCustomerInfo.Location = New System.Drawing.Point(4, 27)
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(938, 663)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(1000, 649)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
@@ -259,7 +267,7 @@ Partial Class frmDashboard
         Me.mtbCustomerAlternatePhone.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbCustomerAlternatePhone.Mask = "(999) 000-0000"
         Me.mtbCustomerAlternatePhone.Name = "mtbCustomerAlternatePhone"
-        Me.mtbCustomerAlternatePhone.Size = New System.Drawing.Size(132, 26)
+        Me.mtbCustomerAlternatePhone.Size = New System.Drawing.Size(132, 30)
         Me.mtbCustomerAlternatePhone.TabIndex = 27
         '
         'mtbCustomerPhone
@@ -269,7 +277,7 @@ Partial Class frmDashboard
         Me.mtbCustomerPhone.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbCustomerPhone.Mask = "(999) 000-0000"
         Me.mtbCustomerPhone.Name = "mtbCustomerPhone"
-        Me.mtbCustomerPhone.Size = New System.Drawing.Size(132, 26)
+        Me.mtbCustomerPhone.Size = New System.Drawing.Size(132, 30)
         Me.mtbCustomerPhone.TabIndex = 26
         '
         'txtCustomerEmail
@@ -278,7 +286,7 @@ Partial Class frmDashboard
         Me.txtCustomerEmail.Location = New System.Drawing.Point(187, 205)
         Me.txtCustomerEmail.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCustomerEmail.Name = "txtCustomerEmail"
-        Me.txtCustomerEmail.Size = New System.Drawing.Size(255, 26)
+        Me.txtCustomerEmail.Size = New System.Drawing.Size(255, 30)
         Me.txtCustomerEmail.TabIndex = 25
         '
         'mtbZipCode
@@ -288,7 +296,7 @@ Partial Class frmDashboard
         Me.mtbZipCode.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbZipCode.Mask = "00000"
         Me.mtbZipCode.Name = "mtbZipCode"
-        Me.mtbZipCode.Size = New System.Drawing.Size(65, 26)
+        Me.mtbZipCode.Size = New System.Drawing.Size(65, 30)
         Me.mtbZipCode.TabIndex = 24
         '
         'txtCustomerAddress
@@ -297,7 +305,7 @@ Partial Class frmDashboard
         Me.txtCustomerAddress.Location = New System.Drawing.Point(187, 112)
         Me.txtCustomerAddress.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCustomerAddress.Name = "txtCustomerAddress"
-        Me.txtCustomerAddress.Size = New System.Drawing.Size(255, 26)
+        Me.txtCustomerAddress.Size = New System.Drawing.Size(255, 30)
         Me.txtCustomerAddress.TabIndex = 23
         '
         'txtCustomerName
@@ -309,7 +317,7 @@ Partial Class frmDashboard
         Me.txtCustomerName.Location = New System.Drawing.Point(187, 66)
         Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCustomerName.Name = "txtCustomerName"
-        Me.txtCustomerName.Size = New System.Drawing.Size(255, 26)
+        Me.txtCustomerName.Size = New System.Drawing.Size(255, 30)
         Me.txtCustomerName.TabIndex = 22
         '
         'lblAlternatePhone
@@ -319,7 +327,7 @@ Partial Class frmDashboard
         Me.lblAlternatePhone.Location = New System.Drawing.Point(8, 308)
         Me.lblAlternatePhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAlternatePhone.Name = "lblAlternatePhone"
-        Me.lblAlternatePhone.Size = New System.Drawing.Size(182, 18)
+        Me.lblAlternatePhone.Size = New System.Drawing.Size(230, 23)
         Me.lblAlternatePhone.TabIndex = 21
         Me.lblAlternatePhone.Text = "Alternate Phone Number:"
         '
@@ -330,7 +338,7 @@ Partial Class frmDashboard
         Me.lblPhoneNumber.Location = New System.Drawing.Point(8, 260)
         Me.lblPhoneNumber.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPhoneNumber.Name = "lblPhoneNumber"
-        Me.lblPhoneNumber.Size = New System.Drawing.Size(116, 18)
+        Me.lblPhoneNumber.Size = New System.Drawing.Size(145, 23)
         Me.lblPhoneNumber.TabIndex = 20
         Me.lblPhoneNumber.Text = "Phone Number:"
         '
@@ -341,7 +349,7 @@ Partial Class frmDashboard
         Me.lblEmailAddress.Location = New System.Drawing.Point(8, 211)
         Me.lblEmailAddress.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEmailAddress.Name = "lblEmailAddress"
-        Me.lblEmailAddress.Size = New System.Drawing.Size(119, 18)
+        Me.lblEmailAddress.Size = New System.Drawing.Size(150, 23)
         Me.lblEmailAddress.TabIndex = 19
         Me.lblEmailAddress.Text = "E-Mail Address:"
         '
@@ -352,7 +360,7 @@ Partial Class frmDashboard
         Me.lblZipCode.Location = New System.Drawing.Point(11, 164)
         Me.lblZipCode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblZipCode.Name = "lblZipCode"
-        Me.lblZipCode.Size = New System.Drawing.Size(77, 18)
+        Me.lblZipCode.Size = New System.Drawing.Size(96, 23)
         Me.lblZipCode.TabIndex = 18
         Me.lblZipCode.Text = "Zip Code:"
         '
@@ -363,7 +371,7 @@ Partial Class frmDashboard
         Me.lblStreetAddress.Location = New System.Drawing.Point(11, 115)
         Me.lblStreetAddress.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStreetAddress.Name = "lblStreetAddress"
-        Me.lblStreetAddress.Size = New System.Drawing.Size(116, 18)
+        Me.lblStreetAddress.Size = New System.Drawing.Size(148, 23)
         Me.lblStreetAddress.TabIndex = 17
         Me.lblStreetAddress.Text = "Street Address:"
         '
@@ -375,7 +383,7 @@ Partial Class frmDashboard
         Me.lblCustomerName.Location = New System.Drawing.Point(11, 69)
         Me.lblCustomerName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomerName.Name = "lblCustomerName"
-        Me.lblCustomerName.Size = New System.Drawing.Size(126, 18)
+        Me.lblCustomerName.Size = New System.Drawing.Size(158, 23)
         Me.lblCustomerName.TabIndex = 16
         Me.lblCustomerName.Text = "Customer Name:"
         '
@@ -387,7 +395,7 @@ Partial Class frmDashboard
         Me.lblCustomerInfo.Location = New System.Drawing.Point(5, 2)
         Me.lblCustomerInfo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomerInfo.Name = "lblCustomerInfo"
-        Me.lblCustomerInfo.Size = New System.Drawing.Size(320, 37)
+        Me.lblCustomerInfo.Size = New System.Drawing.Size(399, 47)
         Me.lblCustomerInfo.TabIndex = 15
         Me.lblCustomerInfo.Text = "Customer Information"
         '
@@ -406,11 +414,11 @@ Partial Class frmDashboard
         Me.tpEventInfo.Controls.Add(Me.chkCeremonyEvent)
         Me.tpEventInfo.Controls.Add(Me.lblEventType)
         Me.tpEventInfo.Controls.Add(Me.lblEventInfo)
-        Me.tpEventInfo.Location = New System.Drawing.Point(4, 24)
+        Me.tpEventInfo.Location = New System.Drawing.Point(4, 27)
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(938, 663)
+        Me.tpEventInfo.Size = New System.Drawing.Size(1000, 649)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
@@ -445,7 +453,7 @@ Partial Class frmDashboard
         Me.dtpRehearsalDate.Location = New System.Drawing.Point(248, 212)
         Me.dtpRehearsalDate.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.dtpRehearsalDate.Name = "dtpRehearsalDate"
-        Me.dtpRehearsalDate.Size = New System.Drawing.Size(361, 26)
+        Me.dtpRehearsalDate.Size = New System.Drawing.Size(361, 30)
         Me.dtpRehearsalDate.TabIndex = 25
         '
         'dtpEventDate
@@ -455,7 +463,7 @@ Partial Class frmDashboard
         Me.dtpEventDate.Location = New System.Drawing.Point(248, 162)
         Me.dtpEventDate.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.dtpEventDate.Name = "dtpEventDate"
-        Me.dtpEventDate.Size = New System.Drawing.Size(361, 26)
+        Me.dtpEventDate.Size = New System.Drawing.Size(361, 30)
         Me.dtpEventDate.TabIndex = 24
         '
         'txtEventType
@@ -464,7 +472,7 @@ Partial Class frmDashboard
         Me.txtEventType.Location = New System.Drawing.Point(248, 70)
         Me.txtEventType.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtEventType.Name = "txtEventType"
-        Me.txtEventType.Size = New System.Drawing.Size(361, 26)
+        Me.txtEventType.Size = New System.Drawing.Size(361, 30)
         Me.txtEventType.TabIndex = 23
         '
         'MaskedTextBox1
@@ -474,7 +482,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.MaskedTextBox1.Mask = "000"
         Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(48, 26)
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(48, 30)
         Me.MaskedTextBox1.TabIndex = 22
         Me.MaskedTextBox1.ValidatingType = GetType(Integer)
         '
@@ -485,7 +493,7 @@ Partial Class frmDashboard
         Me.lblGuestCount.Location = New System.Drawing.Point(9, 265)
         Me.lblGuestCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGuestCount.Name = "lblGuestCount"
-        Me.lblGuestCount.Size = New System.Drawing.Size(173, 18)
+        Me.lblGuestCount.Size = New System.Drawing.Size(220, 23)
         Me.lblGuestCount.TabIndex = 21
         Me.lblGuestCount.Text = "Estimated Guest Count:"
         '
@@ -496,7 +504,7 @@ Partial Class frmDashboard
         Me.lblRehearsalDate.Location = New System.Drawing.Point(9, 219)
         Me.lblRehearsalDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblRehearsalDate.Name = "lblRehearsalDate"
-        Me.lblRehearsalDate.Size = New System.Drawing.Size(121, 18)
+        Me.lblRehearsalDate.Size = New System.Drawing.Size(153, 23)
         Me.lblRehearsalDate.TabIndex = 20
         Me.lblRehearsalDate.Text = "Rehearsal Date:"
         '
@@ -507,7 +515,7 @@ Partial Class frmDashboard
         Me.lblEventDate.Location = New System.Drawing.Point(9, 168)
         Me.lblEventDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEventDate.Name = "lblEventDate"
-        Me.lblEventDate.Size = New System.Drawing.Size(89, 18)
+        Me.lblEventDate.Size = New System.Drawing.Size(113, 23)
         Me.lblEventDate.TabIndex = 19
         Me.lblEventDate.Text = "Event Date:"
         '
@@ -518,7 +526,7 @@ Partial Class frmDashboard
         Me.chkCeremonyEvent.Location = New System.Drawing.Point(13, 120)
         Me.chkCeremonyEvent.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.chkCeremonyEvent.Name = "chkCeremonyEvent"
-        Me.chkCeremonyEvent.Size = New System.Drawing.Size(281, 22)
+        Me.chkCeremonyEvent.Size = New System.Drawing.Size(353, 27)
         Me.chkCeremonyEvent.TabIndex = 18
         Me.chkCeremonyEvent.Text = "Does this event include a ceremony?"
         Me.chkCeremonyEvent.UseVisualStyleBackColor = True
@@ -530,7 +538,7 @@ Partial Class frmDashboard
         Me.lblEventType.Location = New System.Drawing.Point(9, 74)
         Me.lblEventType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEventType.Name = "lblEventType"
-        Me.lblEventType.Size = New System.Drawing.Size(88, 18)
+        Me.lblEventType.Size = New System.Drawing.Size(114, 23)
         Me.lblEventType.TabIndex = 17
         Me.lblEventType.Text = "Event Type:"
         '
@@ -541,7 +549,7 @@ Partial Class frmDashboard
         Me.lblEventInfo.Location = New System.Drawing.Point(4, 8)
         Me.lblEventInfo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEventInfo.Name = "lblEventInfo"
-        Me.lblEventInfo.Size = New System.Drawing.Size(261, 37)
+        Me.lblEventInfo.Size = New System.Drawing.Size(328, 47)
         Me.lblEventInfo.TabIndex = 16
         Me.lblEventInfo.Text = "Event Information"
         '
@@ -552,10 +560,10 @@ Partial Class frmDashboard
         Me.tpTimeline.Controls.Add(Me.cmdUpdateTimeline)
         Me.tpTimeline.Controls.Add(Me.txtTimelineInfo)
         Me.tpTimeline.Controls.Add(Me.lblAVLightingSelection)
-        Me.tpTimeline.Location = New System.Drawing.Point(4, 24)
+        Me.tpTimeline.Location = New System.Drawing.Point(4, 27)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(938, 663)
+        Me.tpTimeline.Size = New System.Drawing.Size(1000, 649)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
@@ -602,7 +610,7 @@ Partial Class frmDashboard
         Me.lblAVLightingSelection.Location = New System.Drawing.Point(1, 0)
         Me.lblAVLightingSelection.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.lblAVLightingSelection.Name = "lblAVLightingSelection"
-        Me.lblAVLightingSelection.Size = New System.Drawing.Size(135, 37)
+        Me.lblAVLightingSelection.Size = New System.Drawing.Size(168, 47)
         Me.lblAVLightingSelection.TabIndex = 26
         Me.lblAVLightingSelection.Text = "Timeline"
         '
@@ -634,10 +642,10 @@ Partial Class frmDashboard
         Me.tpFoodSelection.Controls.Add(Me.lblCateringCompanyName)
         Me.tpFoodSelection.Controls.Add(Me.lblCateringCompany)
         Me.tpFoodSelection.Controls.Add(Me.Label10)
-        Me.tpFoodSelection.Location = New System.Drawing.Point(4, 24)
+        Me.tpFoodSelection.Location = New System.Drawing.Point(4, 27)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(938, 663)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(1000, 649)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
         '
@@ -648,7 +656,7 @@ Partial Class frmDashboard
         Me.Label9.Location = New System.Drawing.Point(-3, 451)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(157, 18)
+        Me.Label9.Size = New System.Drawing.Size(202, 23)
         Me.Label9.TabIndex = 49
         Me.Label9.Text = "Selected Menu Items:"
         '
@@ -693,7 +701,7 @@ Partial Class frmDashboard
         Me.mtbCateringPhone.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbCateringPhone.Mask = "(999) 000-0000"
         Me.mtbCateringPhone.Name = "mtbCateringPhone"
-        Me.mtbCateringPhone.Size = New System.Drawing.Size(168, 26)
+        Me.mtbCateringPhone.Size = New System.Drawing.Size(168, 30)
         Me.mtbCateringPhone.TabIndex = 45
         '
         'txtCateringCompanyName
@@ -702,7 +710,7 @@ Partial Class frmDashboard
         Me.txtCateringCompanyName.Location = New System.Drawing.Point(356, 103)
         Me.txtCateringCompanyName.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCateringCompanyName.Name = "txtCateringCompanyName"
-        Me.txtCateringCompanyName.Size = New System.Drawing.Size(415, 26)
+        Me.txtCateringCompanyName.Size = New System.Drawing.Size(415, 30)
         Me.txtCateringCompanyName.TabIndex = 44
         '
         'txtCateringCompanyEmail
@@ -711,7 +719,7 @@ Partial Class frmDashboard
         Me.txtCateringCompanyEmail.Location = New System.Drawing.Point(356, 182)
         Me.txtCateringCompanyEmail.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCateringCompanyEmail.Name = "txtCateringCompanyEmail"
-        Me.txtCateringCompanyEmail.Size = New System.Drawing.Size(415, 26)
+        Me.txtCateringCompanyEmail.Size = New System.Drawing.Size(415, 30)
         Me.txtCateringCompanyEmail.TabIndex = 43
         '
         'cboCateringCompany
@@ -721,7 +729,7 @@ Partial Class frmDashboard
         Me.cboCateringCompany.Location = New System.Drawing.Point(356, 66)
         Me.cboCateringCompany.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.cboCateringCompany.Name = "cboCateringCompany"
-        Me.cboCateringCompany.Size = New System.Drawing.Size(224, 26)
+        Me.cboCateringCompany.Size = New System.Drawing.Size(224, 31)
         Me.cboCateringCompany.TabIndex = 42
         '
         'txtSpecialNotes
@@ -741,7 +749,7 @@ Partial Class frmDashboard
         Me.lblSpecialNotes.Location = New System.Drawing.Point(9, 712)
         Me.lblSpecialNotes.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSpecialNotes.Name = "lblSpecialNotes"
-        Me.lblSpecialNotes.Size = New System.Drawing.Size(110, 18)
+        Me.lblSpecialNotes.Size = New System.Drawing.Size(137, 23)
         Me.lblSpecialNotes.TabIndex = 40
         Me.lblSpecialNotes.Text = "Special Notes:"
         '
@@ -762,7 +770,7 @@ Partial Class frmDashboard
         Me.lblDietaryRestrictions.Location = New System.Drawing.Point(9, 579)
         Me.lblDietaryRestrictions.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDietaryRestrictions.Name = "lblDietaryRestrictions"
-        Me.lblDietaryRestrictions.Size = New System.Drawing.Size(148, 18)
+        Me.lblDietaryRestrictions.Size = New System.Drawing.Size(188, 23)
         Me.lblDietaryRestrictions.TabIndex = 38
         Me.lblDietaryRestrictions.Text = "Dietary Restrictions:"
         '
@@ -845,7 +853,7 @@ Partial Class frmDashboard
         Me.chkFlatwareFee.Location = New System.Drawing.Point(13, 225)
         Me.chkFlatwareFee.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.chkFlatwareFee.Name = "chkFlatwareFee"
-        Me.chkFlatwareFee.Size = New System.Drawing.Size(320, 22)
+        Me.chkFlatwareFee.Size = New System.Drawing.Size(404, 27)
         Me.chkFlatwareFee.TabIndex = 31
         Me.chkFlatwareFee.Text = "Flatware/China Fee (outside catering only)"
         Me.chkFlatwareFee.UseVisualStyleBackColor = True
@@ -857,7 +865,7 @@ Partial Class frmDashboard
         Me.lblCateringCompanyEmail.Location = New System.Drawing.Point(9, 186)
         Me.lblCateringCompanyEmail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCateringCompanyEmail.Name = "lblCateringCompanyEmail"
-        Me.lblCateringCompanyEmail.Size = New System.Drawing.Size(254, 18)
+        Me.lblCateringCompanyEmail.Size = New System.Drawing.Size(319, 23)
         Me.lblCateringCompanyEmail.TabIndex = 30
         Me.lblCateringCompanyEmail.Text = "Catering Company E-Mail Address:"
         '
@@ -868,7 +876,7 @@ Partial Class frmDashboard
         Me.lblCateringCompanyPhone.Location = New System.Drawing.Point(9, 145)
         Me.lblCateringCompanyPhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCateringCompanyPhone.Name = "lblCateringCompanyPhone"
-        Me.lblCateringCompanyPhone.Size = New System.Drawing.Size(192, 18)
+        Me.lblCateringCompanyPhone.Size = New System.Drawing.Size(240, 23)
         Me.lblCateringCompanyPhone.TabIndex = 29
         Me.lblCateringCompanyPhone.Text = "Catering Company Phone:"
         '
@@ -879,7 +887,7 @@ Partial Class frmDashboard
         Me.lblCateringCompanyName.Location = New System.Drawing.Point(9, 106)
         Me.lblCateringCompanyName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCateringCompanyName.Name = "lblCateringCompanyName"
-        Me.lblCateringCompanyName.Size = New System.Drawing.Size(189, 18)
+        Me.lblCateringCompanyName.Size = New System.Drawing.Size(236, 23)
         Me.lblCateringCompanyName.TabIndex = 28
         Me.lblCateringCompanyName.Text = "Catering Company Name:"
         '
@@ -890,7 +898,7 @@ Partial Class frmDashboard
         Me.lblCateringCompany.Location = New System.Drawing.Point(9, 69)
         Me.lblCateringCompany.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCateringCompany.Name = "lblCateringCompany"
-        Me.lblCateringCompany.Size = New System.Drawing.Size(143, 18)
+        Me.lblCateringCompany.Size = New System.Drawing.Size(179, 23)
         Me.lblCateringCompany.TabIndex = 27
         Me.lblCateringCompany.Text = "Catering Company:"
         '
@@ -901,7 +909,7 @@ Partial Class frmDashboard
         Me.Label10.Location = New System.Drawing.Point(4, 8)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(219, 37)
+        Me.Label10.Size = New System.Drawing.Size(274, 47)
         Me.Label10.TabIndex = 26
         Me.Label10.Text = "Food Selection"
         '
@@ -927,10 +935,10 @@ Partial Class frmDashboard
         Me.tpAudioLighting.Controls.Add(Me.Label1)
         Me.tpAudioLighting.Controls.Add(Me.ComboBox1)
         Me.tpAudioLighting.Controls.Add(Me.Label7)
-        Me.tpAudioLighting.Location = New System.Drawing.Point(4, 24)
+        Me.tpAudioLighting.Location = New System.Drawing.Point(4, 27)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(938, 663)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(1000, 649)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
         '
@@ -964,7 +972,7 @@ Partial Class frmDashboard
         Me.Label8.Location = New System.Drawing.Point(445, 66)
         Me.Label8.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(228, 15)
+        Me.Label8.Size = New System.Drawing.Size(289, 20)
         Me.Label8.TabIndex = 49
         Me.Label8.Text = "Selected Items and Special Notes:"
         '
@@ -983,7 +991,7 @@ Partial Class frmDashboard
         Me.CheckBox2.Location = New System.Drawing.Point(13, 370)
         Me.CheckBox2.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(150, 19)
+        Me.CheckBox2.Size = New System.Drawing.Size(190, 24)
         Me.CheckBox2.TabIndex = 47
         Me.CheckBox2.Text = "Additional 20 lights"
         Me.CheckBox2.UseVisualStyleBackColor = True
@@ -994,7 +1002,7 @@ Partial Class frmDashboard
         Me.Label6.Location = New System.Drawing.Point(13, 337)
         Me.Label6.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(47, 15)
+        Me.Label6.Size = New System.Drawing.Size(59, 20)
         Me.Label6.TabIndex = 46
         Me.Label6.Text = "Color:"
         '
@@ -1003,7 +1011,7 @@ Partial Class frmDashboard
         Me.TextBox3.Location = New System.Drawing.Point(199, 337)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(151, 23)
+        Me.TextBox3.Size = New System.Drawing.Size(151, 26)
         Me.TextBox3.TabIndex = 45
         '
         'CheckBox1
@@ -1012,7 +1020,7 @@ Partial Class frmDashboard
         Me.CheckBox1.Location = New System.Drawing.Point(13, 303)
         Me.CheckBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(153, 19)
+        Me.CheckBox1.Size = New System.Drawing.Size(194, 24)
         Me.CheckBox1.TabIndex = 44
         Me.CheckBox1.Text = "Auxillary Uplighting"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -1023,7 +1031,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox2.Margin = New System.Windows.Forms.Padding(1)
         Me.MaskedTextBox2.Mask = "0"
         Me.MaskedTextBox2.Name = "MaskedTextBox2"
-        Me.MaskedTextBox2.Size = New System.Drawing.Size(28, 23)
+        Me.MaskedTextBox2.Size = New System.Drawing.Size(28, 26)
         Me.MaskedTextBox2.TabIndex = 43
         '
         'Label5
@@ -1032,7 +1040,7 @@ Partial Class frmDashboard
         Me.Label5.Location = New System.Drawing.Point(9, 254)
         Me.Label5.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(168, 15)
+        Me.Label5.Size = New System.Drawing.Size(214, 20)
         Me.Label5.TabIndex = 42
         Me.Label5.Text = "Number of  Microphones:"
         '
@@ -1042,7 +1050,7 @@ Partial Class frmDashboard
         Me.Label4.Location = New System.Drawing.Point(9, 95)
         Me.Label4.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(107, 15)
+        Me.Label4.Size = New System.Drawing.Size(138, 20)
         Me.Label4.TabIndex = 41
         Me.Label4.Text = "Audio Package:"
         '
@@ -1052,7 +1060,7 @@ Partial Class frmDashboard
         Me.ComboBox2.Location = New System.Drawing.Point(199, 91)
         Me.ComboBox2.Margin = New System.Windows.Forms.Padding(1)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(153, 23)
+        Me.ComboBox2.Size = New System.Drawing.Size(153, 26)
         Me.ComboBox2.TabIndex = 40
         '
         'TextBox2
@@ -1060,7 +1068,7 @@ Partial Class frmDashboard
         Me.TextBox2.Location = New System.Drawing.Point(199, 202)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox2.Size = New System.Drawing.Size(199, 26)
         Me.TextBox2.TabIndex = 39
         '
         'TextBox1
@@ -1068,7 +1076,7 @@ Partial Class frmDashboard
         Me.TextBox1.Location = New System.Drawing.Point(199, 166)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox1.Size = New System.Drawing.Size(199, 26)
         Me.TextBox1.TabIndex = 38
         '
         'Label3
@@ -1077,7 +1085,7 @@ Partial Class frmDashboard
         Me.Label3.Location = New System.Drawing.Point(9, 204)
         Me.Label3.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(107, 15)
+        Me.Label3.Size = New System.Drawing.Size(135, 20)
         Me.Label3.TabIndex = 37
         Me.Label3.Text = "Phone Number:"
         '
@@ -1087,7 +1095,7 @@ Partial Class frmDashboard
         Me.Label2.Location = New System.Drawing.Point(9, 168)
         Me.Label2.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 15)
+        Me.Label2.Size = New System.Drawing.Size(62, 20)
         Me.Label2.TabIndex = 36
         Me.Label2.Text = "Name:"
         '
@@ -1097,7 +1105,7 @@ Partial Class frmDashboard
         Me.Label1.Location = New System.Drawing.Point(9, 132)
         Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(79, 15)
+        Me.Label1.Size = New System.Drawing.Size(102, 20)
         Me.Label1.TabIndex = 35
         Me.Label1.Text = "DJ/Vendor:"
         '
@@ -1107,17 +1115,17 @@ Partial Class frmDashboard
         Me.ComboBox1.Location = New System.Drawing.Point(199, 129)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(153, 23)
+        Me.ComboBox1.Size = New System.Drawing.Size(153, 26)
         Me.ComboBox1.TabIndex = 34
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Franklin Gothic Medium", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(1, 0)
+        Me.Label7.Location = New System.Drawing.Point(9, 0)
         Me.Label7.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(300, 37)
+        Me.Label7.Size = New System.Drawing.Size(380, 47)
         Me.Label7.TabIndex = 33
         Me.Label7.Text = "Audio and Uplighting"
         '
@@ -1146,10 +1154,10 @@ Partial Class frmDashboard
         Me.tpDrinkService.Controls.Add(Me.Label17)
         Me.tpDrinkService.Controls.Add(Me.ComboBox3)
         Me.tpDrinkService.Controls.Add(Me.Label18)
-        Me.tpDrinkService.Location = New System.Drawing.Point(4, 24)
+        Me.tpDrinkService.Location = New System.Drawing.Point(4, 27)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(938, 663)
+        Me.tpDrinkService.Size = New System.Drawing.Size(1000, 649)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
         '
@@ -1181,7 +1189,7 @@ Partial Class frmDashboard
         Me.Label11.Location = New System.Drawing.Point(455, 46)
         Me.Label11.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(295, 15)
+        Me.Label11.Size = New System.Drawing.Size(375, 20)
         Me.Label11.TabIndex = 53
         Me.Label11.Text = "Packages/Items Selected and Special Notes:"
         '
@@ -1200,7 +1208,7 @@ Partial Class frmDashboard
         Me.Label12.Location = New System.Drawing.Point(25, 451)
         Me.Label12.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(198, 15)
+        Me.Label12.Size = New System.Drawing.Size(252, 20)
         Me.Label12.TabIndex = 51
         Me.Label12.Text = "Additional Beverage Services"
         '
@@ -1210,7 +1218,7 @@ Partial Class frmDashboard
         Me.CheckBox6.Location = New System.Drawing.Point(25, 550)
         Me.CheckBox6.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(143, 19)
+        Me.CheckBox6.Size = New System.Drawing.Size(181, 24)
         Me.CheckBox6.TabIndex = 50
         Me.CheckBox6.Text = "Champagne Toast"
         Me.CheckBox6.UseVisualStyleBackColor = True
@@ -1221,7 +1229,7 @@ Partial Class frmDashboard
         Me.CheckBox5.Location = New System.Drawing.Point(25, 517)
         Me.CheckBox5.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(102, 19)
+        Me.CheckBox5.Size = New System.Drawing.Size(127, 24)
         Me.CheckBox5.TabIndex = 49
         Me.CheckBox5.Text = "Mimosa Bar"
         Me.CheckBox5.UseVisualStyleBackColor = True
@@ -1232,7 +1240,7 @@ Partial Class frmDashboard
         Me.CheckBox4.Location = New System.Drawing.Point(25, 482)
         Me.CheckBox4.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(131, 19)
+        Me.CheckBox4.Size = New System.Drawing.Size(165, 24)
         Me.CheckBox4.TabIndex = 48
         Me.CheckBox4.Text = "Bloody Mary Bar"
         Me.CheckBox4.UseVisualStyleBackColor = True
@@ -1243,7 +1251,7 @@ Partial Class frmDashboard
         Me.CheckBox3.Location = New System.Drawing.Point(25, 405)
         Me.CheckBox3.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(149, 19)
+        Me.CheckBox3.Size = New System.Drawing.Size(188, 24)
         Me.CheckBox3.TabIndex = 47
         Me.CheckBox3.Text = "Coffee/Tea Service"
         Me.CheckBox3.UseVisualStyleBackColor = True
@@ -1254,7 +1262,7 @@ Partial Class frmDashboard
         Me.Label13.Location = New System.Drawing.Point(25, 354)
         Me.Label13.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(154, 15)
+        Me.Label13.Size = New System.Drawing.Size(196, 20)
         Me.Label13.TabIndex = 46
         Me.Label13.Text = "Number of Bartenders:"
         '
@@ -1263,7 +1271,7 @@ Partial Class frmDashboard
         Me.NumericUpDown3.Location = New System.Drawing.Point(216, 354)
         Me.NumericUpDown3.Margin = New System.Windows.Forms.Padding(1)
         Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(60, 23)
+        Me.NumericUpDown3.Size = New System.Drawing.Size(60, 26)
         Me.NumericUpDown3.TabIndex = 45
         '
         'Label14
@@ -1272,7 +1280,7 @@ Partial Class frmDashboard
         Me.Label14.Location = New System.Drawing.Point(25, 317)
         Me.Label14.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(171, 15)
+        Me.Label14.Size = New System.Drawing.Size(217, 20)
         Me.Label14.TabIndex = 44
         Me.Label14.Text = "Number of Bar Locations:"
         '
@@ -1281,7 +1289,7 @@ Partial Class frmDashboard
         Me.NumericUpDown4.Location = New System.Drawing.Point(216, 317)
         Me.NumericUpDown4.Margin = New System.Windows.Forms.Padding(1)
         Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(60, 23)
+        Me.NumericUpDown4.Size = New System.Drawing.Size(60, 26)
         Me.NumericUpDown4.TabIndex = 43
         '
         'CheckBox7
@@ -1290,7 +1298,7 @@ Partial Class frmDashboard
         Me.CheckBox7.Location = New System.Drawing.Point(25, 277)
         Me.CheckBox7.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(85, 19)
+        Me.CheckBox7.Size = New System.Drawing.Size(106, 24)
         Me.CheckBox7.TabIndex = 42
         Me.CheckBox7.Text = "Cash Bar"
         Me.CheckBox7.UseVisualStyleBackColor = True
@@ -1301,7 +1309,7 @@ Partial Class frmDashboard
         Me.Label15.Location = New System.Drawing.Point(25, 232)
         Me.Label15.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(154, 15)
+        Me.Label15.Size = New System.Drawing.Size(196, 20)
         Me.Label15.TabIndex = 41
         Me.Label15.Text = "Number of Bartenders:"
         '
@@ -1310,7 +1318,7 @@ Partial Class frmDashboard
         Me.NumericUpDown2.Location = New System.Drawing.Point(216, 232)
         Me.NumericUpDown2.Margin = New System.Windows.Forms.Padding(1)
         Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(60, 23)
+        Me.NumericUpDown2.Size = New System.Drawing.Size(60, 26)
         Me.NumericUpDown2.TabIndex = 40
         '
         'Label16
@@ -1319,7 +1327,7 @@ Partial Class frmDashboard
         Me.Label16.Location = New System.Drawing.Point(25, 195)
         Me.Label16.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(171, 15)
+        Me.Label16.Size = New System.Drawing.Size(217, 20)
         Me.Label16.TabIndex = 39
         Me.Label16.Text = "Number of Bar Locations:"
         '
@@ -1328,7 +1336,7 @@ Partial Class frmDashboard
         Me.NumericUpDown1.Location = New System.Drawing.Point(216, 195)
         Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(1)
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(60, 23)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(60, 26)
         Me.NumericUpDown1.TabIndex = 38
         '
         'CheckBox8
@@ -1337,7 +1345,7 @@ Partial Class frmDashboard
         Me.CheckBox8.Location = New System.Drawing.Point(25, 162)
         Me.CheckBox8.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(136, 19)
+        Me.CheckBox8.Size = New System.Drawing.Size(172, 24)
         Me.CheckBox8.TabIndex = 37
         Me.CheckBox8.Text = "Hosted/Open Bar"
         Me.CheckBox8.UseVisualStyleBackColor = True
@@ -1348,7 +1356,7 @@ Partial Class frmDashboard
         Me.Label17.Location = New System.Drawing.Point(23, 66)
         Me.Label17.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(105, 15)
+        Me.Label17.Size = New System.Drawing.Size(135, 20)
         Me.Label17.TabIndex = 36
         Me.Label17.Text = "Drink Package:"
         '
@@ -1358,7 +1366,7 @@ Partial Class frmDashboard
         Me.ComboBox3.Location = New System.Drawing.Point(160, 65)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(1)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(237, 23)
+        Me.ComboBox3.Size = New System.Drawing.Size(237, 26)
         Me.ComboBox3.TabIndex = 35
         '
         'Label18
@@ -1368,7 +1376,7 @@ Partial Class frmDashboard
         Me.Label18.Location = New System.Drawing.Point(1, 0)
         Me.Label18.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(220, 29)
+        Me.Label18.Size = New System.Drawing.Size(264, 36)
         Me.Label18.TabIndex = 34
         Me.Label18.Text = "Beverage Service"
         '
@@ -1402,10 +1410,10 @@ Partial Class frmDashboard
         Me.tpMiscInfo.Controls.Add(Me.Label27)
         Me.tpMiscInfo.Controls.Add(Me.Label28)
         Me.tpMiscInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.tpMiscInfo.Location = New System.Drawing.Point(4, 24)
+        Me.tpMiscInfo.Location = New System.Drawing.Point(4, 27)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(938, 663)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(1000, 649)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Additional Items"
         '
@@ -1448,7 +1456,7 @@ Partial Class frmDashboard
         Me.Label19.Location = New System.Drawing.Point(359, 61)
         Me.Label19.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(236, 15)
+        Me.Label19.Size = New System.Drawing.Size(301, 20)
         Me.Label19.TabIndex = 61
         Me.Label19.Text = "Additional Items and Special Notes:"
         '
@@ -1467,7 +1475,7 @@ Partial Class frmDashboard
         Me.CheckBox9.Location = New System.Drawing.Point(3, 434)
         Me.CheckBox9.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(60, 19)
+        Me.CheckBox9.Size = New System.Drawing.Size(74, 24)
         Me.CheckBox9.TabIndex = 59
         Me.CheckBox9.Text = "Valet"
         Me.CheckBox9.UseVisualStyleBackColor = True
@@ -1478,7 +1486,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox5.Margin = New System.Windows.Forms.Padding(1)
         Me.MaskedTextBox5.Mask = "000"
         Me.MaskedTextBox5.Name = "MaskedTextBox5"
-        Me.MaskedTextBox5.Size = New System.Drawing.Size(52, 23)
+        Me.MaskedTextBox5.Size = New System.Drawing.Size(52, 26)
         Me.MaskedTextBox5.TabIndex = 58
         '
         'Label20
@@ -1487,7 +1495,7 @@ Partial Class frmDashboard
         Me.Label20.Location = New System.Drawing.Point(1, 507)
         Me.Label20.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(153, 15)
+        Me.Label20.Size = New System.Drawing.Size(194, 20)
         Me.Label20.TabIndex = 57
         Me.Label20.Text = "Number of valet hours:"
         '
@@ -1497,7 +1505,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox4.Margin = New System.Windows.Forms.Padding(1)
         Me.MaskedTextBox4.Mask = "000"
         Me.MaskedTextBox4.Name = "MaskedTextBox4"
-        Me.MaskedTextBox4.Size = New System.Drawing.Size(52, 23)
+        Me.MaskedTextBox4.Size = New System.Drawing.Size(52, 26)
         Me.MaskedTextBox4.TabIndex = 56
         '
         'Label21
@@ -1506,7 +1514,7 @@ Partial Class frmDashboard
         Me.Label21.Location = New System.Drawing.Point(0, 466)
         Me.Label21.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(120, 15)
+        Me.Label21.Size = New System.Drawing.Size(153, 20)
         Me.Label21.TabIndex = 55
         Me.Label21.Text = "Number of valets:"
         '
@@ -1516,7 +1524,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox3.Margin = New System.Windows.Forms.Padding(1)
         Me.MaskedTextBox3.Mask = "000"
         Me.MaskedTextBox3.Name = "MaskedTextBox3"
-        Me.MaskedTextBox3.Size = New System.Drawing.Size(52, 23)
+        Me.MaskedTextBox3.Size = New System.Drawing.Size(52, 26)
         Me.MaskedTextBox3.TabIndex = 54
         '
         'Label22
@@ -1525,7 +1533,7 @@ Partial Class frmDashboard
         Me.Label22.Location = New System.Drawing.Point(0, 389)
         Me.Label22.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(159, 15)
+        Me.Label22.Size = New System.Drawing.Size(203, 20)
         Me.Label22.TabIndex = 53
         Me.Label22.Text = "Number of coat checks:"
         '
@@ -1535,7 +1543,7 @@ Partial Class frmDashboard
         Me.CheckBox10.Location = New System.Drawing.Point(3, 348)
         Me.CheckBox10.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(99, 19)
+        Me.CheckBox10.Size = New System.Drawing.Size(124, 24)
         Me.CheckBox10.TabIndex = 52
         Me.CheckBox10.Text = "Coat check"
         Me.CheckBox10.UseVisualStyleBackColor = True
@@ -1546,7 +1554,7 @@ Partial Class frmDashboard
         Me.ComboBox4.Location = New System.Drawing.Point(187, 226)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(1)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(115, 23)
+        Me.ComboBox4.Size = New System.Drawing.Size(115, 26)
         Me.ComboBox4.TabIndex = 51
         '
         'TextBox8
@@ -1554,7 +1562,7 @@ Partial Class frmDashboard
         Me.TextBox8.Location = New System.Drawing.Point(187, 308)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(115, 23)
+        Me.TextBox8.Size = New System.Drawing.Size(115, 26)
         Me.TextBox8.TabIndex = 50
         '
         'Label23
@@ -1563,7 +1571,7 @@ Partial Class frmDashboard
         Me.Label23.Location = New System.Drawing.Point(0, 308)
         Me.Label23.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(93, 15)
+        Me.Label23.Size = New System.Drawing.Size(119, 20)
         Me.Label23.TabIndex = 49
         Me.Label23.Text = "Napkin color:"
         '
@@ -1573,7 +1581,7 @@ Partial Class frmDashboard
         Me.CheckBox11.Location = New System.Drawing.Point(3, 268)
         Me.CheckBox11.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(78, 19)
+        Me.CheckBox11.Size = New System.Drawing.Size(99, 24)
         Me.CheckBox11.TabIndex = 48
         Me.CheckBox11.Text = "Napkins"
         Me.CheckBox11.UseVisualStyleBackColor = True
@@ -1584,7 +1592,7 @@ Partial Class frmDashboard
         Me.Label24.Location = New System.Drawing.Point(0, 226)
         Me.Label24.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(84, 15)
+        Me.Label24.Size = New System.Drawing.Size(105, 20)
         Me.Label24.TabIndex = 47
         Me.Label24.Text = "Linen color:"
         '
@@ -1594,7 +1602,7 @@ Partial Class frmDashboard
         Me.ComboBox5.Location = New System.Drawing.Point(187, 183)
         Me.ComboBox5.Margin = New System.Windows.Forms.Padding(1)
         Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(115, 23)
+        Me.ComboBox5.Size = New System.Drawing.Size(115, 26)
         Me.ComboBox5.TabIndex = 46
         '
         'Label25
@@ -1603,7 +1611,7 @@ Partial Class frmDashboard
         Me.Label25.Location = New System.Drawing.Point(0, 187)
         Me.Label25.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(78, 15)
+        Me.Label25.Size = New System.Drawing.Size(99, 20)
         Me.Label25.TabIndex = 45
         Me.Label25.Text = "Linen type:"
         '
@@ -1613,7 +1621,7 @@ Partial Class frmDashboard
         Me.CheckBox12.Location = New System.Drawing.Point(3, 149)
         Me.CheckBox12.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(104, 19)
+        Me.CheckBox12.Size = New System.Drawing.Size(131, 24)
         Me.CheckBox12.TabIndex = 44
         Me.CheckBox12.Text = "Table linens"
         Me.CheckBox12.UseVisualStyleBackColor = True
@@ -1624,7 +1632,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox6.Margin = New System.Windows.Forms.Padding(1)
         Me.MaskedTextBox6.Mask = "000"
         Me.MaskedTextBox6.Name = "MaskedTextBox6"
-        Me.MaskedTextBox6.Size = New System.Drawing.Size(52, 23)
+        Me.MaskedTextBox6.Size = New System.Drawing.Size(52, 26)
         Me.MaskedTextBox6.TabIndex = 43
         '
         'Label26
@@ -1633,7 +1641,7 @@ Partial Class frmDashboard
         Me.Label26.Location = New System.Drawing.Point(0, 105)
         Me.Label26.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(121, 15)
+        Me.Label26.Size = New System.Drawing.Size(155, 20)
         Me.Label26.TabIndex = 42
         Me.Label26.Text = "Number of tables:"
         '
@@ -1643,7 +1651,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox7.Margin = New System.Windows.Forms.Padding(1)
         Me.MaskedTextBox7.Mask = "00"
         Me.MaskedTextBox7.Name = "MaskedTextBox7"
-        Me.MaskedTextBox7.Size = New System.Drawing.Size(52, 23)
+        Me.MaskedTextBox7.Size = New System.Drawing.Size(52, 26)
         Me.MaskedTextBox7.TabIndex = 41
         '
         'Label27
@@ -1652,7 +1660,7 @@ Partial Class frmDashboard
         Me.Label27.Location = New System.Drawing.Point(0, 61)
         Me.Label27.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(186, 15)
+        Me.Label27.Size = New System.Drawing.Size(239, 20)
         Me.Label27.TabIndex = 40
         Me.Label27.Text = "Number of people per table:"
         '
@@ -1663,9 +1671,74 @@ Partial Class frmDashboard
         Me.Label28.Location = New System.Drawing.Point(1, 0)
         Me.Label28.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(261, 37)
+        Me.Label28.Size = New System.Drawing.Size(319, 46)
         Me.Label28.TabIndex = 39
         Me.Label28.Text = "Additional Items"
+        '
+        'tpLayout
+        '
+        Me.tpLayout.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.tpLayout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tpLayout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tpLayout.Controls.Add(Me.btnChoseFloor)
+        Me.tpLayout.Controls.Add(Me.AxDrawingControl1)
+        Me.tpLayout.Controls.Add(Me.Button9)
+        Me.tpLayout.Controls.Add(Me.Button10)
+        Me.tpLayout.ForeColor = System.Drawing.Color.White
+        Me.tpLayout.Location = New System.Drawing.Point(4, 27)
+        Me.tpLayout.Margin = New System.Windows.Forms.Padding(0)
+        Me.tpLayout.Name = "tpLayout"
+        Me.tpLayout.Size = New System.Drawing.Size(1000, 649)
+        Me.tpLayout.TabIndex = 7
+        Me.tpLayout.Text = "Layout"
+        '
+        'btnChoseFloor
+        '
+        Me.btnChoseFloor.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnChoseFloor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnChoseFloor.ForeColor = System.Drawing.Color.Wheat
+        Me.btnChoseFloor.Location = New System.Drawing.Point(380, 35)
+        Me.btnChoseFloor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnChoseFloor.Name = "btnChoseFloor"
+        Me.btnChoseFloor.Size = New System.Drawing.Size(201, 30)
+        Me.btnChoseFloor.TabIndex = 9
+        Me.btnChoseFloor.Text = "Chose Floor"
+        Me.btnChoseFloor.UseVisualStyleBackColor = False
+        '
+        'AxDrawingControl1
+        '
+        Me.AxDrawingControl1.Enabled = True
+        Me.AxDrawingControl1.Location = New System.Drawing.Point(27, 84)
+        Me.AxDrawingControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.AxDrawingControl1.Name = "AxDrawingControl1"
+        Me.AxDrawingControl1.Size = New System.Drawing.Size(925, 589)
+        Me.AxDrawingControl1.TabIndex = 8
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.ForeColor = System.Drawing.Color.Wheat
+        Me.Button9.Location = New System.Drawing.Point(664, 35)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(201, 30)
+        Me.Button9.TabIndex = 7
+        Me.Button9.Text = "Select Existing Layout"
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.ForeColor = System.Drawing.Color.Wheat
+        Me.Button10.Location = New System.Drawing.Point(103, 35)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(201, 30)
+        Me.Button10.TabIndex = 6
+        Me.Button10.Text = "Create Layout"
+        Me.Button10.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -1679,22 +1752,6 @@ Partial Class frmDashboard
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(133, 914)
         Me.Panel1.TabIndex = 6
-        '
-        'btnLayout
-        '
-        Me.btnLayout.FlatAppearance.BorderSize = 0
-        Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLayout.ForeColor = System.Drawing.Color.White
-        Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
-        Me.btnLayout.Location = New System.Drawing.Point(0, 209)
-        Me.btnLayout.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnLayout.Name = "btnLayout"
-        Me.btnLayout.Size = New System.Drawing.Size(137, 99)
-        Me.btnLayout.TabIndex = 11
-        Me.btnLayout.Text = "Layout"
-        Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnLayout.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -1754,6 +1811,22 @@ Partial Class frmDashboard
         Me.btnHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnHome.UseVisualStyleBackColor = True
         '
+        'btnLayout
+        '
+        Me.btnLayout.FlatAppearance.BorderSize = 0
+        Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLayout.ForeColor = System.Drawing.Color.White
+        Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
+        Me.btnLayout.Location = New System.Drawing.Point(0, 209)
+        Me.btnLayout.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnLayout.Name = "btnLayout"
+        Me.btnLayout.Size = New System.Drawing.Size(137, 99)
+        Me.btnLayout.TabIndex = 11
+        Me.btnLayout.Text = "Layout"
+        Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnLayout.UseVisualStyleBackColor = True
+        '
         'btnExit
         '
         Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -1808,13 +1881,13 @@ Partial Class frmDashboard
         Me.lblDate.ForeColor = System.Drawing.Color.Wheat
         Me.lblDate.Location = New System.Drawing.Point(135, 46)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(22, 32)
+        Me.lblDate.Size = New System.Drawing.Size(26, 39)
         Me.lblDate.TabIndex = 30
         Me.lblDate.Text = " "
         '
         'frmDashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1287, 977)
@@ -1823,8 +1896,8 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.tbpCustomer)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -1849,6 +1922,8 @@ Partial Class frmDashboard
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tpMiscInfo.ResumeLayout(False)
         Me.tpMiscInfo.PerformLayout()
+        Me.tpLayout.ResumeLayout(False)
+        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -1996,4 +2071,9 @@ Partial Class frmDashboard
     Friend WithEvents Button3 As Button
     Friend WithEvents btnLayout As Button
     Friend WithEvents lblDate As Label
+    Friend WithEvents tpLayout As TabPage
+    Friend WithEvents btnChoseFloor As Button
+    Friend WithEvents AxDrawingControl1 As AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
 End Class
