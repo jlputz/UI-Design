@@ -48,6 +48,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>treasurysquare_Mnk_icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -230,6 +233,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="treasurysquare_Mnk_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

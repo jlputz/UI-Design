@@ -5,6 +5,8 @@
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
         lblDate.Text = Date.Now().DayOfWeek.ToString() & ", " & MonthName(Date.Now().Month) & " " & Date.Now.Day
+        clndrHome.Visible = True
+        lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
         Me.WindowState = FormWindowState.Maximized
     End Sub
 
@@ -12,6 +14,8 @@
 
 
     Private Sub btnClient_Click(sender As Object, e As EventArgs) Handles btnClient.Click
+        hideSettings()
+        hideHome()
         btnNewClient.Visible = True
         DataGridView1.Visible = True
         tbpCustomer.Visible = True
@@ -25,19 +29,21 @@
         Me.Close()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnMin.Click
         If Me.WindowState = FormWindowState.Maximized Then
-            Me.WindowState = FormWindowState.Normal
-        Else
-            Me.WindowState = FormWindowState.Maximized
+            Me.WindowState = FormWindowState.Minimized
         End If
+
     End Sub
 
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         hideClientMenu()
         hideSettings()
+
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
+        clndrHome.Visible = True
+        lblDayInfo.Visible = True
     End Sub
 
 
@@ -53,6 +59,7 @@
     Private Sub btnLayout_Click(sender As Object, e As EventArgs) Handles btnLayout.Click
         hideClientMenu()
         hideSettings()
+        hideHome()
         pnlButtonMover.Height = btnLayout.Height
         pnlButtonMover.Top = btnLayout.Top
     End Sub
@@ -68,6 +75,29 @@
     End Sub
 
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+        hideClientMenu()
+        hideHome()
         pnlSettings.Visible = True
+        pnlButtonMover.Height = btnSettings.Height
+        pnlButtonMover.Top = btnSettings.Top
+    End Sub
+
+    Sub hideHome()
+        clndrHome.Visible = False
+        lblDayInfo.Visible = False
+    End Sub
+
+    Private Sub clndrHome_DateChanged(sender As Object, e As DateRangeEventArgs) Handles clndrHome.DateChanged
+        clndrHome.MaxSelectionCount = 1
+
+        Dim EventDate As Date = e.Start
+
+        If EventDate = Date.Today Then
+            lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
+
+        Else
+            lblDayInfo.Text = "No Events on " + EventDate
+
+        End If
     End Sub
 End Class

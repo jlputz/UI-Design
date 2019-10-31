@@ -25,6 +25,8 @@ Partial Class frmDashboard
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDashboard))
         Me.tbpCustomer = New System.Windows.Forms.TabControl()
         Me.tpCustomerInfo = New System.Windows.Forms.TabPage()
+        Me.MaskedTextBox8 = New System.Windows.Forms.MaskedTextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
         Me.cmdCancel = New System.Windows.Forms.Button()
         Me.cmdEnterCustomerInfo = New System.Windows.Forms.Button()
         Me.mtbCustomerAlternatePhone = New System.Windows.Forms.MaskedTextBox()
@@ -154,18 +156,16 @@ Partial Class frmDashboard
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnSettings = New System.Windows.Forms.Button()
         Me.pnlButtonMover = New System.Windows.Forms.Panel()
         Me.btnClient = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnLayout = New System.Windows.Forms.Button()
+        Me.btnSettings = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnMin = New System.Windows.Forms.Button()
         Me.lblDate = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.MaskedTextBox8 = New System.Windows.Forms.MaskedTextBox()
         Me.btnNewClient = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.fName = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -177,10 +177,12 @@ Partial Class frmDashboard
         Me.EventType = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EventDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnlSettings = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.lblNotifs = New System.Windows.Forms.Label()
+        Me.pboxNotif = New System.Windows.Forms.PictureBox()
+        Me.clndrHome = New System.Windows.Forms.MonthCalendar()
+        Me.lblDayInfo = New System.Windows.Forms.Label()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -197,7 +199,7 @@ Partial Class frmDashboard
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSettings.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbpCustomer
@@ -246,6 +248,27 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Size = New System.Drawing.Size(984, 628)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
+        '
+        'MaskedTextBox8
+        '
+        Me.MaskedTextBox8.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaskedTextBox8.Location = New System.Drawing.Point(211, 210)
+        Me.MaskedTextBox8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.MaskedTextBox8.Mask = "  "
+        Me.MaskedTextBox8.Name = "MaskedTextBox8"
+        Me.MaskedTextBox8.Size = New System.Drawing.Size(65, 26)
+        Me.MaskedTextBox8.TabIndex = 31
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(136, 214)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(49, 18)
+        Me.Label29.TabIndex = 30
+        Me.Label29.Text = "State:"
         '
         'cmdCancel
         '
@@ -579,7 +602,7 @@ Partial Class frmDashboard
         Me.tpTimeline.Location = New System.Drawing.Point(4, 24)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(984, 663)
+        Me.tpTimeline.Size = New System.Drawing.Size(984, 628)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
@@ -1693,33 +1716,16 @@ Partial Class frmDashboard
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.btnSettings)
         Me.Panel1.Controls.Add(Me.pnlButtonMover)
         Me.Panel1.Controls.Add(Me.btnClient)
         Me.Panel1.Controls.Add(Me.btnHome)
         Me.Panel1.Controls.Add(Me.btnLayout)
+        Me.Panel1.Controls.Add(Me.btnSettings)
         Me.Panel1.Location = New System.Drawing.Point(0, 122)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(133, 914)
         Me.Panel1.TabIndex = 6
-        '
-        'btnSettings
-        '
-        Me.btnSettings.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.btnSettings.FlatAppearance.BorderSize = 0
-        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSettings.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSettings.ForeColor = System.Drawing.Color.White
-        Me.btnSettings.Image = CType(resources.GetObject("btnSettings.Image"), System.Drawing.Image)
-        Me.btnSettings.Location = New System.Drawing.Point(0, 321)
-        Me.btnSettings.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(137, 99)
-        Me.btnSettings.TabIndex = 10
-        Me.btnSettings.Text = "Settings"
-        Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnSettings.UseVisualStyleBackColor = True
         '
         'pnlButtonMover
         '
@@ -1778,6 +1784,23 @@ Partial Class frmDashboard
         Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnLayout.UseVisualStyleBackColor = True
         '
+        'btnSettings
+        '
+        Me.btnSettings.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.btnSettings.FlatAppearance.BorderSize = 0
+        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSettings.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSettings.ForeColor = System.Drawing.Color.White
+        Me.btnSettings.Image = CType(resources.GetObject("btnSettings.Image"), System.Drawing.Image)
+        Me.btnSettings.Location = New System.Drawing.Point(0, 321)
+        Me.btnSettings.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(137, 99)
+        Me.btnSettings.TabIndex = 10
+        Me.btnSettings.Text = "Settings"
+        Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnSettings.UseVisualStyleBackColor = True
+        '
         'btnExit
         '
         Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -1812,50 +1835,29 @@ Partial Class frmDashboard
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
-        'Button3
+        'btnMin
         '
-        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Wheat
-        Me.Button3.Location = New System.Drawing.Point(1201, 14)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(31, 27)
-        Me.Button3.TabIndex = 31
-        Me.Button3.Text = "[ ]"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnMin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMin.ForeColor = System.Drawing.Color.Wheat
+        Me.btnMin.Location = New System.Drawing.Point(1201, 14)
+        Me.btnMin.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnMin.Name = "btnMin"
+        Me.btnMin.Size = New System.Drawing.Size(31, 27)
+        Me.btnMin.TabIndex = 31
+        Me.btnMin.Text = "-"
+        Me.btnMin.UseVisualStyleBackColor = True
         '
         'lblDate
         '
         Me.lblDate.AutoSize = True
         Me.lblDate.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDate.ForeColor = System.Drawing.Color.Wheat
-        Me.lblDate.Location = New System.Drawing.Point(132, 14)
+        Me.lblDate.Location = New System.Drawing.Point(166, 16)
         Me.lblDate.Name = "lblDate"
         Me.lblDate.Size = New System.Drawing.Size(22, 32)
         Me.lblDate.TabIndex = 30
         Me.lblDate.Text = " "
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(136, 214)
-        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(49, 18)
-        Me.Label29.TabIndex = 30
-        Me.Label29.Text = "State:"
-        '
-        'MaskedTextBox8
-        '
-        Me.MaskedTextBox8.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox8.Location = New System.Drawing.Point(211, 210)
-        Me.MaskedTextBox8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.MaskedTextBox8.Mask = "  "
-        Me.MaskedTextBox8.Name = "MaskedTextBox8"
-        Me.MaskedTextBox8.Size = New System.Drawing.Size(65, 26)
-        Me.MaskedTextBox8.TabIndex = 31
         '
         'btnNewClient
         '
@@ -1932,21 +1934,6 @@ Partial Class frmDashboard
         Me.pnlSettings.Size = New System.Drawing.Size(608, 100)
         Me.pnlSettings.TabIndex = 33
         '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Wheat
-        Me.Button4.Location = New System.Drawing.Point(16, 30)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(265, 40)
-        Me.Button4.TabIndex = 33
-        Me.Button4.Text = "Edit Food Options"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button4.UseVisualStyleBackColor = False
-        '
         'Button9
         '
         Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
@@ -1962,25 +1949,57 @@ Partial Class frmDashboard
         Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button9.UseVisualStyleBackColor = False
         '
-        'Label30
+        'Button4
         '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.ForeColor = System.Drawing.Color.Wheat
-        Me.Label30.Location = New System.Drawing.Point(170, 70)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(224, 22)
-        Me.Label30.TabIndex = 35
-        Me.Label30.Text = " Event Today at 5:00pm"
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.Wheat
+        Me.Button4.Location = New System.Drawing.Point(16, 30)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(265, 40)
+        Me.Button4.TabIndex = 33
+        Me.Button4.Text = "Edit Food Options"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button4.UseVisualStyleBackColor = False
         '
-        'PictureBox2
+        'lblNotifs
         '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(138, 61)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(37, 40)
-        Me.PictureBox2.TabIndex = 36
-        Me.PictureBox2.TabStop = False
+        Me.lblNotifs.AutoSize = True
+        Me.lblNotifs.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNotifs.ForeColor = System.Drawing.Color.Wheat
+        Me.lblNotifs.Location = New System.Drawing.Point(202, 71)
+        Me.lblNotifs.Name = "lblNotifs"
+        Me.lblNotifs.Size = New System.Drawing.Size(224, 22)
+        Me.lblNotifs.TabIndex = 35
+        Me.lblNotifs.Text = " Event Today at 5:00pm"
+        '
+        'pboxNotif
+        '
+        Me.pboxNotif.Image = CType(resources.GetObject("pboxNotif.Image"), System.Drawing.Image)
+        Me.pboxNotif.Location = New System.Drawing.Point(171, 61)
+        Me.pboxNotif.Name = "pboxNotif"
+        Me.pboxNotif.Size = New System.Drawing.Size(37, 40)
+        Me.pboxNotif.TabIndex = 36
+        Me.pboxNotif.TabStop = False
+        '
+        'clndrHome
+        '
+        Me.clndrHome.CalendarDimensions = New System.Drawing.Size(3, 1)
+        Me.clndrHome.Location = New System.Drawing.Point(172, 158)
+        Me.clndrHome.Name = "clndrHome"
+        Me.clndrHome.TabIndex = 37
+        '
+        'lblDayInfo
+        '
+        Me.lblDayInfo.AutoSize = True
+        Me.lblDayInfo.ForeColor = System.Drawing.Color.Wheat
+        Me.lblDayInfo.Location = New System.Drawing.Point(174, 362)
+        Me.lblDayInfo.Name = "lblDayInfo"
+        Me.lblDayInfo.Size = New System.Drawing.Size(67, 15)
+        Me.lblDayInfo.TabIndex = 38
+        Me.lblDayInfo.Text = "Event at: "
         '
         'frmDashboard
         '
@@ -1988,13 +2007,15 @@ Partial Class frmDashboard
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1287, 1100)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Label30)
+        Me.ClientSize = New System.Drawing.Size(1287, 1061)
+        Me.Controls.Add(Me.lblDayInfo)
+        Me.Controls.Add(Me.clndrHome)
+        Me.Controls.Add(Me.pboxNotif)
+        Me.Controls.Add(Me.lblNotifs)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnNewClient)
         Me.Controls.Add(Me.lblDate)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnMin)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Panel1)
@@ -2003,6 +2024,7 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.pnlSettings)
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frmDashboard"
         Me.Text = "The Treasury"
@@ -2029,7 +2051,7 @@ Partial Class frmDashboard
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSettings.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2172,7 +2194,7 @@ Partial Class frmDashboard
     Friend WithEvents pnlButtonMover As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnSettings As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnMin As Button
     Friend WithEvents btnLayout As Button
     Friend WithEvents lblDate As Label
     Friend WithEvents MaskedTextBox8 As MaskedTextBox
@@ -2190,6 +2212,8 @@ Partial Class frmDashboard
     Friend WithEvents pnlSettings As Panel
     Friend WithEvents Button4 As Button
     Friend WithEvents Button9 As Button
-    Friend WithEvents Label30 As Label
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents lblNotifs As Label
+    Friend WithEvents pboxNotif As PictureBox
+    Friend WithEvents clndrHome As MonthCalendar
+    Friend WithEvents lblDayInfo As Label
 End Class
