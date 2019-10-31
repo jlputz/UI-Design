@@ -184,6 +184,7 @@ Partial Class frmDashboard
         Me.clndrHome = New System.Windows.Forms.MonthCalendar()
         Me.lblDayInfo = New System.Windows.Forms.Label()
         Me.tpLayout = New System.Windows.Forms.TabPage()
+        Me.AxDrawingControl1 = New AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -201,6 +202,8 @@ Partial Class frmDashboard
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSettings.SuspendLayout()
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tpLayout.SuspendLayout()
+        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbpCustomer
@@ -2022,12 +2025,21 @@ Partial Class frmDashboard
         '
         'tpLayout
         '
+        Me.tpLayout.Controls.Add(Me.AxDrawingControl1)
         Me.tpLayout.Location = New System.Drawing.Point(4, 27)
         Me.tpLayout.Name = "tpLayout"
         Me.tpLayout.Size = New System.Drawing.Size(984, 625)
         Me.tpLayout.TabIndex = 7
         Me.tpLayout.Text = "Layout"
         Me.tpLayout.UseVisualStyleBackColor = True
+        '
+        'AxDrawingControl1
+        '
+        Me.AxDrawingControl1.Enabled = True
+        Me.AxDrawingControl1.Location = New System.Drawing.Point(71, 88)
+        Me.AxDrawingControl1.Name = "AxDrawingControl1"
+        Me.AxDrawingControl1.Size = New System.Drawing.Size(792, 404)
+        Me.AxDrawingControl1.TabIndex = 1
         '
         'frmDashboard
         '
@@ -2080,6 +2092,8 @@ Partial Class frmDashboard
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSettings.ResumeLayout(False)
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpLayout.ResumeLayout(False)
+        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2245,4 +2259,5 @@ Partial Class frmDashboard
     Friend WithEvents clndrHome As MonthCalendar
     Friend WithEvents lblDayInfo As Label
     Friend WithEvents tpLayout As TabPage
+    Friend WithEvents AxDrawingControl1 As AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl
 End Class
