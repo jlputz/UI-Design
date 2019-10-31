@@ -5,7 +5,7 @@
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
         lblDate.Text = Date.Now().DayOfWeek.ToString() & ", " & MonthName(Date.Now().Month) & " " & Date.Now.Day
-
+        Me.WindowState = FormWindowState.Maximized
     End Sub
 
 
