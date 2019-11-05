@@ -155,8 +155,6 @@ Partial Class frmDashboard
         Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.tpLayout = New System.Windows.Forms.TabPage()
-        Me.AxDrawingControl1 = New AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlButtonMover = New System.Windows.Forms.Panel()
         Me.btnClient = New System.Windows.Forms.Button()
@@ -185,9 +183,8 @@ Partial Class frmDashboard
         Me.pboxNotif = New System.Windows.Forms.PictureBox()
         Me.clndrHome = New System.Windows.Forms.MonthCalendar()
         Me.lblDayInfo = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.tpLayout = New System.Windows.Forms.TabPage()
+        Me.AxDrawingControl1 = New AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -200,13 +197,13 @@ Partial Class frmDashboard
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpMiscInfo.SuspendLayout()
-        Me.tpLayout.SuspendLayout()
-        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSettings.SuspendLayout()
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tpLayout.SuspendLayout()
+        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbpCustomer
@@ -1722,27 +1719,6 @@ Partial Class frmDashboard
         Me.Label28.TabIndex = 39
         Me.Label28.Text = "Additional Items"
         '
-        'tpLayout
-        '
-        Me.tpLayout.Controls.Add(Me.Button10)
-        Me.tpLayout.Controls.Add(Me.Button3)
-        Me.tpLayout.Controls.Add(Me.Button2)
-        Me.tpLayout.Controls.Add(Me.AxDrawingControl1)
-        Me.tpLayout.Location = New System.Drawing.Point(4, 27)
-        Me.tpLayout.Name = "tpLayout"
-        Me.tpLayout.Size = New System.Drawing.Size(984, 625)
-        Me.tpLayout.TabIndex = 7
-        Me.tpLayout.Text = "Layout"
-        Me.tpLayout.UseVisualStyleBackColor = True
-        '
-        'AxDrawingControl1
-        '
-        Me.AxDrawingControl1.Enabled = True
-        Me.AxDrawingControl1.Location = New System.Drawing.Point(78, 59)
-        Me.AxDrawingControl1.Name = "AxDrawingControl1"
-        Me.AxDrawingControl1.Size = New System.Drawing.Size(792, 404)
-        Me.AxDrawingControl1.TabIndex = 1
-        '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.pnlButtonMover)
@@ -2047,41 +2023,23 @@ Partial Class frmDashboard
         Me.lblDayInfo.TabIndex = 38
         Me.lblDayInfo.Text = "Event at: "
         '
-        'Button2
+        'tpLayout
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Wheat
-        Me.Button2.Location = New System.Drawing.Point(371, 30)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(210, 32)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Chose Floor"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.tpLayout.Controls.Add(Me.AxDrawingControl1)
+        Me.tpLayout.Location = New System.Drawing.Point(4, 27)
+        Me.tpLayout.Name = "tpLayout"
+        Me.tpLayout.Size = New System.Drawing.Size(984, 625)
+        Me.tpLayout.TabIndex = 7
+        Me.tpLayout.Text = "Layout"
+        Me.tpLayout.UseVisualStyleBackColor = True
         '
-        'Button3
+        'AxDrawingControl1
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Wheat
-        Me.Button3.Location = New System.Drawing.Point(78, 30)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(210, 32)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Create Layout"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button10
-        '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.ForeColor = System.Drawing.Color.Wheat
-        Me.Button10.Location = New System.Drawing.Point(660, 30)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(210, 32)
-        Me.Button10.TabIndex = 4
-        Me.Button10.Text = "Chose Layout"
-        Me.Button10.UseVisualStyleBackColor = False
+        Me.AxDrawingControl1.Enabled = True
+        Me.AxDrawingControl1.Location = New System.Drawing.Point(71, 88)
+        Me.AxDrawingControl1.Name = "AxDrawingControl1"
+        Me.AxDrawingControl1.Size = New System.Drawing.Size(792, 404)
+        Me.AxDrawingControl1.TabIndex = 1
         '
         'frmDashboard
         '
@@ -2129,13 +2087,13 @@ Partial Class frmDashboard
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tpMiscInfo.ResumeLayout(False)
         Me.tpMiscInfo.PerformLayout()
-        Me.tpLayout.ResumeLayout(False)
-        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSettings.ResumeLayout(False)
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpLayout.ResumeLayout(False)
+        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2302,7 +2260,4 @@ Partial Class frmDashboard
     Friend WithEvents lblDayInfo As Label
     Friend WithEvents tpLayout As TabPage
     Friend WithEvents AxDrawingControl1 As AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button10 As Button
 End Class
