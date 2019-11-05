@@ -117,19 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AxViewer1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAASwEAAAIB
-        AAAAAQAAAAAAAAAAAAAAADYBAAAADgAAEwD///8ACwABAAsAAQALAAAACwABABMA////AAsAAAALAAEA
-        CwABAAsAAAALAAEACAAAAAAAAwAAAAAABQAAAAAAAADwvwsAAQAIANoAAABBAGIAbwB1AHQALABTAGUA
-        cAAsAFoAbwBvAG0ASQBuACwAWgBvAG8AbQBPAHUAdAAsAFoAbwBvAG0AVwBpAGQAdABoACwAWgBvAG8A
-        bQBQAGEAZwBlACwAWgBvAG8AbQAxADAAMAAsAFoAbwBvAG0ALABTAGUAcAAsAE8AcABlAG4ASQBuAFYA
-        aQBzAGkAbwAsAFMAZQBwACwAUAByAG8AcABzACwATABhAHkAZQByAHMALABSAGUAdgBpAGUAdwBpAG4A
-        ZwAsAFMAZQBwACwASABlAGwAcAAAAAsAAQALAAAACw==
-</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnClient.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -567,10 +554,16 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="fName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="EventDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="EventType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="fName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="pPhone.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -583,12 +576,6 @@
     <value>True</value>
   </metadata>
   <metadata name="address.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="EventType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="EventDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="pnlSettings.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -608,6 +595,19 @@
         qP4jQ/Ms5HbDX+EEyM3rOA0xr49c3KAeqlqYLkC3tuQO2ZqP6CHywjwOTRaXGLJQDeno+iIkH+2iDmnK
         A+jRkc3EgDOwqgPr8hhO6YjuiIEDcAXmQDYxso+QR7A8Td/CLFyEXo3UUKv1D98jcZ8M43CwAAAAAElF
         TkSuQmCC
+</value>
+  </data>
+  <data name="AxViewer1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAASwEAAAIB
+        AAAAAQAAAAAAAAAAAAAAADYBAAAADgAAEwD///8ACwABAAsAAQALAAAACwABABMA////AAsAAAALAAEA
+        CwABAAsAAAALAAEACAAAAAAAAwAAAAAABQAAAAAAAADwvwsAAQAIANoAAABBAGIAbwB1AHQALABTAGUA
+        cAAsAFoAbwBvAG0ASQBuACwAWgBvAG8AbQBPAHUAdAAsAFoAbwBvAG0AVwBpAGQAdABoACwAWgBvAG8A
+        bQBQAGEAZwBlACwAWgBvAG8AbQAxADAAMAAsAFoAbwBvAG0ALABTAGUAcAAsAE8AcABlAG4ASQBuAFYA
+        aQBzAGkAbwAsAFMAZQBwACwAUAByAG8AcABzACwATABhAHkAZQByAHMALABSAGUAdgBpAGUAdwBpAG4A
+        ZwAsAFMAZQBwACwASABlAGwAcAAAAAsAAQALAAAACw==
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

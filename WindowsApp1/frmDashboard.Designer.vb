@@ -169,14 +169,6 @@ Partial Class frmDashboard
         Me.lblDate = New System.Windows.Forms.Label()
         Me.btnNewClient = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.fName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.lName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.pPhone = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.sPhone = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.address = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EventType = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EventDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnlSettings = New System.Windows.Forms.Panel()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -185,6 +177,14 @@ Partial Class frmDashboard
         Me.clndrHome = New System.Windows.Forms.MonthCalendar()
         Me.lblDayInfo = New System.Windows.Forms.Label()
         Me.AxViewer1 = New AxVisioViewer.AxViewer()
+        Me.EventDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EventType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.fName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.pPhone = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.sPhone = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.address = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -223,7 +223,7 @@ Partial Class frmDashboard
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(992, 656)
+        Me.tbpCustomer.Size = New System.Drawing.Size(1059, 656)
         Me.tbpCustomer.TabIndex = 4
         '
         'tpCustomerInfo
@@ -250,7 +250,7 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(984, 628)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(1051, 628)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
@@ -462,7 +462,7 @@ Partial Class frmDashboard
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(984, 628)
+        Me.tpEventInfo.Size = New System.Drawing.Size(1051, 628)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
@@ -607,7 +607,7 @@ Partial Class frmDashboard
         Me.tpTimeline.Location = New System.Drawing.Point(4, 24)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(984, 628)
+        Me.tpTimeline.Size = New System.Drawing.Size(1051, 628)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
@@ -689,7 +689,7 @@ Partial Class frmDashboard
         Me.tpFoodSelection.Location = New System.Drawing.Point(4, 24)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(984, 628)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(1051, 628)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
         '
@@ -982,7 +982,7 @@ Partial Class frmDashboard
         Me.tpAudioLighting.Location = New System.Drawing.Point(4, 24)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(984, 628)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(1051, 628)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
         '
@@ -1201,7 +1201,7 @@ Partial Class frmDashboard
         Me.tpDrinkService.Location = New System.Drawing.Point(4, 24)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(984, 628)
+        Me.tpDrinkService.Size = New System.Drawing.Size(1051, 628)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
         '
@@ -1209,7 +1209,7 @@ Partial Class frmDashboard
         '
         Me.cmdAddStationSelections.BackColor = System.Drawing.Color.Gold
         Me.cmdAddStationSelections.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAddStationSelections.Location = New System.Drawing.Point(25, 584)
+        Me.cmdAddStationSelections.Location = New System.Drawing.Point(6, 573)
         Me.cmdAddStationSelections.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.cmdAddStationSelections.Name = "cmdAddStationSelections"
         Me.cmdAddStationSelections.Size = New System.Drawing.Size(457, 51)
@@ -1457,7 +1457,7 @@ Partial Class frmDashboard
         Me.tpMiscInfo.Location = New System.Drawing.Point(4, 24)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(984, 628)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(1051, 628)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Additional Items"
         '
@@ -1724,7 +1724,7 @@ Partial Class frmDashboard
         Me.tpLayout.Controls.Add(Me.AxViewer1)
         Me.tpLayout.Location = New System.Drawing.Point(4, 24)
         Me.tpLayout.Name = "tpLayout"
-        Me.tpLayout.Size = New System.Drawing.Size(984, 628)
+        Me.tpLayout.Size = New System.Drawing.Size(1051, 628)
         Me.tpLayout.TabIndex = 7
         Me.tpLayout.Text = "Layout"
         Me.tpLayout.UseVisualStyleBackColor = True
@@ -1893,69 +1893,16 @@ Partial Class frmDashboard
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fName, Me.lName, Me.pPhone, Me.sPhone, Me.email, Me.address, Me.EventType, Me.EventDate})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EventDate, Me.EventType, Me.lName, Me.fName, Me.pPhone, Me.sPhone, Me.email, Me.address})
         Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.DataGridView1.Location = New System.Drawing.Point(171, 209)
+        Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.Size = New System.Drawing.Size(843, 150)
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView1.Size = New System.Drawing.Size(1061, 150)
         Me.DataGridView1.TabIndex = 32
-        '
-        'fName
-        '
-        Me.fName.HeaderText = "First Name"
-        Me.fName.MinimumWidth = 6
-        Me.fName.Name = "fName"
-        Me.fName.Width = 125
-        '
-        'lName
-        '
-        Me.lName.HeaderText = "Last Name"
-        Me.lName.MinimumWidth = 6
-        Me.lName.Name = "lName"
-        Me.lName.Width = 125
-        '
-        'pPhone
-        '
-        Me.pPhone.HeaderText = "Primary Phone"
-        Me.pPhone.MinimumWidth = 6
-        Me.pPhone.Name = "pPhone"
-        Me.pPhone.Width = 125
-        '
-        'sPhone
-        '
-        Me.sPhone.HeaderText = "Secondary Phone"
-        Me.sPhone.MinimumWidth = 6
-        Me.sPhone.Name = "sPhone"
-        Me.sPhone.Width = 125
-        '
-        'email
-        '
-        Me.email.HeaderText = "Email"
-        Me.email.MinimumWidth = 6
-        Me.email.Name = "email"
-        Me.email.Width = 125
-        '
-        'address
-        '
-        Me.address.HeaderText = "Address"
-        Me.address.MinimumWidth = 6
-        Me.address.Name = "address"
-        Me.address.Width = 125
-        '
-        'EventType
-        '
-        Me.EventType.HeaderText = "Event Type"
-        Me.EventType.MinimumWidth = 6
-        Me.EventType.Name = "EventType"
-        Me.EventType.Width = 125
-        '
-        'EventDate
-        '
-        Me.EventDate.HeaderText = "Event Date"
-        Me.EventDate.MinimumWidth = 6
-        Me.EventDate.Name = "EventDate"
-        Me.EventDate.Width = 125
         '
         'pnlSettings
         '
@@ -2041,8 +1988,64 @@ Partial Class frmDashboard
         Me.AxViewer1.Location = New System.Drawing.Point(23, 22)
         Me.AxViewer1.Name = "AxViewer1"
         Me.AxViewer1.OcxState = CType(resources.GetObject("AxViewer1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxViewer1.Size = New System.Drawing.Size(944, 566)
+        Me.AxViewer1.Size = New System.Drawing.Size(1011, 566)
         Me.AxViewer1.TabIndex = 0
+        '
+        'EventDate
+        '
+        Me.EventDate.HeaderText = "Event Date"
+        Me.EventDate.MinimumWidth = 6
+        Me.EventDate.Name = "EventDate"
+        Me.EventDate.Width = 125
+        '
+        'EventType
+        '
+        Me.EventType.HeaderText = "Event Type"
+        Me.EventType.MinimumWidth = 6
+        Me.EventType.Name = "EventType"
+        Me.EventType.Width = 125
+        '
+        'lName
+        '
+        Me.lName.HeaderText = "Last Name"
+        Me.lName.MinimumWidth = 6
+        Me.lName.Name = "lName"
+        Me.lName.Width = 125
+        '
+        'fName
+        '
+        Me.fName.HeaderText = "First Name"
+        Me.fName.MinimumWidth = 6
+        Me.fName.Name = "fName"
+        Me.fName.Width = 125
+        '
+        'pPhone
+        '
+        Me.pPhone.HeaderText = "Primary Phone"
+        Me.pPhone.MinimumWidth = 6
+        Me.pPhone.Name = "pPhone"
+        Me.pPhone.Width = 125
+        '
+        'sPhone
+        '
+        Me.sPhone.HeaderText = "Secondary Phone"
+        Me.sPhone.MinimumWidth = 6
+        Me.sPhone.Name = "sPhone"
+        Me.sPhone.Width = 125
+        '
+        'email
+        '
+        Me.email.HeaderText = "Email"
+        Me.email.MinimumWidth = 6
+        Me.email.Name = "email"
+        Me.email.Width = 125
+        '
+        'address
+        '
+        Me.address.HeaderText = "Address"
+        Me.address.MinimumWidth = 6
+        Me.address.Name = "address"
+        Me.address.Width = 125
         '
         'frmDashboard
         '
@@ -2246,14 +2249,6 @@ Partial Class frmDashboard
     Friend WithEvents Label29 As Label
     Friend WithEvents btnNewClient As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents fName As DataGridViewTextBoxColumn
-    Friend WithEvents lName As DataGridViewTextBoxColumn
-    Friend WithEvents pPhone As DataGridViewTextBoxColumn
-    Friend WithEvents sPhone As DataGridViewTextBoxColumn
-    Friend WithEvents email As DataGridViewTextBoxColumn
-    Friend WithEvents address As DataGridViewTextBoxColumn
-    Friend WithEvents EventType As DataGridViewTextBoxColumn
-    Friend WithEvents EventDate As DataGridViewTextBoxColumn
     Friend WithEvents pnlSettings As Panel
     Friend WithEvents Button4 As Button
     Friend WithEvents Button9 As Button
@@ -2263,4 +2258,12 @@ Partial Class frmDashboard
     Friend WithEvents lblDayInfo As Label
     Friend WithEvents tpLayout As TabPage
     Friend WithEvents AxViewer1 As AxVisioViewer.AxViewer
+    Friend WithEvents EventDate As DataGridViewTextBoxColumn
+    Friend WithEvents EventType As DataGridViewTextBoxColumn
+    Friend WithEvents lName As DataGridViewTextBoxColumn
+    Friend WithEvents fName As DataGridViewTextBoxColumn
+    Friend WithEvents pPhone As DataGridViewTextBoxColumn
+    Friend WithEvents sPhone As DataGridViewTextBoxColumn
+    Friend WithEvents email As DataGridViewTextBoxColumn
+    Friend WithEvents address As DataGridViewTextBoxColumn
 End Class
