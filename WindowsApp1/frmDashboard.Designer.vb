@@ -156,7 +156,6 @@ Partial Class frmDashboard
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.tpLayout = New System.Windows.Forms.TabPage()
-        Me.AxViewer1 = New AxVisioViewer.AxViewer()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlButtonMover = New System.Windows.Forms.Panel()
         Me.btnClient = New System.Windows.Forms.Button()
@@ -197,8 +196,6 @@ Partial Class frmDashboard
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpMiscInfo.SuspendLayout()
-        Me.tpLayout.SuspendLayout()
-        CType(Me.AxViewer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1721,24 +1718,12 @@ Partial Class frmDashboard
         '
         'tpLayout
         '
-        Me.tpLayout.Controls.Add(Me.AxViewer1)
         Me.tpLayout.Location = New System.Drawing.Point(4, 27)
         Me.tpLayout.Name = "tpLayout"
         Me.tpLayout.Size = New System.Drawing.Size(1051, 625)
         Me.tpLayout.TabIndex = 7
         Me.tpLayout.Text = "Layout"
         Me.tpLayout.UseVisualStyleBackColor = True
-        '
-        'AxViewer1
-        '
-        Me.AxViewer1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AxViewer1.Enabled = True
-        Me.AxViewer1.Location = New System.Drawing.Point(23, 22)
-        Me.AxViewer1.Name = "AxViewer1"
-        Me.AxViewer1.OcxState = CType(resources.GetObject("AxViewer1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxViewer1.Size = New System.Drawing.Size(1011, 566)
-        Me.AxViewer1.TabIndex = 0
         '
         'Panel1
         '
@@ -2101,8 +2086,6 @@ Partial Class frmDashboard
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tpMiscInfo.ResumeLayout(False)
         Me.tpMiscInfo.PerformLayout()
-        Me.tpLayout.ResumeLayout(False)
-        CType(Me.AxViewer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2265,7 +2248,6 @@ Partial Class frmDashboard
     Friend WithEvents clndrHome As MonthCalendar
     Friend WithEvents lblDayInfo As Label
     Friend WithEvents tpLayout As TabPage
-    Friend WithEvents AxViewer1 As AxVisioViewer.AxViewer
     Friend WithEvents EventDate As DataGridViewTextBoxColumn
     Friend WithEvents EventType As DataGridViewTextBoxColumn
     Friend WithEvents lName As DataGridViewTextBoxColumn
