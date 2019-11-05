@@ -24,6 +24,7 @@
         pnlButtonMover.Height = btnClient.Height
         pnlButtonMover.Top = btnClient.Top
     End Sub
+
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
     End Sub
@@ -98,9 +99,5 @@
             lblDayInfo.Text = "No Events on " + EventDate
 
         End If
-    End Sub
-
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
-
     End Sub
 End Class
