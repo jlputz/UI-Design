@@ -100,4 +100,8 @@
 
         End If
     End Sub
+
+    Private Sub TxtCustomerName_TextChanged(sender As Object, e As EventArgs) Handles txtCustomerName.TextChanged
+
+    End Sub
 End Class
