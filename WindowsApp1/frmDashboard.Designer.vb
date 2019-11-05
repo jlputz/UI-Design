@@ -222,11 +222,11 @@ Partial Class frmDashboard
         Me.tbpCustomer.Controls.Add(Me.tpDrinkService)
         Me.tbpCustomer.Controls.Add(Me.tpMiscInfo)
         Me.tbpCustomer.Controls.Add(Me.tpLayout)
-        Me.tbpCustomer.Location = New System.Drawing.Point(173, 380)
+        Me.tbpCustomer.Location = New System.Drawing.Point(144, 384)
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(992, 656)
+        Me.tbpCustomer.Size = New System.Drawing.Size(1007, 536)
         Me.tbpCustomer.TabIndex = 4
         '
         'tpCustomerInfo
@@ -253,7 +253,7 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(984, 625)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(999, 505)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
@@ -448,7 +448,7 @@ Partial Class frmDashboard
         '
         'tpEventInfo
         '
-        Me.tpEventInfo.BackColor = System.Drawing.Color.White
+        Me.tpEventInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.tpEventInfo.Controls.Add(Me.Button5)
         Me.tpEventInfo.Controls.Add(Me.cmdEnterEventInfo)
         Me.tpEventInfo.Controls.Add(Me.dtpRehearsalDate)
@@ -465,7 +465,7 @@ Partial Class frmDashboard
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(984, 625)
+        Me.tpEventInfo.Size = New System.Drawing.Size(1148, 621)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
@@ -610,7 +610,7 @@ Partial Class frmDashboard
         Me.tpTimeline.Location = New System.Drawing.Point(4, 27)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(984, 625)
+        Me.tpTimeline.Size = New System.Drawing.Size(1148, 621)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
@@ -692,7 +692,7 @@ Partial Class frmDashboard
         Me.tpFoodSelection.Location = New System.Drawing.Point(4, 27)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(984, 625)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(1148, 621)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
         '
@@ -985,7 +985,7 @@ Partial Class frmDashboard
         Me.tpAudioLighting.Location = New System.Drawing.Point(4, 27)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(984, 625)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(1148, 621)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
         '
@@ -1204,7 +1204,7 @@ Partial Class frmDashboard
         Me.tpDrinkService.Location = New System.Drawing.Point(4, 27)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(984, 625)
+        Me.tpDrinkService.Size = New System.Drawing.Size(1148, 621)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
         '
@@ -1460,7 +1460,7 @@ Partial Class frmDashboard
         Me.tpMiscInfo.Location = New System.Drawing.Point(4, 27)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(984, 625)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(1148, 621)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Additional Items"
         '
@@ -1724,23 +1724,23 @@ Partial Class frmDashboard
         '
         'tpLayout
         '
+        Me.tpLayout.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.tpLayout.Controls.Add(Me.Button10)
         Me.tpLayout.Controls.Add(Me.Button3)
         Me.tpLayout.Controls.Add(Me.Button2)
         Me.tpLayout.Controls.Add(Me.AxDrawingControl1)
         Me.tpLayout.Location = New System.Drawing.Point(4, 27)
         Me.tpLayout.Name = "tpLayout"
-        Me.tpLayout.Size = New System.Drawing.Size(984, 625)
+        Me.tpLayout.Size = New System.Drawing.Size(1148, 621)
         Me.tpLayout.TabIndex = 7
         Me.tpLayout.Text = "Layout"
-        Me.tpLayout.UseVisualStyleBackColor = True
         '
         'AxDrawingControl1
         '
         Me.AxDrawingControl1.Enabled = True
         Me.AxDrawingControl1.Location = New System.Drawing.Point(78, 59)
         Me.AxDrawingControl1.Name = "AxDrawingControl1"
-        Me.AxDrawingControl1.Size = New System.Drawing.Size(792, 404)
+        Me.AxDrawingControl1.Size = New System.Drawing.Size(792, 527)
         Me.AxDrawingControl1.TabIndex = 1
         '
         'Panel1
@@ -1909,7 +1909,7 @@ Partial Class frmDashboard
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fName, Me.lName, Me.pPhone, Me.sPhone, Me.email, Me.address, Me.EventType, Me.EventDate})
         Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.DataGridView1.Location = New System.Drawing.Point(171, 209)
+        Me.DataGridView1.Location = New System.Drawing.Point(171, 157)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(843, 150)
@@ -2033,7 +2033,7 @@ Partial Class frmDashboard
         'clndrHome
         '
         Me.clndrHome.CalendarDimensions = New System.Drawing.Size(3, 1)
-        Me.clndrHome.Location = New System.Drawing.Point(172, 158)
+        Me.clndrHome.Location = New System.Drawing.Point(171, 125)
         Me.clndrHome.Name = "clndrHome"
         Me.clndrHome.TabIndex = 37
         '
@@ -2041,7 +2041,7 @@ Partial Class frmDashboard
         '
         Me.lblDayInfo.AutoSize = True
         Me.lblDayInfo.ForeColor = System.Drawing.Color.Wheat
-        Me.lblDayInfo.Location = New System.Drawing.Point(174, 362)
+        Me.lblDayInfo.Location = New System.Drawing.Point(169, 331)
         Me.lblDayInfo.Name = "lblDayInfo"
         Me.lblDayInfo.Size = New System.Drawing.Size(84, 20)
         Me.lblDayInfo.TabIndex = 38
@@ -2052,7 +2052,7 @@ Partial Class frmDashboard
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.Color.Wheat
-        Me.Button2.Location = New System.Drawing.Point(371, 30)
+        Me.Button2.Location = New System.Drawing.Point(371, 21)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(210, 32)
         Me.Button2.TabIndex = 2
@@ -2064,7 +2064,7 @@ Partial Class frmDashboard
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.Wheat
-        Me.Button3.Location = New System.Drawing.Point(78, 30)
+        Me.Button3.Location = New System.Drawing.Point(78, 21)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(210, 32)
         Me.Button3.TabIndex = 3
@@ -2076,7 +2076,7 @@ Partial Class frmDashboard
         Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.ForeColor = System.Drawing.Color.Wheat
-        Me.Button10.Location = New System.Drawing.Point(660, 30)
+        Me.Button10.Location = New System.Drawing.Point(660, 21)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(210, 32)
         Me.Button10.TabIndex = 4
@@ -2087,9 +2087,10 @@ Partial Class frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1287, 1055)
+        Me.ClientSize = New System.Drawing.Size(1287, 953)
         Me.Controls.Add(Me.lblDayInfo)
         Me.Controls.Add(Me.clndrHome)
         Me.Controls.Add(Me.pboxNotif)
