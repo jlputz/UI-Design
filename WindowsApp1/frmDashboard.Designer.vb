@@ -77,6 +77,8 @@ Partial Class frmDashboard
         Me.txtTimelineInfo = New System.Windows.Forms.TextBox()
         Me.lblAVLightingSelection = New System.Windows.Forms.Label()
         Me.tpFoodSelection = New System.Windows.Forms.TabPage()
+        Me.btnFoodSel = New System.Windows.Forms.Button()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.mtbCateringPhone = New System.Windows.Forms.MaskedTextBox()
@@ -94,6 +96,31 @@ Partial Class frmDashboard
         Me.lblCateringCompanyPhone = New System.Windows.Forms.Label()
         Me.lblCateringCompanyName = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.tpDrinkService = New System.Windows.Forms.TabPage()
+        Me.pnlOpenBar = New System.Windows.Forms.Panel()
+        Me.chkOpenBar = New System.Windows.Forms.CheckBox()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.pnlCashBar = New System.Windows.Forms.Panel()
+        Me.chkCashBar = New System.Windows.Forms.CheckBox()
+        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.btnBevSel = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.tpAudioLighting = New System.Windows.Forms.TabPage()
         Me.cmdAddAV = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -113,33 +140,17 @@ Partial Class frmDashboard
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.tpDrinkService = New System.Windows.Forms.TabPage()
-        Me.btnBevSel = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
-        Me.chkCashBar = New System.Windows.Forms.CheckBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.chkOpenBar = New System.Windows.Forms.CheckBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.tpMiscInfo = New System.Windows.Forms.TabPage()
+        Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.btnLinensSel = New System.Windows.Forms.Button()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
@@ -149,8 +160,48 @@ Partial Class frmDashboard
         Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.btnVendorSel = New System.Windows.Forms.Button()
+        Me.TextBox34 = New System.Windows.Forms.TextBox()
+        Me.TextBox35 = New System.Windows.Forms.TextBox()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.TextBox32 = New System.Windows.Forms.TextBox()
+        Me.TextBox33 = New System.Windows.Forms.TextBox()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.TextBox30 = New System.Windows.Forms.TextBox()
+        Me.TextBox31 = New System.Windows.Forms.TextBox()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.TextBox28 = New System.Windows.Forms.TextBox()
+        Me.TextBox29 = New System.Windows.Forms.TextBox()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.Label48 = New System.Windows.Forms.Label()
+        Me.TextBox26 = New System.Windows.Forms.TextBox()
+        Me.TextBox27 = New System.Windows.Forms.TextBox()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.TextBox24 = New System.Windows.Forms.TextBox()
+        Me.TextBox25 = New System.Windows.Forms.TextBox()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.TextBox23 = New System.Windows.Forms.TextBox()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.TextBox20 = New System.Windows.Forms.TextBox()
+        Me.TextBox21 = New System.Windows.Forms.TextBox()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
         Me.tpLayout = New System.Windows.Forms.TabPage()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.btnPrintInvoice = New System.Windows.Forms.Button()
+        Me.btnPrintBEO = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlButtonMover = New System.Windows.Forms.Panel()
         Me.btnClient = New System.Windows.Forms.Button()
@@ -173,64 +224,17 @@ Partial Class frmDashboard
         Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.address = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnlSettings = New System.Windows.Forms.Panel()
-        Me.btnCancelNewClient = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnCancelNewClient = New System.Windows.Forms.Button()
         Me.lblNotifs = New System.Windows.Forms.Label()
         Me.pboxNotif = New System.Windows.Forms.PictureBox()
         Me.clndrHome = New System.Windows.Forms.MonthCalendar()
         Me.lblDayInfo = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.btnFoodSel = New System.Windows.Forms.Button()
-        Me.pnlCashBar = New System.Windows.Forms.Panel()
-        Me.pnlOpenBar = New System.Windows.Forms.Panel()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
-        Me.TextBox21 = New System.Windows.Forms.TextBox()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
-        Me.TextBox23 = New System.Windows.Forms.TextBox()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.TextBox24 = New System.Windows.Forms.TextBox()
-        Me.TextBox25 = New System.Windows.Forms.TextBox()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.TextBox26 = New System.Windows.Forms.TextBox()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.TextBox28 = New System.Windows.Forms.TextBox()
-        Me.TextBox29 = New System.Windows.Forms.TextBox()
-        Me.Label47 = New System.Windows.Forms.Label()
-        Me.Label48 = New System.Windows.Forms.Label()
-        Me.TextBox30 = New System.Windows.Forms.TextBox()
-        Me.TextBox31 = New System.Windows.Forms.TextBox()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.Label50 = New System.Windows.Forms.Label()
-        Me.TextBox32 = New System.Windows.Forms.TextBox()
-        Me.TextBox33 = New System.Windows.Forms.TextBox()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.TextBox34 = New System.Windows.Forms.TextBox()
-        Me.TextBox35 = New System.Windows.Forms.TextBox()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.btnVendorSel = New System.Windows.Forms.Button()
-        Me.btnPrintBEO = New System.Windows.Forms.Button()
-        Me.btnPrintInvoice = New System.Windows.Forms.Button()
+        Me.VISIO = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -238,22 +242,23 @@ Partial Class frmDashboard
         Me.pnlCeremony.SuspendLayout()
         Me.tpTimeline.SuspendLayout()
         Me.tpFoodSelection.SuspendLayout()
-        Me.tpAudioLighting.SuspendLayout()
         Me.tpDrinkService.SuspendLayout()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlOpenBar.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlCashBar.SuspendLayout()
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tpAudioLighting.SuspendLayout()
         Me.tpMiscInfo.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        Me.tpLayout.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSettings.SuspendLayout()
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlCashBar.SuspendLayout()
-        Me.pnlOpenBar.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
         '
         'tbpCustomer
@@ -298,11 +303,11 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Controls.Add(Me.lblStreetAddress)
         Me.tpCustomerInfo.Controls.Add(Me.lblCustomerName)
         Me.tpCustomerInfo.Controls.Add(Me.lblCustomerInfo)
-        Me.tpCustomerInfo.Location = New System.Drawing.Point(4, 24)
+        Me.tpCustomerInfo.Location = New System.Drawing.Point(4, 27)
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(1419, 628)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(1419, 625)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
@@ -316,7 +321,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.MaskedTextBox8.Mask = "  "
         Me.MaskedTextBox8.Name = "MaskedTextBox8"
-        Me.MaskedTextBox8.Size = New System.Drawing.Size(65, 26)
+        Me.MaskedTextBox8.Size = New System.Drawing.Size(65, 30)
         Me.MaskedTextBox8.TabIndex = 31
         '
         'Label29
@@ -327,7 +332,7 @@ Partial Class frmDashboard
         Me.Label29.Location = New System.Drawing.Point(136, 214)
         Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(49, 18)
+        Me.Label29.Size = New System.Drawing.Size(63, 23)
         Me.Label29.TabIndex = 30
         Me.Label29.Text = "State:"
         '
@@ -357,7 +362,7 @@ Partial Class frmDashboard
         Me.mtbCustomerAlternatePhone.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbCustomerAlternatePhone.Mask = "(999) 000-0000"
         Me.mtbCustomerAlternatePhone.Name = "mtbCustomerAlternatePhone"
-        Me.mtbCustomerAlternatePhone.Size = New System.Drawing.Size(132, 26)
+        Me.mtbCustomerAlternatePhone.Size = New System.Drawing.Size(132, 30)
         Me.mtbCustomerAlternatePhone.TabIndex = 27
         '
         'mtbCustomerPhone
@@ -370,7 +375,7 @@ Partial Class frmDashboard
         Me.mtbCustomerPhone.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbCustomerPhone.Mask = "(999) 000-0000"
         Me.mtbCustomerPhone.Name = "mtbCustomerPhone"
-        Me.mtbCustomerPhone.Size = New System.Drawing.Size(132, 26)
+        Me.mtbCustomerPhone.Size = New System.Drawing.Size(132, 30)
         Me.mtbCustomerPhone.TabIndex = 26
         '
         'txtCustomerEmail
@@ -382,7 +387,7 @@ Partial Class frmDashboard
         Me.txtCustomerEmail.Location = New System.Drawing.Point(214, 246)
         Me.txtCustomerEmail.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCustomerEmail.Name = "txtCustomerEmail"
-        Me.txtCustomerEmail.Size = New System.Drawing.Size(255, 26)
+        Me.txtCustomerEmail.Size = New System.Drawing.Size(255, 30)
         Me.txtCustomerEmail.TabIndex = 25
         '
         'mtbZipCode
@@ -395,7 +400,7 @@ Partial Class frmDashboard
         Me.mtbZipCode.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbZipCode.Mask = "     "
         Me.mtbZipCode.Name = "mtbZipCode"
-        Me.mtbZipCode.Size = New System.Drawing.Size(65, 26)
+        Me.mtbZipCode.Size = New System.Drawing.Size(65, 30)
         Me.mtbZipCode.TabIndex = 24
         '
         'txtCustomerAddress
@@ -407,7 +412,7 @@ Partial Class frmDashboard
         Me.txtCustomerAddress.Location = New System.Drawing.Point(211, 111)
         Me.txtCustomerAddress.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCustomerAddress.Name = "txtCustomerAddress"
-        Me.txtCustomerAddress.Size = New System.Drawing.Size(255, 26)
+        Me.txtCustomerAddress.Size = New System.Drawing.Size(255, 30)
         Me.txtCustomerAddress.TabIndex = 23
         '
         'txtCustomerName
@@ -419,7 +424,7 @@ Partial Class frmDashboard
         Me.txtCustomerName.Location = New System.Drawing.Point(211, 61)
         Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCustomerName.Name = "txtCustomerName"
-        Me.txtCustomerName.Size = New System.Drawing.Size(255, 26)
+        Me.txtCustomerName.Size = New System.Drawing.Size(255, 30)
         Me.txtCustomerName.TabIndex = 22
         '
         'lblAlternatePhone
@@ -430,7 +435,7 @@ Partial Class frmDashboard
         Me.lblAlternatePhone.Location = New System.Drawing.Point(3, 355)
         Me.lblAlternatePhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAlternatePhone.Name = "lblAlternatePhone"
-        Me.lblAlternatePhone.Size = New System.Drawing.Size(182, 18)
+        Me.lblAlternatePhone.Size = New System.Drawing.Size(230, 23)
         Me.lblAlternatePhone.TabIndex = 21
         Me.lblAlternatePhone.Text = "Alternate Phone Number:"
         '
@@ -442,7 +447,7 @@ Partial Class frmDashboard
         Me.lblPhoneNumber.Location = New System.Drawing.Point(69, 302)
         Me.lblPhoneNumber.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPhoneNumber.Name = "lblPhoneNumber"
-        Me.lblPhoneNumber.Size = New System.Drawing.Size(116, 18)
+        Me.lblPhoneNumber.Size = New System.Drawing.Size(145, 23)
         Me.lblPhoneNumber.TabIndex = 20
         Me.lblPhoneNumber.Text = "Phone Number:"
         '
@@ -454,7 +459,7 @@ Partial Class frmDashboard
         Me.lblEmailAddress.Location = New System.Drawing.Point(66, 250)
         Me.lblEmailAddress.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEmailAddress.Name = "lblEmailAddress"
-        Me.lblEmailAddress.Size = New System.Drawing.Size(119, 18)
+        Me.lblEmailAddress.Size = New System.Drawing.Size(150, 23)
         Me.lblEmailAddress.TabIndex = 19
         Me.lblEmailAddress.Text = "E-Mail Address:"
         '
@@ -466,7 +471,7 @@ Partial Class frmDashboard
         Me.lblZipCode.Location = New System.Drawing.Point(108, 164)
         Me.lblZipCode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblZipCode.Name = "lblZipCode"
-        Me.lblZipCode.Size = New System.Drawing.Size(77, 18)
+        Me.lblZipCode.Size = New System.Drawing.Size(96, 23)
         Me.lblZipCode.TabIndex = 18
         Me.lblZipCode.Text = "Zip Code:"
         '
@@ -478,7 +483,7 @@ Partial Class frmDashboard
         Me.lblStreetAddress.Location = New System.Drawing.Point(66, 115)
         Me.lblStreetAddress.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStreetAddress.Name = "lblStreetAddress"
-        Me.lblStreetAddress.Size = New System.Drawing.Size(116, 18)
+        Me.lblStreetAddress.Size = New System.Drawing.Size(148, 23)
         Me.lblStreetAddress.TabIndex = 17
         Me.lblStreetAddress.Text = "Street Address:"
         '
@@ -490,7 +495,7 @@ Partial Class frmDashboard
         Me.lblCustomerName.Location = New System.Drawing.Point(56, 69)
         Me.lblCustomerName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomerName.Name = "lblCustomerName"
-        Me.lblCustomerName.Size = New System.Drawing.Size(126, 18)
+        Me.lblCustomerName.Size = New System.Drawing.Size(158, 23)
         Me.lblCustomerName.TabIndex = 16
         Me.lblCustomerName.Text = "Customer Name:"
         '
@@ -502,7 +507,7 @@ Partial Class frmDashboard
         Me.lblCustomerInfo.Location = New System.Drawing.Point(5, 2)
         Me.lblCustomerInfo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomerInfo.Name = "lblCustomerInfo"
-        Me.lblCustomerInfo.Size = New System.Drawing.Size(320, 37)
+        Me.lblCustomerInfo.Size = New System.Drawing.Size(399, 47)
         Me.lblCustomerInfo.TabIndex = 15
         Me.lblCustomerInfo.Text = "Customer Information"
         '
@@ -518,11 +523,11 @@ Partial Class frmDashboard
         Me.tpEventInfo.Controls.Add(Me.lblEventType)
         Me.tpEventInfo.Controls.Add(Me.lblEventInfo)
         Me.tpEventInfo.Controls.Add(Me.pnlCeremony)
-        Me.tpEventInfo.Location = New System.Drawing.Point(4, 24)
+        Me.tpEventInfo.Location = New System.Drawing.Point(4, 27)
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(1419, 628)
+        Me.tpEventInfo.Size = New System.Drawing.Size(1419, 625)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
@@ -534,7 +539,7 @@ Partial Class frmDashboard
         Me.Label36.Location = New System.Drawing.Point(711, 102)
         Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(110, 18)
+        Me.Label36.Size = New System.Drawing.Size(137, 23)
         Me.Label36.TabIndex = 50
         Me.Label36.Text = "Special Notes:"
         '
@@ -575,7 +580,7 @@ Partial Class frmDashboard
         Me.CheckBox14.Location = New System.Drawing.Point(138, 185)
         Me.CheckBox14.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(127, 22)
+        Me.CheckBox14.Size = New System.Drawing.Size(157, 27)
         Me.CheckBox14.TabIndex = 36
         Me.CheckBox14.Text = "Valet Services"
         Me.CheckBox14.UseVisualStyleBackColor = True
@@ -588,7 +593,7 @@ Partial Class frmDashboard
         Me.CheckBox13.Location = New System.Drawing.Point(12, 185)
         Me.CheckBox13.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(110, 22)
+        Me.CheckBox13.Size = New System.Drawing.Size(135, 27)
         Me.CheckBox13.TabIndex = 35
         Me.CheckBox13.Text = "Coat Check"
         Me.CheckBox13.UseVisualStyleBackColor = True
@@ -601,7 +606,7 @@ Partial Class frmDashboard
         Me.lblEventDate.Location = New System.Drawing.Point(8, 21)
         Me.lblEventDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEventDate.Name = "lblEventDate"
-        Me.lblEventDate.Size = New System.Drawing.Size(89, 18)
+        Me.lblEventDate.Size = New System.Drawing.Size(113, 23)
         Me.lblEventDate.TabIndex = 19
         Me.lblEventDate.Text = "Event Date:"
         '
@@ -614,7 +619,7 @@ Partial Class frmDashboard
         Me.TextBox9.Location = New System.Drawing.Point(235, 61)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox9.Size = New System.Drawing.Size(184, 30)
         Me.TextBox9.TabIndex = 34
         '
         'Label31
@@ -625,7 +630,7 @@ Partial Class frmDashboard
         Me.Label31.Location = New System.Drawing.Point(8, 63)
         Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(129, 18)
+        Me.Label31.Size = New System.Drawing.Size(164, 23)
         Me.Label31.TabIndex = 33
         Me.Label31.Text = "Event Timeframe:"
         '
@@ -637,7 +642,7 @@ Partial Class frmDashboard
         Me.lblGuestCount.Location = New System.Drawing.Point(8, 100)
         Me.lblGuestCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGuestCount.Name = "lblGuestCount"
-        Me.lblGuestCount.Size = New System.Drawing.Size(173, 18)
+        Me.lblGuestCount.Size = New System.Drawing.Size(220, 23)
         Me.lblGuestCount.TabIndex = 21
         Me.lblGuestCount.Text = "Estimated Guest Count:"
         '
@@ -650,7 +655,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox9.Location = New System.Drawing.Point(233, 139)
         Me.MaskedTextBox9.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.MaskedTextBox9.Name = "MaskedTextBox9"
-        Me.MaskedTextBox9.Size = New System.Drawing.Size(48, 26)
+        Me.MaskedTextBox9.Size = New System.Drawing.Size(48, 30)
         Me.MaskedTextBox9.TabIndex = 32
         Me.MaskedTextBox9.ValidatingType = GetType(Integer)
         '
@@ -663,7 +668,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox1.Location = New System.Drawing.Point(235, 98)
         Me.MaskedTextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(48, 26)
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(48, 30)
         Me.MaskedTextBox1.TabIndex = 22
         Me.MaskedTextBox1.ValidatingType = GetType(Integer)
         '
@@ -675,7 +680,7 @@ Partial Class frmDashboard
         Me.Label30.Location = New System.Drawing.Point(9, 141)
         Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(136, 18)
+        Me.Label30.Size = New System.Drawing.Size(173, 23)
         Me.Label30.TabIndex = 31
         Me.Label30.Text = "Final Guest Count:"
         '
@@ -686,7 +691,7 @@ Partial Class frmDashboard
         Me.dtpEventDate.Location = New System.Drawing.Point(235, 21)
         Me.dtpEventDate.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.dtpEventDate.Name = "dtpEventDate"
-        Me.dtpEventDate.Size = New System.Drawing.Size(263, 26)
+        Me.dtpEventDate.Size = New System.Drawing.Size(263, 30)
         Me.dtpEventDate.TabIndex = 24
         '
         'cmdEnterEventInfo
@@ -713,7 +718,7 @@ Partial Class frmDashboard
         Me.txtEventType.Location = New System.Drawing.Point(248, 70)
         Me.txtEventType.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtEventType.Name = "txtEventType"
-        Me.txtEventType.Size = New System.Drawing.Size(361, 26)
+        Me.txtEventType.Size = New System.Drawing.Size(361, 30)
         Me.txtEventType.TabIndex = 23
         '
         'chkCeremonyEvent
@@ -724,7 +729,7 @@ Partial Class frmDashboard
         Me.chkCeremonyEvent.Location = New System.Drawing.Point(20, 102)
         Me.chkCeremonyEvent.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.chkCeremonyEvent.Name = "chkCeremonyEvent"
-        Me.chkCeremonyEvent.Size = New System.Drawing.Size(281, 22)
+        Me.chkCeremonyEvent.Size = New System.Drawing.Size(353, 27)
         Me.chkCeremonyEvent.TabIndex = 18
         Me.chkCeremonyEvent.Text = "Does this event include a ceremony?"
         Me.chkCeremonyEvent.UseVisualStyleBackColor = True
@@ -737,7 +742,7 @@ Partial Class frmDashboard
         Me.lblEventType.Location = New System.Drawing.Point(17, 72)
         Me.lblEventType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEventType.Name = "lblEventType"
-        Me.lblEventType.Size = New System.Drawing.Size(88, 18)
+        Me.lblEventType.Size = New System.Drawing.Size(114, 23)
         Me.lblEventType.TabIndex = 17
         Me.lblEventType.Text = "Event Type:"
         '
@@ -749,7 +754,7 @@ Partial Class frmDashboard
         Me.lblEventInfo.Location = New System.Drawing.Point(13, 7)
         Me.lblEventInfo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEventInfo.Name = "lblEventInfo"
-        Me.lblEventInfo.Size = New System.Drawing.Size(261, 37)
+        Me.lblEventInfo.Size = New System.Drawing.Size(328, 47)
         Me.lblEventInfo.TabIndex = 16
         Me.lblEventInfo.Text = "Event Information"
         '
@@ -781,7 +786,7 @@ Partial Class frmDashboard
         Me.Label37.Location = New System.Drawing.Point(3, 6)
         Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(170, 26)
+        Me.Label37.Size = New System.Drawing.Size(222, 34)
         Me.Label37.TabIndex = 41
         Me.Label37.Text = "Ceremony Details"
         '
@@ -794,7 +799,7 @@ Partial Class frmDashboard
         Me.TextBox14.Location = New System.Drawing.Point(233, 41)
         Me.TextBox14.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox14.Size = New System.Drawing.Size(184, 30)
         Me.TextBox14.TabIndex = 40
         '
         'TextBox12
@@ -806,7 +811,7 @@ Partial Class frmDashboard
         Me.TextBox12.Location = New System.Drawing.Point(233, 183)
         Me.TextBox12.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox12.Size = New System.Drawing.Size(184, 30)
         Me.TextBox12.TabIndex = 39
         '
         'Label35
@@ -817,7 +822,7 @@ Partial Class frmDashboard
         Me.Label35.Location = New System.Drawing.Point(5, 185)
         Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(115, 18)
+        Me.Label35.Size = New System.Drawing.Size(146, 23)
         Me.Label35.TabIndex = 38
         Me.Label35.Text = "Officiant Name:"
         '
@@ -830,7 +835,7 @@ Partial Class frmDashboard
         Me.TextBox11.Location = New System.Drawing.Point(233, 151)
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox11.Size = New System.Drawing.Size(184, 30)
         Me.TextBox11.TabIndex = 37
         '
         'Label34
@@ -841,7 +846,7 @@ Partial Class frmDashboard
         Me.Label34.Location = New System.Drawing.Point(7, 153)
         Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(122, 18)
+        Me.Label34.Size = New System.Drawing.Size(154, 23)
         Me.Label34.TabIndex = 36
         Me.Label34.Text = "Ceremony Time:"
         '
@@ -854,7 +859,7 @@ Partial Class frmDashboard
         Me.TextBox10.Location = New System.Drawing.Point(233, 119)
         Me.TextBox10.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox10.Size = New System.Drawing.Size(184, 30)
         Me.TextBox10.TabIndex = 35
         '
         'Label33
@@ -865,7 +870,7 @@ Partial Class frmDashboard
         Me.Label33.Location = New System.Drawing.Point(8, 122)
         Me.Label33.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(121, 18)
+        Me.Label33.Size = New System.Drawing.Size(153, 23)
         Me.Label33.TabIndex = 27
         Me.Label33.Text = "Rehearsal Time:"
         '
@@ -877,7 +882,7 @@ Partial Class frmDashboard
         Me.Label32.Location = New System.Drawing.Point(6, 45)
         Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(72, 18)
+        Me.Label32.Size = New System.Drawing.Size(90, 23)
         Me.Label32.TabIndex = 26
         Me.Label32.Text = "Location:"
         '
@@ -889,7 +894,7 @@ Partial Class frmDashboard
         Me.lblRehearsalDate.Location = New System.Drawing.Point(8, 87)
         Me.lblRehearsalDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblRehearsalDate.Name = "lblRehearsalDate"
-        Me.lblRehearsalDate.Size = New System.Drawing.Size(121, 18)
+        Me.lblRehearsalDate.Size = New System.Drawing.Size(153, 23)
         Me.lblRehearsalDate.TabIndex = 20
         Me.lblRehearsalDate.Text = "Rehearsal Date:"
         '
@@ -900,7 +905,7 @@ Partial Class frmDashboard
         Me.dtpRehearsalDate.Location = New System.Drawing.Point(233, 79)
         Me.dtpRehearsalDate.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.dtpRehearsalDate.Name = "dtpRehearsalDate"
-        Me.dtpRehearsalDate.Size = New System.Drawing.Size(268, 26)
+        Me.dtpRehearsalDate.Size = New System.Drawing.Size(268, 30)
         Me.dtpRehearsalDate.TabIndex = 25
         '
         'tpTimeline
@@ -909,10 +914,10 @@ Partial Class frmDashboard
         Me.tpTimeline.Controls.Add(Me.cmdUpdateTimeline)
         Me.tpTimeline.Controls.Add(Me.txtTimelineInfo)
         Me.tpTimeline.Controls.Add(Me.lblAVLightingSelection)
-        Me.tpTimeline.Location = New System.Drawing.Point(4, 24)
+        Me.tpTimeline.Location = New System.Drawing.Point(4, 27)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(1419, 628)
+        Me.tpTimeline.Size = New System.Drawing.Size(1419, 625)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
@@ -955,7 +960,7 @@ Partial Class frmDashboard
         Me.lblAVLightingSelection.Location = New System.Drawing.Point(1, 0)
         Me.lblAVLightingSelection.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.lblAVLightingSelection.Name = "lblAVLightingSelection"
-        Me.lblAVLightingSelection.Size = New System.Drawing.Size(135, 37)
+        Me.lblAVLightingSelection.Size = New System.Drawing.Size(168, 47)
         Me.lblAVLightingSelection.TabIndex = 26
         Me.lblAVLightingSelection.Text = "Timeline"
         '
@@ -982,12 +987,40 @@ Partial Class frmDashboard
         Me.tpFoodSelection.Controls.Add(Me.lblCateringCompanyPhone)
         Me.tpFoodSelection.Controls.Add(Me.lblCateringCompanyName)
         Me.tpFoodSelection.Controls.Add(Me.Label10)
-        Me.tpFoodSelection.Location = New System.Drawing.Point(4, 24)
+        Me.tpFoodSelection.Location = New System.Drawing.Point(4, 27)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(1419, 628)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(1419, 625)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
+        '
+        'btnFoodSel
+        '
+        Me.btnFoodSel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnFoodSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnFoodSel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFoodSel.ForeColor = System.Drawing.Color.Wheat
+        Me.btnFoodSel.Location = New System.Drawing.Point(15, 575)
+        Me.btnFoodSel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnFoodSel.Name = "btnFoodSel"
+        Me.btnFoodSel.Size = New System.Drawing.Size(265, 40)
+        Me.btnFoodSel.TabIndex = 51
+        Me.btnFoodSel.Text = "Enter Food Selection"
+        Me.btnFoodSel.UseVisualStyleBackColor = False
+        Me.btnFoodSel.Visible = False
+        '
+        'TextBox15
+        '
+        Me.TextBox15.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox15.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox15.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox15.Location = New System.Drawing.Point(200, 474)
+        Me.TextBox15.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.TextBox15.Multiline = True
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(714, 74)
+        Me.TextBox15.TabIndex = 50
         '
         'Label9
         '
@@ -998,7 +1031,7 @@ Partial Class frmDashboard
         Me.Label9.Location = New System.Drawing.Point(12, 376)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(157, 18)
+        Me.Label9.Size = New System.Drawing.Size(202, 23)
         Me.Label9.TabIndex = 49
         Me.Label9.Text = "Selected Menu Items:"
         '
@@ -1025,7 +1058,7 @@ Partial Class frmDashboard
         Me.mtbCateringPhone.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.mtbCateringPhone.Mask = "(999) 000-0000"
         Me.mtbCateringPhone.Name = "mtbCateringPhone"
-        Me.mtbCateringPhone.Size = New System.Drawing.Size(168, 26)
+        Me.mtbCateringPhone.Size = New System.Drawing.Size(168, 30)
         Me.mtbCateringPhone.TabIndex = 45
         '
         'txtCateringCompanyName
@@ -1037,7 +1070,7 @@ Partial Class frmDashboard
         Me.txtCateringCompanyName.Location = New System.Drawing.Point(357, 55)
         Me.txtCateringCompanyName.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCateringCompanyName.Name = "txtCateringCompanyName"
-        Me.txtCateringCompanyName.Size = New System.Drawing.Size(415, 26)
+        Me.txtCateringCompanyName.Size = New System.Drawing.Size(415, 30)
         Me.txtCateringCompanyName.TabIndex = 44
         '
         'txtCateringCompanyEmail
@@ -1049,7 +1082,7 @@ Partial Class frmDashboard
         Me.txtCateringCompanyEmail.Location = New System.Drawing.Point(357, 134)
         Me.txtCateringCompanyEmail.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCateringCompanyEmail.Name = "txtCateringCompanyEmail"
-        Me.txtCateringCompanyEmail.Size = New System.Drawing.Size(415, 26)
+        Me.txtCateringCompanyEmail.Size = New System.Drawing.Size(415, 30)
         Me.txtCateringCompanyEmail.TabIndex = 43
         '
         'lblSpecialNotes
@@ -1061,7 +1094,7 @@ Partial Class frmDashboard
         Me.lblSpecialNotes.Location = New System.Drawing.Point(59, 506)
         Me.lblSpecialNotes.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSpecialNotes.Name = "lblSpecialNotes"
-        Me.lblSpecialNotes.Size = New System.Drawing.Size(110, 18)
+        Me.lblSpecialNotes.Size = New System.Drawing.Size(137, 23)
         Me.lblSpecialNotes.TabIndex = 40
         Me.lblSpecialNotes.Text = "Special Notes:"
         '
@@ -1158,7 +1191,7 @@ Partial Class frmDashboard
         Me.chkFlatwareFee.Location = New System.Drawing.Point(14, 177)
         Me.chkFlatwareFee.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.chkFlatwareFee.Name = "chkFlatwareFee"
-        Me.chkFlatwareFee.Size = New System.Drawing.Size(320, 22)
+        Me.chkFlatwareFee.Size = New System.Drawing.Size(404, 27)
         Me.chkFlatwareFee.TabIndex = 31
         Me.chkFlatwareFee.Text = "Flatware/China Fee (outside catering only)"
         Me.chkFlatwareFee.UseVisualStyleBackColor = False
@@ -1172,7 +1205,7 @@ Partial Class frmDashboard
         Me.lblCateringCompanyEmail.Location = New System.Drawing.Point(10, 138)
         Me.lblCateringCompanyEmail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCateringCompanyEmail.Name = "lblCateringCompanyEmail"
-        Me.lblCateringCompanyEmail.Size = New System.Drawing.Size(254, 18)
+        Me.lblCateringCompanyEmail.Size = New System.Drawing.Size(319, 23)
         Me.lblCateringCompanyEmail.TabIndex = 30
         Me.lblCateringCompanyEmail.Text = "Catering Company E-Mail Address:"
         '
@@ -1185,7 +1218,7 @@ Partial Class frmDashboard
         Me.lblCateringCompanyPhone.Location = New System.Drawing.Point(10, 97)
         Me.lblCateringCompanyPhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCateringCompanyPhone.Name = "lblCateringCompanyPhone"
-        Me.lblCateringCompanyPhone.Size = New System.Drawing.Size(192, 18)
+        Me.lblCateringCompanyPhone.Size = New System.Drawing.Size(240, 23)
         Me.lblCateringCompanyPhone.TabIndex = 29
         Me.lblCateringCompanyPhone.Text = "Catering Company Phone:"
         '
@@ -1198,7 +1231,7 @@ Partial Class frmDashboard
         Me.lblCateringCompanyName.Location = New System.Drawing.Point(10, 58)
         Me.lblCateringCompanyName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCateringCompanyName.Name = "lblCateringCompanyName"
-        Me.lblCateringCompanyName.Size = New System.Drawing.Size(189, 18)
+        Me.lblCateringCompanyName.Size = New System.Drawing.Size(236, 23)
         Me.lblCateringCompanyName.TabIndex = 28
         Me.lblCateringCompanyName.Text = "Catering Company Name:"
         '
@@ -1211,256 +1244,9 @@ Partial Class frmDashboard
         Me.Label10.Location = New System.Drawing.Point(4, 8)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(219, 37)
+        Me.Label10.Size = New System.Drawing.Size(274, 47)
         Me.Label10.TabIndex = 26
         Me.Label10.Text = "Food Selection"
-        '
-        'tpAudioLighting
-        '
-        Me.tpAudioLighting.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.tpAudioLighting.Controls.Add(Me.cmdAddAV)
-        Me.tpAudioLighting.Controls.Add(Me.Label8)
-        Me.tpAudioLighting.Controls.Add(Me.TextBox4)
-        Me.tpAudioLighting.Controls.Add(Me.CheckBox2)
-        Me.tpAudioLighting.Controls.Add(Me.Label6)
-        Me.tpAudioLighting.Controls.Add(Me.TextBox3)
-        Me.tpAudioLighting.Controls.Add(Me.CheckBox1)
-        Me.tpAudioLighting.Controls.Add(Me.MaskedTextBox2)
-        Me.tpAudioLighting.Controls.Add(Me.Label5)
-        Me.tpAudioLighting.Controls.Add(Me.Label4)
-        Me.tpAudioLighting.Controls.Add(Me.ComboBox2)
-        Me.tpAudioLighting.Controls.Add(Me.TextBox2)
-        Me.tpAudioLighting.Controls.Add(Me.TextBox1)
-        Me.tpAudioLighting.Controls.Add(Me.Label3)
-        Me.tpAudioLighting.Controls.Add(Me.Label2)
-        Me.tpAudioLighting.Controls.Add(Me.Label1)
-        Me.tpAudioLighting.Controls.Add(Me.ComboBox1)
-        Me.tpAudioLighting.Controls.Add(Me.Label7)
-        Me.tpAudioLighting.Location = New System.Drawing.Point(4, 24)
-        Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(1419, 628)
-        Me.tpAudioLighting.TabIndex = 3
-        Me.tpAudioLighting.Text = "Audio and Uplighting"
-        '
-        'cmdAddAV
-        '
-        Me.cmdAddAV.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdAddAV.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdAddAV.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAddAV.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdAddAV.Location = New System.Drawing.Point(16, 406)
-        Me.cmdAddAV.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdAddAV.Name = "cmdAddAV"
-        Me.cmdAddAV.Size = New System.Drawing.Size(271, 45)
-        Me.cmdAddAV.TabIndex = 50
-        Me.cmdAddAV.Text = "Add AV"
-        Me.cmdAddAV.UseVisualStyleBackColor = False
-        Me.cmdAddAV.Visible = False
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label8.ForeColor = System.Drawing.Color.Wheat
-        Me.Label8.Location = New System.Drawing.Point(445, 66)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(228, 15)
-        Me.Label8.TabIndex = 49
-        Me.Label8.Text = "Selected Items and Special Notes:"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox4.Location = New System.Drawing.Point(445, 84)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(429, 306)
-        Me.TextBox4.TabIndex = 48
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.CheckBox2.ForeColor = System.Drawing.Color.Wheat
-        Me.CheckBox2.Location = New System.Drawing.Point(13, 370)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(1)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(150, 19)
-        Me.CheckBox2.TabIndex = 47
-        Me.CheckBox2.Text = "Additional 20 lights"
-        Me.CheckBox2.UseVisualStyleBackColor = False
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label6.ForeColor = System.Drawing.Color.Wheat
-        Me.Label6.Location = New System.Drawing.Point(13, 337)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(47, 15)
-        Me.Label6.TabIndex = 46
-        Me.Label6.Text = "Color:"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox3.Location = New System.Drawing.Point(199, 337)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(151, 23)
-        Me.TextBox3.TabIndex = 45
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.CheckBox1.ForeColor = System.Drawing.Color.Wheat
-        Me.CheckBox1.Location = New System.Drawing.Point(13, 303)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(1)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(153, 19)
-        Me.CheckBox1.TabIndex = 44
-        Me.CheckBox1.Text = "Auxillary Uplighting"
-        Me.CheckBox1.UseVisualStyleBackColor = False
-        '
-        'MaskedTextBox2
-        '
-        Me.MaskedTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.MaskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MaskedTextBox2.ForeColor = System.Drawing.Color.Wheat
-        Me.MaskedTextBox2.Location = New System.Drawing.Point(199, 250)
-        Me.MaskedTextBox2.Margin = New System.Windows.Forms.Padding(1)
-        Me.MaskedTextBox2.Mask = "0"
-        Me.MaskedTextBox2.Name = "MaskedTextBox2"
-        Me.MaskedTextBox2.Size = New System.Drawing.Size(28, 23)
-        Me.MaskedTextBox2.TabIndex = 43
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label5.ForeColor = System.Drawing.Color.Wheat
-        Me.Label5.Location = New System.Drawing.Point(9, 254)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(168, 15)
-        Me.Label5.TabIndex = 42
-        Me.Label5.Text = "Number of  Microphones:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label4.ForeColor = System.Drawing.Color.Wheat
-        Me.Label4.Location = New System.Drawing.Point(9, 95)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(107, 15)
-        Me.Label4.TabIndex = 41
-        Me.Label4.Text = "Audio Package:"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox2.ForeColor = System.Drawing.Color.Wheat
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(199, 91)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(1)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(153, 23)
-        Me.ComboBox2.TabIndex = 40
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox2.Location = New System.Drawing.Point(199, 202)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox2.TabIndex = 39
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox1.Location = New System.Drawing.Point(199, 166)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox1.TabIndex = 38
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label3.ForeColor = System.Drawing.Color.Wheat
-        Me.Label3.Location = New System.Drawing.Point(9, 204)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(107, 15)
-        Me.Label3.TabIndex = 37
-        Me.Label3.Text = "Phone Number:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label2.ForeColor = System.Drawing.Color.Wheat
-        Me.Label2.Location = New System.Drawing.Point(9, 168)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 15)
-        Me.Label2.TabIndex = 36
-        Me.Label2.Text = "Name:"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label1.ForeColor = System.Drawing.Color.Wheat
-        Me.Label1.Location = New System.Drawing.Point(9, 132)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(79, 15)
-        Me.Label1.TabIndex = 35
-        Me.Label1.Text = "DJ/Vendor:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.ForeColor = System.Drawing.Color.Wheat
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(199, 129)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(1)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(153, 23)
-        Me.ComboBox1.TabIndex = 34
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("Franklin Gothic Medium", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Wheat
-        Me.Label7.Location = New System.Drawing.Point(1, 0)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(300, 37)
-        Me.Label7.TabIndex = 33
-        Me.Label7.Text = "Audio and Uplighting"
         '
         'tpDrinkService
         '
@@ -1479,12 +1265,151 @@ Partial Class frmDashboard
         Me.tpDrinkService.Controls.Add(Me.Label17)
         Me.tpDrinkService.Controls.Add(Me.ComboBox3)
         Me.tpDrinkService.Controls.Add(Me.Label18)
-        Me.tpDrinkService.Location = New System.Drawing.Point(4, 24)
+        Me.tpDrinkService.Location = New System.Drawing.Point(4, 27)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(1419, 628)
+        Me.tpDrinkService.Size = New System.Drawing.Size(1419, 625)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
+        '
+        'pnlOpenBar
+        '
+        Me.pnlOpenBar.Controls.Add(Me.chkOpenBar)
+        Me.pnlOpenBar.Controls.Add(Me.NumericUpDown1)
+        Me.pnlOpenBar.Controls.Add(Me.Label16)
+        Me.pnlOpenBar.Controls.Add(Me.NumericUpDown2)
+        Me.pnlOpenBar.Controls.Add(Me.Label15)
+        Me.pnlOpenBar.Location = New System.Drawing.Point(25, 152)
+        Me.pnlOpenBar.Name = "pnlOpenBar"
+        Me.pnlOpenBar.Size = New System.Drawing.Size(270, 105)
+        Me.pnlOpenBar.TabIndex = 58
+        '
+        'chkOpenBar
+        '
+        Me.chkOpenBar.AutoSize = True
+        Me.chkOpenBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.chkOpenBar.ForeColor = System.Drawing.Color.Wheat
+        Me.chkOpenBar.Location = New System.Drawing.Point(1, 1)
+        Me.chkOpenBar.Margin = New System.Windows.Forms.Padding(1)
+        Me.chkOpenBar.Name = "chkOpenBar"
+        Me.chkOpenBar.Size = New System.Drawing.Size(172, 24)
+        Me.chkOpenBar.TabIndex = 37
+        Me.chkOpenBar.Text = "Hosted/Open Bar"
+        Me.chkOpenBar.UseVisualStyleBackColor = False
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NumericUpDown1.ForeColor = System.Drawing.Color.Wheat
+        Me.NumericUpDown1.Location = New System.Drawing.Point(192, 34)
+        Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(1)
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(60, 26)
+        Me.NumericUpDown1.TabIndex = 38
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label16.ForeColor = System.Drawing.Color.Wheat
+        Me.Label16.Location = New System.Drawing.Point(1, 34)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(217, 20)
+        Me.Label16.TabIndex = 39
+        Me.Label16.Text = "Number of Bar Locations:"
+        '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.NumericUpDown2.ForeColor = System.Drawing.Color.Wheat
+        Me.NumericUpDown2.Location = New System.Drawing.Point(192, 71)
+        Me.NumericUpDown2.Margin = New System.Windows.Forms.Padding(1)
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(60, 26)
+        Me.NumericUpDown2.TabIndex = 40
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label15.ForeColor = System.Drawing.Color.Wheat
+        Me.Label15.Location = New System.Drawing.Point(1, 71)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(196, 20)
+        Me.Label15.TabIndex = 41
+        Me.Label15.Text = "Number of Bartenders:"
+        '
+        'pnlCashBar
+        '
+        Me.pnlCashBar.Controls.Add(Me.chkCashBar)
+        Me.pnlCashBar.Controls.Add(Me.NumericUpDown4)
+        Me.pnlCashBar.Controls.Add(Me.Label14)
+        Me.pnlCashBar.Controls.Add(Me.NumericUpDown3)
+        Me.pnlCashBar.Controls.Add(Me.Label13)
+        Me.pnlCashBar.Location = New System.Drawing.Point(25, 273)
+        Me.pnlCashBar.Name = "pnlCashBar"
+        Me.pnlCashBar.Size = New System.Drawing.Size(274, 111)
+        Me.pnlCashBar.TabIndex = 57
+        '
+        'chkCashBar
+        '
+        Me.chkCashBar.AutoSize = True
+        Me.chkCashBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.chkCashBar.ForeColor = System.Drawing.Color.Wheat
+        Me.chkCashBar.Location = New System.Drawing.Point(1, 1)
+        Me.chkCashBar.Margin = New System.Windows.Forms.Padding(1)
+        Me.chkCashBar.Name = "chkCashBar"
+        Me.chkCashBar.Size = New System.Drawing.Size(106, 24)
+        Me.chkCashBar.TabIndex = 42
+        Me.chkCashBar.Text = "Cash Bar"
+        Me.chkCashBar.UseVisualStyleBackColor = False
+        '
+        'NumericUpDown4
+        '
+        Me.NumericUpDown4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.NumericUpDown4.ForeColor = System.Drawing.Color.Wheat
+        Me.NumericUpDown4.Location = New System.Drawing.Point(192, 41)
+        Me.NumericUpDown4.Margin = New System.Windows.Forms.Padding(1)
+        Me.NumericUpDown4.Name = "NumericUpDown4"
+        Me.NumericUpDown4.Size = New System.Drawing.Size(60, 26)
+        Me.NumericUpDown4.TabIndex = 43
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label14.ForeColor = System.Drawing.Color.Wheat
+        Me.Label14.Location = New System.Drawing.Point(1, 41)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(217, 20)
+        Me.Label14.TabIndex = 44
+        Me.Label14.Text = "Number of Bar Locations:"
+        '
+        'NumericUpDown3
+        '
+        Me.NumericUpDown3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.NumericUpDown3.ForeColor = System.Drawing.Color.Wheat
+        Me.NumericUpDown3.Location = New System.Drawing.Point(192, 78)
+        Me.NumericUpDown3.Margin = New System.Windows.Forms.Padding(1)
+        Me.NumericUpDown3.Name = "NumericUpDown3"
+        Me.NumericUpDown3.Size = New System.Drawing.Size(60, 26)
+        Me.NumericUpDown3.TabIndex = 45
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label13.ForeColor = System.Drawing.Color.Wheat
+        Me.Label13.Location = New System.Drawing.Point(1, 78)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(196, 20)
+        Me.Label13.TabIndex = 46
+        Me.Label13.Text = "Number of Bartenders:"
         '
         'btnBevSel
         '
@@ -1522,7 +1447,7 @@ Partial Class frmDashboard
         Me.Label11.Location = New System.Drawing.Point(455, 46)
         Me.Label11.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(295, 15)
+        Me.Label11.Size = New System.Drawing.Size(375, 20)
         Me.Label11.TabIndex = 53
         Me.Label11.Text = "Packages/Items Selected and Special Notes:"
         '
@@ -1546,7 +1471,7 @@ Partial Class frmDashboard
         Me.Label12.Location = New System.Drawing.Point(25, 451)
         Me.Label12.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(198, 15)
+        Me.Label12.Size = New System.Drawing.Size(252, 20)
         Me.Label12.TabIndex = 51
         Me.Label12.Text = "Additional Beverage Services"
         '
@@ -1558,7 +1483,7 @@ Partial Class frmDashboard
         Me.CheckBox6.Location = New System.Drawing.Point(25, 550)
         Me.CheckBox6.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(143, 19)
+        Me.CheckBox6.Size = New System.Drawing.Size(181, 24)
         Me.CheckBox6.TabIndex = 50
         Me.CheckBox6.Text = "Champagne Toast"
         Me.CheckBox6.UseVisualStyleBackColor = False
@@ -1571,7 +1496,7 @@ Partial Class frmDashboard
         Me.CheckBox5.Location = New System.Drawing.Point(25, 517)
         Me.CheckBox5.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(102, 19)
+        Me.CheckBox5.Size = New System.Drawing.Size(127, 24)
         Me.CheckBox5.TabIndex = 49
         Me.CheckBox5.Text = "Mimosa Bar"
         Me.CheckBox5.UseVisualStyleBackColor = False
@@ -1584,7 +1509,7 @@ Partial Class frmDashboard
         Me.CheckBox4.Location = New System.Drawing.Point(25, 482)
         Me.CheckBox4.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(131, 19)
+        Me.CheckBox4.Size = New System.Drawing.Size(165, 24)
         Me.CheckBox4.TabIndex = 48
         Me.CheckBox4.Text = "Bloody Mary Bar"
         Me.CheckBox4.UseVisualStyleBackColor = False
@@ -1597,125 +1522,10 @@ Partial Class frmDashboard
         Me.CheckBox3.Location = New System.Drawing.Point(25, 405)
         Me.CheckBox3.Margin = New System.Windows.Forms.Padding(1)
         Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(149, 19)
+        Me.CheckBox3.Size = New System.Drawing.Size(188, 24)
         Me.CheckBox3.TabIndex = 47
         Me.CheckBox3.Text = "Coffee/Tea Service"
         Me.CheckBox3.UseVisualStyleBackColor = False
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label13.ForeColor = System.Drawing.Color.Wheat
-        Me.Label13.Location = New System.Drawing.Point(1, 78)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(154, 15)
-        Me.Label13.TabIndex = 46
-        Me.Label13.Text = "Number of Bartenders:"
-        '
-        'NumericUpDown3
-        '
-        Me.NumericUpDown3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.NumericUpDown3.ForeColor = System.Drawing.Color.Wheat
-        Me.NumericUpDown3.Location = New System.Drawing.Point(192, 78)
-        Me.NumericUpDown3.Margin = New System.Windows.Forms.Padding(1)
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(60, 23)
-        Me.NumericUpDown3.TabIndex = 45
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label14.ForeColor = System.Drawing.Color.Wheat
-        Me.Label14.Location = New System.Drawing.Point(1, 41)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(171, 15)
-        Me.Label14.TabIndex = 44
-        Me.Label14.Text = "Number of Bar Locations:"
-        '
-        'NumericUpDown4
-        '
-        Me.NumericUpDown4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.NumericUpDown4.ForeColor = System.Drawing.Color.Wheat
-        Me.NumericUpDown4.Location = New System.Drawing.Point(192, 41)
-        Me.NumericUpDown4.Margin = New System.Windows.Forms.Padding(1)
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(60, 23)
-        Me.NumericUpDown4.TabIndex = 43
-        '
-        'chkCashBar
-        '
-        Me.chkCashBar.AutoSize = True
-        Me.chkCashBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.chkCashBar.ForeColor = System.Drawing.Color.Wheat
-        Me.chkCashBar.Location = New System.Drawing.Point(1, 1)
-        Me.chkCashBar.Margin = New System.Windows.Forms.Padding(1)
-        Me.chkCashBar.Name = "chkCashBar"
-        Me.chkCashBar.Size = New System.Drawing.Size(85, 19)
-        Me.chkCashBar.TabIndex = 42
-        Me.chkCashBar.Text = "Cash Bar"
-        Me.chkCashBar.UseVisualStyleBackColor = False
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label15.ForeColor = System.Drawing.Color.Wheat
-        Me.Label15.Location = New System.Drawing.Point(1, 71)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(154, 15)
-        Me.Label15.TabIndex = 41
-        Me.Label15.Text = "Number of Bartenders:"
-        '
-        'NumericUpDown2
-        '
-        Me.NumericUpDown2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.NumericUpDown2.ForeColor = System.Drawing.Color.Wheat
-        Me.NumericUpDown2.Location = New System.Drawing.Point(192, 71)
-        Me.NumericUpDown2.Margin = New System.Windows.Forms.Padding(1)
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(60, 23)
-        Me.NumericUpDown2.TabIndex = 40
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label16.ForeColor = System.Drawing.Color.Wheat
-        Me.Label16.Location = New System.Drawing.Point(1, 34)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(171, 15)
-        Me.Label16.TabIndex = 39
-        Me.Label16.Text = "Number of Bar Locations:"
-        '
-        'NumericUpDown1
-        '
-        Me.NumericUpDown1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDown1.ForeColor = System.Drawing.Color.Wheat
-        Me.NumericUpDown1.Location = New System.Drawing.Point(192, 34)
-        Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(1)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(60, 23)
-        Me.NumericUpDown1.TabIndex = 38
-        '
-        'chkOpenBar
-        '
-        Me.chkOpenBar.AutoSize = True
-        Me.chkOpenBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.chkOpenBar.ForeColor = System.Drawing.Color.Wheat
-        Me.chkOpenBar.Location = New System.Drawing.Point(1, 1)
-        Me.chkOpenBar.Margin = New System.Windows.Forms.Padding(1)
-        Me.chkOpenBar.Name = "chkOpenBar"
-        Me.chkOpenBar.Size = New System.Drawing.Size(136, 19)
-        Me.chkOpenBar.TabIndex = 37
-        Me.chkOpenBar.Text = "Hosted/Open Bar"
-        Me.chkOpenBar.UseVisualStyleBackColor = False
         '
         'Label17
         '
@@ -1725,7 +1535,7 @@ Partial Class frmDashboard
         Me.Label17.Location = New System.Drawing.Point(23, 66)
         Me.Label17.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(105, 15)
+        Me.Label17.Size = New System.Drawing.Size(135, 20)
         Me.Label17.TabIndex = 36
         Me.Label17.Text = "Drink Package:"
         '
@@ -1738,7 +1548,7 @@ Partial Class frmDashboard
         Me.ComboBox3.Location = New System.Drawing.Point(160, 65)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(1)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(237, 23)
+        Me.ComboBox3.Size = New System.Drawing.Size(237, 26)
         Me.ComboBox3.TabIndex = 35
         '
         'Label18
@@ -1750,9 +1560,256 @@ Partial Class frmDashboard
         Me.Label18.Location = New System.Drawing.Point(23, 10)
         Me.Label18.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(220, 29)
+        Me.Label18.Size = New System.Drawing.Size(264, 36)
         Me.Label18.TabIndex = 34
         Me.Label18.Text = "Beverage Service"
+        '
+        'tpAudioLighting
+        '
+        Me.tpAudioLighting.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.tpAudioLighting.Controls.Add(Me.cmdAddAV)
+        Me.tpAudioLighting.Controls.Add(Me.Label8)
+        Me.tpAudioLighting.Controls.Add(Me.TextBox4)
+        Me.tpAudioLighting.Controls.Add(Me.CheckBox2)
+        Me.tpAudioLighting.Controls.Add(Me.Label6)
+        Me.tpAudioLighting.Controls.Add(Me.TextBox3)
+        Me.tpAudioLighting.Controls.Add(Me.CheckBox1)
+        Me.tpAudioLighting.Controls.Add(Me.MaskedTextBox2)
+        Me.tpAudioLighting.Controls.Add(Me.Label5)
+        Me.tpAudioLighting.Controls.Add(Me.Label4)
+        Me.tpAudioLighting.Controls.Add(Me.ComboBox2)
+        Me.tpAudioLighting.Controls.Add(Me.TextBox2)
+        Me.tpAudioLighting.Controls.Add(Me.TextBox1)
+        Me.tpAudioLighting.Controls.Add(Me.Label3)
+        Me.tpAudioLighting.Controls.Add(Me.Label2)
+        Me.tpAudioLighting.Controls.Add(Me.Label1)
+        Me.tpAudioLighting.Controls.Add(Me.ComboBox1)
+        Me.tpAudioLighting.Controls.Add(Me.Label7)
+        Me.tpAudioLighting.Location = New System.Drawing.Point(4, 27)
+        Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tpAudioLighting.Name = "tpAudioLighting"
+        Me.tpAudioLighting.Size = New System.Drawing.Size(1419, 625)
+        Me.tpAudioLighting.TabIndex = 3
+        Me.tpAudioLighting.Text = "Audio and Uplighting"
+        '
+        'cmdAddAV
+        '
+        Me.cmdAddAV.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddAV.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdAddAV.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAddAV.ForeColor = System.Drawing.Color.Wheat
+        Me.cmdAddAV.Location = New System.Drawing.Point(16, 406)
+        Me.cmdAddAV.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.cmdAddAV.Name = "cmdAddAV"
+        Me.cmdAddAV.Size = New System.Drawing.Size(271, 45)
+        Me.cmdAddAV.TabIndex = 50
+        Me.cmdAddAV.Text = "Add AV"
+        Me.cmdAddAV.UseVisualStyleBackColor = False
+        Me.cmdAddAV.Visible = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label8.ForeColor = System.Drawing.Color.Wheat
+        Me.Label8.Location = New System.Drawing.Point(445, 66)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(289, 20)
+        Me.Label8.TabIndex = 49
+        Me.Label8.Text = "Selected Items and Special Notes:"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox4.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox4.Location = New System.Drawing.Point(445, 84)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox4.Multiline = True
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(429, 306)
+        Me.TextBox4.TabIndex = 48
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.CheckBox2.ForeColor = System.Drawing.Color.Wheat
+        Me.CheckBox2.Location = New System.Drawing.Point(13, 370)
+        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(1)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(190, 24)
+        Me.CheckBox2.TabIndex = 47
+        Me.CheckBox2.Text = "Additional 20 lights"
+        Me.CheckBox2.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label6.ForeColor = System.Drawing.Color.Wheat
+        Me.Label6.Location = New System.Drawing.Point(13, 337)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(59, 20)
+        Me.Label6.TabIndex = 46
+        Me.Label6.Text = "Color:"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox3.Location = New System.Drawing.Point(199, 337)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(151, 26)
+        Me.TextBox3.TabIndex = 45
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.CheckBox1.ForeColor = System.Drawing.Color.Wheat
+        Me.CheckBox1.Location = New System.Drawing.Point(13, 303)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(1)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(194, 24)
+        Me.CheckBox1.TabIndex = 44
+        Me.CheckBox1.Text = "Auxillary Uplighting"
+        Me.CheckBox1.UseVisualStyleBackColor = False
+        '
+        'MaskedTextBox2
+        '
+        Me.MaskedTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.MaskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MaskedTextBox2.ForeColor = System.Drawing.Color.Wheat
+        Me.MaskedTextBox2.Location = New System.Drawing.Point(199, 250)
+        Me.MaskedTextBox2.Margin = New System.Windows.Forms.Padding(1)
+        Me.MaskedTextBox2.Mask = "0"
+        Me.MaskedTextBox2.Name = "MaskedTextBox2"
+        Me.MaskedTextBox2.Size = New System.Drawing.Size(28, 26)
+        Me.MaskedTextBox2.TabIndex = 43
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label5.ForeColor = System.Drawing.Color.Wheat
+        Me.Label5.Location = New System.Drawing.Point(9, 254)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(214, 20)
+        Me.Label5.TabIndex = 42
+        Me.Label5.Text = "Number of  Microphones:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label4.ForeColor = System.Drawing.Color.Wheat
+        Me.Label4.Location = New System.Drawing.Point(9, 95)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(138, 20)
+        Me.Label4.TabIndex = 41
+        Me.Label4.Text = "Audio Package:"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox2.ForeColor = System.Drawing.Color.Wheat
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(199, 91)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(1)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(153, 26)
+        Me.ComboBox2.TabIndex = 40
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox2.Location = New System.Drawing.Point(199, 202)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox2.TabIndex = 39
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox1.Location = New System.Drawing.Point(199, 166)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox1.TabIndex = 38
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label3.ForeColor = System.Drawing.Color.Wheat
+        Me.Label3.Location = New System.Drawing.Point(9, 204)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(135, 20)
+        Me.Label3.TabIndex = 37
+        Me.Label3.Text = "Phone Number:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label2.ForeColor = System.Drawing.Color.Wheat
+        Me.Label2.Location = New System.Drawing.Point(9, 168)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(62, 20)
+        Me.Label2.TabIndex = 36
+        Me.Label2.Text = "Name:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.Wheat
+        Me.Label1.Location = New System.Drawing.Point(9, 132)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(102, 20)
+        Me.Label1.TabIndex = 35
+        Me.Label1.Text = "DJ/Vendor:"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.ForeColor = System.Drawing.Color.Wheat
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(199, 129)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(1)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(153, 26)
+        Me.ComboBox1.TabIndex = 34
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Franklin Gothic Medium", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Wheat
+        Me.Label7.Location = New System.Drawing.Point(1, 0)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(380, 47)
+        Me.Label7.TabIndex = 33
+        Me.Label7.Text = "Audio and Uplighting"
         '
         'tpMiscInfo
         '
@@ -1777,12 +1834,80 @@ Partial Class frmDashboard
         Me.tpMiscInfo.Controls.Add(Me.Label27)
         Me.tpMiscInfo.Controls.Add(Me.Label28)
         Me.tpMiscInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.tpMiscInfo.Location = New System.Drawing.Point(4, 24)
+        Me.tpMiscInfo.Location = New System.Drawing.Point(4, 27)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(1419, 628)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(1419, 625)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Linens"
+        '
+        'TextBox19
+        '
+        Me.TextBox19.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox19.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox19.Location = New System.Drawing.Point(188, 295)
+        Me.TextBox19.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(115, 26)
+        Me.TextBox19.TabIndex = 71
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label21.ForeColor = System.Drawing.Color.Wheat
+        Me.Label21.Location = New System.Drawing.Point(5, 297)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(82, 20)
+        Me.Label21.TabIndex = 70
+        Me.Label21.Text = "Runners:"
+        '
+        'TextBox18
+        '
+        Me.TextBox18.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox18.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox18.Location = New System.Drawing.Point(188, 252)
+        Me.TextBox18.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(115, 26)
+        Me.TextBox18.TabIndex = 68
+        '
+        'TextBox17
+        '
+        Me.TextBox17.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox17.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox17.Location = New System.Drawing.Point(187, 214)
+        Me.TextBox17.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(115, 26)
+        Me.TextBox17.TabIndex = 67
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label20.ForeColor = System.Drawing.Color.Wheat
+        Me.Label20.Location = New System.Drawing.Point(6, 216)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(113, 20)
+        Me.Label20.TabIndex = 66
+        Me.Label20.Text = "Napkin Fold:"
+        '
+        'TextBox16
+        '
+        Me.TextBox16.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox16.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox16.Location = New System.Drawing.Point(187, 174)
+        Me.TextBox16.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(115, 26)
+        Me.TextBox16.TabIndex = 65
         '
         'btnLinensSel
         '
@@ -1807,7 +1932,7 @@ Partial Class frmDashboard
         Me.Label19.Location = New System.Drawing.Point(359, 61)
         Me.Label19.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(236, 15)
+        Me.Label19.Size = New System.Drawing.Size(301, 20)
         Me.Label19.TabIndex = 61
         Me.Label19.Text = "Additional Items and Special Notes:"
         '
@@ -1823,6 +1948,19 @@ Partial Class frmDashboard
         Me.TextBox7.Size = New System.Drawing.Size(455, 466)
         Me.TextBox7.TabIndex = 60
         '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.CheckBox10.ForeColor = System.Drawing.Color.Wheat
+        Me.CheckBox10.Location = New System.Drawing.Point(8, 345)
+        Me.CheckBox10.Margin = New System.Windows.Forms.Padding(1)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(108, 24)
+        Me.CheckBox10.TabIndex = 52
+        Me.CheckBox10.Text = "Chargers"
+        Me.CheckBox10.UseVisualStyleBackColor = False
+        '
         'TextBox8
         '
         Me.TextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
@@ -1831,7 +1969,7 @@ Partial Class frmDashboard
         Me.TextBox8.Location = New System.Drawing.Point(188, 134)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(115, 23)
+        Me.TextBox8.Size = New System.Drawing.Size(115, 26)
         Me.TextBox8.TabIndex = 50
         '
         'Label23
@@ -1842,7 +1980,7 @@ Partial Class frmDashboard
         Me.Label23.Location = New System.Drawing.Point(5, 254)
         Me.Label23.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(95, 15)
+        Me.Label23.Size = New System.Drawing.Size(122, 20)
         Me.Label23.TabIndex = 49
         Me.Label23.Text = "Napkin Color:"
         '
@@ -1854,7 +1992,7 @@ Partial Class frmDashboard
         Me.Label24.Location = New System.Drawing.Point(9, 176)
         Me.Label24.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(84, 15)
+        Me.Label24.Size = New System.Drawing.Size(105, 20)
         Me.Label24.TabIndex = 47
         Me.Label24.Text = "Linen color:"
         '
@@ -1866,7 +2004,7 @@ Partial Class frmDashboard
         Me.Label25.Location = New System.Drawing.Point(5, 137)
         Me.Label25.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(78, 15)
+        Me.Label25.Size = New System.Drawing.Size(99, 20)
         Me.Label25.TabIndex = 45
         Me.Label25.Text = "Linen type:"
         '
@@ -1879,7 +2017,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox6.Margin = New System.Windows.Forms.Padding(1)
         Me.MaskedTextBox6.Mask = "000"
         Me.MaskedTextBox6.Name = "MaskedTextBox6"
-        Me.MaskedTextBox6.Size = New System.Drawing.Size(52, 23)
+        Me.MaskedTextBox6.Size = New System.Drawing.Size(52, 26)
         Me.MaskedTextBox6.TabIndex = 43
         '
         'Label26
@@ -1890,7 +2028,7 @@ Partial Class frmDashboard
         Me.Label26.Location = New System.Drawing.Point(0, 105)
         Me.Label26.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(121, 15)
+        Me.Label26.Size = New System.Drawing.Size(155, 20)
         Me.Label26.TabIndex = 42
         Me.Label26.Text = "Number of tables:"
         '
@@ -1903,7 +2041,7 @@ Partial Class frmDashboard
         Me.MaskedTextBox7.Margin = New System.Windows.Forms.Padding(1)
         Me.MaskedTextBox7.Mask = "00"
         Me.MaskedTextBox7.Name = "MaskedTextBox7"
-        Me.MaskedTextBox7.Size = New System.Drawing.Size(52, 23)
+        Me.MaskedTextBox7.Size = New System.Drawing.Size(52, 26)
         Me.MaskedTextBox7.TabIndex = 41
         '
         'Label27
@@ -1914,7 +2052,7 @@ Partial Class frmDashboard
         Me.Label27.Location = New System.Drawing.Point(0, 61)
         Me.Label27.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(186, 15)
+        Me.Label27.Size = New System.Drawing.Size(239, 20)
         Me.Label27.TabIndex = 40
         Me.Label27.Text = "Number of people per table:"
         '
@@ -1927,17 +2065,501 @@ Partial Class frmDashboard
         Me.Label28.Location = New System.Drawing.Point(1, 0)
         Me.Label28.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(117, 37)
+        Me.Label28.Size = New System.Drawing.Size(143, 46)
         Me.Label28.TabIndex = 39
         Me.Label28.Text = "Linens"
+        '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.btnVendorSel)
+        Me.TabPage2.Controls.Add(Me.TextBox34)
+        Me.TabPage2.Controls.Add(Me.TextBox35)
+        Me.TabPage2.Controls.Add(Me.Label53)
+        Me.TabPage2.Controls.Add(Me.Label54)
+        Me.TabPage2.Controls.Add(Me.TextBox32)
+        Me.TabPage2.Controls.Add(Me.TextBox33)
+        Me.TabPage2.Controls.Add(Me.Label51)
+        Me.TabPage2.Controls.Add(Me.Label52)
+        Me.TabPage2.Controls.Add(Me.TextBox30)
+        Me.TabPage2.Controls.Add(Me.TextBox31)
+        Me.TabPage2.Controls.Add(Me.Label49)
+        Me.TabPage2.Controls.Add(Me.Label50)
+        Me.TabPage2.Controls.Add(Me.TextBox28)
+        Me.TabPage2.Controls.Add(Me.TextBox29)
+        Me.TabPage2.Controls.Add(Me.Label47)
+        Me.TabPage2.Controls.Add(Me.Label48)
+        Me.TabPage2.Controls.Add(Me.TextBox26)
+        Me.TabPage2.Controls.Add(Me.TextBox27)
+        Me.TabPage2.Controls.Add(Me.Label45)
+        Me.TabPage2.Controls.Add(Me.Label46)
+        Me.TabPage2.Controls.Add(Me.TextBox24)
+        Me.TabPage2.Controls.Add(Me.TextBox25)
+        Me.TabPage2.Controls.Add(Me.Label43)
+        Me.TabPage2.Controls.Add(Me.Label44)
+        Me.TabPage2.Controls.Add(Me.TextBox22)
+        Me.TabPage2.Controls.Add(Me.TextBox23)
+        Me.TabPage2.Controls.Add(Me.Label41)
+        Me.TabPage2.Controls.Add(Me.Label42)
+        Me.TabPage2.Controls.Add(Me.TextBox20)
+        Me.TabPage2.Controls.Add(Me.TextBox21)
+        Me.TabPage2.Controls.Add(Me.Label39)
+        Me.TabPage2.Controls.Add(Me.Label40)
+        Me.TabPage2.Controls.Add(Me.CheckBox8)
+        Me.TabPage2.Controls.Add(Me.CheckBox7)
+        Me.TabPage2.Controls.Add(Me.Label38)
+        Me.TabPage2.Controls.Add(Me.Label22)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 27)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(1419, 625)
+        Me.TabPage2.TabIndex = 9
+        Me.TabPage2.Text = "Vendors"
+        '
+        'btnVendorSel
+        '
+        Me.btnVendorSel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnVendorSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVendorSel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVendorSel.ForeColor = System.Drawing.Color.Wheat
+        Me.btnVendorSel.Location = New System.Drawing.Point(12, 566)
+        Me.btnVendorSel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnVendorSel.Name = "btnVendorSel"
+        Me.btnVendorSel.Size = New System.Drawing.Size(280, 47)
+        Me.btnVendorSel.TabIndex = 77
+        Me.btnVendorSel.Text = "Enter Vendor Information"
+        Me.btnVendorSel.UseVisualStyleBackColor = False
+        Me.btnVendorSel.Visible = False
+        '
+        'TextBox34
+        '
+        Me.TextBox34.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox34.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox34.Location = New System.Drawing.Point(511, 483)
+        Me.TextBox34.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox34.Name = "TextBox34"
+        Me.TextBox34.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox34.TabIndex = 76
+        '
+        'TextBox35
+        '
+        Me.TextBox35.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox35.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox35.Location = New System.Drawing.Point(177, 483)
+        Me.TextBox35.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox35.Name = "TextBox35"
+        Me.TextBox35.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox35.TabIndex = 75
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label53.ForeColor = System.Drawing.Color.Wheat
+        Me.Label53.Location = New System.Drawing.Point(391, 485)
+        Me.Label53.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(135, 20)
+        Me.Label53.TabIndex = 74
+        Me.Label53.Text = "Phone Number:"
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label54.ForeColor = System.Drawing.Color.Wheat
+        Me.Label54.Location = New System.Drawing.Point(18, 485)
+        Me.Label54.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(129, 20)
+        Me.Label54.TabIndex = 73
+        Me.Label54.Text = "Caterer Name:"
+        '
+        'TextBox32
+        '
+        Me.TextBox32.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox32.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox32.Location = New System.Drawing.Point(511, 436)
+        Me.TextBox32.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox32.Name = "TextBox32"
+        Me.TextBox32.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox32.TabIndex = 72
+        '
+        'TextBox33
+        '
+        Me.TextBox33.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox33.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox33.Location = New System.Drawing.Point(177, 436)
+        Me.TextBox33.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox33.Name = "TextBox33"
+        Me.TextBox33.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox33.TabIndex = 71
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label51.ForeColor = System.Drawing.Color.Wheat
+        Me.Label51.Location = New System.Drawing.Point(391, 438)
+        Me.Label51.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(135, 20)
+        Me.Label51.TabIndex = 70
+        Me.Label51.Text = "Phone Number:"
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label52.ForeColor = System.Drawing.Color.Wheat
+        Me.Label52.Location = New System.Drawing.Point(18, 438)
+        Me.Label52.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(194, 20)
+        Me.Label52.TabIndex = 69
+        Me.Label52.Text = "Dessert Vendor Name:"
+        '
+        'TextBox30
+        '
+        Me.TextBox30.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox30.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox30.Location = New System.Drawing.Point(511, 389)
+        Me.TextBox30.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox30.Name = "TextBox30"
+        Me.TextBox30.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox30.TabIndex = 68
+        '
+        'TextBox31
+        '
+        Me.TextBox31.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox31.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox31.Location = New System.Drawing.Point(177, 389)
+        Me.TextBox31.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox31.Name = "TextBox31"
+        Me.TextBox31.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox31.TabIndex = 67
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label49.ForeColor = System.Drawing.Color.Wheat
+        Me.Label49.Location = New System.Drawing.Point(391, 391)
+        Me.Label49.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(135, 20)
+        Me.Label49.TabIndex = 66
+        Me.Label49.Text = "Phone Number:"
+        '
+        'Label50
+        '
+        Me.Label50.AutoSize = True
+        Me.Label50.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label50.ForeColor = System.Drawing.Color.Wheat
+        Me.Label50.Location = New System.Drawing.Point(18, 391)
+        Me.Label50.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(137, 20)
+        Me.Label50.TabIndex = 65
+        Me.Label50.Text = "Officiant Name:"
+        '
+        'TextBox28
+        '
+        Me.TextBox28.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox28.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox28.Location = New System.Drawing.Point(511, 341)
+        Me.TextBox28.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox28.Name = "TextBox28"
+        Me.TextBox28.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox28.TabIndex = 64
+        '
+        'TextBox29
+        '
+        Me.TextBox29.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox29.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox29.Location = New System.Drawing.Point(177, 341)
+        Me.TextBox29.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox29.Name = "TextBox29"
+        Me.TextBox29.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox29.TabIndex = 63
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label47.ForeColor = System.Drawing.Color.Wheat
+        Me.Label47.Location = New System.Drawing.Point(391, 343)
+        Me.Label47.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(135, 20)
+        Me.Label47.TabIndex = 62
+        Me.Label47.Text = "Phone Number:"
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label48.ForeColor = System.Drawing.Color.Wheat
+        Me.Label48.Location = New System.Drawing.Point(18, 343)
+        Me.Label48.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(149, 20)
+        Me.Label48.TabIndex = 61
+        Me.Label48.Text = "Decorator Name:"
+        '
+        'TextBox26
+        '
+        Me.TextBox26.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox26.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox26.Location = New System.Drawing.Point(511, 292)
+        Me.TextBox26.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox26.Name = "TextBox26"
+        Me.TextBox26.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox26.TabIndex = 60
+        '
+        'TextBox27
+        '
+        Me.TextBox27.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox27.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox27.Location = New System.Drawing.Point(177, 292)
+        Me.TextBox27.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox27.Name = "TextBox27"
+        Me.TextBox27.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox27.TabIndex = 59
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label45.ForeColor = System.Drawing.Color.Wheat
+        Me.Label45.Location = New System.Drawing.Point(391, 294)
+        Me.Label45.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(135, 20)
+        Me.Label45.TabIndex = 58
+        Me.Label45.Text = "Phone Number:"
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label46.ForeColor = System.Drawing.Color.Wheat
+        Me.Label46.Location = New System.Drawing.Point(18, 294)
+        Me.Label46.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(118, 20)
+        Me.Label46.TabIndex = 57
+        Me.Label46.Text = "Florist Name:"
+        '
+        'TextBox24
+        '
+        Me.TextBox24.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox24.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox24.Location = New System.Drawing.Point(511, 245)
+        Me.TextBox24.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox24.Name = "TextBox24"
+        Me.TextBox24.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox24.TabIndex = 56
+        '
+        'TextBox25
+        '
+        Me.TextBox25.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox25.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox25.Location = New System.Drawing.Point(177, 245)
+        Me.TextBox25.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox25.Name = "TextBox25"
+        Me.TextBox25.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox25.TabIndex = 55
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label43.ForeColor = System.Drawing.Color.Wheat
+        Me.Label43.Location = New System.Drawing.Point(391, 247)
+        Me.Label43.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(135, 20)
+        Me.Label43.TabIndex = 54
+        Me.Label43.Text = "Phone Number:"
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label44.ForeColor = System.Drawing.Color.Wheat
+        Me.Label44.Location = New System.Drawing.Point(18, 247)
+        Me.Label44.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(180, 20)
+        Me.Label44.TabIndex = 53
+        Me.Label44.Text = "Videographer Name:"
+        '
+        'TextBox22
+        '
+        Me.TextBox22.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox22.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox22.Location = New System.Drawing.Point(511, 202)
+        Me.TextBox22.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox22.Name = "TextBox22"
+        Me.TextBox22.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox22.TabIndex = 52
+        '
+        'TextBox23
+        '
+        Me.TextBox23.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox23.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox23.Location = New System.Drawing.Point(177, 202)
+        Me.TextBox23.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox23.Name = "TextBox23"
+        Me.TextBox23.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox23.TabIndex = 51
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label41.ForeColor = System.Drawing.Color.Wheat
+        Me.Label41.Location = New System.Drawing.Point(391, 204)
+        Me.Label41.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(135, 20)
+        Me.Label41.TabIndex = 50
+        Me.Label41.Text = "Phone Number:"
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label42.ForeColor = System.Drawing.Color.Wheat
+        Me.Label42.Location = New System.Drawing.Point(18, 204)
+        Me.Label42.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(179, 20)
+        Me.Label42.TabIndex = 49
+        Me.Label42.Text = "Photographer Name:"
+        '
+        'TextBox20
+        '
+        Me.TextBox20.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox20.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox20.Location = New System.Drawing.Point(511, 159)
+        Me.TextBox20.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox20.TabIndex = 48
+        '
+        'TextBox21
+        '
+        Me.TextBox21.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox21.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox21.Location = New System.Drawing.Point(177, 159)
+        Me.TextBox21.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox21.Name = "TextBox21"
+        Me.TextBox21.Size = New System.Drawing.Size(199, 26)
+        Me.TextBox21.TabIndex = 47
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label39.ForeColor = System.Drawing.Color.Wheat
+        Me.Label39.Location = New System.Drawing.Point(391, 161)
+        Me.Label39.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(135, 20)
+        Me.Label39.TabIndex = 46
+        Me.Label39.Text = "Phone Number:"
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label40.ForeColor = System.Drawing.Color.Wheat
+        Me.Label40.Location = New System.Drawing.Point(18, 159)
+        Me.Label40.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(89, 20)
+        Me.Label40.TabIndex = 45
+        Me.Label40.Text = "DJ Name:"
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox8.ForeColor = System.Drawing.Color.Wheat
+        Me.CheckBox8.Location = New System.Drawing.Point(21, 116)
+        Me.CheckBox8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(331, 27)
+        Me.CheckBox8.TabIndex = 44
+        Me.CheckBox8.Text = "Vendors Included In Seating Chart"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox7.ForeColor = System.Drawing.Color.Wheat
+        Me.CheckBox7.Location = New System.Drawing.Point(21, 81)
+        Me.CheckBox7.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(319, 27)
+        Me.CheckBox7.TabIndex = 43
+        Me.CheckBox7.Text = "Vendors Included in Guest Count"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.ForeColor = System.Drawing.Color.Wheat
+        Me.Label38.Location = New System.Drawing.Point(14, 16)
+        Me.Label38.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(377, 46)
+        Me.Label38.TabIndex = 42
+        Me.Label38.Text = "Vendor Information"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label22.ForeColor = System.Drawing.Color.Wheat
+        Me.Label22.Location = New System.Drawing.Point(18, 81)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(0, 20)
+        Me.Label22.TabIndex = 41
         '
         'tpLayout
         '
         Me.tpLayout.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.tpLayout.Controls.Add(Me.Button5)
+        Me.tpLayout.Controls.Add(Me.Button3)
+        Me.tpLayout.Controls.Add(Me.Button2)
+        Me.tpLayout.Controls.Add(Me.VISIO)
         Me.tpLayout.ForeColor = System.Drawing.Color.Wheat
-        Me.tpLayout.Location = New System.Drawing.Point(4, 24)
+        Me.tpLayout.Location = New System.Drawing.Point(4, 27)
         Me.tpLayout.Name = "tpLayout"
-        Me.tpLayout.Size = New System.Drawing.Size(1419, 628)
+        Me.tpLayout.Size = New System.Drawing.Size(1419, 625)
         Me.tpLayout.TabIndex = 7
         Me.tpLayout.Text = "Layout"
         '
@@ -1946,12 +2568,42 @@ Partial Class frmDashboard
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.TabPage1.Controls.Add(Me.btnPrintInvoice)
         Me.TabPage1.Controls.Add(Me.btnPrintBEO)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 27)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1419, 628)
+        Me.TabPage1.Size = New System.Drawing.Size(1419, 625)
         Me.TabPage1.TabIndex = 8
         Me.TabPage1.Text = "Payments & Reports"
+        '
+        'btnPrintInvoice
+        '
+        Me.btnPrintInvoice.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnPrintInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrintInvoice.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrintInvoice.ForeColor = System.Drawing.Color.Wheat
+        Me.btnPrintInvoice.Location = New System.Drawing.Point(32, 563)
+        Me.btnPrintInvoice.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnPrintInvoice.Name = "btnPrintInvoice"
+        Me.btnPrintInvoice.Size = New System.Drawing.Size(265, 40)
+        Me.btnPrintInvoice.TabIndex = 41
+        Me.btnPrintInvoice.Text = "Print Invoice"
+        Me.btnPrintInvoice.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPrintInvoice.UseVisualStyleBackColor = False
+        '
+        'btnPrintBEO
+        '
+        Me.btnPrintBEO.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnPrintBEO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrintBEO.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrintBEO.ForeColor = System.Drawing.Color.Wheat
+        Me.btnPrintBEO.Location = New System.Drawing.Point(339, 563)
+        Me.btnPrintBEO.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnPrintBEO.Name = "btnPrintBEO"
+        Me.btnPrintBEO.Size = New System.Drawing.Size(265, 40)
+        Me.btnPrintBEO.TabIndex = 40
+        Me.btnPrintBEO.Text = "Print BEO"
+        Me.btnPrintBEO.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPrintBEO.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -2094,7 +2746,7 @@ Partial Class frmDashboard
         Me.lblDate.ForeColor = System.Drawing.Color.Wheat
         Me.lblDate.Location = New System.Drawing.Point(166, 16)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(22, 32)
+        Me.lblDate.Size = New System.Drawing.Size(26, 39)
         Me.lblDate.TabIndex = 30
         Me.lblDate.Text = " "
         '
@@ -2201,21 +2853,6 @@ Partial Class frmDashboard
         Me.pnlSettings.Size = New System.Drawing.Size(608, 100)
         Me.pnlSettings.TabIndex = 33
         '
-        'btnCancelNewClient
-        '
-        Me.btnCancelNewClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnCancelNewClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancelNewClient.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelNewClient.ForeColor = System.Drawing.Color.Wheat
-        Me.btnCancelNewClient.Location = New System.Drawing.Point(171, 156)
-        Me.btnCancelNewClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnCancelNewClient.Name = "btnCancelNewClient"
-        Me.btnCancelNewClient.Size = New System.Drawing.Size(265, 40)
-        Me.btnCancelNewClient.TabIndex = 39
-        Me.btnCancelNewClient.Text = "Cancel New Client"
-        Me.btnCancelNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnCancelNewClient.UseVisualStyleBackColor = False
-        '
         'Button9
         '
         Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
@@ -2246,6 +2883,21 @@ Partial Class frmDashboard
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'btnCancelNewClient
+        '
+        Me.btnCancelNewClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnCancelNewClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelNewClient.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelNewClient.ForeColor = System.Drawing.Color.Wheat
+        Me.btnCancelNewClient.Location = New System.Drawing.Point(171, 156)
+        Me.btnCancelNewClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnCancelNewClient.Name = "btnCancelNewClient"
+        Me.btnCancelNewClient.Size = New System.Drawing.Size(265, 40)
+        Me.btnCancelNewClient.TabIndex = 39
+        Me.btnCancelNewClient.Text = "Cancel New Client"
+        Me.btnCancelNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnCancelNewClient.UseVisualStyleBackColor = False
+        '
         'lblNotifs
         '
         Me.lblNotifs.AutoSize = True
@@ -2253,7 +2905,7 @@ Partial Class frmDashboard
         Me.lblNotifs.ForeColor = System.Drawing.Color.Wheat
         Me.lblNotifs.Location = New System.Drawing.Point(205, 68)
         Me.lblNotifs.Name = "lblNotifs"
-        Me.lblNotifs.Size = New System.Drawing.Size(224, 22)
+        Me.lblNotifs.Size = New System.Drawing.Size(280, 28)
         Me.lblNotifs.TabIndex = 35
         Me.lblNotifs.Text = " Event Today at 5:00pm"
         '
@@ -2279,656 +2931,66 @@ Partial Class frmDashboard
         Me.lblDayInfo.ForeColor = System.Drawing.Color.Wheat
         Me.lblDayInfo.Location = New System.Drawing.Point(174, 362)
         Me.lblDayInfo.Name = "lblDayInfo"
-        Me.lblDayInfo.Size = New System.Drawing.Size(67, 15)
+        Me.lblDayInfo.Size = New System.Drawing.Size(84, 20)
         Me.lblDayInfo.TabIndex = 38
         Me.lblDayInfo.Text = "Event at: "
         '
-        'TextBox15
-        '
-        Me.TextBox15.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox15.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox15.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox15.Location = New System.Drawing.Point(200, 474)
-        Me.TextBox15.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.TextBox15.Multiline = True
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(714, 74)
-        Me.TextBox15.TabIndex = 50
-        '
-        'btnFoodSel
-        '
-        Me.btnFoodSel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnFoodSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFoodSel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFoodSel.ForeColor = System.Drawing.Color.Wheat
-        Me.btnFoodSel.Location = New System.Drawing.Point(15, 575)
-        Me.btnFoodSel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnFoodSel.Name = "btnFoodSel"
-        Me.btnFoodSel.Size = New System.Drawing.Size(265, 40)
-        Me.btnFoodSel.TabIndex = 51
-        Me.btnFoodSel.Text = "Enter Food Selection"
-        Me.btnFoodSel.UseVisualStyleBackColor = False
-        Me.btnFoodSel.Visible = False
-        '
-        'pnlCashBar
-        '
-        Me.pnlCashBar.Controls.Add(Me.chkCashBar)
-        Me.pnlCashBar.Controls.Add(Me.NumericUpDown4)
-        Me.pnlCashBar.Controls.Add(Me.Label14)
-        Me.pnlCashBar.Controls.Add(Me.NumericUpDown3)
-        Me.pnlCashBar.Controls.Add(Me.Label13)
-        Me.pnlCashBar.Location = New System.Drawing.Point(25, 273)
-        Me.pnlCashBar.Name = "pnlCashBar"
-        Me.pnlCashBar.Size = New System.Drawing.Size(274, 111)
-        Me.pnlCashBar.TabIndex = 57
-        '
-        'pnlOpenBar
-        '
-        Me.pnlOpenBar.Controls.Add(Me.chkOpenBar)
-        Me.pnlOpenBar.Controls.Add(Me.NumericUpDown1)
-        Me.pnlOpenBar.Controls.Add(Me.Label16)
-        Me.pnlOpenBar.Controls.Add(Me.NumericUpDown2)
-        Me.pnlOpenBar.Controls.Add(Me.Label15)
-        Me.pnlOpenBar.Location = New System.Drawing.Point(25, 152)
-        Me.pnlOpenBar.Name = "pnlOpenBar"
-        Me.pnlOpenBar.Size = New System.Drawing.Size(270, 105)
-        Me.pnlOpenBar.TabIndex = 58
-        '
-        'TextBox16
-        '
-        Me.TextBox16.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox16.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox16.Location = New System.Drawing.Point(187, 174)
-        Me.TextBox16.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(115, 23)
-        Me.TextBox16.TabIndex = 65
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label20.ForeColor = System.Drawing.Color.Wheat
-        Me.Label20.Location = New System.Drawing.Point(6, 216)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(87, 15)
-        Me.Label20.TabIndex = 66
-        Me.Label20.Text = "Napkin Fold:"
-        '
-        'TextBox17
-        '
-        Me.TextBox17.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox17.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox17.Location = New System.Drawing.Point(187, 214)
-        Me.TextBox17.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(115, 23)
-        Me.TextBox17.TabIndex = 67
-        '
-        'TextBox18
-        '
-        Me.TextBox18.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox18.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox18.Location = New System.Drawing.Point(188, 252)
-        Me.TextBox18.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(115, 23)
-        Me.TextBox18.TabIndex = 68
-        '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.CheckBox10.ForeColor = System.Drawing.Color.Wheat
-        Me.CheckBox10.Location = New System.Drawing.Point(8, 345)
-        Me.CheckBox10.Margin = New System.Windows.Forms.Padding(1)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(87, 19)
-        Me.CheckBox10.TabIndex = 52
-        Me.CheckBox10.Text = "Chargers"
-        Me.CheckBox10.UseVisualStyleBackColor = False
-        '
-        'TextBox19
-        '
-        Me.TextBox19.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox19.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox19.Location = New System.Drawing.Point(188, 295)
-        Me.TextBox19.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(115, 23)
-        Me.TextBox19.TabIndex = 71
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label21.ForeColor = System.Drawing.Color.Wheat
-        Me.Label21.Location = New System.Drawing.Point(5, 297)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(65, 15)
-        Me.Label21.TabIndex = 70
-        Me.Label21.Text = "Runners:"
-        '
-        'TabPage2
-        '
-        Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TabPage2.Controls.Add(Me.btnVendorSel)
-        Me.TabPage2.Controls.Add(Me.TextBox34)
-        Me.TabPage2.Controls.Add(Me.TextBox35)
-        Me.TabPage2.Controls.Add(Me.Label53)
-        Me.TabPage2.Controls.Add(Me.Label54)
-        Me.TabPage2.Controls.Add(Me.TextBox32)
-        Me.TabPage2.Controls.Add(Me.TextBox33)
-        Me.TabPage2.Controls.Add(Me.Label51)
-        Me.TabPage2.Controls.Add(Me.Label52)
-        Me.TabPage2.Controls.Add(Me.TextBox30)
-        Me.TabPage2.Controls.Add(Me.TextBox31)
-        Me.TabPage2.Controls.Add(Me.Label49)
-        Me.TabPage2.Controls.Add(Me.Label50)
-        Me.TabPage2.Controls.Add(Me.TextBox28)
-        Me.TabPage2.Controls.Add(Me.TextBox29)
-        Me.TabPage2.Controls.Add(Me.Label47)
-        Me.TabPage2.Controls.Add(Me.Label48)
-        Me.TabPage2.Controls.Add(Me.TextBox26)
-        Me.TabPage2.Controls.Add(Me.TextBox27)
-        Me.TabPage2.Controls.Add(Me.Label45)
-        Me.TabPage2.Controls.Add(Me.Label46)
-        Me.TabPage2.Controls.Add(Me.TextBox24)
-        Me.TabPage2.Controls.Add(Me.TextBox25)
-        Me.TabPage2.Controls.Add(Me.Label43)
-        Me.TabPage2.Controls.Add(Me.Label44)
-        Me.TabPage2.Controls.Add(Me.TextBox22)
-        Me.TabPage2.Controls.Add(Me.TextBox23)
-        Me.TabPage2.Controls.Add(Me.Label41)
-        Me.TabPage2.Controls.Add(Me.Label42)
-        Me.TabPage2.Controls.Add(Me.TextBox20)
-        Me.TabPage2.Controls.Add(Me.TextBox21)
-        Me.TabPage2.Controls.Add(Me.Label39)
-        Me.TabPage2.Controls.Add(Me.Label40)
-        Me.TabPage2.Controls.Add(Me.CheckBox8)
-        Me.TabPage2.Controls.Add(Me.CheckBox7)
-        Me.TabPage2.Controls.Add(Me.Label38)
-        Me.TabPage2.Controls.Add(Me.Label22)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 24)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1419, 628)
-        Me.TabPage2.TabIndex = 9
-        Me.TabPage2.Text = "Vendors"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label22.ForeColor = System.Drawing.Color.Wheat
-        Me.Label22.Location = New System.Drawing.Point(18, 81)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(0, 15)
-        Me.Label22.TabIndex = 41
-        '
-        'Label38
-        '
-        Me.Label38.AutoSize = True
-        Me.Label38.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.ForeColor = System.Drawing.Color.Wheat
-        Me.Label38.Location = New System.Drawing.Point(14, 16)
-        Me.Label38.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(309, 37)
-        Me.Label38.TabIndex = 42
-        Me.Label38.Text = "Vendor Information"
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox7.ForeColor = System.Drawing.Color.Wheat
-        Me.CheckBox7.Location = New System.Drawing.Point(21, 81)
-        Me.CheckBox7.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(252, 22)
-        Me.CheckBox7.TabIndex = 43
-        Me.CheckBox7.Text = "Vendors Included in Guest Count"
-        Me.CheckBox7.UseVisualStyleBackColor = True
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox8.ForeColor = System.Drawing.Color.Wheat
-        Me.CheckBox8.Location = New System.Drawing.Point(21, 116)
-        Me.CheckBox8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(261, 22)
-        Me.CheckBox8.TabIndex = 44
-        Me.CheckBox8.Text = "Vendors Included In Seating Chart"
-        Me.CheckBox8.UseVisualStyleBackColor = True
-        '
-        'TextBox20
-        '
-        Me.TextBox20.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox20.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox20.Location = New System.Drawing.Point(511, 159)
-        Me.TextBox20.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox20.TabIndex = 48
-        '
-        'TextBox21
-        '
-        Me.TextBox21.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox21.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox21.Location = New System.Drawing.Point(177, 159)
-        Me.TextBox21.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox21.TabIndex = 47
-        '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label39.ForeColor = System.Drawing.Color.Wheat
-        Me.Label39.Location = New System.Drawing.Point(391, 161)
-        Me.Label39.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(107, 15)
-        Me.Label39.TabIndex = 46
-        Me.Label39.Text = "Phone Number:"
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label40.ForeColor = System.Drawing.Color.Wheat
-        Me.Label40.Location = New System.Drawing.Point(18, 159)
-        Me.Label40.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(69, 15)
-        Me.Label40.TabIndex = 45
-        Me.Label40.Text = "DJ Name:"
-        '
-        'TextBox22
-        '
-        Me.TextBox22.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox22.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox22.Location = New System.Drawing.Point(511, 202)
-        Me.TextBox22.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox22.TabIndex = 52
-        '
-        'TextBox23
-        '
-        Me.TextBox23.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox23.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox23.Location = New System.Drawing.Point(177, 202)
-        Me.TextBox23.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox23.TabIndex = 51
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label41.ForeColor = System.Drawing.Color.Wheat
-        Me.Label41.Location = New System.Drawing.Point(391, 204)
-        Me.Label41.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(107, 15)
-        Me.Label41.TabIndex = 50
-        Me.Label41.Text = "Phone Number:"
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label42.ForeColor = System.Drawing.Color.Wheat
-        Me.Label42.Location = New System.Drawing.Point(18, 204)
-        Me.Label42.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(142, 15)
-        Me.Label42.TabIndex = 49
-        Me.Label42.Text = "Photographer Name:"
-        '
-        'TextBox24
-        '
-        Me.TextBox24.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox24.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox24.Location = New System.Drawing.Point(511, 245)
-        Me.TextBox24.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox24.TabIndex = 56
-        '
-        'TextBox25
-        '
-        Me.TextBox25.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox25.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox25.Location = New System.Drawing.Point(177, 245)
-        Me.TextBox25.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox25.TabIndex = 55
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label43.ForeColor = System.Drawing.Color.Wheat
-        Me.Label43.Location = New System.Drawing.Point(391, 247)
-        Me.Label43.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(107, 15)
-        Me.Label43.TabIndex = 54
-        Me.Label43.Text = "Phone Number:"
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label44.ForeColor = System.Drawing.Color.Wheat
-        Me.Label44.Location = New System.Drawing.Point(18, 247)
-        Me.Label44.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(141, 15)
-        Me.Label44.TabIndex = 53
-        Me.Label44.Text = "Videographer Name:"
-        '
-        'TextBox26
-        '
-        Me.TextBox26.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox26.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox26.Location = New System.Drawing.Point(511, 292)
-        Me.TextBox26.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox26.TabIndex = 60
-        '
-        'TextBox27
-        '
-        Me.TextBox27.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox27.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox27.Location = New System.Drawing.Point(177, 292)
-        Me.TextBox27.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox27.TabIndex = 59
-        '
-        'Label45
-        '
-        Me.Label45.AutoSize = True
-        Me.Label45.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label45.ForeColor = System.Drawing.Color.Wheat
-        Me.Label45.Location = New System.Drawing.Point(391, 294)
-        Me.Label45.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(107, 15)
-        Me.Label45.TabIndex = 58
-        Me.Label45.Text = "Phone Number:"
-        '
-        'Label46
-        '
-        Me.Label46.AutoSize = True
-        Me.Label46.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label46.ForeColor = System.Drawing.Color.Wheat
-        Me.Label46.Location = New System.Drawing.Point(18, 294)
-        Me.Label46.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(94, 15)
-        Me.Label46.TabIndex = 57
-        Me.Label46.Text = "Florist Name:"
-        '
-        'TextBox28
-        '
-        Me.TextBox28.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox28.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox28.Location = New System.Drawing.Point(511, 341)
-        Me.TextBox28.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox28.TabIndex = 64
-        '
-        'TextBox29
-        '
-        Me.TextBox29.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox29.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox29.Location = New System.Drawing.Point(177, 341)
-        Me.TextBox29.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox29.Name = "TextBox29"
-        Me.TextBox29.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox29.TabIndex = 63
-        '
-        'Label47
-        '
-        Me.Label47.AutoSize = True
-        Me.Label47.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label47.ForeColor = System.Drawing.Color.Wheat
-        Me.Label47.Location = New System.Drawing.Point(391, 343)
-        Me.Label47.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(107, 15)
-        Me.Label47.TabIndex = 62
-        Me.Label47.Text = "Phone Number:"
-        '
-        'Label48
-        '
-        Me.Label48.AutoSize = True
-        Me.Label48.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label48.ForeColor = System.Drawing.Color.Wheat
-        Me.Label48.Location = New System.Drawing.Point(18, 343)
-        Me.Label48.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(119, 15)
-        Me.Label48.TabIndex = 61
-        Me.Label48.Text = "Decorator Name:"
-        '
-        'TextBox30
-        '
-        Me.TextBox30.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox30.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox30.Location = New System.Drawing.Point(511, 389)
-        Me.TextBox30.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox30.Name = "TextBox30"
-        Me.TextBox30.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox30.TabIndex = 68
-        '
-        'TextBox31
-        '
-        Me.TextBox31.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox31.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox31.Location = New System.Drawing.Point(177, 389)
-        Me.TextBox31.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox31.Name = "TextBox31"
-        Me.TextBox31.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox31.TabIndex = 67
-        '
-        'Label49
-        '
-        Me.Label49.AutoSize = True
-        Me.Label49.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label49.ForeColor = System.Drawing.Color.Wheat
-        Me.Label49.Location = New System.Drawing.Point(391, 391)
-        Me.Label49.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(107, 15)
-        Me.Label49.TabIndex = 66
-        Me.Label49.Text = "Phone Number:"
-        '
-        'Label50
-        '
-        Me.Label50.AutoSize = True
-        Me.Label50.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label50.ForeColor = System.Drawing.Color.Wheat
-        Me.Label50.Location = New System.Drawing.Point(18, 391)
-        Me.Label50.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(107, 15)
-        Me.Label50.TabIndex = 65
-        Me.Label50.Text = "Officiant Name:"
-        '
-        'TextBox32
-        '
-        Me.TextBox32.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox32.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox32.Location = New System.Drawing.Point(511, 436)
-        Me.TextBox32.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox32.Name = "TextBox32"
-        Me.TextBox32.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox32.TabIndex = 72
-        '
-        'TextBox33
-        '
-        Me.TextBox33.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox33.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox33.Location = New System.Drawing.Point(177, 436)
-        Me.TextBox33.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox33.Name = "TextBox33"
-        Me.TextBox33.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox33.TabIndex = 71
-        '
-        'Label51
-        '
-        Me.Label51.AutoSize = True
-        Me.Label51.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label51.ForeColor = System.Drawing.Color.Wheat
-        Me.Label51.Location = New System.Drawing.Point(391, 438)
-        Me.Label51.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(107, 15)
-        Me.Label51.TabIndex = 70
-        Me.Label51.Text = "Phone Number:"
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label52.ForeColor = System.Drawing.Color.Wheat
-        Me.Label52.Location = New System.Drawing.Point(18, 438)
-        Me.Label52.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(153, 15)
-        Me.Label52.TabIndex = 69
-        Me.Label52.Text = "Dessert Vendor Name:"
-        '
-        'TextBox34
-        '
-        Me.TextBox34.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox34.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox34.Location = New System.Drawing.Point(511, 483)
-        Me.TextBox34.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox34.Name = "TextBox34"
-        Me.TextBox34.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox34.TabIndex = 76
-        '
-        'TextBox35
-        '
-        Me.TextBox35.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox35.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox35.Location = New System.Drawing.Point(177, 483)
-        Me.TextBox35.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox35.Name = "TextBox35"
-        Me.TextBox35.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox35.TabIndex = 75
-        '
-        'Label53
-        '
-        Me.Label53.AutoSize = True
-        Me.Label53.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label53.ForeColor = System.Drawing.Color.Wheat
-        Me.Label53.Location = New System.Drawing.Point(391, 485)
-        Me.Label53.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(107, 15)
-        Me.Label53.TabIndex = 74
-        Me.Label53.Text = "Phone Number:"
-        '
-        'Label54
-        '
-        Me.Label54.AutoSize = True
-        Me.Label54.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label54.ForeColor = System.Drawing.Color.Wheat
-        Me.Label54.Location = New System.Drawing.Point(18, 485)
-        Me.Label54.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(103, 15)
-        Me.Label54.TabIndex = 73
-        Me.Label54.Text = "Caterer Name:"
-        '
-        'btnVendorSel
-        '
-        Me.btnVendorSel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnVendorSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVendorSel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVendorSel.ForeColor = System.Drawing.Color.Wheat
-        Me.btnVendorSel.Location = New System.Drawing.Point(12, 566)
-        Me.btnVendorSel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnVendorSel.Name = "btnVendorSel"
-        Me.btnVendorSel.Size = New System.Drawing.Size(280, 47)
-        Me.btnVendorSel.TabIndex = 77
-        Me.btnVendorSel.Text = "Enter Vendor Information"
-        Me.btnVendorSel.UseVisualStyleBackColor = False
-        Me.btnVendorSel.Visible = False
-        '
-        'btnPrintBEO
-        '
-        Me.btnPrintBEO.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnPrintBEO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPrintBEO.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrintBEO.ForeColor = System.Drawing.Color.Wheat
-        Me.btnPrintBEO.Location = New System.Drawing.Point(339, 563)
-        Me.btnPrintBEO.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnPrintBEO.Name = "btnPrintBEO"
-        Me.btnPrintBEO.Size = New System.Drawing.Size(265, 40)
-        Me.btnPrintBEO.TabIndex = 40
-        Me.btnPrintBEO.Text = "Print BEO"
-        Me.btnPrintBEO.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnPrintBEO.UseVisualStyleBackColor = False
-        '
-        'btnPrintInvoice
-        '
-        Me.btnPrintInvoice.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnPrintInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPrintInvoice.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrintInvoice.ForeColor = System.Drawing.Color.Wheat
-        Me.btnPrintInvoice.Location = New System.Drawing.Point(32, 563)
-        Me.btnPrintInvoice.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnPrintInvoice.Name = "btnPrintInvoice"
-        Me.btnPrintInvoice.Size = New System.Drawing.Size(265, 40)
-        Me.btnPrintInvoice.TabIndex = 41
-        Me.btnPrintInvoice.Text = "Print Invoice"
-        Me.btnPrintInvoice.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnPrintInvoice.UseVisualStyleBackColor = False
+        'VISIO
+        '
+        Me.VISIO.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.VISIO.Location = New System.Drawing.Point(56, 116)
+        Me.VISIO.Name = "VISIO"
+        Me.VISIO.Size = New System.Drawing.Size(964, 396)
+        Me.VISIO.TabIndex = 0
+        Me.VISIO.Text = "VISIO"
+        Me.VISIO.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Wheat
+        Me.Button2.Location = New System.Drawing.Point(420, 54)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(222, 43)
+        Me.Button2.TabIndex = 78
+        Me.Button2.Text = "Select Floor"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.Wheat
+        Me.Button3.Location = New System.Drawing.Point(740, 52)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(280, 47)
+        Me.Button3.TabIndex = 79
+        Me.Button3.Text = "Select Layout"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.Wheat
+        Me.Button5.Location = New System.Drawing.Point(56, 52)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(280, 47)
+        Me.Button5.TabIndex = 80
+        Me.Button5.Text = "Create Layout"
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'frmDashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
@@ -2967,28 +3029,29 @@ Partial Class frmDashboard
         Me.tpTimeline.PerformLayout()
         Me.tpFoodSelection.ResumeLayout(False)
         Me.tpFoodSelection.PerformLayout()
-        Me.tpAudioLighting.ResumeLayout(False)
-        Me.tpAudioLighting.PerformLayout()
         Me.tpDrinkService.ResumeLayout(False)
         Me.tpDrinkService.PerformLayout()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlOpenBar.ResumeLayout(False)
+        Me.pnlOpenBar.PerformLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlCashBar.ResumeLayout(False)
+        Me.pnlCashBar.PerformLayout()
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpAudioLighting.ResumeLayout(False)
+        Me.tpAudioLighting.PerformLayout()
         Me.tpMiscInfo.ResumeLayout(False)
         Me.tpMiscInfo.PerformLayout()
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage2.PerformLayout()
+        Me.tpLayout.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSettings.ResumeLayout(False)
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlCashBar.ResumeLayout(False)
-        Me.pnlCashBar.PerformLayout()
-        Me.pnlOpenBar.ResumeLayout(False)
-        Me.pnlOpenBar.PerformLayout()
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3201,4 +3264,8 @@ Partial Class frmDashboard
     Friend WithEvents Label52 As Label
     Friend WithEvents btnPrintInvoice As Button
     Friend WithEvents btnPrintBEO As Button
+    Private WithEvents VISIO As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
 End Class

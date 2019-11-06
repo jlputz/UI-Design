@@ -16,6 +16,7 @@
 
 
     Private Sub btnClient_Click(sender As Object, e As EventArgs) Handles btnClient.Click
+        tbpCustomer.SelectedTab = tpCustomerInfo
         hideSettings()
         hideHome()
         btnNewClient.Visible = True
@@ -60,7 +61,8 @@
     End Sub
 
     Private Sub btnLayout_Click(sender As Object, e As EventArgs) Handles btnLayout.Click
-        hideClientMenu()
+        'hideClientMenu()
+        tbpCustomer.SelectedTab = tpLayout
         hideSettings()
         hideHome()
         DataGridView1.Visible = True
@@ -189,5 +191,9 @@
 
             txtCustomerName.Text = DataGridView1.SelectedCells(3).Value.ToString()
         End If
+    End Sub
+
+    Private Sub BtnVendorSel_Click(sender As Object, e As EventArgs) Handles btnVendorSel.Click
+
     End Sub
 End Class
