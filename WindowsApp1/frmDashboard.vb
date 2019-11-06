@@ -51,6 +51,7 @@
         tbpCustomer.Visible = False
         btnNewClient.Visible = False
         DataGridView1.Visible = False
+        btnCancelNewClient.Visible = False
     End Sub
     Sub hideSettings()
         pnlSettings.Visible = False
@@ -60,6 +61,7 @@
         hideClientMenu()
         hideSettings()
         hideHome()
+        DataGridView1.Visible = True
         pnlButtonMover.Height = btnLayout.Height
         pnlButtonMover.Top = btnLayout.Top
     End Sub
@@ -68,6 +70,26 @@
         tbpCustomer.Visible = True
         tbpCustomer.Top = DataGridView1.Top
         DataGridView1.Visible = False
+
+        btnNewClient.Visible = False
+        togglePnlButtons()
+        btnCancelNewClient.Visible = True
+    End Sub
+
+    Private Sub btnCancelNewClient_Click(sender As Object, e As EventArgs) Handles btnCancelNewClient.Click
+        If MessageBox.Show("Are you Sure You want To Cancel?", "Cancel? ", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+            tbpCustomer.Visible = True
+            DataGridView1.Visible = True
+            tbpCustomer.Top = DataGridView1.Bottom + 3
+            btnCancelNewClient.Visible = False
+            btnNewClient.Visible = True
+        End If
+
+    End Sub
+
+    Sub togglePnlButtons()
+        cmdEnterCustomerInfo.Visible = Not cmdEnterCustomerInfo.Visible
+        cmdEnterEventInfo.Visible = Not cmdEnterEventInfo.Visible
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -104,4 +126,28 @@
     Private Sub TxtCustomerName_TextChanged(sender As Object, e As EventArgs) Handles txtCustomerName.TextChanged
 
     End Sub
+
+    Private Sub lblGuestCount_Click(sender As Object, e As EventArgs) Handles lblGuestCount.Click
+
+    End Sub
+
+    Private Sub chkCeremonyEvent_CheckedChanged(sender As Object, e As EventArgs) Handles chkCeremonyEvent.CheckedChanged
+        If chkCeremonyEvent.Checked = True Then
+            pnlCeremony.Visible = True
+            pnlEventInfo.Top = pnlCeremony.Bottom + 3
+        Else
+            pnlCeremony.Visible = False
+            pnlEventInfo.Top = chkCeremonyEvent.Bottom + 3
+        End If
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles pnlEventInfo.Paint
+
+    End Sub
+
+    Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MaskedTextBox1.MaskInputRejected
+
+    End Sub
+
+
 End Class

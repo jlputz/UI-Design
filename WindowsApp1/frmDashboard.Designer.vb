@@ -27,7 +27,6 @@ Partial Class frmDashboard
         Me.tpCustomerInfo = New System.Windows.Forms.TabPage()
         Me.MaskedTextBox8 = New System.Windows.Forms.MaskedTextBox()
         Me.Label29 = New System.Windows.Forms.Label()
-        Me.cmdCancel = New System.Windows.Forms.Button()
         Me.cmdEnterCustomerInfo = New System.Windows.Forms.Button()
         Me.mtbCustomerAlternatePhone = New System.Windows.Forms.MaskedTextBox()
         Me.mtbCustomerPhone = New System.Windows.Forms.MaskedTextBox()
@@ -43,36 +42,49 @@ Partial Class frmDashboard
         Me.lblCustomerName = New System.Windows.Forms.Label()
         Me.lblCustomerInfo = New System.Windows.Forms.Label()
         Me.tpEventInfo = New System.Windows.Forms.TabPage()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.cmdEnterEventInfo = New System.Windows.Forms.Button()
-        Me.dtpRehearsalDate = New System.Windows.Forms.DateTimePicker()
-        Me.dtpEventDate = New System.Windows.Forms.DateTimePicker()
-        Me.txtEventType = New System.Windows.Forms.TextBox()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
-        Me.lblGuestCount = New System.Windows.Forms.Label()
-        Me.lblRehearsalDate = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.pnlEventInfo = New System.Windows.Forms.Panel()
+        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
         Me.lblEventDate = New System.Windows.Forms.Label()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.lblGuestCount = New System.Windows.Forms.Label()
+        Me.MaskedTextBox9 = New System.Windows.Forms.MaskedTextBox()
+        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.dtpEventDate = New System.Windows.Forms.DateTimePicker()
+        Me.cmdEnterEventInfo = New System.Windows.Forms.Button()
+        Me.txtEventType = New System.Windows.Forms.TextBox()
         Me.chkCeremonyEvent = New System.Windows.Forms.CheckBox()
         Me.lblEventType = New System.Windows.Forms.Label()
         Me.lblEventInfo = New System.Windows.Forms.Label()
+        Me.pnlCeremony = New System.Windows.Forms.Panel()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.lblRehearsalDate = New System.Windows.Forms.Label()
+        Me.dtpRehearsalDate = New System.Windows.Forms.DateTimePicker()
         Me.tpTimeline = New System.Windows.Forms.TabPage()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.cmdUpdateTimeline = New System.Windows.Forms.Button()
         Me.txtTimelineInfo = New System.Windows.Forms.TextBox()
         Me.lblAVLightingSelection = New System.Windows.Forms.Label()
         Me.tpFoodSelection = New System.Windows.Forms.TabPage()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.cmdAddFoodSelections = New System.Windows.Forms.Button()
         Me.mtbCateringPhone = New System.Windows.Forms.MaskedTextBox()
         Me.txtCateringCompanyName = New System.Windows.Forms.TextBox()
         Me.txtCateringCompanyEmail = New System.Windows.Forms.TextBox()
         Me.cboCateringCompany = New System.Windows.Forms.ComboBox()
         Me.txtSpecialNotes = New System.Windows.Forms.TextBox()
         Me.lblSpecialNotes = New System.Windows.Forms.Label()
-        Me.txtDietaryRestrictions = New System.Windows.Forms.TextBox()
-        Me.lblDietaryRestrictions = New System.Windows.Forms.Label()
         Me.cmdAfterglow = New System.Windows.Forms.Button()
         Me.cmdDessert = New System.Windows.Forms.Button()
         Me.cmdHorsD = New System.Windows.Forms.Button()
@@ -156,6 +168,7 @@ Partial Class frmDashboard
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.tpLayout = New System.Windows.Forms.TabPage()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlButtonMover = New System.Windows.Forms.Panel()
         Me.btnClient = New System.Windows.Forms.Button()
@@ -178,6 +191,7 @@ Partial Class frmDashboard
         Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.address = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnlSettings = New System.Windows.Forms.Panel()
+        Me.btnCancelNewClient = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.lblNotifs = New System.Windows.Forms.Label()
@@ -187,6 +201,8 @@ Partial Class frmDashboard
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
+        Me.pnlEventInfo.SuspendLayout()
+        Me.pnlCeremony.SuspendLayout()
         Me.tpTimeline.SuspendLayout()
         Me.tpFoodSelection.SuspendLayout()
         Me.tpAudioLighting.SuspendLayout()
@@ -205,7 +221,8 @@ Partial Class frmDashboard
         '
         'tbpCustomer
         '
-        Me.tbpCustomer.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.tbpCustomer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tbpCustomer.CausesValidation = False
         Me.tbpCustomer.Controls.Add(Me.tpCustomerInfo)
@@ -216,11 +233,12 @@ Partial Class frmDashboard
         Me.tbpCustomer.Controls.Add(Me.tpDrinkService)
         Me.tbpCustomer.Controls.Add(Me.tpMiscInfo)
         Me.tbpCustomer.Controls.Add(Me.tpLayout)
+        Me.tbpCustomer.Controls.Add(Me.TabPage1)
         Me.tbpCustomer.Location = New System.Drawing.Point(173, 380)
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(1059, 656)
+        Me.tbpCustomer.Size = New System.Drawing.Size(1427, 656)
         Me.tbpCustomer.TabIndex = 4
         '
         'tpCustomerInfo
@@ -228,7 +246,6 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.tpCustomerInfo.Controls.Add(Me.MaskedTextBox8)
         Me.tpCustomerInfo.Controls.Add(Me.Label29)
-        Me.tpCustomerInfo.Controls.Add(Me.cmdCancel)
         Me.tpCustomerInfo.Controls.Add(Me.cmdEnterCustomerInfo)
         Me.tpCustomerInfo.Controls.Add(Me.mtbCustomerAlternatePhone)
         Me.tpCustomerInfo.Controls.Add(Me.mtbCustomerPhone)
@@ -247,13 +264,14 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(1051, 628)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(1419, 628)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
         'MaskedTextBox8
         '
         Me.MaskedTextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.MaskedTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.MaskedTextBox8.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MaskedTextBox8.ForeColor = System.Drawing.Color.Wheat
         Me.MaskedTextBox8.Location = New System.Drawing.Point(211, 210)
@@ -275,27 +293,13 @@ Partial Class frmDashboard
         Me.Label29.TabIndex = 30
         Me.Label29.Text = "State:"
         '
-        'cmdCancel
-        '
-        Me.cmdCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdCancel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCancel.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdCancel.Location = New System.Drawing.Point(284, 455)
-        Me.cmdCancel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdCancel.Name = "cmdCancel"
-        Me.cmdCancel.Size = New System.Drawing.Size(265, 40)
-        Me.cmdCancel.TabIndex = 29
-        Me.cmdCancel.Text = "Cancel"
-        Me.cmdCancel.UseVisualStyleBackColor = False
-        '
         'cmdEnterCustomerInfo
         '
         Me.cmdEnterCustomerInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.cmdEnterCustomerInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdEnterCustomerInfo.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdEnterCustomerInfo.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdEnterCustomerInfo.Location = New System.Drawing.Point(11, 456)
+        Me.cmdEnterCustomerInfo.Location = New System.Drawing.Point(11, 455)
         Me.cmdEnterCustomerInfo.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.cmdEnterCustomerInfo.Name = "cmdEnterCustomerInfo"
         Me.cmdEnterCustomerInfo.Size = New System.Drawing.Size(265, 40)
@@ -303,10 +307,12 @@ Partial Class frmDashboard
         Me.cmdEnterCustomerInfo.Text = "Enter Customer Info"
         Me.cmdEnterCustomerInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdEnterCustomerInfo.UseVisualStyleBackColor = False
+        Me.cmdEnterCustomerInfo.Visible = False
         '
         'mtbCustomerAlternatePhone
         '
         Me.mtbCustomerAlternatePhone.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.mtbCustomerAlternatePhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.mtbCustomerAlternatePhone.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mtbCustomerAlternatePhone.ForeColor = System.Drawing.Color.Wheat
         Me.mtbCustomerAlternatePhone.Location = New System.Drawing.Point(214, 351)
@@ -319,6 +325,7 @@ Partial Class frmDashboard
         'mtbCustomerPhone
         '
         Me.mtbCustomerPhone.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.mtbCustomerPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.mtbCustomerPhone.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mtbCustomerPhone.ForeColor = System.Drawing.Color.Wheat
         Me.mtbCustomerPhone.Location = New System.Drawing.Point(214, 298)
@@ -331,6 +338,7 @@ Partial Class frmDashboard
         'txtCustomerEmail
         '
         Me.txtCustomerEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtCustomerEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtCustomerEmail.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCustomerEmail.ForeColor = System.Drawing.Color.Wheat
         Me.txtCustomerEmail.Location = New System.Drawing.Point(214, 246)
@@ -342,11 +350,12 @@ Partial Class frmDashboard
         'mtbZipCode
         '
         Me.mtbZipCode.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.mtbZipCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.mtbZipCode.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mtbZipCode.ForeColor = System.Drawing.Color.Wheat
         Me.mtbZipCode.Location = New System.Drawing.Point(211, 160)
         Me.mtbZipCode.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.mtbZipCode.Mask = "00000"
+        Me.mtbZipCode.Mask = "     "
         Me.mtbZipCode.Name = "mtbZipCode"
         Me.mtbZipCode.Size = New System.Drawing.Size(65, 26)
         Me.mtbZipCode.TabIndex = 24
@@ -354,6 +363,7 @@ Partial Class frmDashboard
         'txtCustomerAddress
         '
         Me.txtCustomerAddress.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtCustomerAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtCustomerAddress.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCustomerAddress.ForeColor = System.Drawing.Color.Wheat
         Me.txtCustomerAddress.Location = New System.Drawing.Point(211, 111)
@@ -461,75 +471,205 @@ Partial Class frmDashboard
         'tpEventInfo
         '
         Me.tpEventInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.tpEventInfo.Controls.Add(Me.Button5)
+        Me.tpEventInfo.Controls.Add(Me.Label36)
+        Me.tpEventInfo.Controls.Add(Me.TextBox13)
+        Me.tpEventInfo.Controls.Add(Me.pnlEventInfo)
         Me.tpEventInfo.Controls.Add(Me.cmdEnterEventInfo)
-        Me.tpEventInfo.Controls.Add(Me.dtpRehearsalDate)
-        Me.tpEventInfo.Controls.Add(Me.dtpEventDate)
         Me.tpEventInfo.Controls.Add(Me.txtEventType)
-        Me.tpEventInfo.Controls.Add(Me.MaskedTextBox1)
-        Me.tpEventInfo.Controls.Add(Me.lblGuestCount)
-        Me.tpEventInfo.Controls.Add(Me.lblRehearsalDate)
-        Me.tpEventInfo.Controls.Add(Me.lblEventDate)
         Me.tpEventInfo.Controls.Add(Me.chkCeremonyEvent)
         Me.tpEventInfo.Controls.Add(Me.lblEventType)
         Me.tpEventInfo.Controls.Add(Me.lblEventInfo)
+        Me.tpEventInfo.Controls.Add(Me.pnlCeremony)
         Me.tpEventInfo.Location = New System.Drawing.Point(4, 24)
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(1051, 628)
+        Me.tpEventInfo.Size = New System.Drawing.Size(1419, 628)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
-        'Button5
+        'Label36
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button5.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.Wheat
-        Me.Button5.Location = New System.Drawing.Point(340, 299)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(265, 51)
-        Me.Button5.TabIndex = 27
-        Me.Button5.Text = "Cancel"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.Label36.AutoSize = True
+        Me.Label36.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.ForeColor = System.Drawing.Color.Wheat
+        Me.Label36.Location = New System.Drawing.Point(711, 102)
+        Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(110, 18)
+        Me.Label36.TabIndex = 50
+        Me.Label36.Text = "Special Notes:"
         '
-        'cmdEnterEventInfo
+        'TextBox13
         '
-        Me.cmdEnterEventInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdEnterEventInfo.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdEnterEventInfo.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdEnterEventInfo.Location = New System.Drawing.Point(13, 299)
-        Me.cmdEnterEventInfo.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdEnterEventInfo.Name = "cmdEnterEventInfo"
-        Me.cmdEnterEventInfo.Size = New System.Drawing.Size(265, 51)
-        Me.cmdEnterEventInfo.TabIndex = 26
-        Me.cmdEnterEventInfo.Text = "Enter Event Info"
-        Me.cmdEnterEventInfo.UseVisualStyleBackColor = False
+        Me.TextBox13.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox13.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox13.Location = New System.Drawing.Point(714, 130)
+        Me.TextBox13.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox13.Multiline = True
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(308, 434)
+        Me.TextBox13.TabIndex = 49
         '
-        'dtpRehearsalDate
+        'pnlEventInfo
         '
-        Me.dtpRehearsalDate.CalendarFont = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpRehearsalDate.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpRehearsalDate.Location = New System.Drawing.Point(248, 212)
-        Me.dtpRehearsalDate.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.dtpRehearsalDate.Name = "dtpRehearsalDate"
-        Me.dtpRehearsalDate.Size = New System.Drawing.Size(361, 26)
-        Me.dtpRehearsalDate.TabIndex = 25
+        Me.pnlEventInfo.Controls.Add(Me.CheckBox14)
+        Me.pnlEventInfo.Controls.Add(Me.CheckBox13)
+        Me.pnlEventInfo.Controls.Add(Me.lblEventDate)
+        Me.pnlEventInfo.Controls.Add(Me.TextBox9)
+        Me.pnlEventInfo.Controls.Add(Me.Label31)
+        Me.pnlEventInfo.Controls.Add(Me.lblGuestCount)
+        Me.pnlEventInfo.Controls.Add(Me.MaskedTextBox9)
+        Me.pnlEventInfo.Controls.Add(Me.MaskedTextBox1)
+        Me.pnlEventInfo.Controls.Add(Me.Label30)
+        Me.pnlEventInfo.Controls.Add(Me.dtpEventDate)
+        Me.pnlEventInfo.Location = New System.Drawing.Point(13, 136)
+        Me.pnlEventInfo.Name = "pnlEventInfo"
+        Me.pnlEventInfo.Size = New System.Drawing.Size(671, 226)
+        Me.pnlEventInfo.TabIndex = 35
+        '
+        'CheckBox14
+        '
+        Me.CheckBox14.AutoSize = True
+        Me.CheckBox14.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox14.ForeColor = System.Drawing.Color.Wheat
+        Me.CheckBox14.Location = New System.Drawing.Point(138, 185)
+        Me.CheckBox14.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.CheckBox14.Name = "CheckBox14"
+        Me.CheckBox14.Size = New System.Drawing.Size(127, 22)
+        Me.CheckBox14.TabIndex = 36
+        Me.CheckBox14.Text = "Valet Services"
+        Me.CheckBox14.UseVisualStyleBackColor = True
+        '
+        'CheckBox13
+        '
+        Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox13.ForeColor = System.Drawing.Color.Wheat
+        Me.CheckBox13.Location = New System.Drawing.Point(12, 185)
+        Me.CheckBox13.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.CheckBox13.Name = "CheckBox13"
+        Me.CheckBox13.Size = New System.Drawing.Size(110, 22)
+        Me.CheckBox13.TabIndex = 35
+        Me.CheckBox13.Text = "Coat Check"
+        Me.CheckBox13.UseVisualStyleBackColor = True
+        '
+        'lblEventDate
+        '
+        Me.lblEventDate.AutoSize = True
+        Me.lblEventDate.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEventDate.ForeColor = System.Drawing.Color.Wheat
+        Me.lblEventDate.Location = New System.Drawing.Point(8, 21)
+        Me.lblEventDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblEventDate.Name = "lblEventDate"
+        Me.lblEventDate.Size = New System.Drawing.Size(89, 18)
+        Me.lblEventDate.TabIndex = 19
+        Me.lblEventDate.Text = "Event Date:"
+        '
+        'TextBox9
+        '
+        Me.TextBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox9.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox9.Location = New System.Drawing.Point(235, 61)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox9.TabIndex = 34
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.ForeColor = System.Drawing.Color.Wheat
+        Me.Label31.Location = New System.Drawing.Point(8, 63)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(129, 18)
+        Me.Label31.TabIndex = 33
+        Me.Label31.Text = "Event Timeframe:"
+        '
+        'lblGuestCount
+        '
+        Me.lblGuestCount.AutoSize = True
+        Me.lblGuestCount.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGuestCount.ForeColor = System.Drawing.Color.Wheat
+        Me.lblGuestCount.Location = New System.Drawing.Point(8, 100)
+        Me.lblGuestCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblGuestCount.Name = "lblGuestCount"
+        Me.lblGuestCount.Size = New System.Drawing.Size(173, 18)
+        Me.lblGuestCount.TabIndex = 21
+        Me.lblGuestCount.Text = "Estimated Guest Count:"
+        '
+        'MaskedTextBox9
+        '
+        Me.MaskedTextBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.MaskedTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MaskedTextBox9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaskedTextBox9.ForeColor = System.Drawing.Color.Wheat
+        Me.MaskedTextBox9.Location = New System.Drawing.Point(233, 139)
+        Me.MaskedTextBox9.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.MaskedTextBox9.Name = "MaskedTextBox9"
+        Me.MaskedTextBox9.Size = New System.Drawing.Size(48, 26)
+        Me.MaskedTextBox9.TabIndex = 32
+        Me.MaskedTextBox9.ValidatingType = GetType(Integer)
+        '
+        'MaskedTextBox1
+        '
+        Me.MaskedTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.MaskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MaskedTextBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaskedTextBox1.ForeColor = System.Drawing.Color.Wheat
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(235, 98)
+        Me.MaskedTextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.MaskedTextBox1.Name = "MaskedTextBox1"
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(48, 26)
+        Me.MaskedTextBox1.TabIndex = 22
+        Me.MaskedTextBox1.ValidatingType = GetType(Integer)
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.ForeColor = System.Drawing.Color.Wheat
+        Me.Label30.Location = New System.Drawing.Point(9, 141)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(136, 18)
+        Me.Label30.TabIndex = 31
+        Me.Label30.Text = "Final Guest Count:"
         '
         'dtpEventDate
         '
         Me.dtpEventDate.CalendarFont = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpEventDate.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpEventDate.Location = New System.Drawing.Point(248, 162)
+        Me.dtpEventDate.Location = New System.Drawing.Point(235, 21)
         Me.dtpEventDate.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.dtpEventDate.Name = "dtpEventDate"
-        Me.dtpEventDate.Size = New System.Drawing.Size(361, 26)
+        Me.dtpEventDate.Size = New System.Drawing.Size(263, 26)
         Me.dtpEventDate.TabIndex = 24
+        '
+        'cmdEnterEventInfo
+        '
+        Me.cmdEnterEventInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdEnterEventInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdEnterEventInfo.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdEnterEventInfo.ForeColor = System.Drawing.Color.Wheat
+        Me.cmdEnterEventInfo.Location = New System.Drawing.Point(12, 574)
+        Me.cmdEnterEventInfo.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.cmdEnterEventInfo.Name = "cmdEnterEventInfo"
+        Me.cmdEnterEventInfo.Size = New System.Drawing.Size(265, 40)
+        Me.cmdEnterEventInfo.TabIndex = 26
+        Me.cmdEnterEventInfo.Text = "Enter Event Info"
+        Me.cmdEnterEventInfo.UseVisualStyleBackColor = False
+        Me.cmdEnterEventInfo.Visible = False
         '
         'txtEventType
         '
         Me.txtEventType.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtEventType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEventType.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEventType.ForeColor = System.Drawing.Color.Wheat
         Me.txtEventType.Location = New System.Drawing.Point(248, 70)
@@ -538,61 +678,12 @@ Partial Class frmDashboard
         Me.txtEventType.Size = New System.Drawing.Size(361, 26)
         Me.txtEventType.TabIndex = 23
         '
-        'MaskedTextBox1
-        '
-        Me.MaskedTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.MaskedTextBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox1.ForeColor = System.Drawing.Color.Wheat
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(248, 262)
-        Me.MaskedTextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.MaskedTextBox1.Mask = "000"
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(48, 26)
-        Me.MaskedTextBox1.TabIndex = 22
-        Me.MaskedTextBox1.ValidatingType = GetType(Integer)
-        '
-        'lblGuestCount
-        '
-        Me.lblGuestCount.AutoSize = True
-        Me.lblGuestCount.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGuestCount.ForeColor = System.Drawing.Color.Wheat
-        Me.lblGuestCount.Location = New System.Drawing.Point(9, 265)
-        Me.lblGuestCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblGuestCount.Name = "lblGuestCount"
-        Me.lblGuestCount.Size = New System.Drawing.Size(173, 18)
-        Me.lblGuestCount.TabIndex = 21
-        Me.lblGuestCount.Text = "Estimated Guest Count:"
-        '
-        'lblRehearsalDate
-        '
-        Me.lblRehearsalDate.AutoSize = True
-        Me.lblRehearsalDate.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRehearsalDate.ForeColor = System.Drawing.Color.Wheat
-        Me.lblRehearsalDate.Location = New System.Drawing.Point(9, 219)
-        Me.lblRehearsalDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblRehearsalDate.Name = "lblRehearsalDate"
-        Me.lblRehearsalDate.Size = New System.Drawing.Size(121, 18)
-        Me.lblRehearsalDate.TabIndex = 20
-        Me.lblRehearsalDate.Text = "Rehearsal Date:"
-        '
-        'lblEventDate
-        '
-        Me.lblEventDate.AutoSize = True
-        Me.lblEventDate.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEventDate.ForeColor = System.Drawing.Color.Wheat
-        Me.lblEventDate.Location = New System.Drawing.Point(9, 168)
-        Me.lblEventDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblEventDate.Name = "lblEventDate"
-        Me.lblEventDate.Size = New System.Drawing.Size(89, 18)
-        Me.lblEventDate.TabIndex = 19
-        Me.lblEventDate.Text = "Event Date:"
-        '
         'chkCeremonyEvent
         '
         Me.chkCeremonyEvent.AutoSize = True
         Me.chkCeremonyEvent.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkCeremonyEvent.ForeColor = System.Drawing.Color.Wheat
-        Me.chkCeremonyEvent.Location = New System.Drawing.Point(13, 120)
+        Me.chkCeremonyEvent.Location = New System.Drawing.Point(20, 102)
         Me.chkCeremonyEvent.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.chkCeremonyEvent.Name = "chkCeremonyEvent"
         Me.chkCeremonyEvent.Size = New System.Drawing.Size(281, 22)
@@ -605,7 +696,7 @@ Partial Class frmDashboard
         Me.lblEventType.AutoSize = True
         Me.lblEventType.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEventType.ForeColor = System.Drawing.Color.Wheat
-        Me.lblEventType.Location = New System.Drawing.Point(9, 74)
+        Me.lblEventType.Location = New System.Drawing.Point(17, 72)
         Me.lblEventType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEventType.Name = "lblEventType"
         Me.lblEventType.Size = New System.Drawing.Size(88, 18)
@@ -617,43 +708,180 @@ Partial Class frmDashboard
         Me.lblEventInfo.AutoSize = True
         Me.lblEventInfo.Font = New System.Drawing.Font("Franklin Gothic Medium", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEventInfo.ForeColor = System.Drawing.Color.Wheat
-        Me.lblEventInfo.Location = New System.Drawing.Point(4, 8)
+        Me.lblEventInfo.Location = New System.Drawing.Point(13, 7)
         Me.lblEventInfo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEventInfo.Name = "lblEventInfo"
         Me.lblEventInfo.Size = New System.Drawing.Size(261, 37)
         Me.lblEventInfo.TabIndex = 16
         Me.lblEventInfo.Text = "Event Information"
         '
+        'pnlCeremony
+        '
+        Me.pnlCeremony.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.pnlCeremony.Controls.Add(Me.Label37)
+        Me.pnlCeremony.Controls.Add(Me.TextBox14)
+        Me.pnlCeremony.Controls.Add(Me.TextBox12)
+        Me.pnlCeremony.Controls.Add(Me.Label35)
+        Me.pnlCeremony.Controls.Add(Me.TextBox11)
+        Me.pnlCeremony.Controls.Add(Me.Label34)
+        Me.pnlCeremony.Controls.Add(Me.TextBox10)
+        Me.pnlCeremony.Controls.Add(Me.Label33)
+        Me.pnlCeremony.Controls.Add(Me.Label32)
+        Me.pnlCeremony.Controls.Add(Me.lblRehearsalDate)
+        Me.pnlCeremony.Controls.Add(Me.dtpRehearsalDate)
+        Me.pnlCeremony.Location = New System.Drawing.Point(12, 130)
+        Me.pnlCeremony.Name = "pnlCeremony"
+        Me.pnlCeremony.Size = New System.Drawing.Size(671, 213)
+        Me.pnlCeremony.TabIndex = 36
+        Me.pnlCeremony.Visible = False
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.ForeColor = System.Drawing.Color.Wheat
+        Me.Label37.Location = New System.Drawing.Point(3, 6)
+        Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(170, 26)
+        Me.Label37.TabIndex = 41
+        Me.Label37.Text = "Ceremony Details"
+        '
+        'TextBox14
+        '
+        Me.TextBox14.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox14.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox14.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox14.Location = New System.Drawing.Point(233, 41)
+        Me.TextBox14.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox14.TabIndex = 40
+        '
+        'TextBox12
+        '
+        Me.TextBox12.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox12.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox12.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox12.Location = New System.Drawing.Point(233, 183)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox12.TabIndex = 39
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.ForeColor = System.Drawing.Color.Wheat
+        Me.Label35.Location = New System.Drawing.Point(5, 185)
+        Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(115, 18)
+        Me.Label35.TabIndex = 38
+        Me.Label35.Text = "Officiant Name:"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox11.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox11.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox11.Location = New System.Drawing.Point(233, 151)
+        Me.TextBox11.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox11.TabIndex = 37
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.ForeColor = System.Drawing.Color.Wheat
+        Me.Label34.Location = New System.Drawing.Point(7, 153)
+        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(122, 18)
+        Me.Label34.TabIndex = 36
+        Me.Label34.Text = "Ceremony Time:"
+        '
+        'TextBox10
+        '
+        Me.TextBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox10.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox10.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox10.Location = New System.Drawing.Point(233, 119)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(184, 26)
+        Me.TextBox10.TabIndex = 35
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.ForeColor = System.Drawing.Color.Wheat
+        Me.Label33.Location = New System.Drawing.Point(8, 122)
+        Me.Label33.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(121, 18)
+        Me.Label33.TabIndex = 27
+        Me.Label33.Text = "Rehearsal Time:"
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.ForeColor = System.Drawing.Color.Wheat
+        Me.Label32.Location = New System.Drawing.Point(6, 45)
+        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(72, 18)
+        Me.Label32.TabIndex = 26
+        Me.Label32.Text = "Location:"
+        '
+        'lblRehearsalDate
+        '
+        Me.lblRehearsalDate.AutoSize = True
+        Me.lblRehearsalDate.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRehearsalDate.ForeColor = System.Drawing.Color.Wheat
+        Me.lblRehearsalDate.Location = New System.Drawing.Point(8, 87)
+        Me.lblRehearsalDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblRehearsalDate.Name = "lblRehearsalDate"
+        Me.lblRehearsalDate.Size = New System.Drawing.Size(121, 18)
+        Me.lblRehearsalDate.TabIndex = 20
+        Me.lblRehearsalDate.Text = "Rehearsal Date:"
+        '
+        'dtpRehearsalDate
+        '
+        Me.dtpRehearsalDate.CalendarFont = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpRehearsalDate.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpRehearsalDate.Location = New System.Drawing.Point(233, 79)
+        Me.dtpRehearsalDate.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.dtpRehearsalDate.Name = "dtpRehearsalDate"
+        Me.dtpRehearsalDate.Size = New System.Drawing.Size(268, 26)
+        Me.dtpRehearsalDate.TabIndex = 25
+        '
         'tpTimeline
         '
         Me.tpTimeline.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.tpTimeline.Controls.Add(Me.Button6)
         Me.tpTimeline.Controls.Add(Me.cmdUpdateTimeline)
         Me.tpTimeline.Controls.Add(Me.txtTimelineInfo)
         Me.tpTimeline.Controls.Add(Me.lblAVLightingSelection)
         Me.tpTimeline.Location = New System.Drawing.Point(4, 24)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(1051, 628)
+        Me.tpTimeline.Size = New System.Drawing.Size(1419, 628)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button6.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.Wheat
-        Me.Button6.Location = New System.Drawing.Point(363, 444)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(341, 51)
-        Me.Button6.TabIndex = 29
-        Me.Button6.Text = "Cancel"
-        Me.Button6.UseVisualStyleBackColor = False
         '
         'cmdUpdateTimeline
         '
         Me.cmdUpdateTimeline.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdUpdateTimeline.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdUpdateTimeline.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdUpdateTimeline.ForeColor = System.Drawing.Color.Wheat
         Me.cmdUpdateTimeline.Location = New System.Drawing.Point(11, 444)
@@ -667,6 +895,7 @@ Partial Class frmDashboard
         'txtTimelineInfo
         '
         Me.txtTimelineInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtTimelineInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtTimelineInfo.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTimelineInfo.ForeColor = System.Drawing.Color.Wheat
         Me.txtTimelineInfo.Location = New System.Drawing.Point(11, 46)
@@ -697,16 +926,12 @@ Partial Class frmDashboard
         Me.tpFoodSelection.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.tpFoodSelection.Controls.Add(Me.Label9)
         Me.tpFoodSelection.Controls.Add(Me.TextBox5)
-        Me.tpFoodSelection.Controls.Add(Me.Button8)
-        Me.tpFoodSelection.Controls.Add(Me.cmdAddFoodSelections)
         Me.tpFoodSelection.Controls.Add(Me.mtbCateringPhone)
         Me.tpFoodSelection.Controls.Add(Me.txtCateringCompanyName)
         Me.tpFoodSelection.Controls.Add(Me.txtCateringCompanyEmail)
         Me.tpFoodSelection.Controls.Add(Me.cboCateringCompany)
         Me.tpFoodSelection.Controls.Add(Me.txtSpecialNotes)
         Me.tpFoodSelection.Controls.Add(Me.lblSpecialNotes)
-        Me.tpFoodSelection.Controls.Add(Me.txtDietaryRestrictions)
-        Me.tpFoodSelection.Controls.Add(Me.lblDietaryRestrictions)
         Me.tpFoodSelection.Controls.Add(Me.cmdAfterglow)
         Me.tpFoodSelection.Controls.Add(Me.cmdDessert)
         Me.tpFoodSelection.Controls.Add(Me.cmdHorsD)
@@ -722,7 +947,7 @@ Partial Class frmDashboard
         Me.tpFoodSelection.Location = New System.Drawing.Point(4, 24)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(1051, 628)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(1419, 628)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
         '
@@ -732,7 +957,7 @@ Partial Class frmDashboard
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.Label9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Wheat
-        Me.Label9.Location = New System.Drawing.Point(-3, 451)
+        Me.Label9.Location = New System.Drawing.Point(9, 458)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(157, 18)
@@ -744,38 +969,12 @@ Partial Class frmDashboard
         Me.TextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.TextBox5.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox5.Location = New System.Drawing.Point(215, 408)
+        Me.TextBox5.Location = New System.Drawing.Point(197, 422)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(697, 117)
         Me.TextBox5.TabIndex = 48
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button8.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.Wheat
-        Me.Button8.Location = New System.Drawing.Point(480, 779)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(376, 51)
-        Me.Button8.TabIndex = 47
-        Me.Button8.Text = "Cancel"
-        Me.Button8.UseVisualStyleBackColor = False
-        '
-        'cmdAddFoodSelections
-        '
-        Me.cmdAddFoodSelections.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdAddFoodSelections.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAddFoodSelections.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdAddFoodSelections.Location = New System.Drawing.Point(96, 779)
-        Me.cmdAddFoodSelections.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdAddFoodSelections.Name = "cmdAddFoodSelections"
-        Me.cmdAddFoodSelections.Size = New System.Drawing.Size(376, 51)
-        Me.cmdAddFoodSelections.TabIndex = 46
-        Me.cmdAddFoodSelections.Text = "Add Food Selections to Event"
-        Me.cmdAddFoodSelections.UseVisualStyleBackColor = False
         '
         'mtbCateringPhone
         '
@@ -828,7 +1027,7 @@ Partial Class frmDashboard
         Me.txtSpecialNotes.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.txtSpecialNotes.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSpecialNotes.ForeColor = System.Drawing.Color.Wheat
-        Me.txtSpecialNotes.Location = New System.Drawing.Point(215, 654)
+        Me.txtSpecialNotes.Location = New System.Drawing.Point(197, 576)
         Me.txtSpecialNotes.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtSpecialNotes.Multiline = True
         Me.txtSpecialNotes.Name = "txtSpecialNotes"
@@ -841,37 +1040,12 @@ Partial Class frmDashboard
         Me.lblSpecialNotes.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.lblSpecialNotes.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSpecialNotes.ForeColor = System.Drawing.Color.Wheat
-        Me.lblSpecialNotes.Location = New System.Drawing.Point(9, 712)
+        Me.lblSpecialNotes.Location = New System.Drawing.Point(56, 619)
         Me.lblSpecialNotes.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSpecialNotes.Name = "lblSpecialNotes"
         Me.lblSpecialNotes.Size = New System.Drawing.Size(110, 18)
         Me.lblSpecialNotes.TabIndex = 40
         Me.lblSpecialNotes.Text = "Special Notes:"
-        '
-        'txtDietaryRestrictions
-        '
-        Me.txtDietaryRestrictions.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtDietaryRestrictions.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDietaryRestrictions.ForeColor = System.Drawing.Color.Wheat
-        Me.txtDietaryRestrictions.Location = New System.Drawing.Point(215, 531)
-        Me.txtDietaryRestrictions.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.txtDietaryRestrictions.Multiline = True
-        Me.txtDietaryRestrictions.Name = "txtDietaryRestrictions"
-        Me.txtDietaryRestrictions.Size = New System.Drawing.Size(697, 117)
-        Me.txtDietaryRestrictions.TabIndex = 39
-        '
-        'lblDietaryRestrictions
-        '
-        Me.lblDietaryRestrictions.AutoSize = True
-        Me.lblDietaryRestrictions.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblDietaryRestrictions.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDietaryRestrictions.ForeColor = System.Drawing.Color.Wheat
-        Me.lblDietaryRestrictions.Location = New System.Drawing.Point(9, 579)
-        Me.lblDietaryRestrictions.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDietaryRestrictions.Name = "lblDietaryRestrictions"
-        Me.lblDietaryRestrictions.Size = New System.Drawing.Size(148, 18)
-        Me.lblDietaryRestrictions.TabIndex = 38
-        Me.lblDietaryRestrictions.Text = "Dietary Restrictions:"
         '
         'cmdAfterglow
         '
@@ -1055,7 +1229,7 @@ Partial Class frmDashboard
         Me.tpAudioLighting.Location = New System.Drawing.Point(4, 24)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(1051, 628)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(1419, 628)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
         '
@@ -1310,7 +1484,7 @@ Partial Class frmDashboard
         Me.tpDrinkService.Location = New System.Drawing.Point(4, 24)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(1051, 628)
+        Me.tpDrinkService.Size = New System.Drawing.Size(1419, 628)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
         '
@@ -1609,7 +1783,7 @@ Partial Class frmDashboard
         Me.tpMiscInfo.Location = New System.Drawing.Point(4, 24)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(1051, 628)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(1419, 628)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Additional Items"
         '
@@ -1929,9 +2103,19 @@ Partial Class frmDashboard
         Me.tpLayout.ForeColor = System.Drawing.Color.Wheat
         Me.tpLayout.Location = New System.Drawing.Point(4, 24)
         Me.tpLayout.Name = "tpLayout"
-        Me.tpLayout.Size = New System.Drawing.Size(1051, 628)
+        Me.tpLayout.Size = New System.Drawing.Size(1419, 628)
         Me.tpLayout.TabIndex = 7
         Me.tpLayout.Text = "Layout"
+        '
+        'TabPage1
+        '
+        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TabPage1.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1419, 628)
+        Me.TabPage1.TabIndex = 8
+        Me.TabPage1.Text = "Payment"
         '
         'Panel1
         '
@@ -2025,7 +2209,7 @@ Partial Class frmDashboard
         Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.ForeColor = System.Drawing.Color.Wheat
-        Me.btnExit.Location = New System.Drawing.Point(1240, 14)
+        Me.btnExit.Location = New System.Drawing.Point(1608, 14)
         Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(31, 27)
@@ -2041,7 +2225,7 @@ Partial Class frmDashboard
         Me.Panel2.Location = New System.Drawing.Point(0, 121)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1288, 6)
+        Me.Panel2.Size = New System.Drawing.Size(1656, 6)
         Me.Panel2.TabIndex = 30
         '
         'PictureBox1
@@ -2059,7 +2243,7 @@ Partial Class frmDashboard
         Me.btnMin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMin.ForeColor = System.Drawing.Color.Wheat
-        Me.btnMin.Location = New System.Drawing.Point(1201, 14)
+        Me.btnMin.Location = New System.Drawing.Point(1569, 14)
         Me.btnMin.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnMin.Name = "btnMin"
         Me.btnMin.Size = New System.Drawing.Size(31, 27)
@@ -2084,7 +2268,7 @@ Partial Class frmDashboard
         Me.btnNewClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNewClient.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNewClient.ForeColor = System.Drawing.Color.Wheat
-        Me.btnNewClient.Location = New System.Drawing.Point(173, 157)
+        Me.btnNewClient.Location = New System.Drawing.Point(173, 159)
         Me.btnNewClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnNewClient.Name = "btnNewClient"
         Me.btnNewClient.Size = New System.Drawing.Size(265, 40)
@@ -2181,6 +2365,21 @@ Partial Class frmDashboard
         Me.pnlSettings.Size = New System.Drawing.Size(608, 100)
         Me.pnlSettings.TabIndex = 33
         '
+        'btnCancelNewClient
+        '
+        Me.btnCancelNewClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnCancelNewClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelNewClient.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelNewClient.ForeColor = System.Drawing.Color.Wheat
+        Me.btnCancelNewClient.Location = New System.Drawing.Point(171, 156)
+        Me.btnCancelNewClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnCancelNewClient.Name = "btnCancelNewClient"
+        Me.btnCancelNewClient.Size = New System.Drawing.Size(265, 40)
+        Me.btnCancelNewClient.TabIndex = 39
+        Me.btnCancelNewClient.Text = "Cancel New Client"
+        Me.btnCancelNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnCancelNewClient.UseVisualStyleBackColor = False
+        '
         'Button9
         '
         Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
@@ -2254,13 +2453,12 @@ Partial Class frmDashboard
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1287, 1055)
+        Me.ClientSize = New System.Drawing.Size(1655, 1055)
+        Me.Controls.Add(Me.btnCancelNewClient)
         Me.Controls.Add(Me.lblDayInfo)
-        Me.Controls.Add(Me.clndrHome)
         Me.Controls.Add(Me.pboxNotif)
         Me.Controls.Add(Me.lblNotifs)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.btnNewClient)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.btnMin)
         Me.Controls.Add(Me.Panel2)
@@ -2269,6 +2467,8 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.tbpCustomer)
         Me.Controls.Add(Me.pnlSettings)
+        Me.Controls.Add(Me.clndrHome)
+        Me.Controls.Add(Me.btnNewClient)
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -2280,6 +2480,10 @@ Partial Class frmDashboard
         Me.tpCustomerInfo.PerformLayout()
         Me.tpEventInfo.ResumeLayout(False)
         Me.tpEventInfo.PerformLayout()
+        Me.pnlEventInfo.ResumeLayout(False)
+        Me.pnlEventInfo.PerformLayout()
+        Me.pnlCeremony.ResumeLayout(False)
+        Me.pnlCeremony.PerformLayout()
         Me.tpTimeline.ResumeLayout(False)
         Me.tpTimeline.PerformLayout()
         Me.tpFoodSelection.ResumeLayout(False)
@@ -2306,7 +2510,6 @@ Partial Class frmDashboard
     Friend WithEvents tbpCustomer As TabControl
     Friend WithEvents tpCustomerInfo As TabPage
     Friend WithEvents tpEventInfo As TabPage
-    Friend WithEvents cmdCancel As Button
     Friend WithEvents cmdEnterCustomerInfo As Button
     Friend WithEvents mtbCustomerAlternatePhone As MaskedTextBox
     Friend WithEvents mtbCustomerPhone As MaskedTextBox
@@ -2321,7 +2524,6 @@ Partial Class frmDashboard
     Friend WithEvents lblStreetAddress As Label
     Friend WithEvents lblCustomerName As Label
     Friend WithEvents lblCustomerInfo As Label
-    Friend WithEvents Button5 As Button
     Friend WithEvents cmdEnterEventInfo As Button
     Friend WithEvents dtpRehearsalDate As DateTimePicker
     Friend WithEvents dtpEventDate As DateTimePicker
@@ -2336,7 +2538,6 @@ Partial Class frmDashboard
     Friend WithEvents tpTimeline As TabPage
     Friend WithEvents tpAudioLighting As TabPage
     Friend WithEvents tpFoodSelection As TabPage
-    Friend WithEvents Button6 As Button
     Friend WithEvents cmdUpdateTimeline As Button
     Friend WithEvents txtTimelineInfo As TextBox
     Friend WithEvents lblAVLightingSelection As Label
@@ -2361,16 +2562,12 @@ Partial Class frmDashboard
     Friend WithEvents Label7 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Button8 As Button
-    Friend WithEvents cmdAddFoodSelections As Button
     Friend WithEvents mtbCateringPhone As MaskedTextBox
     Friend WithEvents txtCateringCompanyName As TextBox
     Friend WithEvents txtCateringCompanyEmail As TextBox
     Friend WithEvents cboCateringCompany As ComboBox
     Friend WithEvents txtSpecialNotes As TextBox
     Friend WithEvents lblSpecialNotes As Label
-    Friend WithEvents txtDietaryRestrictions As TextBox
-    Friend WithEvents lblDietaryRestrictions As Label
     Friend WithEvents cmdAfterglow As Button
     Friend WithEvents cmdDessert As Button
     Friend WithEvents cmdHorsD As Button
@@ -2464,4 +2661,25 @@ Partial Class frmDashboard
     Friend WithEvents sPhone As DataGridViewTextBoxColumn
     Friend WithEvents email As DataGridViewTextBoxColumn
     Friend WithEvents address As DataGridViewTextBoxColumn
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Label31 As Label
+    Friend WithEvents MaskedTextBox9 As MaskedTextBox
+    Friend WithEvents Label30 As Label
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents pnlEventInfo As Panel
+    Friend WithEvents Label36 As Label
+    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents pnlCeremony As Panel
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents Label35 As Label
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents Label34 As Label
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Label33 As Label
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label37 As Label
+    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents CheckBox14 As CheckBox
+    Friend WithEvents CheckBox13 As CheckBox
+    Friend WithEvents btnCancelNewClient As Button
 End Class
