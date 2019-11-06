@@ -8,6 +8,8 @@
         clndrHome.Visible = True
         lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
         Me.WindowState = FormWindowState.Maximized
+        DataGridView1.Rows.Add(New String() {"11/7/2019", "Wedding", "Anderson", "Clyde", "999-999-999", "888-888-8888", "clyde@internet.com", "123 Oak St"})
+        DataGridView1.Rows.Add(New String() {"11/8/2019", "Wedding", "Putz", "Jared", "999-999-999", "888-888-8888", "jared@internet.com", "124 Oak St"})
     End Sub
 
 
@@ -83,6 +85,7 @@
             tbpCustomer.Top = DataGridView1.Bottom + 3
             btnCancelNewClient.Visible = False
             btnNewClient.Visible = True
+            togglePnlButtons()
         End If
 
     End Sub
@@ -90,6 +93,13 @@
     Sub togglePnlButtons()
         cmdEnterCustomerInfo.Visible = Not cmdEnterCustomerInfo.Visible
         cmdEnterEventInfo.Visible = Not cmdEnterEventInfo.Visible
+        cmdUpdateTimeline.Visible = Not cmdUpdateTimeline.Visible
+        btnFoodSel.Visible = Not btnFoodSel.Visible
+        btnBevSel.Visible = Not btnBevSel.Visible
+        cmdAddAV.Visible = Not cmdAddAV.Visible
+        btnLinensSel.Visible = Not btnLinensSel.Visible
+        btnVendorSel.Visible = Not btnVendorSel.Visible
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -149,5 +159,35 @@
 
     End Sub
 
+    Private Sub chkOpenBar_CheckedChanged(sender As Object, e As EventArgs) Handles chkOpenBar.CheckedChanged
+        If chkOpenBar.Checked = True Then
+            pnlCashBar.Visible = False
+        Else
+            pnlCashBar.Visible = True
+        End If
+    End Sub
 
+    Private Sub chkCashBar_CheckedChanged(sender As Object, e As EventArgs) Handles chkCashBar.CheckedChanged
+        If chkCashBar.Checked = True Then
+            pnlOpenBar.Visible = False
+        Else
+            pnlOpenBar.Visible = True
+        End If
+    End Sub
+
+    Private Sub tpMiscInfo_Click(sender As Object, e As EventArgs) Handles tpMiscInfo.Click
+
+    End Sub
+
+    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
+
+    End Sub
+
+
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        If (DataGridView1.CurrentRow.Selected) Then
+
+            txtCustomerName.Text = DataGridView1.SelectedCells(3).Value.ToString()
+        End If
+    End Sub
 End Class
