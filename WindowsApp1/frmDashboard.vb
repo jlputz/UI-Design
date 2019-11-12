@@ -62,6 +62,7 @@
 
     Private Sub btnLayout_Click(sender As Object, e As EventArgs) Handles btnLayout.Click
         'hideClientMenu()
+        tbpCustomer.Visible = True
         tbpCustomer.SelectedTab = tpLayout
         hideSettings()
         hideHome()
