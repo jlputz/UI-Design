@@ -237,6 +237,22 @@ Partial Class frmDashboard
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.TextBox36 = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.TextBox37 = New System.Windows.Forms.TextBox()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.TextBox38 = New System.Windows.Forms.TextBox()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.TextBox39 = New System.Windows.Forms.TextBox()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.TextBox40 = New System.Windows.Forms.TextBox()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.TextBox41 = New System.Windows.Forms.TextBox()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.TextBox42 = New System.Windows.Forms.TextBox()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.TextBox43 = New System.Windows.Forms.TextBox()
+        Me.Label61 = New System.Windows.Forms.Label()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -2021,6 +2037,22 @@ Partial Class frmDashboard
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.TextBox36)
+        Me.TabPage2.Controls.Add(Me.Label29)
+        Me.TabPage2.Controls.Add(Me.TextBox37)
+        Me.TabPage2.Controls.Add(Me.Label55)
+        Me.TabPage2.Controls.Add(Me.TextBox38)
+        Me.TabPage2.Controls.Add(Me.Label56)
+        Me.TabPage2.Controls.Add(Me.TextBox39)
+        Me.TabPage2.Controls.Add(Me.Label57)
+        Me.TabPage2.Controls.Add(Me.TextBox40)
+        Me.TabPage2.Controls.Add(Me.Label58)
+        Me.TabPage2.Controls.Add(Me.TextBox41)
+        Me.TabPage2.Controls.Add(Me.Label59)
+        Me.TabPage2.Controls.Add(Me.TextBox42)
+        Me.TabPage2.Controls.Add(Me.Label60)
+        Me.TabPage2.Controls.Add(Me.TextBox43)
+        Me.TabPage2.Controls.Add(Me.Label61)
         Me.TabPage2.Controls.Add(Me.btnVendorSel)
         Me.TabPage2.Controls.Add(Me.TextBox34)
         Me.TabPage2.Controls.Add(Me.TextBox35)
@@ -3012,6 +3044,190 @@ Partial Class frmDashboard
         Me.Button10.Text = "Button10"
         Me.Button10.UseVisualStyleBackColor = True
         '
+        'TextBox36
+        '
+        Me.TextBox36.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox36.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox36.Location = New System.Drawing.Point(860, 483)
+        Me.TextBox36.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox36.Name = "TextBox36"
+        Me.TextBox36.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox36.TabIndex = 93
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label29.ForeColor = System.Drawing.Color.Wheat
+        Me.Label29.Location = New System.Drawing.Point(740, 485)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(104, 15)
+        Me.Label29.TabIndex = 92
+        Me.Label29.Text = "Email Address:"
+        '
+        'TextBox37
+        '
+        Me.TextBox37.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox37.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox37.Location = New System.Drawing.Point(860, 436)
+        Me.TextBox37.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox37.Name = "TextBox37"
+        Me.TextBox37.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox37.TabIndex = 91
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label55.ForeColor = System.Drawing.Color.Wheat
+        Me.Label55.Location = New System.Drawing.Point(740, 438)
+        Me.Label55.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(104, 15)
+        Me.Label55.TabIndex = 90
+        Me.Label55.Text = "Email Address:"
+        '
+        'TextBox38
+        '
+        Me.TextBox38.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox38.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox38.Location = New System.Drawing.Point(860, 389)
+        Me.TextBox38.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox38.Name = "TextBox38"
+        Me.TextBox38.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox38.TabIndex = 89
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label56.ForeColor = System.Drawing.Color.Wheat
+        Me.Label56.Location = New System.Drawing.Point(740, 391)
+        Me.Label56.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(107, 15)
+        Me.Label56.TabIndex = 88
+        Me.Label56.Text = "Email Address: "
+        '
+        'TextBox39
+        '
+        Me.TextBox39.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox39.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox39.Location = New System.Drawing.Point(860, 341)
+        Me.TextBox39.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox39.Name = "TextBox39"
+        Me.TextBox39.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox39.TabIndex = 87
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label57.ForeColor = System.Drawing.Color.Wheat
+        Me.Label57.Location = New System.Drawing.Point(740, 343)
+        Me.Label57.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(104, 15)
+        Me.Label57.TabIndex = 86
+        Me.Label57.Text = "Email Address:"
+        '
+        'TextBox40
+        '
+        Me.TextBox40.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox40.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox40.Location = New System.Drawing.Point(860, 292)
+        Me.TextBox40.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox40.Name = "TextBox40"
+        Me.TextBox40.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox40.TabIndex = 85
+        '
+        'Label58
+        '
+        Me.Label58.AutoSize = True
+        Me.Label58.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label58.ForeColor = System.Drawing.Color.Wheat
+        Me.Label58.Location = New System.Drawing.Point(740, 294)
+        Me.Label58.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(104, 15)
+        Me.Label58.TabIndex = 84
+        Me.Label58.Text = "Email Address:"
+        '
+        'TextBox41
+        '
+        Me.TextBox41.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox41.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox41.Location = New System.Drawing.Point(860, 245)
+        Me.TextBox41.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox41.Name = "TextBox41"
+        Me.TextBox41.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox41.TabIndex = 83
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label59.ForeColor = System.Drawing.Color.Wheat
+        Me.Label59.Location = New System.Drawing.Point(740, 247)
+        Me.Label59.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(104, 15)
+        Me.Label59.TabIndex = 82
+        Me.Label59.Text = "Email Address:"
+        '
+        'TextBox42
+        '
+        Me.TextBox42.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox42.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox42.Location = New System.Drawing.Point(860, 202)
+        Me.TextBox42.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox42.Name = "TextBox42"
+        Me.TextBox42.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox42.TabIndex = 81
+        '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label60.ForeColor = System.Drawing.Color.Wheat
+        Me.Label60.Location = New System.Drawing.Point(740, 204)
+        Me.Label60.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(104, 15)
+        Me.Label60.TabIndex = 80
+        Me.Label60.Text = "Email Address:"
+        '
+        'TextBox43
+        '
+        Me.TextBox43.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox43.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox43.Location = New System.Drawing.Point(860, 159)
+        Me.TextBox43.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox43.Name = "TextBox43"
+        Me.TextBox43.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox43.TabIndex = 79
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label61.ForeColor = System.Drawing.Color.Wheat
+        Me.Label61.Location = New System.Drawing.Point(740, 161)
+        Me.Label61.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(104, 15)
+        Me.Label61.TabIndex = 78
+        Me.Label61.Text = "Email Address:"
+        '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
@@ -3019,7 +3235,6 @@ Partial Class frmDashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1655, 1055)
-        Me.Controls.Add(Me.pnlLayout)
         Me.Controls.Add(Me.btnCancelNewClient)
         Me.Controls.Add(Me.lblDayInfo)
         Me.Controls.Add(Me.pboxNotif)
@@ -3035,6 +3250,7 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.pnlSettings)
         Me.Controls.Add(Me.clndrHome)
         Me.Controls.Add(Me.btnNewClient)
+        Me.Controls.Add(Me.pnlLayout)
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -3296,4 +3512,20 @@ Partial Class frmDashboard
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Private WithEvents Button10 As Button
+    Friend WithEvents TextBox36 As TextBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents TextBox37 As TextBox
+    Friend WithEvents Label55 As Label
+    Friend WithEvents TextBox38 As TextBox
+    Friend WithEvents Label56 As Label
+    Friend WithEvents TextBox39 As TextBox
+    Friend WithEvents Label57 As Label
+    Friend WithEvents TextBox40 As TextBox
+    Friend WithEvents Label58 As Label
+    Friend WithEvents TextBox41 As TextBox
+    Friend WithEvents Label59 As Label
+    Friend WithEvents TextBox42 As TextBox
+    Friend WithEvents Label60 As Label
+    Friend WithEvents TextBox43 As TextBox
+    Friend WithEvents Label61 As Label
 End Class
