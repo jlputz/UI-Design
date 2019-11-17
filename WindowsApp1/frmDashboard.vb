@@ -1,12 +1,12 @@
 ﻿Public Class frmDashboard
     Private Sub frmDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        hideClientMenu()
-        hideSettings()
+
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
         lblDate.Text = Date.Now().DayOfWeek.ToString() & ", " & MonthName(Date.Now().Month) & " " & Date.Now.Day
-        clndrHome.Visible = True
-        lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
+
+        btnHome.PerformClick()
+
         Me.WindowState = FormWindowState.Maximized
         GetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/7/2019", "Wedding", "Anderson", "Clyde", "999-999-9999", "888-888-8888", "clyde@internet.com", "123 Oak St"})
         GetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/8/2019", "Wedding", "Putz", "Jared", "999-999-9999", "888-888-8888", "jared@internet.com", "124 Oak St"})
@@ -16,16 +16,16 @@
 
 
     Private Sub btnClient_Click(sender As Object, e As EventArgs) Handles btnClient.Click
-
-        hideSettings()
-        hideHome()
-        hideLayout()
+        SettingsForm.Close()
+        HomeForm.Close()
+        LayoutForm.Close()
         ClientForm.TopLevel = False
         ClientForm.TopMost = True
         Me.pnlForms.Controls.Add(ClientForm)
         ClientForm.Show()
 
-
+        pnlButtonMover.Height = btnClient.Height
+        pnlButtonMover.Top = btnClient.Top
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -40,58 +40,58 @@
     End Sub
 
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
-        hideClientMenu()
-        hideSettings()
-        hideLayout()
+
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
-        clndrHome.Visible = True
-        lblDayInfo.Visible = True
+        SettingsForm.Close()
+        ClientForm.Close()
+        LayoutForm.Close()
+        HomeForm.TopLevel = False
+        HomeForm.TopMost = True
+        Me.pnlForms.Controls.Add(HomeForm)
+        HomeForm.Show()
+
+
     End Sub
 
 
-    Sub hideClientMenu()
-        ClientForm.TopLevel = False
-        ClientForm.TopMost = True
-        Me.pnlForms.Controls.Remove(ClientForm)
 
-    End Sub
-    Sub hideSettings()
-        pnlSettings.Visible = False
-    End Sub
-    Sub hideLayout()
-        GetCustomerInContext.DataGridView1.Visible = False
-        pnlLayout.Visible = False
-    End Sub
+
 
 
     Private Sub btnLayout_Click(sender As Object, e As EventArgs) Handles btnLayout.Click
-        hideClientMenu()
-        hideSettings()
-        hideHome()
-        GetCustomerInContext.DataGridView1.Visible = True
+
+
+        SettingsForm.Close()
+        ClientForm.Close()
+        HomeForm.Close()
+        LayoutForm.TopLevel = False
+        ClientForm.TopMost = True
+        Me.pnlForms.Controls.Add(LayoutForm)
+        LayoutForm.Show()
+
         pnlButtonMover.Height = btnLayout.Height
         pnlButtonMover.Top = btnLayout.Top
-        pnlLayout.Visible = True
+
     End Sub
 
-    Private Sub btnNewClient_Click(sender As Object, e As EventArgs) Handles btnNewClient.Click
+    Private Sub btnNewClient_Click(sender As Object, e As EventArgs)
         'tbpCustomer.Visible = True
         'tbpCustomer.Top = GetCustomerInContext.DataGridView1.Top
         GetCustomerInContext.DataGridView1.Visible = False
 
-        btnNewClient.Visible = False
+        ClientForm.btnNewClient.Visible = False
         togglePnlButtons()
-        btnCancelNewClient.Visible = True
+        'btnCancelNewClient.Visible = True
     End Sub
 
-    Private Sub btnCancelNewClient_Click(sender As Object, e As EventArgs) Handles btnCancelNewClient.Click
+    Private Sub btnCancelNewClient_Click(sender As Object, e As EventArgs)
         If MessageBox.Show("Are you Sure You want To Cancel?", "Cancel? ", MessageBoxButtons.YesNo) = DialogResult.Yes Then
             '   tbpCustomer.Visible = True
             GetCustomerInContext.DataGridView1.Visible = True
             '  tbpCustomer.Top = GetCustomerInContext.DataGridView1.Bottom + 3
-            btnCancelNewClient.Visible = False
-            btnNewClient.Visible = True
+            'btnCancelNewClient.Visible = False
+            ClientForm.btnNewClient.Visible = True
             togglePnlButtons()
         End If
 
@@ -109,45 +109,44 @@
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
-        hideClientMenu()
-        hideHome()
-        hideLayout()
-        pnlSettings.Visible = True
+
+        ClientForm.Close()
+        HomeForm.Close()
+        LayoutForm.Close()
+        SettingsForm.TopLevel = False
+        SettingsForm.TopMost = True
+        Me.pnlForms.Controls.Add(SettingsForm)
+        SettingsForm.Show()
+
         pnlButtonMover.Height = btnSettings.Height
         pnlButtonMover.Top = btnSettings.Top
     End Sub
 
     Sub hideHome()
-        clndrHome.Visible = False
-        lblDayInfo.Visible = False
+        HomeForm.clndrHome.Visible = False
+        HomeForm.lblDayInfo.Visible = False
     End Sub
 
-    Private Sub clndrHome_DateChanged(sender As Object, e As DateRangeEventArgs) Handles clndrHome.DateChanged
-        clndrHome.MaxSelectionCount = 1
+    Private Sub clndrHome_DateChanged(sender As Object, e As DateRangeEventArgs)
+        HomeForm.clndrHome.MaxSelectionCount = 1
 
         Dim EventDate As Date = e.Start
 
         If EventDate = Date.Today Then
-            lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
+            HomeForm.lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
 
         Else
-            lblDayInfo.Text = "No Events on " + EventDate
+            HomeForm.lblDayInfo.Text = "No Events on " + EventDate
 
         End If
     End Sub
 
-    Private Sub TxtCustomerName_TextChanged(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub lblGuestCount_Click(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub chkCeremonyEvent_CheckedChanged(sender As Object, e As EventArgs)
         'If chkCeremonyEvent.Checked = True Then
@@ -159,13 +158,6 @@
         'End If
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs)
-
-    End Sub
 
     Private Sub chkOpenBar_CheckedChanged(sender As Object, e As EventArgs)
         'If chkOpenBar.Checked = True Then
@@ -212,14 +204,12 @@
         Process.Start("C:\BEO_mockup.pdf")
     End Sub
 
-    Private Sub btnLoadClient_Click(sender As Object, e As EventArgs) Handles btnLoadClient.Click
+    Private Sub btnLoadClient_Click(sender As Object, e As EventArgs)
         GetCustomerInContext.ShowDialog()
         getDataFromDGV()
     End Sub
 
-    Private Sub cmdStrollingStations_Click(sender As Object, e As EventArgs)
-        frmStrollingStations.ShowDialog()
-    End Sub
+
 
     Private Sub cmdTraditionalBuffet_Click(sender As Object, e As EventArgs)
         frmBuffetStyle.ShowDialog()

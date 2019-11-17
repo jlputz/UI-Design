@@ -215,6 +215,18 @@
     <Compile Include="GetCustomerInContext.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HomeForm.Designer.vb">
+      <DependentUpon>HomeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutForm.Designer.vb">
+      <DependentUpon>LayoutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -229,6 +241,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.vb">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -289,11 +307,20 @@
     <EmbeddedResource Include="GetCustomerInContext.resx">
       <DependentUpon>GetCustomerInContext.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutForm.resx">
+      <DependentUpon>LayoutForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

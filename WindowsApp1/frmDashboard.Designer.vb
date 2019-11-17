@@ -33,26 +33,11 @@ Partial Class frmDashboard
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnMin = New System.Windows.Forms.Button()
         Me.lblDate = New System.Windows.Forms.Label()
-        Me.btnNewClient = New System.Windows.Forms.Button()
-        Me.pnlSettings = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.btnCancelNewClient = New System.Windows.Forms.Button()
         Me.lblNotifs = New System.Windows.Forms.Label()
-        Me.clndrHome = New System.Windows.Forms.MonthCalendar()
-        Me.lblDayInfo = New System.Windows.Forms.Label()
-        Me.pnlLayout = New System.Windows.Forms.Panel()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
         Me.pboxNotif = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnLoadClient = New System.Windows.Forms.Button()
         Me.pnlForms = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
-        Me.pnlSettings.SuspendLayout()
-        Me.pnlLayout.SuspendLayout()
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -149,7 +134,7 @@ Partial Class frmDashboard
         Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.ForeColor = System.Drawing.Color.Wheat
-        Me.btnExit.Location = New System.Drawing.Point(1608, 14)
+        Me.btnExit.Location = New System.Drawing.Point(1400, 12)
         Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(31, 27)
@@ -192,75 +177,6 @@ Partial Class frmDashboard
         Me.lblDate.TabIndex = 30
         Me.lblDate.Text = " "
         '
-        'btnNewClient
-        '
-        Me.btnNewClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnNewClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNewClient.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNewClient.ForeColor = System.Drawing.Color.Wheat
-        Me.btnNewClient.Location = New System.Drawing.Point(173, 159)
-        Me.btnNewClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnNewClient.Name = "btnNewClient"
-        Me.btnNewClient.Size = New System.Drawing.Size(265, 40)
-        Me.btnNewClient.TabIndex = 32
-        Me.btnNewClient.Text = "New Client"
-        Me.btnNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnNewClient.UseVisualStyleBackColor = False
-        '
-        'pnlSettings
-        '
-        Me.pnlSettings.Controls.Add(Me.Button9)
-        Me.pnlSettings.Controls.Add(Me.Button4)
-        Me.pnlSettings.Location = New System.Drawing.Point(173, 157)
-        Me.pnlSettings.Name = "pnlSettings"
-        Me.pnlSettings.Size = New System.Drawing.Size(608, 100)
-        Me.pnlSettings.TabIndex = 33
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.ForeColor = System.Drawing.Color.Wheat
-        Me.Button9.Location = New System.Drawing.Point(320, 30)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(265, 40)
-        Me.Button9.TabIndex = 34
-        Me.Button9.Text = "Edit Beverage Options"
-        Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Wheat
-        Me.Button4.Location = New System.Drawing.Point(16, 30)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(265, 40)
-        Me.Button4.TabIndex = 33
-        Me.Button4.Text = "Edit Food Options"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'btnCancelNewClient
-        '
-        Me.btnCancelNewClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnCancelNewClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancelNewClient.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelNewClient.ForeColor = System.Drawing.Color.Wheat
-        Me.btnCancelNewClient.Location = New System.Drawing.Point(171, 156)
-        Me.btnCancelNewClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnCancelNewClient.Name = "btnCancelNewClient"
-        Me.btnCancelNewClient.Size = New System.Drawing.Size(265, 40)
-        Me.btnCancelNewClient.TabIndex = 39
-        Me.btnCancelNewClient.Text = "Cancel New Client"
-        Me.btnCancelNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnCancelNewClient.UseVisualStyleBackColor = False
-        '
         'lblNotifs
         '
         Me.lblNotifs.AutoSize = True
@@ -271,88 +187,6 @@ Partial Class frmDashboard
         Me.lblNotifs.Size = New System.Drawing.Size(224, 22)
         Me.lblNotifs.TabIndex = 35
         Me.lblNotifs.Text = " Event Today at 5:00pm"
-        '
-        'clndrHome
-        '
-        Me.clndrHome.CalendarDimensions = New System.Drawing.Size(3, 1)
-        Me.clndrHome.Location = New System.Drawing.Point(172, 158)
-        Me.clndrHome.Name = "clndrHome"
-        Me.clndrHome.TabIndex = 37
-        '
-        'lblDayInfo
-        '
-        Me.lblDayInfo.AutoSize = True
-        Me.lblDayInfo.ForeColor = System.Drawing.Color.Wheat
-        Me.lblDayInfo.Location = New System.Drawing.Point(174, 362)
-        Me.lblDayInfo.Name = "lblDayInfo"
-        Me.lblDayInfo.Size = New System.Drawing.Size(67, 15)
-        Me.lblDayInfo.TabIndex = 38
-        Me.lblDayInfo.Text = "Event at: "
-        '
-        'pnlLayout
-        '
-        Me.pnlLayout.Controls.Add(Me.Button6)
-        Me.pnlLayout.Controls.Add(Me.Button7)
-        Me.pnlLayout.Controls.Add(Me.Button8)
-        Me.pnlLayout.Controls.Add(Me.Button10)
-        Me.pnlLayout.Location = New System.Drawing.Point(171, 359)
-        Me.pnlLayout.Name = "pnlLayout"
-        Me.pnlLayout.Size = New System.Drawing.Size(1125, 539)
-        Me.pnlLayout.TabIndex = 40
-        Me.pnlLayout.Visible = False
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.Wheat
-        Me.Button6.Location = New System.Drawing.Point(21, 19)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(280, 47)
-        Me.Button6.TabIndex = 84
-        Me.Button6.Text = "Create Layout"
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.Wheat
-        Me.Button7.Location = New System.Drawing.Point(705, 19)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(280, 47)
-        Me.Button7.TabIndex = 83
-        Me.Button7.Text = "Select Layout"
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button8.Cursor = System.Windows.Forms.Cursors.Cross
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.Wheat
-        Me.Button8.Location = New System.Drawing.Point(385, 21)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(222, 43)
-        Me.Button8.TabIndex = 82
-        Me.Button8.Text = "Select Floor"
-        Me.Button8.UseVisualStyleBackColor = False
-        '
-        'Button10
-        '
-        Me.Button10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button10.Location = New System.Drawing.Point(21, 83)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(964, 396)
-        Me.Button10.TabIndex = 81
-        Me.Button10.Text = "Button10"
-        Me.Button10.UseVisualStyleBackColor = True
         '
         'pboxNotif
         '
@@ -373,21 +207,6 @@ Partial Class frmDashboard
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
-        'btnLoadClient
-        '
-        Me.btnLoadClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnLoadClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLoadClient.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoadClient.ForeColor = System.Drawing.Color.Wheat
-        Me.btnLoadClient.Location = New System.Drawing.Point(476, 158)
-        Me.btnLoadClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnLoadClient.Name = "btnLoadClient"
-        Me.btnLoadClient.Size = New System.Drawing.Size(265, 40)
-        Me.btnLoadClient.TabIndex = 41
-        Me.btnLoadClient.Text = "Load Client"
-        Me.btnLoadClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnLoadClient.UseVisualStyleBackColor = False
-        '
         'pnlForms
         '
         Me.pnlForms.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -405,9 +224,6 @@ Partial Class frmDashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1444, 881)
-        Me.Controls.Add(Me.pnlForms)
-        Me.Controls.Add(Me.btnLoadClient)
-        Me.Controls.Add(Me.lblDayInfo)
         Me.Controls.Add(Me.pboxNotif)
         Me.Controls.Add(Me.lblNotifs)
         Me.Controls.Add(Me.lblDate)
@@ -416,11 +232,7 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.btnNewClient)
-        Me.Controls.Add(Me.btnCancelNewClient)
-        Me.Controls.Add(Me.pnlLayout)
-        Me.Controls.Add(Me.pnlSettings)
-        Me.Controls.Add(Me.clndrHome)
+        Me.Controls.Add(Me.pnlForms)
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -428,8 +240,6 @@ Partial Class frmDashboard
         Me.Name = "frmDashboard"
         Me.Text = "The Treasury"
         Me.Panel1.ResumeLayout(False)
-        Me.pnlSettings.ResumeLayout(False)
-        Me.pnlLayout.ResumeLayout(False)
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -447,20 +257,7 @@ Partial Class frmDashboard
     Friend WithEvents btnMin As Button
     Friend WithEvents btnLayout As Button
     Friend WithEvents lblDate As Label
-    Friend WithEvents btnNewClient As Button
-    Friend WithEvents pnlSettings As Panel
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button9 As Button
     Friend WithEvents lblNotifs As Label
     Friend WithEvents pboxNotif As PictureBox
-    Friend WithEvents clndrHome As MonthCalendar
-    Friend WithEvents lblDayInfo As Label
-    Friend WithEvents btnCancelNewClient As Button
-    Friend WithEvents pnlLayout As Panel
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Private WithEvents Button10 As Button
-    Friend WithEvents btnLoadClient As Button
     Friend WithEvents pnlForms As Panel
 End Class
