@@ -8,9 +8,9 @@
         clndrHome.Visible = True
         lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
         Me.WindowState = FormWindowState.Maximized
-        DataGridView1.Rows.Add(New String() {"11/7/2019", "Wedding", "Anderson", "Clyde", "999-999-9999", "888-888-8888", "clyde@internet.com", "123 Oak St"})
-        DataGridView1.Rows.Add(New String() {"11/8/2019", "Wedding", "Putz", "Jared", "999-999-9999", "888-888-8888", "jared@internet.com", "124 Oak St"})
-        getDataFromDGV()
+        GetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/7/2019", "Wedding", "Anderson", "Clyde", "999-999-9999", "888-888-8888", "clyde@internet.com", "123 Oak St"})
+        GetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/8/2019", "Wedding", "Putz", "Jared", "999-999-9999", "888-888-8888", "jared@internet.com", "124 Oak St"})
+        'getDataFromDGV()
     End Sub
 
 
@@ -21,14 +21,15 @@
         hideHome()
         hideLayout()
         btnNewClient.Visible = True
-        DataGridView1.Visible = True
+        GetCustomerInContext.DataGridView1.Visible = True
         tbpCustomer.Visible = True
         pnlSettings.Visible = False
-        tbpCustomer.Top = DataGridView1.Bottom + 5
         pnlButtonMover.Height = btnClient.Height
         pnlButtonMover.Top = btnClient.Top
-        txtsearch.Visible = True
-        btnSearch.Visible = True
+        GetCustomerInContext.txtsearch.Visible = True
+        GetCustomerInContext.btnSearch.Visible = True
+        btnLoadClient.Visible = True
+
 
     End Sub
 
@@ -57,16 +58,17 @@
     Sub hideClientMenu()
         tbpCustomer.Visible = False
         btnNewClient.Visible = False
-        DataGridView1.Visible = False
+        GetCustomerInContext.DataGridView1.Visible = False
         btnCancelNewClient.Visible = False
-        txtsearch.Visible = False
-        btnSearch.Visible = False
+        GetCustomerInContext.txtsearch.Visible = False
+        GetCustomerInContext.btnSearch.Visible = False
+        btnLoadClient.Visible = False
     End Sub
     Sub hideSettings()
         pnlSettings.Visible = False
     End Sub
     Sub hideLayout()
-        DataGridView1.Visible = False
+        GetCustomerInContext.DataGridView1.Visible = False
         pnlLayout.Visible = False
     End Sub
 
@@ -75,7 +77,7 @@
         hideClientMenu()
         hideSettings()
         hideHome()
-        DataGridView1.Visible = True
+        GetCustomerInContext.DataGridView1.Visible = True
         pnlButtonMover.Height = btnLayout.Height
         pnlButtonMover.Top = btnLayout.Top
         pnlLayout.Visible = True
@@ -83,8 +85,8 @@
 
     Private Sub btnNewClient_Click(sender As Object, e As EventArgs) Handles btnNewClient.Click
         tbpCustomer.Visible = True
-        tbpCustomer.Top = DataGridView1.Top
-        DataGridView1.Visible = False
+        tbpCustomer.Top = GetCustomerInContext.DataGridView1.Top
+        GetCustomerInContext.DataGridView1.Visible = False
 
         btnNewClient.Visible = False
         togglePnlButtons()
@@ -94,8 +96,8 @@
     Private Sub btnCancelNewClient_Click(sender As Object, e As EventArgs) Handles btnCancelNewClient.Click
         If MessageBox.Show("Are you Sure You want To Cancel?", "Cancel? ", MessageBoxButtons.YesNo) = DialogResult.Yes Then
             tbpCustomer.Visible = True
-            DataGridView1.Visible = True
-            tbpCustomer.Top = DataGridView1.Bottom + 3
+            GetCustomerInContext.DataGridView1.Visible = True
+            tbpCustomer.Top = GetCustomerInContext.DataGridView1.Bottom + 3
             btnCancelNewClient.Visible = False
             btnNewClient.Visible = True
             togglePnlButtons()
@@ -198,14 +200,14 @@
     End Sub
 
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs)
         getDataFromDGV()
     End Sub
 
     Sub getDataFromDGV()
-        If (DataGridView1.CurrentRow.Selected) Then
+        If (GetCustomerInContext.DataGridView1.CurrentRow.Selected) Then
 
-            txtCustomerName.Text = DataGridView1.SelectedCells(3).Value.ToString() + " " + DataGridView1.SelectedCells(2).Value.ToString()
+            txtCustomerName.Text = GetCustomerInContext.DataGridView1.SelectedCells(3).Value.ToString() + " " + GetCustomerInContext.DataGridView1.SelectedCells(2).Value.ToString()
 
         End If
     End Sub
@@ -216,5 +218,10 @@
 
     Private Sub btnPrintBEO_Click(sender As Object, e As EventArgs) Handles btnPrintBEO.Click
         Process.Start("C:\BEO_mockup.pdf")
+    End Sub
+
+    Private Sub btnLoadClient_Click(sender As Object, e As EventArgs) Handles btnLoadClient.Click
+        GetCustomerInContext.ShowDialog()
+        getDataFromDGV()
     End Sub
 End Class

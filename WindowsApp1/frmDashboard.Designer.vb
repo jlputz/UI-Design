@@ -219,23 +219,16 @@ Partial Class frmDashboard
         Me.btnPrintBEO = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlButtonMover = New System.Windows.Forms.Panel()
-        Me.btnClient = New System.Windows.Forms.Button()
-        Me.btnHome = New System.Windows.Forms.Button()
-        Me.btnLayout = New System.Windows.Forms.Button()
-        Me.btnSettings = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnMin = New System.Windows.Forms.Button()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.btnNewClient = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.pnlSettings = New System.Windows.Forms.Panel()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.btnCancelNewClient = New System.Windows.Forms.Button()
         Me.lblNotifs = New System.Windows.Forms.Label()
-        Me.pboxNotif = New System.Windows.Forms.PictureBox()
         Me.clndrHome = New System.Windows.Forms.MonthCalendar()
         Me.lblDayInfo = New System.Windows.Forms.Label()
         Me.pnlLayout = New System.Windows.Forms.Panel()
@@ -243,13 +236,13 @@ Partial Class frmDashboard
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
-        Me.EventDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EventType = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.lName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.fName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.txtsearch = New System.Windows.Forms.TextBox()
-        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.pboxNotif = New System.Windows.Forms.PictureBox()
+        Me.btnClient = New System.Windows.Forms.Button()
+        Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnLayout = New System.Windows.Forms.Button()
+        Me.btnSettings = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnLoadClient = New System.Windows.Forms.Button()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -270,11 +263,10 @@ Partial Class frmDashboard
         Me.tpLayout.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSettings.SuspendLayout()
-        CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlLayout.SuspendLayout()
+        CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbpCustomer
@@ -293,7 +285,7 @@ Partial Class frmDashboard
         Me.tbpCustomer.Controls.Add(Me.TabPage2)
         Me.tbpCustomer.Controls.Add(Me.tpLayout)
         Me.tbpCustomer.Controls.Add(Me.TabPage1)
-        Me.tbpCustomer.Location = New System.Drawing.Point(173, 380)
+        Me.tbpCustomer.Location = New System.Drawing.Point(172, 223)
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
@@ -2820,71 +2812,6 @@ Partial Class frmDashboard
         Me.pnlButtonMover.Size = New System.Drawing.Size(7, 100)
         Me.pnlButtonMover.TabIndex = 9
         '
-        'btnClient
-        '
-        Me.btnClient.FlatAppearance.BorderSize = 0
-        Me.btnClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClient.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClient.ForeColor = System.Drawing.Color.White
-        Me.btnClient.Image = CType(resources.GetObject("btnClient.Image"), System.Drawing.Image)
-        Me.btnClient.Location = New System.Drawing.Point(0, 105)
-        Me.btnClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnClient.Name = "btnClient"
-        Me.btnClient.Size = New System.Drawing.Size(137, 99)
-        Me.btnClient.TabIndex = 8
-        Me.btnClient.Text = "Clients"
-        Me.btnClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnClient.UseVisualStyleBackColor = True
-        '
-        'btnHome
-        '
-        Me.btnHome.FlatAppearance.BorderSize = 0
-        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHome.ForeColor = System.Drawing.Color.White
-        Me.btnHome.Image = CType(resources.GetObject("btnHome.Image"), System.Drawing.Image)
-        Me.btnHome.Location = New System.Drawing.Point(0, 3)
-        Me.btnHome.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(133, 99)
-        Me.btnHome.TabIndex = 7
-        Me.btnHome.Text = "Home"
-        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnHome.UseVisualStyleBackColor = True
-        '
-        'btnLayout
-        '
-        Me.btnLayout.FlatAppearance.BorderSize = 0
-        Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLayout.ForeColor = System.Drawing.Color.White
-        Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
-        Me.btnLayout.Location = New System.Drawing.Point(0, 209)
-        Me.btnLayout.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnLayout.Name = "btnLayout"
-        Me.btnLayout.Size = New System.Drawing.Size(137, 99)
-        Me.btnLayout.TabIndex = 11
-        Me.btnLayout.Text = "Layout"
-        Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnLayout.UseVisualStyleBackColor = True
-        '
-        'btnSettings
-        '
-        Me.btnSettings.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.btnSettings.FlatAppearance.BorderSize = 0
-        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSettings.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSettings.ForeColor = System.Drawing.Color.White
-        Me.btnSettings.Image = CType(resources.GetObject("btnSettings.Image"), System.Drawing.Image)
-        Me.btnSettings.Location = New System.Drawing.Point(0, 321)
-        Me.btnSettings.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(137, 99)
-        Me.btnSettings.TabIndex = 10
-        Me.btnSettings.Text = "Settings"
-        Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnSettings.UseVisualStyleBackColor = True
-        '
         'btnExit
         '
         Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -2908,16 +2835,6 @@ Partial Class frmDashboard
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1656, 6)
         Me.Panel2.TabIndex = 30
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(109, 115)
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
         '
         'btnMin
         '
@@ -2957,21 +2874,6 @@ Partial Class frmDashboard
         Me.btnNewClient.Text = "New Client"
         Me.btnNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnNewClient.UseVisualStyleBackColor = False
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EventDate, Me.EventType, Me.lName, Me.fName})
-        Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.DataGridView1.Location = New System.Drawing.Point(171, 209)
-        Me.DataGridView1.MultiSelect = False
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(554, 150)
-        Me.DataGridView1.TabIndex = 32
         '
         'pnlSettings
         '
@@ -3038,15 +2940,6 @@ Partial Class frmDashboard
         Me.lblNotifs.TabIndex = 35
         Me.lblNotifs.Text = " Event Today at 5:00pm"
         '
-        'pboxNotif
-        '
-        Me.pboxNotif.Image = CType(resources.GetObject("pboxNotif.Image"), System.Drawing.Image)
-        Me.pboxNotif.Location = New System.Drawing.Point(171, 61)
-        Me.pboxNotif.Name = "pboxNotif"
-        Me.pboxNotif.Size = New System.Drawing.Size(37, 40)
-        Me.pboxNotif.TabIndex = 36
-        Me.pboxNotif.TabStop = False
-        '
         'clndrHome
         '
         Me.clndrHome.CalendarDimensions = New System.Drawing.Size(3, 1)
@@ -3070,7 +2963,7 @@ Partial Class frmDashboard
         Me.pnlLayout.Controls.Add(Me.Button7)
         Me.pnlLayout.Controls.Add(Me.Button8)
         Me.pnlLayout.Controls.Add(Me.Button10)
-        Me.pnlLayout.Location = New System.Drawing.Point(171, 365)
+        Me.pnlLayout.Location = New System.Drawing.Point(171, 359)
         Me.pnlLayout.Name = "pnlLayout"
         Me.pnlLayout.Size = New System.Drawing.Size(1125, 539)
         Me.pnlLayout.TabIndex = 40
@@ -3129,77 +3022,104 @@ Partial Class frmDashboard
         Me.Button10.Text = "Button10"
         Me.Button10.UseVisualStyleBackColor = True
         '
-        'EventDate
+        'pboxNotif
         '
-        Me.EventDate.HeaderText = "Event Date"
-        Me.EventDate.MinimumWidth = 6
-        Me.EventDate.Name = "EventDate"
-        Me.EventDate.ReadOnly = True
-        Me.EventDate.Width = 125
+        Me.pboxNotif.Image = CType(resources.GetObject("pboxNotif.Image"), System.Drawing.Image)
+        Me.pboxNotif.Location = New System.Drawing.Point(171, 61)
+        Me.pboxNotif.Name = "pboxNotif"
+        Me.pboxNotif.Size = New System.Drawing.Size(37, 40)
+        Me.pboxNotif.TabIndex = 36
+        Me.pboxNotif.TabStop = False
         '
-        'EventType
+        'btnClient
         '
-        Me.EventType.HeaderText = "Event Type"
-        Me.EventType.MinimumWidth = 6
-        Me.EventType.Name = "EventType"
-        Me.EventType.ReadOnly = True
-        Me.EventType.Width = 125
+        Me.btnClient.FlatAppearance.BorderSize = 0
+        Me.btnClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClient.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClient.ForeColor = System.Drawing.Color.White
+        Me.btnClient.Image = CType(resources.GetObject("btnClient.Image"), System.Drawing.Image)
+        Me.btnClient.Location = New System.Drawing.Point(0, 105)
+        Me.btnClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnClient.Name = "btnClient"
+        Me.btnClient.Size = New System.Drawing.Size(137, 99)
+        Me.btnClient.TabIndex = 8
+        Me.btnClient.Text = "Clients"
+        Me.btnClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnClient.UseVisualStyleBackColor = True
         '
-        'lName
+        'btnHome
         '
-        Me.lName.HeaderText = "Last Name"
-        Me.lName.MinimumWidth = 6
-        Me.lName.Name = "lName"
-        Me.lName.ReadOnly = True
-        Me.lName.Width = 125
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.ForeColor = System.Drawing.Color.White
+        Me.btnHome.Image = CType(resources.GetObject("btnHome.Image"), System.Drawing.Image)
+        Me.btnHome.Location = New System.Drawing.Point(0, 3)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(133, 99)
+        Me.btnHome.TabIndex = 7
+        Me.btnHome.Text = "Home"
+        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnHome.UseVisualStyleBackColor = True
         '
-        'fName
+        'btnLayout
         '
-        Me.fName.HeaderText = "First Name"
-        Me.fName.MinimumWidth = 6
-        Me.fName.Name = "fName"
-        Me.fName.ReadOnly = True
-        Me.fName.Width = 125
+        Me.btnLayout.FlatAppearance.BorderSize = 0
+        Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLayout.ForeColor = System.Drawing.Color.White
+        Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
+        Me.btnLayout.Location = New System.Drawing.Point(0, 209)
+        Me.btnLayout.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnLayout.Name = "btnLayout"
+        Me.btnLayout.Size = New System.Drawing.Size(137, 99)
+        Me.btnLayout.TabIndex = 11
+        Me.btnLayout.Text = "Layout"
+        Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnLayout.UseVisualStyleBackColor = True
         '
-        'Button11
+        'btnSettings
         '
-        Me.Button11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.ForeColor = System.Drawing.Color.Wheat
-        Me.Button11.Location = New System.Drawing.Point(1305, 148)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(295, 51)
-        Me.Button11.TabIndex = 51
-        Me.Button11.Text = "Cancel Event"
-        Me.Button11.UseVisualStyleBackColor = False
+        Me.btnSettings.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.btnSettings.FlatAppearance.BorderSize = 0
+        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSettings.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSettings.ForeColor = System.Drawing.Color.White
+        Me.btnSettings.Image = CType(resources.GetObject("btnSettings.Image"), System.Drawing.Image)
+        Me.btnSettings.Location = New System.Drawing.Point(0, 321)
+        Me.btnSettings.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(137, 99)
+        Me.btnSettings.TabIndex = 10
+        Me.btnSettings.Text = "Settings"
+        Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnSettings.UseVisualStyleBackColor = True
         '
-        'txtsearch
+        'PictureBox1
         '
-        Me.txtsearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtsearch.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsearch.Location = New System.Drawing.Point(461, 167)
-        Me.txtsearch.Name = "txtsearch"
-        Me.txtsearch.Size = New System.Drawing.Size(264, 25)
-        Me.txtsearch.TabIndex = 52
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(109, 115)
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
         '
-        'btnSearch
+        'btnLoadClient
         '
-        Me.btnSearch.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnSearch.Image = CType(resources.GetObject("btnSearch.Image"), System.Drawing.Image)
-        Me.btnSearch.Location = New System.Drawing.Point(736, 161)
-        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(45, 40)
-        Me.btnSearch.TabIndex = 52
-        Me.btnSearch.UseVisualStyleBackColor = True
+        Me.btnLoadClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnLoadClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLoadClient.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadClient.ForeColor = System.Drawing.Color.Wheat
+        Me.btnLoadClient.Location = New System.Drawing.Point(476, 158)
+        Me.btnLoadClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnLoadClient.Name = "btnLoadClient"
+        Me.btnLoadClient.Size = New System.Drawing.Size(265, 40)
+        Me.btnLoadClient.TabIndex = 41
+        Me.btnLoadClient.Text = "Load Client"
+        Me.btnLoadClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnLoadClient.UseVisualStyleBackColor = False
         '
         'frmDashboard
         '
@@ -3208,9 +3128,8 @@ Partial Class frmDashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1655, 1055)
-        Me.Controls.Add(Me.btnSearch)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.txtsearch)
+        Me.Controls.Add(Me.btnLoadClient)
+        Me.Controls.Add(Me.tbpCustomer)
         Me.Controls.Add(Me.lblDayInfo)
         Me.Controls.Add(Me.pboxNotif)
         Me.Controls.Add(Me.lblNotifs)
@@ -3220,9 +3139,7 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.tbpCustomer)
         Me.Controls.Add(Me.btnNewClient)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnCancelNewClient)
         Me.Controls.Add(Me.pnlLayout)
         Me.Controls.Add(Me.pnlSettings)
@@ -3265,11 +3182,10 @@ Partial Class frmDashboard
         Me.tpLayout.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSettings.ResumeLayout(False)
-        CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlLayout.ResumeLayout(False)
+        CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3387,7 +3303,6 @@ Partial Class frmDashboard
     Friend WithEvents btnLayout As Button
     Friend WithEvents lblDate As Label
     Friend WithEvents btnNewClient As Button
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents pnlSettings As Panel
     Friend WithEvents Button4 As Button
     Friend WithEvents Button9 As Button
@@ -3494,11 +3409,5 @@ Partial Class frmDashboard
     Friend WithEvents Label60 As Label
     Friend WithEvents TextBox43 As TextBox
     Friend WithEvents Label61 As Label
-    Friend WithEvents EventDate As DataGridViewTextBoxColumn
-    Friend WithEvents EventType As DataGridViewTextBoxColumn
-    Friend WithEvents lName As DataGridViewTextBoxColumn
-    Friend WithEvents fName As DataGridViewTextBoxColumn
-    Friend WithEvents Button11 As Button
-    Friend WithEvents btnSearch As Button
-    Friend WithEvents txtsearch As TextBox
+    Friend WithEvents btnLoadClient As Button
 End Class

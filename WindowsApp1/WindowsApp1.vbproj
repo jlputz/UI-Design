@@ -197,6 +197,12 @@
     <Compile Include="frmTimeline.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GetCustomerInContext.Designer.vb">
+      <DependentUpon>GetCustomerInContext.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetCustomerInContext.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -261,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTimeline.resx">
       <DependentUpon>frmTimeline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetCustomerInContext.resx">
+      <DependentUpon>GetCustomerInContext.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
