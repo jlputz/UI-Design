@@ -51,7 +51,6 @@ Partial Class frmDashboard
         Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.dtpEventDate = New System.Windows.Forms.DateTimePicker()
-        Me.cmdEnterEventInfo = New System.Windows.Forms.Button()
         Me.txtEventType = New System.Windows.Forms.TextBox()
         Me.chkCeremonyEvent = New System.Windows.Forms.CheckBox()
         Me.lblEventType = New System.Windows.Forms.Label()
@@ -73,7 +72,6 @@ Partial Class frmDashboard
         Me.txtTimelineInfo = New System.Windows.Forms.TextBox()
         Me.lblAVLightingSelection = New System.Windows.Forms.Label()
         Me.tpFoodSelection = New System.Windows.Forms.TabPage()
-        Me.btnFoodSel = New System.Windows.Forms.Button()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
@@ -157,6 +155,22 @@ Partial Class frmDashboard
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TextBox36 = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.TextBox37 = New System.Windows.Forms.TextBox()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.TextBox38 = New System.Windows.Forms.TextBox()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.TextBox39 = New System.Windows.Forms.TextBox()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.TextBox40 = New System.Windows.Forms.TextBox()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.TextBox41 = New System.Windows.Forms.TextBox()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.TextBox42 = New System.Windows.Forms.TextBox()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.TextBox43 = New System.Windows.Forms.TextBox()
+        Me.Label61 = New System.Windows.Forms.Label()
         Me.btnVendorSel = New System.Windows.Forms.Button()
         Me.TextBox34 = New System.Windows.Forms.TextBox()
         Me.TextBox35 = New System.Windows.Forms.TextBox()
@@ -216,14 +230,6 @@ Partial Class frmDashboard
         Me.lblDate = New System.Windows.Forms.Label()
         Me.btnNewClient = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.EventDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EventType = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.lName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.fName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.pPhone = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.sPhone = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.address = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnlSettings = New System.Windows.Forms.Panel()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -237,22 +243,13 @@ Partial Class frmDashboard
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
-        Me.TextBox36 = New System.Windows.Forms.TextBox()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.TextBox37 = New System.Windows.Forms.TextBox()
-        Me.Label55 = New System.Windows.Forms.Label()
-        Me.TextBox38 = New System.Windows.Forms.TextBox()
-        Me.Label56 = New System.Windows.Forms.Label()
-        Me.TextBox39 = New System.Windows.Forms.TextBox()
-        Me.Label57 = New System.Windows.Forms.Label()
-        Me.TextBox40 = New System.Windows.Forms.TextBox()
-        Me.Label58 = New System.Windows.Forms.Label()
-        Me.TextBox41 = New System.Windows.Forms.TextBox()
-        Me.Label59 = New System.Windows.Forms.Label()
-        Me.TextBox42 = New System.Windows.Forms.TextBox()
-        Me.Label60 = New System.Windows.Forms.Label()
-        Me.TextBox43 = New System.Windows.Forms.TextBox()
-        Me.Label61 = New System.Windows.Forms.Label()
+        Me.EventDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EventType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.fName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.txtsearch = New System.Windows.Forms.TextBox()
+        Me.btnSearch = New System.Windows.Forms.Button()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -482,7 +479,6 @@ Partial Class frmDashboard
         Me.tpEventInfo.Controls.Add(Me.Label36)
         Me.tpEventInfo.Controls.Add(Me.TextBox13)
         Me.tpEventInfo.Controls.Add(Me.pnlEventInfo)
-        Me.tpEventInfo.Controls.Add(Me.cmdEnterEventInfo)
         Me.tpEventInfo.Controls.Add(Me.txtEventType)
         Me.tpEventInfo.Controls.Add(Me.chkCeremonyEvent)
         Me.tpEventInfo.Controls.Add(Me.lblEventType)
@@ -658,21 +654,6 @@ Partial Class frmDashboard
         Me.dtpEventDate.Name = "dtpEventDate"
         Me.dtpEventDate.Size = New System.Drawing.Size(263, 26)
         Me.dtpEventDate.TabIndex = 24
-        '
-        'cmdEnterEventInfo
-        '
-        Me.cmdEnterEventInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdEnterEventInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdEnterEventInfo.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdEnterEventInfo.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdEnterEventInfo.Location = New System.Drawing.Point(12, 574)
-        Me.cmdEnterEventInfo.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdEnterEventInfo.Name = "cmdEnterEventInfo"
-        Me.cmdEnterEventInfo.Size = New System.Drawing.Size(265, 40)
-        Me.cmdEnterEventInfo.TabIndex = 26
-        Me.cmdEnterEventInfo.Text = "Enter Event Info"
-        Me.cmdEnterEventInfo.UseVisualStyleBackColor = False
-        Me.cmdEnterEventInfo.Visible = False
         '
         'txtEventType
         '
@@ -933,7 +914,6 @@ Partial Class frmDashboard
         '
         Me.tpFoodSelection.AutoScroll = True
         Me.tpFoodSelection.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.tpFoodSelection.Controls.Add(Me.btnFoodSel)
         Me.tpFoodSelection.Controls.Add(Me.TextBox15)
         Me.tpFoodSelection.Controls.Add(Me.Label9)
         Me.tpFoodSelection.Controls.Add(Me.TextBox5)
@@ -958,21 +938,6 @@ Partial Class frmDashboard
         Me.tpFoodSelection.Size = New System.Drawing.Size(1419, 628)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
-        '
-        'btnFoodSel
-        '
-        Me.btnFoodSel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnFoodSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFoodSel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFoodSel.ForeColor = System.Drawing.Color.Wheat
-        Me.btnFoodSel.Location = New System.Drawing.Point(15, 575)
-        Me.btnFoodSel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnFoodSel.Name = "btnFoodSel"
-        Me.btnFoodSel.Size = New System.Drawing.Size(265, 40)
-        Me.btnFoodSel.TabIndex = 51
-        Me.btnFoodSel.Text = "Enter Food Selection"
-        Me.btnFoodSel.UseVisualStyleBackColor = False
-        Me.btnFoodSel.Visible = False
         '
         'TextBox15
         '
@@ -2097,6 +2062,190 @@ Partial Class frmDashboard
         Me.TabPage2.TabIndex = 9
         Me.TabPage2.Text = "Vendors"
         '
+        'TextBox36
+        '
+        Me.TextBox36.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox36.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox36.Location = New System.Drawing.Point(860, 483)
+        Me.TextBox36.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox36.Name = "TextBox36"
+        Me.TextBox36.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox36.TabIndex = 93
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label29.ForeColor = System.Drawing.Color.Wheat
+        Me.Label29.Location = New System.Drawing.Point(740, 485)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(104, 15)
+        Me.Label29.TabIndex = 92
+        Me.Label29.Text = "Email Address:"
+        '
+        'TextBox37
+        '
+        Me.TextBox37.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox37.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox37.Location = New System.Drawing.Point(860, 436)
+        Me.TextBox37.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox37.Name = "TextBox37"
+        Me.TextBox37.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox37.TabIndex = 91
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label55.ForeColor = System.Drawing.Color.Wheat
+        Me.Label55.Location = New System.Drawing.Point(740, 438)
+        Me.Label55.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(104, 15)
+        Me.Label55.TabIndex = 90
+        Me.Label55.Text = "Email Address:"
+        '
+        'TextBox38
+        '
+        Me.TextBox38.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox38.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox38.Location = New System.Drawing.Point(860, 389)
+        Me.TextBox38.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox38.Name = "TextBox38"
+        Me.TextBox38.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox38.TabIndex = 89
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label56.ForeColor = System.Drawing.Color.Wheat
+        Me.Label56.Location = New System.Drawing.Point(740, 391)
+        Me.Label56.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(107, 15)
+        Me.Label56.TabIndex = 88
+        Me.Label56.Text = "Email Address: "
+        '
+        'TextBox39
+        '
+        Me.TextBox39.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox39.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox39.Location = New System.Drawing.Point(860, 341)
+        Me.TextBox39.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox39.Name = "TextBox39"
+        Me.TextBox39.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox39.TabIndex = 87
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label57.ForeColor = System.Drawing.Color.Wheat
+        Me.Label57.Location = New System.Drawing.Point(740, 343)
+        Me.Label57.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(104, 15)
+        Me.Label57.TabIndex = 86
+        Me.Label57.Text = "Email Address:"
+        '
+        'TextBox40
+        '
+        Me.TextBox40.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox40.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox40.Location = New System.Drawing.Point(860, 292)
+        Me.TextBox40.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox40.Name = "TextBox40"
+        Me.TextBox40.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox40.TabIndex = 85
+        '
+        'Label58
+        '
+        Me.Label58.AutoSize = True
+        Me.Label58.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label58.ForeColor = System.Drawing.Color.Wheat
+        Me.Label58.Location = New System.Drawing.Point(740, 294)
+        Me.Label58.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(104, 15)
+        Me.Label58.TabIndex = 84
+        Me.Label58.Text = "Email Address:"
+        '
+        'TextBox41
+        '
+        Me.TextBox41.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox41.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox41.Location = New System.Drawing.Point(860, 245)
+        Me.TextBox41.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox41.Name = "TextBox41"
+        Me.TextBox41.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox41.TabIndex = 83
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label59.ForeColor = System.Drawing.Color.Wheat
+        Me.Label59.Location = New System.Drawing.Point(740, 247)
+        Me.Label59.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(104, 15)
+        Me.Label59.TabIndex = 82
+        Me.Label59.Text = "Email Address:"
+        '
+        'TextBox42
+        '
+        Me.TextBox42.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox42.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox42.Location = New System.Drawing.Point(860, 202)
+        Me.TextBox42.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox42.Name = "TextBox42"
+        Me.TextBox42.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox42.TabIndex = 81
+        '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label60.ForeColor = System.Drawing.Color.Wheat
+        Me.Label60.Location = New System.Drawing.Point(740, 204)
+        Me.Label60.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(104, 15)
+        Me.Label60.TabIndex = 80
+        Me.Label60.Text = "Email Address:"
+        '
+        'TextBox43
+        '
+        Me.TextBox43.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox43.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox43.Location = New System.Drawing.Point(860, 159)
+        Me.TextBox43.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBox43.Name = "TextBox43"
+        Me.TextBox43.Size = New System.Drawing.Size(199, 23)
+        Me.TextBox43.TabIndex = 79
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label61.ForeColor = System.Drawing.Color.Wheat
+        Me.Label61.Location = New System.Drawing.Point(740, 161)
+        Me.Label61.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(104, 15)
+        Me.Label61.TabIndex = 78
+        Me.Label61.Text = "Email Address:"
+        '
         'btnVendorSel
         '
         Me.btnVendorSel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
@@ -2813,7 +2962,7 @@ Partial Class frmDashboard
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EventDate, Me.EventType, Me.lName, Me.fName, Me.pPhone, Me.sPhone, Me.email, Me.address})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EventDate, Me.EventType, Me.lName, Me.fName})
         Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.DataGridView1.Location = New System.Drawing.Point(171, 209)
         Me.DataGridView1.MultiSelect = False
@@ -2821,72 +2970,8 @@ Partial Class frmDashboard
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(1061, 150)
+        Me.DataGridView1.Size = New System.Drawing.Size(554, 150)
         Me.DataGridView1.TabIndex = 32
-        '
-        'EventDate
-        '
-        Me.EventDate.HeaderText = "Event Date"
-        Me.EventDate.MinimumWidth = 6
-        Me.EventDate.Name = "EventDate"
-        Me.EventDate.ReadOnly = True
-        Me.EventDate.Width = 125
-        '
-        'EventType
-        '
-        Me.EventType.HeaderText = "Event Type"
-        Me.EventType.MinimumWidth = 6
-        Me.EventType.Name = "EventType"
-        Me.EventType.ReadOnly = True
-        Me.EventType.Width = 125
-        '
-        'lName
-        '
-        Me.lName.HeaderText = "Last Name"
-        Me.lName.MinimumWidth = 6
-        Me.lName.Name = "lName"
-        Me.lName.ReadOnly = True
-        Me.lName.Width = 125
-        '
-        'fName
-        '
-        Me.fName.HeaderText = "First Name"
-        Me.fName.MinimumWidth = 6
-        Me.fName.Name = "fName"
-        Me.fName.ReadOnly = True
-        Me.fName.Width = 125
-        '
-        'pPhone
-        '
-        Me.pPhone.HeaderText = "Primary Phone"
-        Me.pPhone.MinimumWidth = 6
-        Me.pPhone.Name = "pPhone"
-        Me.pPhone.ReadOnly = True
-        Me.pPhone.Width = 125
-        '
-        'sPhone
-        '
-        Me.sPhone.HeaderText = "Secondary Phone"
-        Me.sPhone.MinimumWidth = 6
-        Me.sPhone.Name = "sPhone"
-        Me.sPhone.ReadOnly = True
-        Me.sPhone.Width = 125
-        '
-        'email
-        '
-        Me.email.HeaderText = "Email"
-        Me.email.MinimumWidth = 6
-        Me.email.Name = "email"
-        Me.email.ReadOnly = True
-        Me.email.Width = 125
-        '
-        'address
-        '
-        Me.address.HeaderText = "Address"
-        Me.address.MinimumWidth = 6
-        Me.address.Name = "address"
-        Me.address.ReadOnly = True
-        Me.address.Width = 125
         '
         'pnlSettings
         '
@@ -3044,189 +3129,77 @@ Partial Class frmDashboard
         Me.Button10.Text = "Button10"
         Me.Button10.UseVisualStyleBackColor = True
         '
-        'TextBox36
+        'EventDate
         '
-        Me.TextBox36.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox36.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox36.Location = New System.Drawing.Point(860, 483)
-        Me.TextBox36.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox36.Name = "TextBox36"
-        Me.TextBox36.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox36.TabIndex = 93
+        Me.EventDate.HeaderText = "Event Date"
+        Me.EventDate.MinimumWidth = 6
+        Me.EventDate.Name = "EventDate"
+        Me.EventDate.ReadOnly = True
+        Me.EventDate.Width = 125
         '
-        'Label29
+        'EventType
         '
-        Me.Label29.AutoSize = True
-        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label29.ForeColor = System.Drawing.Color.Wheat
-        Me.Label29.Location = New System.Drawing.Point(740, 485)
-        Me.Label29.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(104, 15)
-        Me.Label29.TabIndex = 92
-        Me.Label29.Text = "Email Address:"
+        Me.EventType.HeaderText = "Event Type"
+        Me.EventType.MinimumWidth = 6
+        Me.EventType.Name = "EventType"
+        Me.EventType.ReadOnly = True
+        Me.EventType.Width = 125
         '
-        'TextBox37
+        'lName
         '
-        Me.TextBox37.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox37.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox37.Location = New System.Drawing.Point(860, 436)
-        Me.TextBox37.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox37.Name = "TextBox37"
-        Me.TextBox37.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox37.TabIndex = 91
+        Me.lName.HeaderText = "Last Name"
+        Me.lName.MinimumWidth = 6
+        Me.lName.Name = "lName"
+        Me.lName.ReadOnly = True
+        Me.lName.Width = 125
         '
-        'Label55
+        'fName
         '
-        Me.Label55.AutoSize = True
-        Me.Label55.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label55.ForeColor = System.Drawing.Color.Wheat
-        Me.Label55.Location = New System.Drawing.Point(740, 438)
-        Me.Label55.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(104, 15)
-        Me.Label55.TabIndex = 90
-        Me.Label55.Text = "Email Address:"
+        Me.fName.HeaderText = "First Name"
+        Me.fName.MinimumWidth = 6
+        Me.fName.Name = "fName"
+        Me.fName.ReadOnly = True
+        Me.fName.Width = 125
         '
-        'TextBox38
+        'Button11
         '
-        Me.TextBox38.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox38.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox38.Location = New System.Drawing.Point(860, 389)
-        Me.TextBox38.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox38.Name = "TextBox38"
-        Me.TextBox38.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox38.TabIndex = 89
+        Me.Button11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.ForeColor = System.Drawing.Color.Wheat
+        Me.Button11.Location = New System.Drawing.Point(1305, 148)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(295, 51)
+        Me.Button11.TabIndex = 51
+        Me.Button11.Text = "Cancel Event"
+        Me.Button11.UseVisualStyleBackColor = False
         '
-        'Label56
+        'txtsearch
         '
-        Me.Label56.AutoSize = True
-        Me.Label56.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label56.ForeColor = System.Drawing.Color.Wheat
-        Me.Label56.Location = New System.Drawing.Point(740, 391)
-        Me.Label56.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(107, 15)
-        Me.Label56.TabIndex = 88
-        Me.Label56.Text = "Email Address: "
+        Me.txtsearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtsearch.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtsearch.Location = New System.Drawing.Point(461, 167)
+        Me.txtsearch.Name = "txtsearch"
+        Me.txtsearch.Size = New System.Drawing.Size(264, 25)
+        Me.txtsearch.TabIndex = 52
         '
-        'TextBox39
+        'btnSearch
         '
-        Me.TextBox39.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox39.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox39.Location = New System.Drawing.Point(860, 341)
-        Me.TextBox39.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox39.Name = "TextBox39"
-        Me.TextBox39.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox39.TabIndex = 87
-        '
-        'Label57
-        '
-        Me.Label57.AutoSize = True
-        Me.Label57.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label57.ForeColor = System.Drawing.Color.Wheat
-        Me.Label57.Location = New System.Drawing.Point(740, 343)
-        Me.Label57.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label57.Name = "Label57"
-        Me.Label57.Size = New System.Drawing.Size(104, 15)
-        Me.Label57.TabIndex = 86
-        Me.Label57.Text = "Email Address:"
-        '
-        'TextBox40
-        '
-        Me.TextBox40.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox40.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox40.Location = New System.Drawing.Point(860, 292)
-        Me.TextBox40.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox40.Name = "TextBox40"
-        Me.TextBox40.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox40.TabIndex = 85
-        '
-        'Label58
-        '
-        Me.Label58.AutoSize = True
-        Me.Label58.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label58.ForeColor = System.Drawing.Color.Wheat
-        Me.Label58.Location = New System.Drawing.Point(740, 294)
-        Me.Label58.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label58.Name = "Label58"
-        Me.Label58.Size = New System.Drawing.Size(104, 15)
-        Me.Label58.TabIndex = 84
-        Me.Label58.Text = "Email Address:"
-        '
-        'TextBox41
-        '
-        Me.TextBox41.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox41.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox41.Location = New System.Drawing.Point(860, 245)
-        Me.TextBox41.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox41.Name = "TextBox41"
-        Me.TextBox41.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox41.TabIndex = 83
-        '
-        'Label59
-        '
-        Me.Label59.AutoSize = True
-        Me.Label59.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label59.ForeColor = System.Drawing.Color.Wheat
-        Me.Label59.Location = New System.Drawing.Point(740, 247)
-        Me.Label59.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label59.Name = "Label59"
-        Me.Label59.Size = New System.Drawing.Size(104, 15)
-        Me.Label59.TabIndex = 82
-        Me.Label59.Text = "Email Address:"
-        '
-        'TextBox42
-        '
-        Me.TextBox42.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox42.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox42.Location = New System.Drawing.Point(860, 202)
-        Me.TextBox42.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox42.Name = "TextBox42"
-        Me.TextBox42.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox42.TabIndex = 81
-        '
-        'Label60
-        '
-        Me.Label60.AutoSize = True
-        Me.Label60.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label60.ForeColor = System.Drawing.Color.Wheat
-        Me.Label60.Location = New System.Drawing.Point(740, 204)
-        Me.Label60.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(104, 15)
-        Me.Label60.TabIndex = 80
-        Me.Label60.Text = "Email Address:"
-        '
-        'TextBox43
-        '
-        Me.TextBox43.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox43.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox43.Location = New System.Drawing.Point(860, 159)
-        Me.TextBox43.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox43.Name = "TextBox43"
-        Me.TextBox43.Size = New System.Drawing.Size(199, 23)
-        Me.TextBox43.TabIndex = 79
-        '
-        'Label61
-        '
-        Me.Label61.AutoSize = True
-        Me.Label61.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label61.ForeColor = System.Drawing.Color.Wheat
-        Me.Label61.Location = New System.Drawing.Point(740, 161)
-        Me.Label61.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(104, 15)
-        Me.Label61.TabIndex = 78
-        Me.Label61.Text = "Email Address:"
+        Me.btnSearch.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.btnSearch.Image = CType(resources.GetObject("btnSearch.Image"), System.Drawing.Image)
+        Me.btnSearch.Location = New System.Drawing.Point(736, 161)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(45, 40)
+        Me.btnSearch.TabIndex = 52
+        Me.btnSearch.UseVisualStyleBackColor = True
         '
         'frmDashboard
         '
@@ -3235,11 +3208,12 @@ Partial Class frmDashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1655, 1055)
-        Me.Controls.Add(Me.btnCancelNewClient)
+        Me.Controls.Add(Me.btnSearch)
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.txtsearch)
         Me.Controls.Add(Me.lblDayInfo)
         Me.Controls.Add(Me.pboxNotif)
         Me.Controls.Add(Me.lblNotifs)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.btnMin)
         Me.Controls.Add(Me.Panel2)
@@ -3247,10 +3221,12 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.tbpCustomer)
+        Me.Controls.Add(Me.btnNewClient)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.btnCancelNewClient)
+        Me.Controls.Add(Me.pnlLayout)
         Me.Controls.Add(Me.pnlSettings)
         Me.Controls.Add(Me.clndrHome)
-        Me.Controls.Add(Me.btnNewClient)
-        Me.Controls.Add(Me.pnlLayout)
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -3312,7 +3288,6 @@ Partial Class frmDashboard
     Friend WithEvents lblStreetAddress As Label
     Friend WithEvents lblCustomerName As Label
     Friend WithEvents lblCustomerInfo As Label
-    Friend WithEvents cmdEnterEventInfo As Button
     Friend WithEvents dtpRehearsalDate As DateTimePicker
     Friend WithEvents dtpEventDate As DateTimePicker
     Friend WithEvents txtEventType As TextBox
@@ -3421,14 +3396,6 @@ Partial Class frmDashboard
     Friend WithEvents clndrHome As MonthCalendar
     Friend WithEvents lblDayInfo As Label
     Friend WithEvents tpLayout As TabPage
-    Friend WithEvents EventDate As DataGridViewTextBoxColumn
-    Friend WithEvents EventType As DataGridViewTextBoxColumn
-    Friend WithEvents lName As DataGridViewTextBoxColumn
-    Friend WithEvents fName As DataGridViewTextBoxColumn
-    Friend WithEvents pPhone As DataGridViewTextBoxColumn
-    Friend WithEvents sPhone As DataGridViewTextBoxColumn
-    Friend WithEvents email As DataGridViewTextBoxColumn
-    Friend WithEvents address As DataGridViewTextBoxColumn
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents Label31 As Label
     Friend WithEvents MaskedTextBox9 As MaskedTextBox
@@ -3450,7 +3417,6 @@ Partial Class frmDashboard
     Friend WithEvents CheckBox14 As CheckBox
     Friend WithEvents CheckBox13 As CheckBox
     Friend WithEvents btnCancelNewClient As Button
-    Friend WithEvents btnFoodSel As Button
     Friend WithEvents TextBox15 As TextBox
     Friend WithEvents pnlOpenBar As Panel
     Friend WithEvents pnlCashBar As Panel
@@ -3528,4 +3494,11 @@ Partial Class frmDashboard
     Friend WithEvents Label60 As Label
     Friend WithEvents TextBox43 As TextBox
     Friend WithEvents Label61 As Label
+    Friend WithEvents EventDate As DataGridViewTextBoxColumn
+    Friend WithEvents EventType As DataGridViewTextBoxColumn
+    Friend WithEvents lName As DataGridViewTextBoxColumn
+    Friend WithEvents fName As DataGridViewTextBoxColumn
+    Friend WithEvents Button11 As Button
+    Friend WithEvents btnSearch As Button
+    Friend WithEvents txtsearch As TextBox
 End Class
