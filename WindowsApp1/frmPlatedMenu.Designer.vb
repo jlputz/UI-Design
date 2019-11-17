@@ -164,6 +164,8 @@ Partial Class frmPlatedMenu
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox1.ForeColor = System.Drawing.Color.Wheat
         Me.TextBox1.Location = New System.Drawing.Point(434, 63)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
