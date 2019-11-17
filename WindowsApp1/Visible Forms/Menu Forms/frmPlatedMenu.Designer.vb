@@ -55,6 +55,7 @@ Partial Class frmPlatedMenu
         '
         'cboStarches
         '
+        Me.cboStarches.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboStarches.FormattingEnabled = True
         Me.cboStarches.Location = New System.Drawing.Point(109, 147)
         Me.cboStarches.Name = "cboStarches"
@@ -72,6 +73,7 @@ Partial Class frmPlatedMenu
         '
         'cboVegetable
         '
+        Me.cboVegetable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboVegetable.FormattingEnabled = True
         Me.cboVegetable.Location = New System.Drawing.Point(109, 107)
         Me.cboVegetable.Name = "cboVegetable"
@@ -80,6 +82,7 @@ Partial Class frmPlatedMenu
         '
         'cboSaladSelections
         '
+        Me.cboSaladSelections.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboSaladSelections.FormattingEnabled = True
         Me.cboSaladSelections.Location = New System.Drawing.Point(109, 67)
         Me.cboSaladSelections.Name = "cboSaladSelections"
@@ -129,6 +132,7 @@ Partial Class frmPlatedMenu
         '
         'cboEntrees
         '
+        Me.cboEntrees.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboEntrees.FormattingEnabled = True
         Me.cboEntrees.Location = New System.Drawing.Point(109, 187)
         Me.cboEntrees.Name = "cboEntrees"
@@ -200,6 +204,7 @@ Partial Class frmPlatedMenu
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(109, 226)
         Me.ComboBox1.Name = "ComboBox1"

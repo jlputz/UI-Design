@@ -69,6 +69,7 @@ Partial Class frmBuffetStyle
         '
         'cboSaladSelections
         '
+        Me.cboSaladSelections.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboSaladSelections.FormattingEnabled = True
         Me.cboSaladSelections.Location = New System.Drawing.Point(151, 75)
         Me.cboSaladSelections.Name = "cboSaladSelections"
@@ -77,6 +78,7 @@ Partial Class frmBuffetStyle
         '
         'cboSideDishes
         '
+        Me.cboSideDishes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboSideDishes.FormattingEnabled = True
         Me.cboSideDishes.Location = New System.Drawing.Point(151, 120)
         Me.cboSideDishes.Name = "cboSideDishes"
@@ -94,6 +96,7 @@ Partial Class frmBuffetStyle
         '
         'cboEntrees
         '
+        Me.cboEntrees.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboEntrees.FormattingEnabled = True
         Me.cboEntrees.Location = New System.Drawing.Point(151, 163)
         Me.cboEntrees.Name = "cboEntrees"

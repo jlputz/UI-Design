@@ -43,6 +43,7 @@ Partial Class frmHorsD
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.lblHorsDSelections)
         Me.ForeColor = System.Drawing.Color.Wheat
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "frmHorsD"
         Me.Text = "Hors'D Selections"
         Me.ResumeLayout(False)

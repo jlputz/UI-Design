@@ -76,6 +76,7 @@ Partial Class frmDesertSelections
         '
         'cboDesertShooters
         '
+        Me.cboDesertShooters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboDesertShooters.FormattingEnabled = True
         Me.cboDesertShooters.Location = New System.Drawing.Point(163, 91)
         Me.cboDesertShooters.Name = "cboDesertShooters"
@@ -105,6 +106,7 @@ Partial Class frmDesertSelections
         '
         'cboCookies
         '
+        Me.cboCookies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboCookies.FormattingEnabled = True
         Me.cboCookies.Location = New System.Drawing.Point(163, 133)
         Me.cboCookies.Name = "cboCookies"
@@ -134,6 +136,7 @@ Partial Class frmDesertSelections
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(163, 175)
         Me.ComboBox1.Name = "ComboBox1"
@@ -174,6 +177,7 @@ Partial Class frmDesertSelections
         '
         'cboDonutSelections
         '
+        Me.cboDonutSelections.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboDonutSelections.FormattingEnabled = True
         Me.cboDonutSelections.Location = New System.Drawing.Point(163, 244)
         Me.cboDonutSelections.Name = "cboDonutSelections"

@@ -20,4 +20,24 @@
     Private Sub btnPrintInvoice_Click(sender As Object, e As EventArgs) Handles btnPrintInvoice.Click
 
     End Sub
+
+    Private Sub cmdTraditionalBuffet_Click(sender As Object, e As EventArgs) Handles cmdTraditionalBuffet.Click
+        frmBuffetStyle.ShowDialog()
+    End Sub
+
+    Private Sub cmdPlatedMeals_Click(sender As Object, e As EventArgs) Handles cmdPlatedMeals.Click
+        frmPlatedMenu.ShowDialog()
+    End Sub
+
+    Private Sub cmdDessert_Click(sender As Object, e As EventArgs) Handles cmdDessert.Click
+        frmDesertSelections.ShowDialog()
+    End Sub
+
+    Private Sub cmdHorsD_Click(sender As Object, e As EventArgs) Handles cmdHorsD.Click
+        frmHorsD.ShowDialog()
+    End Sub
+
+    Private Sub cmdAfterglow_Click(sender As Object, e As EventArgs) Handles cmdAfterglow.Click
+        frmAfterglow.ShowDialog()
+    End Sub
 End Class

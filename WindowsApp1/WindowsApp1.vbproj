@@ -107,6 +107,12 @@
       <DependentUpon>BeverageService.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmAfterglow.Designer.vb">
+      <DependentUpon>frmAfterglow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmAfterglow.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Visible Forms\Dashboard Forms\frmClient.Designer.vb">
       <DependentUpon>frmClient.vb</DependentUpon>
     </Compile>
@@ -149,10 +155,10 @@
     <Compile Include="Reference Forms %28OLD%29\frmFoodSelection.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reference Forms %28OLD%29\frmHorsD.Designer.vb">
+    <Compile Include="Visible Forms\Menu Forms\frmHorsD.Designer.vb">
       <DependentUpon>frmHorsD.vb</DependentUpon>
     </Compile>
-    <Compile Include="Reference Forms %28OLD%29\frmHorsD.vb">
+    <Compile Include="Visible Forms\Menu Forms\frmHorsD.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reference Forms %28OLD%29\frmMenu.Designer.vb">
@@ -241,6 +247,9 @@
     <EmbeddedResource Include="Reference Forms %28OLD%29\BeverageService.resx">
       <DependentUpon>BeverageService.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmAfterglow.resx">
+      <DependentUpon>frmAfterglow.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmClient.resx">
       <DependentUpon>frmClient.vb</DependentUpon>
     </EmbeddedResource>
@@ -262,7 +271,7 @@
     <EmbeddedResource Include="Reference Forms %28OLD%29\frmFoodSelection.resx">
       <DependentUpon>frmFoodSelection.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reference Forms %28OLD%29\frmHorsD.resx">
+    <EmbeddedResource Include="Visible Forms\Menu Forms\frmHorsD.resx">
       <DependentUpon>frmHorsD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reference Forms %28OLD%29\frmMenu.resx">
