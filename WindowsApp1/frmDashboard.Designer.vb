@@ -219,6 +219,10 @@ Partial Class frmDashboard
         Me.btnPrintBEO = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlButtonMover = New System.Windows.Forms.Panel()
+        Me.btnClient = New System.Windows.Forms.Button()
+        Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnLayout = New System.Windows.Forms.Button()
+        Me.btnSettings = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnMin = New System.Windows.Forms.Button()
@@ -237,10 +241,6 @@ Partial Class frmDashboard
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.pboxNotif = New System.Windows.Forms.PictureBox()
-        Me.btnClient = New System.Windows.Forms.Button()
-        Me.btnHome = New System.Windows.Forms.Button()
-        Me.btnLayout = New System.Windows.Forms.Button()
-        Me.btnSettings = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnLoadClient = New System.Windows.Forms.Button()
         Me.tbpCustomer.SuspendLayout()
@@ -2812,6 +2812,71 @@ Partial Class frmDashboard
         Me.pnlButtonMover.Size = New System.Drawing.Size(7, 100)
         Me.pnlButtonMover.TabIndex = 9
         '
+        'btnClient
+        '
+        Me.btnClient.FlatAppearance.BorderSize = 0
+        Me.btnClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClient.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClient.ForeColor = System.Drawing.Color.White
+        Me.btnClient.Image = CType(resources.GetObject("btnClient.Image"), System.Drawing.Image)
+        Me.btnClient.Location = New System.Drawing.Point(0, 105)
+        Me.btnClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnClient.Name = "btnClient"
+        Me.btnClient.Size = New System.Drawing.Size(137, 99)
+        Me.btnClient.TabIndex = 8
+        Me.btnClient.Text = "Clients"
+        Me.btnClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnClient.UseVisualStyleBackColor = True
+        '
+        'btnHome
+        '
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.ForeColor = System.Drawing.Color.White
+        Me.btnHome.Image = CType(resources.GetObject("btnHome.Image"), System.Drawing.Image)
+        Me.btnHome.Location = New System.Drawing.Point(0, 3)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(133, 99)
+        Me.btnHome.TabIndex = 7
+        Me.btnHome.Text = "Home"
+        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnHome.UseVisualStyleBackColor = True
+        '
+        'btnLayout
+        '
+        Me.btnLayout.FlatAppearance.BorderSize = 0
+        Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLayout.ForeColor = System.Drawing.Color.White
+        Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
+        Me.btnLayout.Location = New System.Drawing.Point(0, 209)
+        Me.btnLayout.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnLayout.Name = "btnLayout"
+        Me.btnLayout.Size = New System.Drawing.Size(137, 99)
+        Me.btnLayout.TabIndex = 11
+        Me.btnLayout.Text = "Layout"
+        Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnLayout.UseVisualStyleBackColor = True
+        '
+        'btnSettings
+        '
+        Me.btnSettings.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.btnSettings.FlatAppearance.BorderSize = 0
+        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSettings.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSettings.ForeColor = System.Drawing.Color.White
+        Me.btnSettings.Image = CType(resources.GetObject("btnSettings.Image"), System.Drawing.Image)
+        Me.btnSettings.Location = New System.Drawing.Point(0, 321)
+        Me.btnSettings.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(137, 99)
+        Me.btnSettings.TabIndex = 10
+        Me.btnSettings.Text = "Settings"
+        Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnSettings.UseVisualStyleBackColor = True
+        '
         'btnExit
         '
         Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -3031,71 +3096,6 @@ Partial Class frmDashboard
         Me.pboxNotif.TabIndex = 36
         Me.pboxNotif.TabStop = False
         '
-        'btnClient
-        '
-        Me.btnClient.FlatAppearance.BorderSize = 0
-        Me.btnClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClient.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClient.ForeColor = System.Drawing.Color.White
-        Me.btnClient.Image = CType(resources.GetObject("btnClient.Image"), System.Drawing.Image)
-        Me.btnClient.Location = New System.Drawing.Point(0, 105)
-        Me.btnClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnClient.Name = "btnClient"
-        Me.btnClient.Size = New System.Drawing.Size(137, 99)
-        Me.btnClient.TabIndex = 8
-        Me.btnClient.Text = "Clients"
-        Me.btnClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnClient.UseVisualStyleBackColor = True
-        '
-        'btnHome
-        '
-        Me.btnHome.FlatAppearance.BorderSize = 0
-        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHome.ForeColor = System.Drawing.Color.White
-        Me.btnHome.Image = CType(resources.GetObject("btnHome.Image"), System.Drawing.Image)
-        Me.btnHome.Location = New System.Drawing.Point(0, 3)
-        Me.btnHome.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(133, 99)
-        Me.btnHome.TabIndex = 7
-        Me.btnHome.Text = "Home"
-        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnHome.UseVisualStyleBackColor = True
-        '
-        'btnLayout
-        '
-        Me.btnLayout.FlatAppearance.BorderSize = 0
-        Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLayout.ForeColor = System.Drawing.Color.White
-        Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
-        Me.btnLayout.Location = New System.Drawing.Point(0, 209)
-        Me.btnLayout.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnLayout.Name = "btnLayout"
-        Me.btnLayout.Size = New System.Drawing.Size(137, 99)
-        Me.btnLayout.TabIndex = 11
-        Me.btnLayout.Text = "Layout"
-        Me.btnLayout.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnLayout.UseVisualStyleBackColor = True
-        '
-        'btnSettings
-        '
-        Me.btnSettings.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.btnSettings.FlatAppearance.BorderSize = 0
-        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSettings.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSettings.ForeColor = System.Drawing.Color.White
-        Me.btnSettings.Image = CType(resources.GetObject("btnSettings.Image"), System.Drawing.Image)
-        Me.btnSettings.Location = New System.Drawing.Point(0, 321)
-        Me.btnSettings.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(137, 99)
-        Me.btnSettings.TabIndex = 10
-        Me.btnSettings.Text = "Settings"
-        Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnSettings.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -3127,7 +3127,7 @@ Partial Class frmDashboard
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1655, 1055)
+        Me.ClientSize = New System.Drawing.Size(1444, 881)
         Me.Controls.Add(Me.btnLoadClient)
         Me.Controls.Add(Me.tbpCustomer)
         Me.Controls.Add(Me.lblDayInfo)

@@ -224,4 +224,20 @@
         GetCustomerInContext.ShowDialog()
         getDataFromDGV()
     End Sub
+
+    Private Sub cmdStrollingStations_Click(sender As Object, e As EventArgs) Handles cmdStrollingStations.Click
+        frmStrollingStations.ShowDialog()
+    End Sub
+
+    Private Sub cmdTraditionalBuffet_Click(sender As Object, e As EventArgs) Handles cmdTraditionalBuffet.Click
+        frmBuffetStyle.ShowDialog()
+    End Sub
+
+    Private Sub cmdPlatedMeals_Click(sender As Object, e As EventArgs) Handles cmdPlatedMeals.Click
+        frmPlatedMenu.ShowDialog()
+    End Sub
+
+    Private Sub cmdDessert_Click(sender As Object, e As EventArgs) Handles cmdDessert.Click
+        frmDesertSelections.ShowDialog()
+    End Sub
 End Class
