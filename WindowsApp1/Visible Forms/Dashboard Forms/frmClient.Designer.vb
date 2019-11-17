@@ -259,7 +259,7 @@ Partial Class frmClient
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(1170, 610)
+        Me.tbpCustomer.Size = New System.Drawing.Size(1208, 610)
         Me.tbpCustomer.TabIndex = 5
         '
         'tpCustomerInfo
@@ -281,7 +281,7 @@ Partial Class frmClient
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(1162, 584)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(1200, 584)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
@@ -450,7 +450,7 @@ Partial Class frmClient
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(1162, 584)
+        Me.tpEventInfo.Size = New System.Drawing.Size(1200, 584)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
@@ -825,7 +825,7 @@ Partial Class frmClient
         Me.tpTimeline.Location = New System.Drawing.Point(4, 22)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(1162, 584)
+        Me.tpTimeline.Size = New System.Drawing.Size(1200, 584)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
@@ -897,7 +897,7 @@ Partial Class frmClient
         Me.tpFoodSelection.Location = New System.Drawing.Point(4, 22)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(1162, 584)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(1200, 584)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
         '
@@ -1160,7 +1160,7 @@ Partial Class frmClient
         Me.tpDrinkService.Location = New System.Drawing.Point(4, 22)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(1162, 584)
+        Me.tpDrinkService.Size = New System.Drawing.Size(1200, 584)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
         '
@@ -1480,7 +1480,7 @@ Partial Class frmClient
         Me.tpAudioLighting.Location = New System.Drawing.Point(4, 22)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(1162, 584)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(1200, 584)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
         '
@@ -1729,7 +1729,7 @@ Partial Class frmClient
         Me.tpMiscInfo.Location = New System.Drawing.Point(4, 22)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(1162, 584)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(1200, 584)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Linens"
         '
@@ -2020,7 +2020,7 @@ Partial Class frmClient
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1162, 584)
+        Me.TabPage2.Size = New System.Drawing.Size(1200, 584)
         Me.TabPage2.TabIndex = 9
         Me.TabPage2.Text = "Vendors"
         '
@@ -2651,7 +2651,7 @@ Partial Class frmClient
         Me.tpLayout.ForeColor = System.Drawing.Color.Wheat
         Me.tpLayout.Location = New System.Drawing.Point(4, 22)
         Me.tpLayout.Name = "tpLayout"
-        Me.tpLayout.Size = New System.Drawing.Size(1162, 584)
+        Me.tpLayout.Size = New System.Drawing.Size(1200, 584)
         Me.tpLayout.TabIndex = 7
         Me.tpLayout.Text = "Layout"
         '
@@ -2717,7 +2717,7 @@ Partial Class frmClient
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1162, 584)
+        Me.TabPage1.Size = New System.Drawing.Size(1200, 584)
         Me.TabPage1.TabIndex = 8
         Me.TabPage1.Text = "Payments & Reports"
         '
@@ -2790,7 +2790,7 @@ Partial Class frmClient
         Me.btnNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnNewClient.UseVisualStyleBackColor = False
         '
-        'ClientForm
+        'frmClient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -2800,7 +2800,7 @@ Partial Class frmClient
         Me.Controls.Add(Me.btnNewClient)
         Me.Controls.Add(Me.tbpCustomer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "ClientForm"
+        Me.Name = "frmClient"
         Me.Text = "ClientForm"
         Me.tbpCustomer.ResumeLayout(False)
         Me.tpCustomerInfo.ResumeLayout(False)

@@ -200,7 +200,7 @@ Partial Class frmDashboard
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 0)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(109, 115)
@@ -214,7 +214,7 @@ Partial Class frmDashboard
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlForms.Location = New System.Drawing.Point(155, 142)
         Me.pnlForms.Name = "pnlForms"
-        Me.pnlForms.Size = New System.Drawing.Size(1257, 713)
+        Me.pnlForms.Size = New System.Drawing.Size(1220, 713)
         Me.pnlForms.TabIndex = 42
         '
         'frmDashboard
