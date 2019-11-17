@@ -113,6 +113,12 @@
       <DependentUpon>BeverageService.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmBuffetStyle.Designer.vb">
+      <DependentUpon>frmBuffetStyle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuffetStyle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmCustomerInfo.Designer.vb">
       <DependentUpon>frmCustomerInfo.vb</DependentUpon>
     </Compile>
@@ -147,6 +153,12 @@
       <DependentUpon>frmMenu.vb</DependentUpon>
     </Compile>
     <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlatedMenu.Designer.vb">
+      <DependentUpon>frmPlatedMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlatedMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmStrollingStations.Designer.vb">
@@ -208,6 +220,9 @@
     <EmbeddedResource Include="BeverageService.resx">
       <DependentUpon>BeverageService.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuffetStyle.resx">
+      <DependentUpon>frmBuffetStyle.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCustomerInfo.resx">
       <DependentUpon>frmCustomerInfo.vb</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlatedMenu.resx">
+      <DependentUpon>frmPlatedMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStrollingStations.resx">
       <DependentUpon>frmStrollingStations.vb</DependentUpon>
