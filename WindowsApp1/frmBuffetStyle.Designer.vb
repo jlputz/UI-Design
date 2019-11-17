@@ -31,8 +31,10 @@ Partial Class frmBuffetStyle
         Me.cboEntrees = New System.Windows.Forms.ComboBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.lblBuffetSelections = New System.Windows.Forms.Label()
-        Me.cmdAddToBuffetSelections = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.cmdAddToEventFoodSelections = New System.Windows.Forms.Button()
+        Me.cmdAddSaladsToMeal = New System.Windows.Forms.Button()
+        Me.cmdAddSideDishes = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTraditionalBuffet
@@ -88,7 +90,7 @@ Partial Class frmBuffetStyle
         Me.lblEntrees.Name = "lblEntrees"
         Me.lblEntrees.Size = New System.Drawing.Size(62, 15)
         Me.lblEntrees.TabIndex = 9
-        Me.lblEntrees.Text = "Entrees:"
+        Me.lblEntrees.Text = "Entrées:"
         '
         'cboEntrees
         '
@@ -102,7 +104,7 @@ Partial Class frmBuffetStyle
         '
         Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.TextBox1.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox1.Location = New System.Drawing.Point(371, 76)
+        Me.TextBox1.Location = New System.Drawing.Point(465, 76)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(432, 431)
@@ -112,44 +114,64 @@ Partial Class frmBuffetStyle
         '
         Me.lblBuffetSelections.AutoSize = True
         Me.lblBuffetSelections.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBuffetSelections.Location = New System.Drawing.Point(368, 55)
+        Me.lblBuffetSelections.Location = New System.Drawing.Point(462, 55)
         Me.lblBuffetSelections.Name = "lblBuffetSelections"
         Me.lblBuffetSelections.Size = New System.Drawing.Size(149, 18)
         Me.lblBuffetSelections.TabIndex = 12
         Me.lblBuffetSelections.Text = "Buffet Selections:"
         '
-        'cmdAddToBuffetSelections
+        'cmdAddToEventFoodSelections
         '
-        Me.cmdAddToBuffetSelections.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdAddToBuffetSelections.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAddToBuffetSelections.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdAddToBuffetSelections.Location = New System.Drawing.Point(86, 211)
-        Me.cmdAddToBuffetSelections.Name = "cmdAddToBuffetSelections"
-        Me.cmdAddToBuffetSelections.Size = New System.Drawing.Size(213, 39)
-        Me.cmdAddToBuffetSelections.TabIndex = 36
-        Me.cmdAddToBuffetSelections.Text = "Add to Buffet Selections"
-        Me.cmdAddToBuffetSelections.UseVisualStyleBackColor = False
+        Me.cmdAddToEventFoodSelections.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddToEventFoodSelections.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAddToEventFoodSelections.ForeColor = System.Drawing.Color.Wheat
+        Me.cmdAddToEventFoodSelections.Location = New System.Drawing.Point(544, 515)
+        Me.cmdAddToEventFoodSelections.Name = "cmdAddToEventFoodSelections"
+        Me.cmdAddToEventFoodSelections.Size = New System.Drawing.Size(279, 39)
+        Me.cmdAddToEventFoodSelections.TabIndex = 37
+        Me.cmdAddToEventFoodSelections.Text = "Add to Event Food Selections"
+        Me.cmdAddToEventFoodSelections.UseVisualStyleBackColor = False
         '
-        'Button1
+        'cmdAddSaladsToMeal
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Wheat
-        Me.Button1.Location = New System.Drawing.Point(450, 515)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(279, 39)
-        Me.Button1.TabIndex = 37
-        Me.Button1.Text = "Add to Event Food Selections"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.cmdAddSaladsToMeal.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddSaladsToMeal.Location = New System.Drawing.Point(351, 70)
+        Me.cmdAddSaladsToMeal.Name = "cmdAddSaladsToMeal"
+        Me.cmdAddSaladsToMeal.Size = New System.Drawing.Size(93, 28)
+        Me.cmdAddSaladsToMeal.TabIndex = 38
+        Me.cmdAddSaladsToMeal.Text = "Add Salad"
+        Me.cmdAddSaladsToMeal.UseVisualStyleBackColor = False
+        '
+        'cmdAddSideDishes
+        '
+        Me.cmdAddSideDishes.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddSideDishes.Location = New System.Drawing.Point(351, 116)
+        Me.cmdAddSideDishes.Name = "cmdAddSideDishes"
+        Me.cmdAddSideDishes.Size = New System.Drawing.Size(93, 28)
+        Me.cmdAddSideDishes.TabIndex = 39
+        Me.cmdAddSideDishes.Text = "Add Side"
+        Me.cmdAddSideDishes.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button2.Location = New System.Drawing.Point(351, 159)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(93, 28)
+        Me.Button2.TabIndex = 40
+        Me.Button2.Text = "Add Entrée"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'frmBuffetStyle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(824, 566)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.cmdAddToBuffetSelections)
+        Me.ClientSize = New System.Drawing.Size(916, 566)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.cmdAddSideDishes)
+        Me.Controls.Add(Me.cmdAddSaladsToMeal)
+        Me.Controls.Add(Me.cmdAddToEventFoodSelections)
         Me.Controls.Add(Me.lblBuffetSelections)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.cboEntrees)
@@ -179,6 +201,8 @@ Partial Class frmBuffetStyle
     Friend WithEvents cboEntrees As ComboBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents lblBuffetSelections As Label
-    Friend WithEvents cmdAddToBuffetSelections As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents cmdAddToEventFoodSelections As Button
+    Friend WithEvents cmdAddSaladsToMeal As Button
+    Friend WithEvents cmdAddSideDishes As Button
+    Friend WithEvents Button2 As Button
 End Class
