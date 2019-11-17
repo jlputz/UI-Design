@@ -131,6 +131,12 @@
     <Compile Include="frmDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmDesertSelections.Designer.vb">
+      <DependentUpon>frmDesertSelections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDesertSelections.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDrinkTableEditior.Designer.vb">
       <DependentUpon>frmDrinkTableEditior.vb</DependentUpon>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDesertSelections.resx">
+      <DependentUpon>frmDesertSelections.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDrinkTableEditior.resx">
       <DependentUpon>frmDrinkTableEditior.vb</DependentUpon>
