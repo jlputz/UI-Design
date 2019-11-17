@@ -424,9 +424,9 @@ Partial Class frmStrollingStations
         Me.cmdAddStrollingDinnerItems.ForeColor = System.Drawing.Color.Wheat
         Me.cmdAddStrollingDinnerItems.Location = New System.Drawing.Point(29, 499)
         Me.cmdAddStrollingDinnerItems.Name = "cmdAddStrollingDinnerItems"
-        Me.cmdAddStrollingDinnerItems.Size = New System.Drawing.Size(152, 39)
+        Me.cmdAddStrollingDinnerItems.Size = New System.Drawing.Size(207, 39)
         Me.cmdAddStrollingDinnerItems.TabIndex = 35
-        Me.cmdAddStrollingDinnerItems.Text = "Add to Event"
+        Me.cmdAddStrollingDinnerItems.Text = "Add to Food Selections"
         Me.cmdAddStrollingDinnerItems.UseVisualStyleBackColor = False
         '
         'frmStrollingStations
