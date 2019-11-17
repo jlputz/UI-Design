@@ -16,19 +16,14 @@
 
 
     Private Sub btnClient_Click(sender As Object, e As EventArgs) Handles btnClient.Click
-        tbpCustomer.SelectedTab = tpCustomerInfo
+
         hideSettings()
         hideHome()
         hideLayout()
-        btnNewClient.Visible = True
-        GetCustomerInContext.DataGridView1.Visible = True
-        tbpCustomer.Visible = True
-        pnlSettings.Visible = False
-        pnlButtonMover.Height = btnClient.Height
-        pnlButtonMover.Top = btnClient.Top
-        GetCustomerInContext.txtsearch.Visible = True
-        GetCustomerInContext.btnSearch.Visible = True
-        btnLoadClient.Visible = True
+        ClientForm.TopLevel = False
+        ClientForm.TopMost = True
+        Me.pnlForms.Controls.Add(ClientForm)
+        ClientForm.Show()
 
 
     End Sub
@@ -56,13 +51,10 @@
 
 
     Sub hideClientMenu()
-        tbpCustomer.Visible = False
-        btnNewClient.Visible = False
-        GetCustomerInContext.DataGridView1.Visible = False
-        btnCancelNewClient.Visible = False
-        GetCustomerInContext.txtsearch.Visible = False
-        GetCustomerInContext.btnSearch.Visible = False
-        btnLoadClient.Visible = False
+        ClientForm.TopLevel = False
+        ClientForm.TopMost = True
+        Me.pnlForms.Controls.Remove(ClientForm)
+
     End Sub
     Sub hideSettings()
         pnlSettings.Visible = False
@@ -84,8 +76,8 @@
     End Sub
 
     Private Sub btnNewClient_Click(sender As Object, e As EventArgs) Handles btnNewClient.Click
-        tbpCustomer.Visible = True
-        tbpCustomer.Top = GetCustomerInContext.DataGridView1.Top
+        'tbpCustomer.Visible = True
+        'tbpCustomer.Top = GetCustomerInContext.DataGridView1.Top
         GetCustomerInContext.DataGridView1.Visible = False
 
         btnNewClient.Visible = False
@@ -95,9 +87,9 @@
 
     Private Sub btnCancelNewClient_Click(sender As Object, e As EventArgs) Handles btnCancelNewClient.Click
         If MessageBox.Show("Are you Sure You want To Cancel?", "Cancel? ", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-            tbpCustomer.Visible = True
+            '   tbpCustomer.Visible = True
             GetCustomerInContext.DataGridView1.Visible = True
-            tbpCustomer.Top = GetCustomerInContext.DataGridView1.Bottom + 3
+            '  tbpCustomer.Top = GetCustomerInContext.DataGridView1.Bottom + 3
             btnCancelNewClient.Visible = False
             btnNewClient.Visible = True
             togglePnlButtons()
@@ -106,14 +98,14 @@
     End Sub
 
     Sub togglePnlButtons()
-        cmdEnterCustomerInfo.Visible = Not cmdEnterCustomerInfo.Visible
+        ' cmdEnterCustomerInfo.Visible = Not cmdEnterCustomerInfo.Visible
 
-        cmdUpdateTimeline.Visible = Not cmdUpdateTimeline.Visible
+        'cmdUpdateTimeline.Visible = Not cmdUpdateTimeline.Visible
 
-        btnBevSel.Visible = Not btnBevSel.Visible
-        cmdAddAV.Visible = Not cmdAddAV.Visible
-        btnLinensSel.Visible = Not btnLinensSel.Visible
-        btnVendorSel.Visible = Not btnVendorSel.Visible
+        'btnBevSel.Visible = Not btnBevSel.Visible
+        'cmdAddAV.Visible = Not cmdAddAV.Visible
+        'btnLinensSel.Visible = Not btnLinensSel.Visible
+        'btnVendorSel.Visible = Not btnVendorSel.Visible
 
     End Sub
 
@@ -149,53 +141,53 @@
         End If
     End Sub
 
-    Private Sub TxtCustomerName_TextChanged(sender As Object, e As EventArgs) Handles txtCustomerName.TextChanged
+    Private Sub TxtCustomerName_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub lblGuestCount_Click(sender As Object, e As EventArgs) Handles lblGuestCount.Click
+    Private Sub lblGuestCount_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub chkCeremonyEvent_CheckedChanged(sender As Object, e As EventArgs) Handles chkCeremonyEvent.CheckedChanged
-        If chkCeremonyEvent.Checked = True Then
-            pnlCeremony.Visible = True
-            pnlEventInfo.Top = pnlCeremony.Bottom + 3
-        Else
-            pnlCeremony.Visible = False
-            pnlEventInfo.Top = chkCeremonyEvent.Bottom + 3
-        End If
+    Private Sub chkCeremonyEvent_CheckedChanged(sender As Object, e As EventArgs)
+        'If chkCeremonyEvent.Checked = True Then
+        '  pnlCeremony.Visible = True
+        '   pnlEventInfo.Top = pnlCeremony.Bottom + 3
+        'Else
+        '  pnlCeremony.Visible = False
+        '   pnlEventInfo.Top = chkCeremonyEvent.Bottom + 3
+        'End If
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles pnlEventInfo.Paint
-
-    End Sub
-
-    Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MaskedTextBox1.MaskInputRejected
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
-    Private Sub chkOpenBar_CheckedChanged(sender As Object, e As EventArgs) Handles chkOpenBar.CheckedChanged
-        If chkOpenBar.Checked = True Then
-            pnlCashBar.Visible = False
-        Else
-            pnlCashBar.Visible = True
-        End If
-    End Sub
-
-    Private Sub chkCashBar_CheckedChanged(sender As Object, e As EventArgs) Handles chkCashBar.CheckedChanged
-        If chkCashBar.Checked = True Then
-            pnlOpenBar.Visible = False
-        Else
-            pnlOpenBar.Visible = True
-        End If
-    End Sub
-
-    Private Sub tpMiscInfo_Click(sender As Object, e As EventArgs) Handles tpMiscInfo.Click
+    Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs)
 
     End Sub
 
-    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
+    Private Sub chkOpenBar_CheckedChanged(sender As Object, e As EventArgs)
+        'If chkOpenBar.Checked = True Then
+        '    pnlCashBar.Visible = False
+        'Else
+        '   pnlCashBar.Visible = True
+        'End If
+    End Sub
+
+    Private Sub chkCashBar_CheckedChanged(sender As Object, e As EventArgs)
+        'If chkCashBar.Checked = True Then
+        '    pnlOpenBar.Visible = False
+        'Else
+        '   pnlOpenBar.Visible = True
+        'End If
+    End Sub
+
+    Private Sub tpMiscInfo_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub TabPage2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -207,16 +199,16 @@
     Sub getDataFromDGV()
         If (GetCustomerInContext.DataGridView1.CurrentRow.Selected) Then
 
-            txtCustomerName.Text = GetCustomerInContext.DataGridView1.SelectedCells(3).Value.ToString() + " " + GetCustomerInContext.DataGridView1.SelectedCells(2).Value.ToString()
+            '  txtCustomerName.Text = GetCustomerInContext.DataGridView1.SelectedCells(3).Value.ToString() + " " + GetCustomerInContext.DataGridView1.SelectedCells(2).Value.ToString()
 
         End If
     End Sub
 
-    Private Sub btnPrintInvoice_Click(sender As Object, e As EventArgs) Handles btnPrintInvoice.Click
+    Private Sub btnPrintInvoice_Click(sender As Object, e As EventArgs)
         Process.Start("C:\TTInvoice.pdf")
     End Sub
 
-    Private Sub btnPrintBEO_Click(sender As Object, e As EventArgs) Handles btnPrintBEO.Click
+    Private Sub btnPrintBEO_Click(sender As Object, e As EventArgs)
         Process.Start("C:\BEO_mockup.pdf")
     End Sub
 
@@ -225,19 +217,19 @@
         getDataFromDGV()
     End Sub
 
-    Private Sub cmdStrollingStations_Click(sender As Object, e As EventArgs) Handles cmdStrollingStations.Click
+    Private Sub cmdStrollingStations_Click(sender As Object, e As EventArgs)
         frmStrollingStations.ShowDialog()
     End Sub
 
-    Private Sub cmdTraditionalBuffet_Click(sender As Object, e As EventArgs) Handles cmdTraditionalBuffet.Click
+    Private Sub cmdTraditionalBuffet_Click(sender As Object, e As EventArgs)
         frmBuffetStyle.ShowDialog()
     End Sub
 
-    Private Sub cmdPlatedMeals_Click(sender As Object, e As EventArgs) Handles cmdPlatedMeals.Click
+    Private Sub cmdPlatedMeals_Click(sender As Object, e As EventArgs)
         frmPlatedMenu.ShowDialog()
     End Sub
 
-    Private Sub cmdDessert_Click(sender As Object, e As EventArgs) Handles cmdDessert.Click
+    Private Sub cmdDessert_Click(sender As Object, e As EventArgs)
         frmDesertSelections.ShowDialog()
     End Sub
 End Class
