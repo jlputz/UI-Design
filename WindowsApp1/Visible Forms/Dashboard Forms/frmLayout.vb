@@ -1,4 +1,4 @@
-﻿Public Class LayoutForm
+﻿Public Class frmLayout
     Private Sub LayoutForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub

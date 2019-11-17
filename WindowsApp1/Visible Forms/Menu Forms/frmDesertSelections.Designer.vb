@@ -66,6 +66,7 @@ Partial Class frmDesertSelections
         'cmdAddDesertShooters
         '
         Me.cmdAddDesertShooters.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddDesertShooters.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddDesertShooters.Location = New System.Drawing.Point(363, 87)
         Me.cmdAddDesertShooters.Name = "cmdAddDesertShooters"
         Me.cmdAddDesertShooters.Size = New System.Drawing.Size(116, 28)
@@ -94,6 +95,7 @@ Partial Class frmDesertSelections
         'cmdAddCookies
         '
         Me.cmdAddCookies.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddCookies.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddCookies.Location = New System.Drawing.Point(363, 129)
         Me.cmdAddCookies.Name = "cmdAddCookies"
         Me.cmdAddCookies.Size = New System.Drawing.Size(116, 28)
@@ -122,6 +124,7 @@ Partial Class frmDesertSelections
         'cmdAddDessertShooters
         '
         Me.cmdAddDessertShooters.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddDessertShooters.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddDessertShooters.Location = New System.Drawing.Point(363, 171)
         Me.cmdAddDessertShooters.Name = "cmdAddDessertShooters"
         Me.cmdAddDessertShooters.Size = New System.Drawing.Size(116, 28)
@@ -161,6 +164,7 @@ Partial Class frmDesertSelections
         'cmdAddDonuts
         '
         Me.cmdAddDonuts.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddDonuts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddDonuts.Location = New System.Drawing.Point(363, 240)
         Me.cmdAddDonuts.Name = "cmdAddDonuts"
         Me.cmdAddDonuts.Size = New System.Drawing.Size(116, 28)
@@ -188,10 +192,13 @@ Partial Class frmDesertSelections
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(495, 87)
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox1.Location = New System.Drawing.Point(495, 79)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(518, 336)
+        Me.TextBox1.Size = New System.Drawing.Size(518, 384)
         Me.TextBox1.TabIndex = 53
         '
         'lblDesertsSelected
@@ -207,9 +214,10 @@ Partial Class frmDesertSelections
         'cmdAddToEventFoodSelections
         '
         Me.cmdAddToEventFoodSelections.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddToEventFoodSelections.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddToEventFoodSelections.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddToEventFoodSelections.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdAddToEventFoodSelections.Location = New System.Drawing.Point(634, 429)
+        Me.cmdAddToEventFoodSelections.Location = New System.Drawing.Point(14, 424)
         Me.cmdAddToEventFoodSelections.Name = "cmdAddToEventFoodSelections"
         Me.cmdAddToEventFoodSelections.Size = New System.Drawing.Size(279, 39)
         Me.cmdAddToEventFoodSelections.TabIndex = 56
@@ -241,7 +249,7 @@ Partial Class frmDesertSelections
         Me.Controls.Add(Me.chkStuffedStrawberries)
         Me.Controls.Add(Me.lblDesertSelectionsTitle)
         Me.ForeColor = System.Drawing.Color.Wheat
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "frmDesertSelections"
         Me.Text = "Desert Selections"
         Me.ResumeLayout(False)

@@ -191,7 +191,7 @@ Partial Class frmDashboard
         'pboxNotif
         '
         Me.pboxNotif.Image = CType(resources.GetObject("pboxNotif.Image"), System.Drawing.Image)
-        Me.pboxNotif.Location = New System.Drawing.Point(171, 61)
+        Me.pboxNotif.Location = New System.Drawing.Point(168, 60)
         Me.pboxNotif.Name = "pboxNotif"
         Me.pboxNotif.Size = New System.Drawing.Size(37, 40)
         Me.pboxNotif.TabIndex = 36

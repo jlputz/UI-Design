@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class GetCustomerInContext
+Partial Class frmGetCustomerInContext
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class GetCustomerInContext
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GetCustomerInContext))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGetCustomerInContext))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.EventDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EventType = New System.Windows.Forms.DataGridViewTextBoxColumn()

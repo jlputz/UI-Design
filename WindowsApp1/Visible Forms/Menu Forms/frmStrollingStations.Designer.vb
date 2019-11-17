@@ -49,8 +49,6 @@ Partial Class frmStrollingStations
         Me.chkBBQSides = New System.Windows.Forms.CheckBox()
         Me.lstStrollingDinnerSelections = New System.Windows.Forms.ListBox()
         Me.lblStationsSelected = New System.Windows.Forms.Label()
-        Me.cmdCancel = New System.Windows.Forms.Button()
-        Me.cmdAddStationSelections = New System.Windows.Forms.Button()
         Me.lblPastaAddons = New System.Windows.Forms.Label()
         Me.cboPastaAddons = New System.Windows.Forms.ComboBox()
         Me.cmdAddPastaAddons = New System.Windows.Forms.Button()
@@ -104,6 +102,7 @@ Partial Class frmStrollingStations
         'cmdAddPastaItems
         '
         Me.cmdAddPastaItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddPastaItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddPastaItems.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddPastaItems.ForeColor = System.Drawing.Color.Wheat
         Me.cmdAddPastaItems.Location = New System.Drawing.Point(245, 86)
@@ -116,6 +115,7 @@ Partial Class frmStrollingStations
         'cmdAddSeafoodItems
         '
         Me.cmdAddSeafoodItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddSeafoodItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddSeafoodItems.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddSeafoodItems.ForeColor = System.Drawing.Color.Wheat
         Me.cmdAddSeafoodItems.Location = New System.Drawing.Point(242, 218)
@@ -130,9 +130,9 @@ Partial Class frmStrollingStations
         Me.cboSeafoodItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboSeafoodItems.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboSeafoodItems.FormattingEnabled = True
-        Me.cboSeafoodItems.Location = New System.Drawing.Point(71, 222)
+        Me.cboSeafoodItems.Location = New System.Drawing.Point(76, 222)
         Me.cboSeafoodItems.Name = "cboSeafoodItems"
-        Me.cboSeafoodItems.Size = New System.Drawing.Size(165, 26)
+        Me.cboSeafoodItems.Size = New System.Drawing.Size(160, 26)
         Me.cboSeafoodItems.TabIndex = 10
         '
         'lblSeafoodItems
@@ -161,6 +161,7 @@ Partial Class frmStrollingStations
         'cmdAddGardenItems
         '
         Me.cmdAddGardenItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddGardenItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddGardenItems.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddGardenItems.ForeColor = System.Drawing.Color.Wheat
         Me.cmdAddGardenItems.Location = New System.Drawing.Point(242, 277)
@@ -175,9 +176,9 @@ Partial Class frmStrollingStations
         Me.cboGardenItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboGardenItems.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboGardenItems.FormattingEnabled = True
-        Me.cboGardenItems.Location = New System.Drawing.Point(71, 280)
+        Me.cboGardenItems.Location = New System.Drawing.Point(76, 280)
         Me.cboGardenItems.Name = "cboGardenItems"
-        Me.cboGardenItems.Size = New System.Drawing.Size(165, 26)
+        Me.cboGardenItems.Size = New System.Drawing.Size(160, 26)
         Me.cboGardenItems.TabIndex = 14
         '
         'lblGardenItems
@@ -206,6 +207,7 @@ Partial Class frmStrollingStations
         'cmdCarvedEntreeAddItems
         '
         Me.cmdCarvedEntreeAddItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdCarvedEntreeAddItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCarvedEntreeAddItems.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdCarvedEntreeAddItems.ForeColor = System.Drawing.Color.Wheat
         Me.cmdCarvedEntreeAddItems.Location = New System.Drawing.Point(242, 336)
@@ -220,9 +222,9 @@ Partial Class frmStrollingStations
         Me.cboCarvedEntreeItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboCarvedEntreeItems.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCarvedEntreeItems.FormattingEnabled = True
-        Me.cboCarvedEntreeItems.Location = New System.Drawing.Point(71, 339)
+        Me.cboCarvedEntreeItems.Location = New System.Drawing.Point(76, 339)
         Me.cboCarvedEntreeItems.Name = "cboCarvedEntreeItems"
-        Me.cboCarvedEntreeItems.Size = New System.Drawing.Size(165, 26)
+        Me.cboCarvedEntreeItems.Size = New System.Drawing.Size(160, 26)
         Me.cboCarvedEntreeItems.TabIndex = 18
         '
         'lblCarvedEntreeItems
@@ -251,6 +253,7 @@ Partial Class frmStrollingStations
         'cmdAddTacoTruckItems
         '
         Me.cmdAddTacoTruckItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddTacoTruckItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddTacoTruckItems.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddTacoTruckItems.ForeColor = System.Drawing.Color.Wheat
         Me.cmdAddTacoTruckItems.Location = New System.Drawing.Point(242, 395)
@@ -265,9 +268,9 @@ Partial Class frmStrollingStations
         Me.cboTacoTruckItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTacoTruckItems.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboTacoTruckItems.FormattingEnabled = True
-        Me.cboTacoTruckItems.Location = New System.Drawing.Point(71, 398)
+        Me.cboTacoTruckItems.Location = New System.Drawing.Point(76, 398)
         Me.cboTacoTruckItems.Name = "cboTacoTruckItems"
-        Me.cboTacoTruckItems.Size = New System.Drawing.Size(165, 26)
+        Me.cboTacoTruckItems.Size = New System.Drawing.Size(160, 26)
         Me.cboTacoTruckItems.TabIndex = 22
         '
         'lblTacoTruckItems
@@ -296,6 +299,7 @@ Partial Class frmStrollingStations
         'cmdAddBBQSidesItems
         '
         Me.cmdAddBBQSidesItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddBBQSidesItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddBBQSidesItems.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddBBQSidesItems.ForeColor = System.Drawing.Color.Wheat
         Me.cmdAddBBQSidesItems.Location = New System.Drawing.Point(242, 454)
@@ -310,9 +314,9 @@ Partial Class frmStrollingStations
         Me.cboBBQSidesItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboBBQSidesItems.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboBBQSidesItems.FormattingEnabled = True
-        Me.cboBBQSidesItems.Location = New System.Drawing.Point(71, 457)
+        Me.cboBBQSidesItems.Location = New System.Drawing.Point(76, 457)
         Me.cboBBQSidesItems.Name = "cboBBQSidesItems"
-        Me.cboBBQSidesItems.Size = New System.Drawing.Size(165, 26)
+        Me.cboBBQSidesItems.Size = New System.Drawing.Size(160, 26)
         Me.cboBBQSidesItems.TabIndex = 26
         '
         'chkBBQSidesItems
@@ -341,6 +345,7 @@ Partial Class frmStrollingStations
         'lstStrollingDinnerSelections
         '
         Me.lstStrollingDinnerSelections.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.lstStrollingDinnerSelections.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lstStrollingDinnerSelections.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstStrollingDinnerSelections.ForeColor = System.Drawing.Color.Wheat
         Me.lstStrollingDinnerSelections.FormattingEnabled = True
@@ -348,7 +353,7 @@ Partial Class frmStrollingStations
         Me.lstStrollingDinnerSelections.Items.AddRange(New Object() {"Pasta Station (Choose 2 - $10):", "" & Global.Microsoft.VisualBasic.ChrW(9) & "-Fettucini & Alfredo", "" & Global.Microsoft.VisualBasic.ChrW(9) & "-Traditional Lasagna"})
         Me.lstStrollingDinnerSelections.Location = New System.Drawing.Point(345, 87)
         Me.lstStrollingDinnerSelections.Name = "lstStrollingDinnerSelections"
-        Me.lstStrollingDinnerSelections.Size = New System.Drawing.Size(382, 310)
+        Me.lstStrollingDinnerSelections.Size = New System.Drawing.Size(382, 506)
         Me.lstStrollingDinnerSelections.TabIndex = 28
         '
         'lblStationsSelected
@@ -361,28 +366,6 @@ Partial Class frmStrollingStations
         Me.lblStationsSelected.Size = New System.Drawing.Size(160, 18)
         Me.lblStationsSelected.TabIndex = 29
         Me.lblStationsSelected.Text = "Stations/Items Added:"
-        '
-        'cmdCancel
-        '
-        Me.cmdCancel.BackColor = System.Drawing.Color.Coral
-        Me.cmdCancel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCancel.Location = New System.Drawing.Point(372, 548)
-        Me.cmdCancel.Name = "cmdCancel"
-        Me.cmdCancel.Size = New System.Drawing.Size(282, 44)
-        Me.cmdCancel.TabIndex = 31
-        Me.cmdCancel.Text = "Cancel"
-        Me.cmdCancel.UseVisualStyleBackColor = False
-        '
-        'cmdAddStationSelections
-        '
-        Me.cmdAddStationSelections.BackColor = System.Drawing.Color.Gold
-        Me.cmdAddStationSelections.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAddStationSelections.Location = New System.Drawing.Point(84, 548)
-        Me.cmdAddStationSelections.Name = "cmdAddStationSelections"
-        Me.cmdAddStationSelections.Size = New System.Drawing.Size(282, 44)
-        Me.cmdAddStationSelections.TabIndex = 30
-        Me.cmdAddStationSelections.Text = "Add Items to Food Selections"
-        Me.cmdAddStationSelections.UseVisualStyleBackColor = False
         '
         'lblPastaAddons
         '
@@ -408,6 +391,7 @@ Partial Class frmStrollingStations
         'cmdAddPastaAddons
         '
         Me.cmdAddPastaAddons.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddPastaAddons.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddPastaAddons.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddPastaAddons.ForeColor = System.Drawing.Color.Wheat
         Me.cmdAddPastaAddons.Location = New System.Drawing.Point(245, 125)
@@ -420,9 +404,10 @@ Partial Class frmStrollingStations
         'cmdAddStrollingDinnerItems
         '
         Me.cmdAddStrollingDinnerItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdAddStrollingDinnerItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddStrollingDinnerItems.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddStrollingDinnerItems.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdAddStrollingDinnerItems.Location = New System.Drawing.Point(29, 499)
+        Me.cmdAddStrollingDinnerItems.Location = New System.Drawing.Point(18, 552)
         Me.cmdAddStrollingDinnerItems.Name = "cmdAddStrollingDinnerItems"
         Me.cmdAddStrollingDinnerItems.Size = New System.Drawing.Size(207, 39)
         Me.cmdAddStrollingDinnerItems.TabIndex = 35
@@ -434,13 +419,11 @@ Partial Class frmStrollingStations
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(743, 550)
+        Me.ClientSize = New System.Drawing.Size(751, 621)
         Me.Controls.Add(Me.cmdAddStrollingDinnerItems)
         Me.Controls.Add(Me.cmdAddPastaAddons)
         Me.Controls.Add(Me.cboPastaAddons)
         Me.Controls.Add(Me.lblPastaAddons)
-        Me.Controls.Add(Me.cmdCancel)
-        Me.Controls.Add(Me.cmdAddStationSelections)
         Me.Controls.Add(Me.lblStationsSelected)
         Me.Controls.Add(Me.lstStrollingDinnerSelections)
         Me.Controls.Add(Me.cmdAddBBQSidesItems)
@@ -504,8 +487,6 @@ Partial Class frmStrollingStations
     Friend WithEvents chkBBQSides As CheckBox
     Friend WithEvents lstStrollingDinnerSelections As ListBox
     Friend WithEvents lblStationsSelected As Label
-    Friend WithEvents cmdCancel As Button
-    Friend WithEvents cmdAddStationSelections As Button
     Friend WithEvents lblPastaAddons As Label
     Friend WithEvents cboPastaAddons As ComboBox
     Friend WithEvents cmdAddPastaAddons As Button

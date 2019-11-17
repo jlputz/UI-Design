@@ -8,21 +8,21 @@
         btnHome.PerformClick()
 
         Me.WindowState = FormWindowState.Maximized
-        GetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/7/2019", "Wedding", "Anderson", "Clyde", "999-999-9999", "888-888-8888", "clyde@internet.com", "123 Oak St"})
-        GetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/8/2019", "Wedding", "Putz", "Jared", "999-999-9999", "888-888-8888", "jared@internet.com", "124 Oak St"})
+        frmGetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/7/2019", "Wedding", "Anderson", "Clyde", "999-999-9999", "888-888-8888", "clyde@internet.com", "123 Oak St"})
+        frmGetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/8/2019", "Wedding", "Putz", "Jared", "999-999-9999", "888-888-8888", "jared@internet.com", "124 Oak St"})
         'getDataFromDGV()
     End Sub
 
 
 
     Private Sub btnClient_Click(sender As Object, e As EventArgs) Handles btnClient.Click
-        SettingsForm.Close()
-        HomeForm.Close()
-        LayoutForm.Close()
-        ClientForm.TopLevel = False
-        ClientForm.TopMost = True
-        Me.pnlForms.Controls.Add(ClientForm)
-        ClientForm.Show()
+        frmSettings.Close()
+        frmHome.Close()
+        frmLayout.Close()
+        frmClient.TopLevel = False
+        frmClient.TopMost = True
+        Me.pnlForms.Controls.Add(frmClient)
+        frmClient.Show()
 
         pnlButtonMover.Height = btnClient.Height
         pnlButtonMover.Top = btnClient.Top
@@ -43,13 +43,13 @@
 
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
-        SettingsForm.Close()
-        ClientForm.Close()
-        LayoutForm.Close()
-        HomeForm.TopLevel = False
-        HomeForm.TopMost = True
-        Me.pnlForms.Controls.Add(HomeForm)
-        HomeForm.Show()
+        frmSettings.Close()
+        frmClient.Close()
+        frmLayout.Close()
+        frmHome.TopLevel = False
+        frmHome.TopMost = True
+        Me.pnlForms.Controls.Add(frmHome)
+        frmHome.Show()
 
 
     End Sub
@@ -62,13 +62,13 @@
     Private Sub btnLayout_Click(sender As Object, e As EventArgs) Handles btnLayout.Click
 
 
-        SettingsForm.Close()
-        ClientForm.Close()
-        HomeForm.Close()
-        LayoutForm.TopLevel = False
-        ClientForm.TopMost = True
-        Me.pnlForms.Controls.Add(LayoutForm)
-        LayoutForm.Show()
+        frmSettings.Close()
+        frmClient.Close()
+        frmHome.Close()
+        frmLayout.TopLevel = False
+        frmClient.TopMost = True
+        Me.pnlForms.Controls.Add(frmLayout)
+        frmLayout.Show()
 
         pnlButtonMover.Height = btnLayout.Height
         pnlButtonMover.Top = btnLayout.Top
@@ -78,9 +78,9 @@
     Private Sub btnNewClient_Click(sender As Object, e As EventArgs)
         'tbpCustomer.Visible = True
         'tbpCustomer.Top = GetCustomerInContext.DataGridView1.Top
-        GetCustomerInContext.DataGridView1.Visible = False
+        frmGetCustomerInContext.DataGridView1.Visible = False
 
-        ClientForm.btnNewClient.Visible = False
+        frmClient.btnNewClient.Visible = False
         togglePnlButtons()
         'btnCancelNewClient.Visible = True
     End Sub
@@ -88,10 +88,10 @@
     Private Sub btnCancelNewClient_Click(sender As Object, e As EventArgs)
         If MessageBox.Show("Are you Sure You want To Cancel?", "Cancel? ", MessageBoxButtons.YesNo) = DialogResult.Yes Then
             '   tbpCustomer.Visible = True
-            GetCustomerInContext.DataGridView1.Visible = True
+            frmGetCustomerInContext.DataGridView1.Visible = True
             '  tbpCustomer.Top = GetCustomerInContext.DataGridView1.Bottom + 3
             'btnCancelNewClient.Visible = False
-            ClientForm.btnNewClient.Visible = True
+            frmClient.btnNewClient.Visible = True
             togglePnlButtons()
         End If
 
@@ -115,33 +115,33 @@
 
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
 
-        ClientForm.Close()
-        HomeForm.Close()
-        LayoutForm.Close()
-        SettingsForm.TopLevel = False
-        SettingsForm.TopMost = True
-        Me.pnlForms.Controls.Add(SettingsForm)
-        SettingsForm.Show()
+        frmClient.Close()
+        frmHome.Close()
+        frmLayout.Close()
+        frmSettings.TopLevel = False
+        frmSettings.TopMost = True
+        Me.pnlForms.Controls.Add(frmSettings)
+        frmSettings.Show()
 
         pnlButtonMover.Height = btnSettings.Height
         pnlButtonMover.Top = btnSettings.Top
     End Sub
 
     Sub hideHome()
-        HomeForm.clndrHome.Visible = False
-        HomeForm.lblDayInfo.Visible = False
+        frmHome.clndrHome.Visible = False
+        frmHome.lblDayInfo.Visible = False
     End Sub
 
     Private Sub clndrHome_DateChanged(sender As Object, e As DateRangeEventArgs)
-        HomeForm.clndrHome.MaxSelectionCount = 1
+        frmHome.clndrHome.MaxSelectionCount = 1
 
         Dim EventDate As Date = e.Start
 
         If EventDate = Date.Today Then
-            HomeForm.lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
+            frmHome.lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
 
         Else
-            HomeForm.lblDayInfo.Text = "No Events on " + EventDate
+            frmHome.lblDayInfo.Text = "No Events on " + EventDate
 
         End If
     End Sub
@@ -189,7 +189,7 @@
     End Sub
 
     Sub getDataFromDGV()
-        If (GetCustomerInContext.DataGridView1.CurrentRow.Selected) Then
+        If (frmGetCustomerInContext.DataGridView1.CurrentRow.Selected) Then
 
             '  txtCustomerName.Text = GetCustomerInContext.DataGridView1.SelectedCells(3).Value.ToString() + " " + GetCustomerInContext.DataGridView1.SelectedCells(2).Value.ToString()
 
@@ -205,7 +205,7 @@
     End Sub
 
     Private Sub btnLoadClient_Click(sender As Object, e As EventArgs)
-        GetCustomerInContext.ShowDialog()
+        frmGetCustomerInContext.ShowDialog()
         getDataFromDGV()
     End Sub
 
