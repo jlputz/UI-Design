@@ -566,42 +566,6 @@
   <metadata name="fName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="pPhone.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="sPhone.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="address.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="EventDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="EventType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="fName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="pPhone.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="sPhone.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="address.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="pnlSettings.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -619,6 +583,22 @@
         qP4jQ/Ms5HbDX+EEyM3rOA0xr49c3KAeqlqYLkC3tuQO2ZqP6CHywjwOTRaXGLJQDeno+iIkH+2iDmnK
         A+jRkc3EgDOwqgPr8hhO6YjuiIEDcAXmQDYxso+QR7A8Td/CLFyEXo3UUKv1D98jcZ8M43CwAAAAAElF
         TkSuQmCC
+</value>
+  </data>
+  <data name="btnSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAJZSURBVFhHzZc9a1RBGIVvYtBCUCQWgmCjBAMiBBVF0wnaqUXAQuzE2hSSUtFf4A+I2ATsElAI
+        AVuJSBBERLAIFkEIImIRxEqfI2dh5nWSnXs3EQ88xe45573D/Zi729RoY/XZAbgE9+ApLMIczMAk7HV0
+        e8XgE7ACvypYgMOuDiYG7YcXHtyWWdjtUe1FeRw2PKwrn+CgR9aL0slkyKD8hPpFENaN9sPlyEe4DPtg
+        2PldMArX4SuUejoTdZeD4JukmHIThhwrCl+LeeB8ZNaxzUXoXCj1OO1IlcjfCP0eWz8dBHSqYmnKdivR
+        exjmiAXbfwvzSAiLV7Zbi64uR+meKG9WGLdCUEzY7iT6ujHjzEnbuTDmQ1CM2O4k+no64swZ27kw1kJw
+        3VZnMUOXIZ0p5mznwtCGkQaXbQ2kMFMs2sqFsR6Ca7Y6ixnDYaZ4YjsXxlIIij+7XVfR144ZZ963nQtj
+        OgTFmO1Ooq9tO868aDsXht5+MTxvu7XoDoHeHXHmqCO5MFT4ngR7nHKklejp3RFnrdgui8C1UBB6Og45
+        UiXyZ5J+ynlHyiKguzbuB0KLqDoT5KaSXspLR7YWwaOhmKLdcgyyp4PPIzABr6HUE48d7y/CV0O5hM7U
+        MnxJvuvHIx+ivwjXLKILrRahy1G6J2p4Dx/Cdz1aLUKP5xX45nI/PoPy6u0BLaSUq1+EREEDj8Md0D8i
+        vTv0dKzCc7gNxyD73cjn7VtEV3EgLeJdcuD/bhEXHNtZcaDNFjHtyM6Lg2kRb5ODi3Hb/0YcUDvnXdBf
+        +7NN0zS/AXSC5n+8q23gAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

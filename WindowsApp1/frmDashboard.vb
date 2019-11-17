@@ -27,6 +27,9 @@
         tbpCustomer.Top = DataGridView1.Bottom + 5
         pnlButtonMover.Height = btnClient.Height
         pnlButtonMover.Top = btnClient.Top
+        txtsearch.Visible = True
+        btnSearch.Visible = True
+
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -56,6 +59,8 @@
         btnNewClient.Visible = False
         DataGridView1.Visible = False
         btnCancelNewClient.Visible = False
+        txtsearch.Visible = False
+        btnSearch.Visible = False
     End Sub
     Sub hideSettings()
         pnlSettings.Visible = False
@@ -100,9 +105,9 @@
 
     Sub togglePnlButtons()
         cmdEnterCustomerInfo.Visible = Not cmdEnterCustomerInfo.Visible
-        cmdEnterEventInfo.Visible = Not cmdEnterEventInfo.Visible
+
         cmdUpdateTimeline.Visible = Not cmdUpdateTimeline.Visible
-        btnFoodSel.Visible = Not btnFoodSel.Visible
+
         btnBevSel.Visible = Not btnBevSel.Visible
         cmdAddAV.Visible = Not cmdAddAV.Visible
         btnLinensSel.Visible = Not btnLinensSel.Visible
@@ -201,10 +206,7 @@
         If (DataGridView1.CurrentRow.Selected) Then
 
             txtCustomerName.Text = DataGridView1.SelectedCells(3).Value.ToString() + " " + DataGridView1.SelectedCells(2).Value.ToString()
-            txtCustomerAddress.Text = DataGridView1.SelectedCells(7).Value.ToString()
-            txtCustomerEmail.Text = DataGridView1.SelectedCells(6).Value.ToString()
-            mtbCustomerPhone.Text = DataGridView1.SelectedCells(4).Value.ToString()
-            mtbCustomerAlternatePhone.Text = DataGridView1.SelectedCells(5).Value.ToString()
+
         End If
     End Sub
 
