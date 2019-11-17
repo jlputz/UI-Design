@@ -113,6 +113,12 @@
       <DependentUpon>BeverageService.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClientForm.Designer.vb">
+      <DependentUpon>ClientForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmBuffetStyle.Designer.vb">
       <DependentUpon>frmBuffetStyle.vb</DependentUpon>
     </Compile>
@@ -231,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BeverageService.resx">
       <DependentUpon>BeverageService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuffetStyle.resx">
       <DependentUpon>frmBuffetStyle.vb</DependentUpon>
