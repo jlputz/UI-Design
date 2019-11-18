@@ -107,10 +107,10 @@
       <DependentUpon>BeverageService.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Visible Forms\Dashboard Forms\frmAfterglow.Designer.vb">
+    <Compile Include="Visible Forms\Menu Forms\frmAfterglow.Designer.vb">
       <DependentUpon>frmAfterglow.vb</DependentUpon>
     </Compile>
-    <Compile Include="Visible Forms\Dashboard Forms\frmAfterglow.vb">
+    <Compile Include="Visible Forms\Menu Forms\frmAfterglow.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Visible Forms\Dashboard Forms\frmClient.Designer.vb">
@@ -247,7 +247,7 @@
     <EmbeddedResource Include="Reference Forms %28OLD%29\BeverageService.resx">
       <DependentUpon>BeverageService.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmAfterglow.resx">
+    <EmbeddedResource Include="Visible Forms\Menu Forms\frmAfterglow.resx">
       <DependentUpon>frmAfterglow.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmClient.resx">
