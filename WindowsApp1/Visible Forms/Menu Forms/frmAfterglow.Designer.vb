@@ -624,7 +624,7 @@ Partial Class frmAfterglow
         Me.cmdAddAfterglowSelections.Name = "cmdAddAfterglowSelections"
         Me.cmdAddAfterglowSelections.Size = New System.Drawing.Size(625, 39)
         Me.cmdAddAfterglowSelections.TabIndex = 55
-        Me.cmdAddAfterglowSelections.Text = "Add to Food Selections"
+        Me.cmdAddAfterglowSelections.Text = "Save Food Selections"
         Me.cmdAddAfterglowSelections.UseVisualStyleBackColor = False
         '
         'frmAfterglow

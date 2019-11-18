@@ -26,11 +26,11 @@ Partial Class frmHorsD
         Me.lblColdDips = New System.Windows.Forms.Label()
         Me.cboColdDips = New System.Windows.Forms.ComboBox()
         Me.grpDips = New System.Windows.Forms.GroupBox()
-        Me.lblHotDips = New System.Windows.Forms.Label()
-        Me.cboHotDipItems = New System.Windows.Forms.ComboBox()
         Me.lblDipStarches = New System.Windows.Forms.Label()
-        Me.cboDipStarchItems = New System.Windows.Forms.ComboBox()
         Me.cmdAddDipItems = New System.Windows.Forms.Button()
+        Me.cboDipStarchItems = New System.Windows.Forms.ComboBox()
+        Me.cboHotDipItems = New System.Windows.Forms.ComboBox()
+        Me.lblHotDips = New System.Windows.Forms.Label()
         Me.chkFreshFruitDisplay = New System.Windows.Forms.CheckBox()
         Me.lblFruitDisplayDips = New System.Windows.Forms.Label()
         Me.cboFruitDisplayDips = New System.Windows.Forms.ComboBox()
@@ -144,26 +144,6 @@ Partial Class frmHorsD
         Me.grpDips.TabStop = False
         Me.grpDips.Text = "Dippables"
         '
-        'lblHotDips
-        '
-        Me.lblHotDips.AutoSize = True
-        Me.lblHotDips.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHotDips.Location = New System.Drawing.Point(14, 84)
-        Me.lblHotDips.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblHotDips.Name = "lblHotDips"
-        Me.lblHotDips.Size = New System.Drawing.Size(66, 15)
-        Me.lblHotDips.TabIndex = 4
-        Me.lblHotDips.Text = "Hot Dips:"
-        '
-        'cboHotDipItems
-        '
-        Me.cboHotDipItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboHotDipItems.FormattingEnabled = True
-        Me.cboHotDipItems.Location = New System.Drawing.Point(98, 81)
-        Me.cboHotDipItems.Name = "cboHotDipItems"
-        Me.cboHotDipItems.Size = New System.Drawing.Size(155, 23)
-        Me.cboHotDipItems.TabIndex = 5
-        '
         'lblDipStarches
         '
         Me.lblDipStarches.AutoSize = True
@@ -175,15 +155,6 @@ Partial Class frmHorsD
         Me.lblDipStarches.TabIndex = 6
         Me.lblDipStarches.Text = "Starch:"
         '
-        'cboDipStarchItems
-        '
-        Me.cboDipStarchItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboDipStarchItems.FormattingEnabled = True
-        Me.cboDipStarchItems.Location = New System.Drawing.Point(98, 22)
-        Me.cboDipStarchItems.Name = "cboDipStarchItems"
-        Me.cboDipStarchItems.Size = New System.Drawing.Size(155, 23)
-        Me.cboDipStarchItems.TabIndex = 7
-        '
         'cmdAddDipItems
         '
         Me.cmdAddDipItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
@@ -194,6 +165,35 @@ Partial Class frmHorsD
         Me.cmdAddDipItems.TabIndex = 5
         Me.cmdAddDipItems.Text = "Add Item"
         Me.cmdAddDipItems.UseVisualStyleBackColor = False
+        '
+        'cboDipStarchItems
+        '
+        Me.cboDipStarchItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboDipStarchItems.FormattingEnabled = True
+        Me.cboDipStarchItems.Location = New System.Drawing.Point(98, 22)
+        Me.cboDipStarchItems.Name = "cboDipStarchItems"
+        Me.cboDipStarchItems.Size = New System.Drawing.Size(155, 23)
+        Me.cboDipStarchItems.TabIndex = 7
+        '
+        'cboHotDipItems
+        '
+        Me.cboHotDipItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboHotDipItems.FormattingEnabled = True
+        Me.cboHotDipItems.Location = New System.Drawing.Point(98, 81)
+        Me.cboHotDipItems.Name = "cboHotDipItems"
+        Me.cboHotDipItems.Size = New System.Drawing.Size(155, 23)
+        Me.cboHotDipItems.TabIndex = 5
+        '
+        'lblHotDips
+        '
+        Me.lblHotDips.AutoSize = True
+        Me.lblHotDips.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHotDips.Location = New System.Drawing.Point(14, 84)
+        Me.lblHotDips.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblHotDips.Name = "lblHotDips"
+        Me.lblHotDips.Size = New System.Drawing.Size(66, 15)
+        Me.lblHotDips.TabIndex = 4
+        Me.lblHotDips.Text = "Hot Dips:"
         '
         'chkFreshFruitDisplay
         '
@@ -806,7 +806,7 @@ Partial Class frmHorsD
         Me.cmdAddHorsDSelections.Name = "cmdAddHorsDSelections"
         Me.cmdAddHorsDSelections.Size = New System.Drawing.Size(501, 39)
         Me.cmdAddHorsDSelections.TabIndex = 67
-        Me.cmdAddHorsDSelections.Text = "Add to Food Selections"
+        Me.cmdAddHorsDSelections.Text = "Save Food Selections"
         Me.cmdAddHorsDSelections.UseVisualStyleBackColor = False
         '
         'frmHorsD

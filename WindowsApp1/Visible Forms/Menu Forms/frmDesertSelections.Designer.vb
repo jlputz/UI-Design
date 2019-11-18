@@ -67,20 +67,22 @@ Partial Class frmDesertSelections
         '
         Me.cmdAddDesertShooters.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.cmdAddDesertShooters.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdAddDesertShooters.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddDesertShooters.Location = New System.Drawing.Point(363, 87)
         Me.cmdAddDesertShooters.Name = "cmdAddDesertShooters"
         Me.cmdAddDesertShooters.Size = New System.Drawing.Size(116, 28)
         Me.cmdAddDesertShooters.TabIndex = 42
-        Me.cmdAddDesertShooters.Text = "Add Desert Shooters"
+        Me.cmdAddDesertShooters.Text = "Add Item"
         Me.cmdAddDesertShooters.UseVisualStyleBackColor = False
         '
         'cboDesertShooters
         '
         Me.cboDesertShooters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboDesertShooters.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboDesertShooters.FormattingEnabled = True
         Me.cboDesertShooters.Location = New System.Drawing.Point(163, 91)
         Me.cboDesertShooters.Name = "cboDesertShooters"
-        Me.cboDesertShooters.Size = New System.Drawing.Size(194, 21)
+        Me.cboDesertShooters.Size = New System.Drawing.Size(194, 23)
         Me.cboDesertShooters.TabIndex = 41
         '
         'lblDesertShooters
@@ -97,20 +99,22 @@ Partial Class frmDesertSelections
         '
         Me.cmdAddCookies.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.cmdAddCookies.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdAddCookies.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddCookies.Location = New System.Drawing.Point(363, 129)
         Me.cmdAddCookies.Name = "cmdAddCookies"
         Me.cmdAddCookies.Size = New System.Drawing.Size(116, 28)
         Me.cmdAddCookies.TabIndex = 45
-        Me.cmdAddCookies.Text = "Add Desert Shooters"
+        Me.cmdAddCookies.Text = "Add Item"
         Me.cmdAddCookies.UseVisualStyleBackColor = False
         '
         'cboCookies
         '
         Me.cboCookies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboCookies.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCookies.FormattingEnabled = True
         Me.cboCookies.Location = New System.Drawing.Point(163, 133)
         Me.cboCookies.Name = "cboCookies"
-        Me.cboCookies.Size = New System.Drawing.Size(194, 21)
+        Me.cboCookies.Size = New System.Drawing.Size(194, 23)
         Me.cboCookies.TabIndex = 44
         '
         'lblCookies
@@ -127,20 +131,22 @@ Partial Class frmDesertSelections
         '
         Me.cmdAddDessertShooters.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.cmdAddDessertShooters.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdAddDessertShooters.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddDessertShooters.Location = New System.Drawing.Point(363, 171)
         Me.cmdAddDessertShooters.Name = "cmdAddDessertShooters"
         Me.cmdAddDessertShooters.Size = New System.Drawing.Size(116, 28)
         Me.cmdAddDessertShooters.TabIndex = 48
-        Me.cmdAddDessertShooters.Text = "Add Desert Shooters"
+        Me.cmdAddDessertShooters.Text = "Add Item"
         Me.cmdAddDessertShooters.UseVisualStyleBackColor = False
         '
         'ComboBox1
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(163, 175)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(194, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(194, 23)
         Me.ComboBox1.TabIndex = 47
         '
         'lblCheeseCakeSquares
@@ -168,20 +174,22 @@ Partial Class frmDesertSelections
         '
         Me.cmdAddDonuts.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.cmdAddDonuts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdAddDonuts.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddDonuts.Location = New System.Drawing.Point(363, 240)
         Me.cmdAddDonuts.Name = "cmdAddDonuts"
         Me.cmdAddDonuts.Size = New System.Drawing.Size(116, 28)
         Me.cmdAddDonuts.TabIndex = 52
-        Me.cmdAddDonuts.Text = "Add Donuts"
+        Me.cmdAddDonuts.Text = "Add Item"
         Me.cmdAddDonuts.UseVisualStyleBackColor = False
         '
         'cboDonutSelections
         '
         Me.cboDonutSelections.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboDonutSelections.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboDonutSelections.FormattingEnabled = True
         Me.cboDonutSelections.Location = New System.Drawing.Point(163, 244)
         Me.cboDonutSelections.Name = "cboDonutSelections"
-        Me.cboDonutSelections.Size = New System.Drawing.Size(194, 21)
+        Me.cboDonutSelections.Size = New System.Drawing.Size(194, 23)
         Me.cboDonutSelections.TabIndex = 51
         '
         'lblDonutSelections
@@ -221,11 +229,11 @@ Partial Class frmDesertSelections
         Me.cmdAddToEventFoodSelections.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddToEventFoodSelections.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddToEventFoodSelections.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdAddToEventFoodSelections.Location = New System.Drawing.Point(14, 424)
+        Me.cmdAddToEventFoodSelections.Location = New System.Drawing.Point(495, 469)
         Me.cmdAddToEventFoodSelections.Name = "cmdAddToEventFoodSelections"
-        Me.cmdAddToEventFoodSelections.Size = New System.Drawing.Size(279, 39)
+        Me.cmdAddToEventFoodSelections.Size = New System.Drawing.Size(518, 39)
         Me.cmdAddToEventFoodSelections.TabIndex = 56
-        Me.cmdAddToEventFoodSelections.Text = "Add to Event Food Selections"
+        Me.cmdAddToEventFoodSelections.Text = "Save Food Selections"
         Me.cmdAddToEventFoodSelections.UseVisualStyleBackColor = False
         '
         'frmDesertSelections
@@ -233,7 +241,7 @@ Partial Class frmDesertSelections
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1025, 475)
+        Me.ClientSize = New System.Drawing.Size(1025, 517)
         Me.Controls.Add(Me.cmdAddToEventFoodSelections)
         Me.Controls.Add(Me.lblDesertsSelected)
         Me.Controls.Add(Me.TextBox1)

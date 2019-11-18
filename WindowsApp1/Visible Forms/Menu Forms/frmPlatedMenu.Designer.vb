@@ -226,11 +226,11 @@ Partial Class frmPlatedMenu
         Me.cmdAddToEventFoodSelections.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddToEventFoodSelections.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddToEventFoodSelections.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdAddToEventFoodSelections.Location = New System.Drawing.Point(12, 396)
+        Me.cmdAddToEventFoodSelections.Location = New System.Drawing.Point(434, 441)
         Me.cmdAddToEventFoodSelections.Name = "cmdAddToEventFoodSelections"
-        Me.cmdAddToEventFoodSelections.Size = New System.Drawing.Size(279, 39)
+        Me.cmdAddToEventFoodSelections.Size = New System.Drawing.Size(542, 39)
         Me.cmdAddToEventFoodSelections.TabIndex = 52
-        Me.cmdAddToEventFoodSelections.Text = "Add to Event Food Selections"
+        Me.cmdAddToEventFoodSelections.Text = "Save Food Selections"
         Me.cmdAddToEventFoodSelections.UseVisualStyleBackColor = False
         '
         'frmPlatedMenu
@@ -238,7 +238,7 @@ Partial Class frmPlatedMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(988, 447)
+        Me.ClientSize = New System.Drawing.Size(988, 486)
         Me.Controls.Add(Me.cmdAddToEventFoodSelections)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
