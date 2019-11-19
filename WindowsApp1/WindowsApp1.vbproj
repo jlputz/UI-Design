@@ -100,83 +100,125 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewClient.Designer.vb">
-      <DependentUpon>AddNewClient.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AddNewClient.vb">
+    <Compile Include="Reference Forms %28OLD%29\BeverageService.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BeverageService.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BeverageService.Designer.vb">
+    <Compile Include="Reference Forms %28OLD%29\BeverageService.Designer.vb">
       <DependentUpon>BeverageService.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCustomerInfo.Designer.vb">
-      <DependentUpon>frmCustomerInfo.vb</DependentUpon>
+    <Compile Include="Visible Forms\Menu Forms\frmAfterglow.Designer.vb">
+      <DependentUpon>frmAfterglow.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmCustomerInfo.vb">
+    <Compile Include="Visible Forms\Menu Forms\frmAfterglow.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDashboard.Designer.vb">
+    <Compile Include="Visible Forms\Dashboard Forms\frmClient.Designer.vb">
+      <DependentUpon>frmClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visible Forms\Menu Forms\frmBuffetStyle.Designer.vb">
+      <DependentUpon>frmBuffetStyle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Menu Forms\frmBuffetStyle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmDashboard.Designer.vb">
       <DependentUpon>frmDashboard.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmDashboard.vb">
+    <Compile Include="Visible Forms\Dashboard Forms\frmDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDrinkTableEditior.Designer.vb">
+    <Compile Include="Visible Forms\Menu Forms\frmDesertSelections.Designer.vb">
+      <DependentUpon>frmDesertSelections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Menu Forms\frmDesertSelections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Forms %28OLD%29\frmDrinkTableEditior.Designer.vb">
       <DependentUpon>frmDrinkTableEditior.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmDrinkTableEditior.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmDrinkTableEditior.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEventInfo.Designer.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmEventInfo.Designer.vb">
       <DependentUpon>frmEventInfo.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmEventInfo.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmEventInfo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFoodSelection.Designer.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmFoodSelection.Designer.vb">
       <DependentUpon>frmFoodSelection.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmFoodSelection.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmFoodSelection.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenu.Designer.vb">
+    <Compile Include="Visible Forms\Menu Forms\frmHorsD.Designer.vb">
+      <DependentUpon>frmHorsD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Menu Forms\frmHorsD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Forms %28OLD%29\frmMenu.Designer.vb">
       <DependentUpon>frmMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmMenu.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmStrollingStations.Designer.vb">
+    <Compile Include="Visible Forms\Menu Forms\frmPlatedMenu.Designer.vb">
+      <DependentUpon>frmPlatedMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Menu Forms\frmPlatedMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visible Forms\Menu Forms\frmStrollingStations.Designer.vb">
       <DependentUpon>frmStrollingStations.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmStrollingStations.vb">
+    <Compile Include="Visible Forms\Menu Forms\frmStrollingStations.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLightingAV.Designer.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmLightingAV.Designer.vb">
       <DependentUpon>frmLightingAV.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmLightingAV.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmLightingAV.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMiscellaneous.Designer.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmMiscellaneous.Designer.vb">
       <DependentUpon>frmMiscellaneous.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmMiscellaneous.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmMiscellaneous.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTableManager.Designer.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmTableManager.Designer.vb">
       <DependentUpon>frmTableManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmTableManager.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmTableManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTimeline.Designer.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmTimeline.Designer.vb">
       <DependentUpon>frmTimeline.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmTimeline.vb">
+    <Compile Include="Reference Forms %28OLD%29\frmTimeline.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmGetCustomerInContext.Designer.vb">
+      <DependentUpon>frmGetCustomerInContext.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmGetCustomerInContext.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmLayout.Designer.vb">
+      <DependentUpon>frmLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmLayout.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -194,52 +236,82 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AddNewClient.resx">
-      <DependentUpon>AddNewClient.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BeverageService.resx">
+    <EmbeddedResource Include="Reference Forms %28OLD%29\BeverageService.resx">
       <DependentUpon>BeverageService.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCustomerInfo.resx">
-      <DependentUpon>frmCustomerInfo.vb</DependentUpon>
+    <EmbeddedResource Include="Visible Forms\Menu Forms\frmAfterglow.resx">
+      <DependentUpon>frmAfterglow.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDashboard.resx">
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmClient.resx">
+      <DependentUpon>frmClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Menu Forms\frmBuffetStyle.resx">
+      <DependentUpon>frmBuffetStyle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmDashboard.resx">
       <DependentUpon>frmDashboard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDrinkTableEditior.resx">
+    <EmbeddedResource Include="Visible Forms\Menu Forms\frmDesertSelections.resx">
+      <DependentUpon>frmDesertSelections.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Forms %28OLD%29\frmDrinkTableEditior.resx">
       <DependentUpon>frmDrinkTableEditior.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEventInfo.resx">
+    <EmbeddedResource Include="Reference Forms %28OLD%29\frmEventInfo.resx">
       <DependentUpon>frmEventInfo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFoodSelection.resx">
+    <EmbeddedResource Include="Reference Forms %28OLD%29\frmFoodSelection.resx">
       <DependentUpon>frmFoodSelection.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMenu.resx">
+    <EmbeddedResource Include="Visible Forms\Menu Forms\frmHorsD.resx">
+      <DependentUpon>frmHorsD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Forms %28OLD%29\frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmStrollingStations.resx">
+    <EmbeddedResource Include="Visible Forms\Menu Forms\frmPlatedMenu.resx">
+      <DependentUpon>frmPlatedMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Menu Forms\frmStrollingStations.resx">
       <DependentUpon>frmStrollingStations.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLightingAV.resx">
+    <EmbeddedResource Include="Reference Forms %28OLD%29\frmLightingAV.resx">
       <DependentUpon>frmLightingAV.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMiscellaneous.resx">
+    <EmbeddedResource Include="Reference Forms %28OLD%29\frmMiscellaneous.resx">
       <DependentUpon>frmMiscellaneous.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTableManager.resx">
+    <EmbeddedResource Include="Reference Forms %28OLD%29\frmTableManager.resx">
       <DependentUpon>frmTableManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTimeline.resx">
+    <EmbeddedResource Include="Reference Forms %28OLD%29\frmTimeline.resx">
       <DependentUpon>frmTimeline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmGetCustomerInContext.resx">
+      <DependentUpon>frmGetCustomerInContext.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmLayout.resx">
+      <DependentUpon>frmLayout.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -287,6 +359,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
