@@ -13,9 +13,6 @@
 
     End Sub
 
-    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
-
-    End Sub
 
     Private Sub btnPrintInvoice_Click(sender As Object, e As EventArgs) Handles btnPrintInvoice.Click
 
@@ -39,5 +36,13 @@
 
     Private Sub cmdAfterglow_Click(sender As Object, e As EventArgs) Handles cmdAfterglow.Click
         frmAfterglow.ShowDialog()
+    End Sub
+
+    Private Sub btnAddTimeline_Click(sender As Object, e As EventArgs) Handles btnAddTimeline.Click
+        If pnlAddTimeline.Visible = True Then
+            pnlAddTimeline.Visible = False
+        Else
+            pnlAddTimeline.Visible = True
+        End If
     End Sub
 End Class
