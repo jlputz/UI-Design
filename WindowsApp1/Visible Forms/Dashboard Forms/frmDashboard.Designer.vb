@@ -158,7 +158,7 @@ Partial Class frmDashboard
         Me.btnMin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMin.ForeColor = System.Drawing.Color.Wheat
-        Me.btnMin.Location = New System.Drawing.Point(1569, 14)
+        Me.btnMin.Location = New System.Drawing.Point(1361, 12)
         Me.btnMin.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnMin.Name = "btnMin"
         Me.btnMin.Size = New System.Drawing.Size(31, 27)
@@ -193,7 +193,7 @@ Partial Class frmDashboard
         Me.pboxNotif.Image = CType(resources.GetObject("pboxNotif.Image"), System.Drawing.Image)
         Me.pboxNotif.Location = New System.Drawing.Point(168, 60)
         Me.pboxNotif.Name = "pboxNotif"
-        Me.pboxNotif.Size = New System.Drawing.Size(37, 40)
+        Me.pboxNotif.Size = New System.Drawing.Size(31, 39)
         Me.pboxNotif.TabIndex = 36
         Me.pboxNotif.TabStop = False
         '
@@ -214,7 +214,7 @@ Partial Class frmDashboard
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlForms.Location = New System.Drawing.Point(155, 142)
         Me.pnlForms.Name = "pnlForms"
-        Me.pnlForms.Size = New System.Drawing.Size(1220, 713)
+        Me.pnlForms.Size = New System.Drawing.Size(1246, 713)
         Me.pnlForms.TabIndex = 42
         '
         'frmDashboard

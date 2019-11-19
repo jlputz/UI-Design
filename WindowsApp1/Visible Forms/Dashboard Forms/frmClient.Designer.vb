@@ -67,7 +67,13 @@ Partial Class frmClient
         Me.lblRehearsalDate = New System.Windows.Forms.Label()
         Me.dtpRehearsalDate = New System.Windows.Forms.DateTimePicker()
         Me.tpTimeline = New System.Windows.Forms.TabPage()
-        Me.cmdUpdateTimeline = New System.Windows.Forms.Button()
+        Me.pnlAddTimeline = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.TextBox44 = New System.Windows.Forms.TextBox()
+        Me.Label63 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label62 = New System.Windows.Forms.Label()
+        Me.btnAddTimeline = New System.Windows.Forms.Button()
         Me.txtTimelineInfo = New System.Windows.Forms.TextBox()
         Me.lblAVLightingSelection = New System.Windows.Forms.Label()
         Me.tpFoodSelection = New System.Windows.Forms.TabPage()
@@ -115,7 +121,6 @@ Partial Class frmClient
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.tpAudioLighting = New System.Windows.Forms.TabPage()
-        Me.cmdAddAV = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
@@ -140,7 +145,6 @@ Partial Class frmClient
         Me.TextBox17 = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.btnLinensSel = New System.Windows.Forms.Button()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.CheckBox10 = New System.Windows.Forms.CheckBox()
@@ -170,7 +174,6 @@ Partial Class frmClient
         Me.Label60 = New System.Windows.Forms.Label()
         Me.TextBox43 = New System.Windows.Forms.TextBox()
         Me.Label61 = New System.Windows.Forms.Label()
-        Me.btnVendorSel = New System.Windows.Forms.Button()
         Me.TextBox34 = New System.Windows.Forms.TextBox()
         Me.TextBox35 = New System.Windows.Forms.TextBox()
         Me.Label53 = New System.Windows.Forms.Label()
@@ -213,7 +216,6 @@ Partial Class frmClient
         Me.Button2 = New System.Windows.Forms.Button()
         Me.VISIO = New System.Windows.Forms.Button()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.btnPrintInvoice = New System.Windows.Forms.Button()
         Me.btnPrintBEO = New System.Windows.Forms.Button()
         Me.btnLoadClient = New System.Windows.Forms.Button()
@@ -224,6 +226,7 @@ Partial Class frmClient
         Me.pnlEventInfo.SuspendLayout()
         Me.pnlCeremony.SuspendLayout()
         Me.tpTimeline.SuspendLayout()
+        Me.pnlAddTimeline.SuspendLayout()
         Me.tpFoodSelection.SuspendLayout()
         Me.tpDrinkService.SuspendLayout()
         Me.pnlOpenBar.SuspendLayout()
@@ -259,7 +262,7 @@ Partial Class frmClient
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(1208, 610)
+        Me.tbpCustomer.Size = New System.Drawing.Size(1087, 610)
         Me.tbpCustomer.TabIndex = 5
         '
         'tpCustomerInfo
@@ -281,7 +284,7 @@ Partial Class frmClient
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(1200, 584)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(1079, 584)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
@@ -450,7 +453,7 @@ Partial Class frmClient
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(1200, 584)
+        Me.tpEventInfo.Size = New System.Drawing.Size(1079, 584)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
@@ -819,30 +822,94 @@ Partial Class frmClient
         'tpTimeline
         '
         Me.tpTimeline.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.tpTimeline.Controls.Add(Me.cmdUpdateTimeline)
+        Me.tpTimeline.Controls.Add(Me.pnlAddTimeline)
+        Me.tpTimeline.Controls.Add(Me.btnAddTimeline)
         Me.tpTimeline.Controls.Add(Me.txtTimelineInfo)
         Me.tpTimeline.Controls.Add(Me.lblAVLightingSelection)
         Me.tpTimeline.Location = New System.Drawing.Point(4, 22)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(1200, 584)
+        Me.tpTimeline.Size = New System.Drawing.Size(1079, 584)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
-        'cmdUpdateTimeline
+        'pnlAddTimeline
         '
-        Me.cmdUpdateTimeline.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdUpdateTimeline.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdUpdateTimeline.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdUpdateTimeline.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdUpdateTimeline.Location = New System.Drawing.Point(11, 444)
-        Me.cmdUpdateTimeline.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdUpdateTimeline.Name = "cmdUpdateTimeline"
-        Me.cmdUpdateTimeline.Size = New System.Drawing.Size(266, 40)
-        Me.cmdUpdateTimeline.TabIndex = 28
-        Me.cmdUpdateTimeline.Text = "Update Timeline"
-        Me.cmdUpdateTimeline.UseVisualStyleBackColor = False
-        Me.cmdUpdateTimeline.Visible = False
+        Me.pnlAddTimeline.Controls.Add(Me.Button4)
+        Me.pnlAddTimeline.Controls.Add(Me.TextBox44)
+        Me.pnlAddTimeline.Controls.Add(Me.Label63)
+        Me.pnlAddTimeline.Controls.Add(Me.DateTimePicker1)
+        Me.pnlAddTimeline.Controls.Add(Me.Label62)
+        Me.pnlAddTimeline.Location = New System.Drawing.Point(11, 476)
+        Me.pnlAddTimeline.Name = "pnlAddTimeline"
+        Me.pnlAddTimeline.Size = New System.Drawing.Size(692, 108)
+        Me.pnlAddTimeline.TabIndex = 29
+        Me.pnlAddTimeline.Visible = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.ForeColor = System.Drawing.Color.Wheat
+        Me.Button4.Location = New System.Drawing.Point(288, 76)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(1)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(97, 28)
+        Me.Button4.TabIndex = 55
+        Me.Button4.Text = "Add Event"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'TextBox44
+        '
+        Me.TextBox44.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TextBox44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox44.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox44.ForeColor = System.Drawing.Color.Wheat
+        Me.TextBox44.Location = New System.Drawing.Point(94, 39)
+        Me.TextBox44.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.TextBox44.Name = "TextBox44"
+        Me.TextBox44.Size = New System.Drawing.Size(291, 26)
+        Me.TextBox44.TabIndex = 45
+        '
+        'Label63
+        '
+        Me.Label63.AutoSize = True
+        Me.Label63.ForeColor = System.Drawing.Color.Wheat
+        Me.Label63.Location = New System.Drawing.Point(3, 45)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(80, 13)
+        Me.Label63.TabIndex = 3
+        Me.Label63.Text = "Timeline Event:"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.DateTimePicker1.Location = New System.Drawing.Point(94, 11)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(94, 20)
+        Me.DateTimePicker1.TabIndex = 2
+        '
+        'Label62
+        '
+        Me.Label62.AutoSize = True
+        Me.Label62.ForeColor = System.Drawing.Color.Wheat
+        Me.Label62.Location = New System.Drawing.Point(46, 17)
+        Me.Label62.Name = "Label62"
+        Me.Label62.Size = New System.Drawing.Size(33, 13)
+        Me.Label62.TabIndex = 1
+        Me.Label62.Text = "Time:"
+        '
+        'btnAddTimeline
+        '
+        Me.btnAddTimeline.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddTimeline.ForeColor = System.Drawing.Color.Wheat
+        Me.btnAddTimeline.Location = New System.Drawing.Point(11, 443)
+        Me.btnAddTimeline.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnAddTimeline.Name = "btnAddTimeline"
+        Me.btnAddTimeline.Size = New System.Drawing.Size(31, 27)
+        Me.btnAddTimeline.TabIndex = 28
+        Me.btnAddTimeline.Text = "V"
+        Me.btnAddTimeline.UseVisualStyleBackColor = True
         '
         'txtTimelineInfo
         '
@@ -897,7 +964,7 @@ Partial Class frmClient
         Me.tpFoodSelection.Location = New System.Drawing.Point(4, 22)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(1200, 584)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(1079, 584)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
         '
@@ -1160,7 +1227,7 @@ Partial Class frmClient
         Me.tpDrinkService.Location = New System.Drawing.Point(4, 22)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(1200, 584)
+        Me.tpDrinkService.Size = New System.Drawing.Size(1079, 584)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
         '
@@ -1459,7 +1526,6 @@ Partial Class frmClient
         'tpAudioLighting
         '
         Me.tpAudioLighting.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.tpAudioLighting.Controls.Add(Me.cmdAddAV)
         Me.tpAudioLighting.Controls.Add(Me.Label8)
         Me.tpAudioLighting.Controls.Add(Me.TextBox4)
         Me.tpAudioLighting.Controls.Add(Me.CheckBox2)
@@ -1480,24 +1546,9 @@ Partial Class frmClient
         Me.tpAudioLighting.Location = New System.Drawing.Point(4, 22)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(1200, 584)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(1079, 584)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
-        '
-        'cmdAddAV
-        '
-        Me.cmdAddAV.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdAddAV.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdAddAV.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAddAV.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdAddAV.Location = New System.Drawing.Point(16, 406)
-        Me.cmdAddAV.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdAddAV.Name = "cmdAddAV"
-        Me.cmdAddAV.Size = New System.Drawing.Size(271, 45)
-        Me.cmdAddAV.TabIndex = 50
-        Me.cmdAddAV.Text = "Add AV"
-        Me.cmdAddAV.UseVisualStyleBackColor = False
-        Me.cmdAddAV.Visible = False
         '
         'Label8
         '
@@ -1712,7 +1763,6 @@ Partial Class frmClient
         Me.tpMiscInfo.Controls.Add(Me.TextBox17)
         Me.tpMiscInfo.Controls.Add(Me.Label20)
         Me.tpMiscInfo.Controls.Add(Me.TextBox16)
-        Me.tpMiscInfo.Controls.Add(Me.btnLinensSel)
         Me.tpMiscInfo.Controls.Add(Me.Label19)
         Me.tpMiscInfo.Controls.Add(Me.TextBox7)
         Me.tpMiscInfo.Controls.Add(Me.CheckBox10)
@@ -1729,7 +1779,7 @@ Partial Class frmClient
         Me.tpMiscInfo.Location = New System.Drawing.Point(4, 22)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(1200, 584)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(1079, 584)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Linens"
         '
@@ -1800,21 +1850,6 @@ Partial Class frmClient
         Me.TextBox16.Name = "TextBox16"
         Me.TextBox16.Size = New System.Drawing.Size(115, 20)
         Me.TextBox16.TabIndex = 65
-        '
-        'btnLinensSel
-        '
-        Me.btnLinensSel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnLinensSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLinensSel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLinensSel.ForeColor = System.Drawing.Color.Wheat
-        Me.btnLinensSel.Location = New System.Drawing.Point(12, 568)
-        Me.btnLinensSel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnLinensSel.Name = "btnLinensSel"
-        Me.btnLinensSel.Size = New System.Drawing.Size(280, 47)
-        Me.btnLinensSel.TabIndex = 62
-        Me.btnLinensSel.Text = "Enter Linens"
-        Me.btnLinensSel.UseVisualStyleBackColor = False
-        Me.btnLinensSel.Visible = False
         '
         'Label19
         '
@@ -1980,7 +2015,6 @@ Partial Class frmClient
         Me.TabPage2.Controls.Add(Me.Label60)
         Me.TabPage2.Controls.Add(Me.TextBox43)
         Me.TabPage2.Controls.Add(Me.Label61)
-        Me.TabPage2.Controls.Add(Me.btnVendorSel)
         Me.TabPage2.Controls.Add(Me.TextBox34)
         Me.TabPage2.Controls.Add(Me.TextBox35)
         Me.TabPage2.Controls.Add(Me.Label53)
@@ -2020,7 +2054,7 @@ Partial Class frmClient
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1200, 584)
+        Me.TabPage2.Size = New System.Drawing.Size(1079, 584)
         Me.TabPage2.TabIndex = 9
         Me.TabPage2.Text = "Vendors"
         '
@@ -2207,21 +2241,6 @@ Partial Class frmClient
         Me.Label61.Size = New System.Drawing.Size(76, 13)
         Me.Label61.TabIndex = 78
         Me.Label61.Text = "Email Address:"
-        '
-        'btnVendorSel
-        '
-        Me.btnVendorSel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnVendorSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVendorSel.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVendorSel.ForeColor = System.Drawing.Color.Wheat
-        Me.btnVendorSel.Location = New System.Drawing.Point(12, 566)
-        Me.btnVendorSel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btnVendorSel.Name = "btnVendorSel"
-        Me.btnVendorSel.Size = New System.Drawing.Size(280, 47)
-        Me.btnVendorSel.TabIndex = 77
-        Me.btnVendorSel.Text = "Enter Vendor Information"
-        Me.btnVendorSel.UseVisualStyleBackColor = False
-        Me.btnVendorSel.Visible = False
         '
         'TextBox34
         '
@@ -2651,7 +2670,7 @@ Partial Class frmClient
         Me.tpLayout.ForeColor = System.Drawing.Color.Wheat
         Me.tpLayout.Location = New System.Drawing.Point(4, 22)
         Me.tpLayout.Name = "tpLayout"
-        Me.tpLayout.Size = New System.Drawing.Size(1200, 584)
+        Me.tpLayout.Size = New System.Drawing.Size(1079, 584)
         Me.tpLayout.TabIndex = 7
         Me.tpLayout.Text = "Layout"
         '
@@ -2711,24 +2730,14 @@ Partial Class frmClient
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TabPage1.Controls.Add(Me.WebBrowser1)
         Me.TabPage1.Controls.Add(Me.btnPrintInvoice)
         Me.TabPage1.Controls.Add(Me.btnPrintBEO)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1200, 584)
+        Me.TabPage1.Size = New System.Drawing.Size(1079, 584)
         Me.TabPage1.TabIndex = 8
         Me.TabPage1.Text = "Payments & Reports"
-        '
-        'WebBrowser1
-        '
-        Me.WebBrowser1.Location = New System.Drawing.Point(32, 108)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(768, 502)
-        Me.WebBrowser1.TabIndex = 42
-        Me.WebBrowser1.Url = New System.Uri("", System.UriKind.Relative)
         '
         'btnPrintInvoice
         '
@@ -2795,7 +2804,7 @@ Partial Class frmClient
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1940, 846)
+        Me.ClientSize = New System.Drawing.Size(1124, 846)
         Me.Controls.Add(Me.btnLoadClient)
         Me.Controls.Add(Me.btnNewClient)
         Me.Controls.Add(Me.tbpCustomer)
@@ -2813,6 +2822,8 @@ Partial Class frmClient
         Me.pnlCeremony.PerformLayout()
         Me.tpTimeline.ResumeLayout(False)
         Me.tpTimeline.PerformLayout()
+        Me.pnlAddTimeline.ResumeLayout(False)
+        Me.pnlAddTimeline.PerformLayout()
         Me.tpFoodSelection.ResumeLayout(False)
         Me.tpFoodSelection.PerformLayout()
         Me.tpDrinkService.ResumeLayout(False)
@@ -2882,7 +2893,6 @@ Partial Class frmClient
     Friend WithEvents lblRehearsalDate As Label
     Friend WithEvents dtpRehearsalDate As DateTimePicker
     Friend WithEvents tpTimeline As TabPage
-    Friend WithEvents cmdUpdateTimeline As Button
     Friend WithEvents txtTimelineInfo As TextBox
     Friend WithEvents lblAVLightingSelection As Label
     Friend WithEvents tpFoodSelection As TabPage
@@ -2930,7 +2940,6 @@ Partial Class frmClient
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents Label18 As Label
     Friend WithEvents tpAudioLighting As TabPage
-    Friend WithEvents cmdAddAV As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents CheckBox2 As CheckBox
@@ -2955,7 +2964,6 @@ Partial Class frmClient
     Friend WithEvents TextBox17 As TextBox
     Friend WithEvents Label20 As Label
     Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents btnLinensSel As Button
     Friend WithEvents Label19 As Label
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents CheckBox10 As CheckBox
@@ -2985,7 +2993,6 @@ Partial Class frmClient
     Friend WithEvents Label60 As Label
     Friend WithEvents TextBox43 As TextBox
     Friend WithEvents Label61 As Label
-    Friend WithEvents btnVendorSel As Button
     Friend WithEvents TextBox34 As TextBox
     Friend WithEvents TextBox35 As TextBox
     Friend WithEvents Label53 As Label
@@ -3028,9 +3035,15 @@ Partial Class frmClient
     Friend WithEvents Button2 As Button
     Private WithEvents VISIO As Button
     Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents WebBrowser1 As WebBrowser
     Friend WithEvents btnPrintInvoice As Button
     Friend WithEvents btnPrintBEO As Button
     Friend WithEvents btnLoadClient As Button
     Friend WithEvents btnNewClient As Button
+    Friend WithEvents pnlAddTimeline As Panel
+    Friend WithEvents Button4 As Button
+    Friend WithEvents TextBox44 As TextBox
+    Friend WithEvents Label63 As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Label62 As Label
+    Friend WithEvents btnAddTimeline As Button
 End Class
