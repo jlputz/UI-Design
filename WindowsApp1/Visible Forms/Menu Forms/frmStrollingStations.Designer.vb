@@ -353,7 +353,7 @@ Partial Class frmStrollingStations
         Me.lstStrollingDinnerSelections.Items.AddRange(New Object() {"Pasta Station (Choose 2 - $10):", "" & Global.Microsoft.VisualBasic.ChrW(9) & "-Fettucini & Alfredo", "" & Global.Microsoft.VisualBasic.ChrW(9) & "-Traditional Lasagna"})
         Me.lstStrollingDinnerSelections.Location = New System.Drawing.Point(345, 87)
         Me.lstStrollingDinnerSelections.Name = "lstStrollingDinnerSelections"
-        Me.lstStrollingDinnerSelections.Size = New System.Drawing.Size(382, 506)
+        Me.lstStrollingDinnerSelections.Size = New System.Drawing.Size(455, 506)
         Me.lstStrollingDinnerSelections.TabIndex = 28
         '
         'lblStationsSelected
@@ -407,11 +407,11 @@ Partial Class frmStrollingStations
         Me.cmdAddStrollingDinnerItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAddStrollingDinnerItems.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAddStrollingDinnerItems.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdAddStrollingDinnerItems.Location = New System.Drawing.Point(18, 552)
+        Me.cmdAddStrollingDinnerItems.Location = New System.Drawing.Point(345, 599)
         Me.cmdAddStrollingDinnerItems.Name = "cmdAddStrollingDinnerItems"
-        Me.cmdAddStrollingDinnerItems.Size = New System.Drawing.Size(207, 39)
+        Me.cmdAddStrollingDinnerItems.Size = New System.Drawing.Size(455, 39)
         Me.cmdAddStrollingDinnerItems.TabIndex = 35
-        Me.cmdAddStrollingDinnerItems.Text = "Add to Food Selections"
+        Me.cmdAddStrollingDinnerItems.Text = "Save Food Selections"
         Me.cmdAddStrollingDinnerItems.UseVisualStyleBackColor = False
         '
         'frmStrollingStations
@@ -419,7 +419,7 @@ Partial Class frmStrollingStations
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(751, 621)
+        Me.ClientSize = New System.Drawing.Size(812, 646)
         Me.Controls.Add(Me.cmdAddStrollingDinnerItems)
         Me.Controls.Add(Me.cmdAddPastaAddons)
         Me.Controls.Add(Me.cboPastaAddons)

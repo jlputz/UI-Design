@@ -1,7 +1,7 @@
 ﻿Public Class frmClient
     Private Sub ClientForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Me.Width = frmDashboard.pnlForms.Width - 5
+        tbpCustomer.Width = frmDashboard.pnlForms.Width
     End Sub
 
 
@@ -13,7 +13,7 @@
 
     End Sub
 
-    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs)
+    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
 
     End Sub
 
@@ -21,20 +21,23 @@
 
     End Sub
 
-    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
-
+    Private Sub cmdTraditionalBuffet_Click(sender As Object, e As EventArgs) Handles cmdTraditionalBuffet.Click
+        frmBuffetStyle.ShowDialog()
     End Sub
 
-    Private Sub btnAddTimeline_Click(sender As Object, e As EventArgs) Handles btnAddTimeline.Click
-        DateTimePicker1.CustomFormat = "hh:mm tt"
-        DateTimePicker1.Format = DateTimePickerFormat.Custom
-        DateTimePicker1.ShowUpDown = True
-        If pnlAddTimeline.Visible = True Then
-            pnlAddTimeline.Visible = False
-        Else
-            pnlAddTimeline.Visible = True
-        End If
+    Private Sub cmdPlatedMeals_Click(sender As Object, e As EventArgs) Handles cmdPlatedMeals.Click
+        frmPlatedMenu.ShowDialog()
+    End Sub
 
+    Private Sub cmdDessert_Click(sender As Object, e As EventArgs) Handles cmdDessert.Click
+        frmDesertSelections.ShowDialog()
+    End Sub
 
+    Private Sub cmdHorsD_Click(sender As Object, e As EventArgs) Handles cmdHorsD.Click
+        frmHorsD.ShowDialog()
+    End Sub
+
+    Private Sub cmdAfterglow_Click(sender As Object, e As EventArgs) Handles cmdAfterglow.Click
+        frmAfterglow.ShowDialog()
     End Sub
 End Class
