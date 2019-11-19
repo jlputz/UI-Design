@@ -8,10 +8,10 @@
         clndrHome.Visible = True
         lblDayInfo.Text = "Event at 5pm - Anderson Wedding"
         Me.WindowState = FormWindowState.Maximized
-        DataGridView1.Rows.Add(New String() {"11/7/2019", "Wedding", "Anderson", "Clyde", "999-999-999", "888-888-8888", "clyde@internet.com", "123 Oak St"})
-        DataGridView1.Rows.Add(New String() {"11/8/2019", "Wedding", "Putz", "Jared", "999-999-999", "888-888-8888", "jared@internet.com", "124 Oak St"})
+        DataGridView1.Rows.Add(New String() {"11/7/2019", "Wedding", "Anderson", "Clyde", "999-999-9999", "888-888-8888", "clyde@internet.com", "123 Oak St"})
+        DataGridView1.Rows.Add(New String() {"11/8/2019", "Wedding", "Putz", "Jared", "999-999-9999", "888-888-8888", "jared@internet.com", "124 Oak St"})
+        getDataFromDGV()
     End Sub
-
 
 
 
@@ -19,6 +19,7 @@
         tbpCustomer.SelectedTab = tpCustomerInfo
         hideSettings()
         hideHome()
+        hideLayout()
         btnNewClient.Visible = True
         DataGridView1.Visible = True
         tbpCustomer.Visible = True
@@ -42,7 +43,7 @@
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         hideClientMenu()
         hideSettings()
-
+        hideLayout()
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
         clndrHome.Visible = True
@@ -59,16 +60,20 @@
     Sub hideSettings()
         pnlSettings.Visible = False
     End Sub
+    Sub hideLayout()
+        DataGridView1.Visible = False
+        pnlLayout.Visible = False
+    End Sub
+
 
     Private Sub btnLayout_Click(sender As Object, e As EventArgs) Handles btnLayout.Click
-        'hideClientMenu()
-        tbpCustomer.Visible = True
-        tbpCustomer.SelectedTab = tpLayout
+        hideClientMenu()
         hideSettings()
         hideHome()
         DataGridView1.Visible = True
         pnlButtonMover.Height = btnLayout.Height
         pnlButtonMover.Top = btnLayout.Top
+        pnlLayout.Visible = True
     End Sub
 
     Private Sub btnNewClient_Click(sender As Object, e As EventArgs) Handles btnNewClient.Click
@@ -112,6 +117,7 @@
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
         hideClientMenu()
         hideHome()
+        hideLayout()
         pnlSettings.Visible = True
         pnlButtonMover.Height = btnSettings.Height
         pnlButtonMover.Top = btnSettings.Top
@@ -188,13 +194,25 @@
 
 
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        getDataFromDGV()
+    End Sub
+
+    Sub getDataFromDGV()
         If (DataGridView1.CurrentRow.Selected) Then
 
-            txtCustomerName.Text = DataGridView1.SelectedCells(3).Value.ToString()
+            txtCustomerName.Text = DataGridView1.SelectedCells(3).Value.ToString() + " " + DataGridView1.SelectedCells(2).Value.ToString()
+            txtCustomerAddress.Text = DataGridView1.SelectedCells(7).Value.ToString()
+            txtCustomerEmail.Text = DataGridView1.SelectedCells(6).Value.ToString()
+            mtbCustomerPhone.Text = DataGridView1.SelectedCells(4).Value.ToString()
+            mtbCustomerAlternatePhone.Text = DataGridView1.SelectedCells(5).Value.ToString()
         End If
     End Sub
 
-    Private Sub BtnVendorSel_Click(sender As Object, e As EventArgs) Handles btnVendorSel.Click
+    Private Sub btnPrintInvoice_Click(sender As Object, e As EventArgs) Handles btnPrintInvoice.Click
+        Process.Start("C:\TTInvoice.pdf")
+    End Sub
 
+    Private Sub btnPrintBEO_Click(sender As Object, e As EventArgs) Handles btnPrintBEO.Click
+        Process.Start("C:\BEO_mockup.pdf")
     End Sub
 End Class
