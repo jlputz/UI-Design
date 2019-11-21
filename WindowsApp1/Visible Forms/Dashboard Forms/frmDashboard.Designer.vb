@@ -68,7 +68,7 @@ Partial Class frmDashboard
         '
         Me.btnClient.FlatAppearance.BorderSize = 0
         Me.btnClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClient.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClient.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClient.ForeColor = System.Drawing.Color.White
         Me.btnClient.Image = CType(resources.GetObject("btnClient.Image"), System.Drawing.Image)
         Me.btnClient.Location = New System.Drawing.Point(0, 105)
@@ -84,7 +84,7 @@ Partial Class frmDashboard
         '
         Me.btnHome.FlatAppearance.BorderSize = 0
         Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHome.ForeColor = System.Drawing.Color.White
         Me.btnHome.Image = CType(resources.GetObject("btnHome.Image"), System.Drawing.Image)
         Me.btnHome.Location = New System.Drawing.Point(0, 3)
@@ -100,7 +100,7 @@ Partial Class frmDashboard
         '
         Me.btnLayout.FlatAppearance.BorderSize = 0
         Me.btnLayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLayout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLayout.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLayout.ForeColor = System.Drawing.Color.White
         Me.btnLayout.Image = CType(resources.GetObject("btnLayout.Image"), System.Drawing.Image)
         Me.btnLayout.Location = New System.Drawing.Point(0, 209)
@@ -117,7 +117,7 @@ Partial Class frmDashboard
         Me.btnSettings.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.btnSettings.FlatAppearance.BorderSize = 0
         Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSettings.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSettings.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSettings.ForeColor = System.Drawing.Color.White
         Me.btnSettings.Image = CType(resources.GetObject("btnSettings.Image"), System.Drawing.Image)
         Me.btnSettings.Location = New System.Drawing.Point(0, 321)
@@ -169,22 +169,22 @@ Partial Class frmDashboard
         'lblDate
         '
         Me.lblDate.AutoSize = True
-        Me.lblDate.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDate.ForeColor = System.Drawing.Color.Wheat
         Me.lblDate.Location = New System.Drawing.Point(166, 16)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(22, 32)
+        Me.lblDate.Size = New System.Drawing.Size(21, 31)
         Me.lblDate.TabIndex = 30
         Me.lblDate.Text = " "
         '
         'lblNotifs
         '
         Me.lblNotifs.AutoSize = True
-        Me.lblNotifs.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNotifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNotifs.ForeColor = System.Drawing.Color.Wheat
         Me.lblNotifs.Location = New System.Drawing.Point(205, 68)
         Me.lblNotifs.Name = "lblNotifs"
-        Me.lblNotifs.Size = New System.Drawing.Size(224, 22)
+        Me.lblNotifs.Size = New System.Drawing.Size(207, 24)
         Me.lblNotifs.TabIndex = 35
         Me.lblNotifs.Text = " Event Today at 5:00pm"
         '
@@ -219,7 +219,7 @@ Partial Class frmDashboard
         '
         'frmDashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
@@ -233,7 +233,7 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pnlForms)
-        Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
