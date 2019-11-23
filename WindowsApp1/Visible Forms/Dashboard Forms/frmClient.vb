@@ -53,4 +53,14 @@
     Private Sub cmdUploadToGoogleDrive_Click(sender As Object, e As EventArgs) Handles cmdUploadToGoogleDrive.Click
         frmUploadReports.ShowDialog()
     End Sub
+
+    Private Sub chkCeremonyEvent_CheckedChanged(sender As Object, e As EventArgs) Handles chkCeremonyEvent.CheckedChanged
+        If chkCeremonyEvent.Checked = True Then
+            pnlCeremony.Visible = True
+            pnlEventInfo.Top = pnlCeremony.Bottom + 3
+        Else
+            pnlCeremony.Visible = False
+            pnlEventInfo.Top = chkCeremonyEvent.Bottom + 3
+        End If
+    End Sub
 End Class

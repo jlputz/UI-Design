@@ -222,6 +222,8 @@ Partial Class frmClient
         Me.btnNewClient = New System.Windows.Forms.Button()
         Me.cmdEmailReports = New System.Windows.Forms.Button()
         Me.cmdUploadToGoogleDrive = New System.Windows.Forms.Button()
+        Me.lblEventDateAvailability = New System.Windows.Forms.Label()
+        Me.lblRehearsalDateAvailability = New System.Windows.Forms.Label()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -485,6 +487,7 @@ Partial Class frmClient
         '
         'pnlEventInfo
         '
+        Me.pnlEventInfo.Controls.Add(Me.lblEventDateAvailability)
         Me.pnlEventInfo.Controls.Add(Me.CheckBox14)
         Me.pnlEventInfo.Controls.Add(Me.CheckBox13)
         Me.pnlEventInfo.Controls.Add(Me.lblEventDate)
@@ -674,6 +677,7 @@ Partial Class frmClient
         'pnlCeremony
         '
         Me.pnlCeremony.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.pnlCeremony.Controls.Add(Me.lblRehearsalDateAvailability)
         Me.pnlCeremony.Controls.Add(Me.Label37)
         Me.pnlCeremony.Controls.Add(Me.TextBox14)
         Me.pnlCeremony.Controls.Add(Me.TextBox12)
@@ -2833,6 +2837,28 @@ Partial Class frmClient
         Me.cmdUploadToGoogleDrive.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdUploadToGoogleDrive.UseVisualStyleBackColor = False
         '
+        'lblEventDateAvailability
+        '
+        Me.lblEventDateAvailability.AutoSize = True
+        Me.lblEventDateAvailability.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEventDateAvailability.ForeColor = System.Drawing.Color.Wheat
+        Me.lblEventDateAvailability.Location = New System.Drawing.Point(505, 30)
+        Me.lblEventDateAvailability.Name = "lblEventDateAvailability"
+        Me.lblEventDateAvailability.Size = New System.Drawing.Size(115, 15)
+        Me.lblEventDateAvailability.TabIndex = 37
+        Me.lblEventDateAvailability.Text = "Date is Available"
+        '
+        'lblRehearsalDateAvailability
+        '
+        Me.lblRehearsalDateAvailability.AutoSize = True
+        Me.lblRehearsalDateAvailability.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRehearsalDateAvailability.ForeColor = System.Drawing.Color.Wheat
+        Me.lblRehearsalDateAvailability.Location = New System.Drawing.Point(508, 87)
+        Me.lblRehearsalDateAvailability.Name = "lblRehearsalDateAvailability"
+        Me.lblRehearsalDateAvailability.Size = New System.Drawing.Size(115, 15)
+        Me.lblRehearsalDateAvailability.TabIndex = 42
+        Me.lblRehearsalDateAvailability.Text = "Date is Available"
+        '
         'frmClient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3082,4 +3108,6 @@ Partial Class frmClient
     Friend WithEvents btnAddTimeline As Button
     Friend WithEvents cmdEmailReports As Button
     Friend WithEvents cmdUploadToGoogleDrive As Button
+    Friend WithEvents lblEventDateAvailability As Label
+    Friend WithEvents lblRehearsalDateAvailability As Label
 End Class
