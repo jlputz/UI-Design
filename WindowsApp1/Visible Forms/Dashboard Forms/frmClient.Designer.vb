@@ -220,6 +220,8 @@ Partial Class frmClient
         Me.btnPrintBEO = New System.Windows.Forms.Button()
         Me.btnLoadClient = New System.Windows.Forms.Button()
         Me.btnNewClient = New System.Windows.Forms.Button()
+        Me.cmdEmailReports = New System.Windows.Forms.Button()
+        Me.cmdUploadToGoogleDrive = New System.Windows.Forms.Button()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -2730,6 +2732,8 @@ Partial Class frmClient
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TabPage1.Controls.Add(Me.cmdUploadToGoogleDrive)
+        Me.TabPage1.Controls.Add(Me.cmdEmailReports)
         Me.TabPage1.Controls.Add(Me.btnPrintInvoice)
         Me.TabPage1.Controls.Add(Me.btnPrintBEO)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
@@ -2798,6 +2802,36 @@ Partial Class frmClient
         Me.btnNewClient.Text = "New Client"
         Me.btnNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnNewClient.UseVisualStyleBackColor = False
+        '
+        'cmdEmailReports
+        '
+        Me.cmdEmailReports.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdEmailReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdEmailReports.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdEmailReports.ForeColor = System.Drawing.Color.Wheat
+        Me.cmdEmailReports.Location = New System.Drawing.Point(32, 85)
+        Me.cmdEmailReports.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.cmdEmailReports.Name = "cmdEmailReports"
+        Me.cmdEmailReports.Size = New System.Drawing.Size(265, 40)
+        Me.cmdEmailReports.TabIndex = 42
+        Me.cmdEmailReports.Text = "Email Reports"
+        Me.cmdEmailReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdEmailReports.UseVisualStyleBackColor = False
+        '
+        'cmdUploadToGoogleDrive
+        '
+        Me.cmdUploadToGoogleDrive.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdUploadToGoogleDrive.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdUploadToGoogleDrive.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdUploadToGoogleDrive.ForeColor = System.Drawing.Color.Wheat
+        Me.cmdUploadToGoogleDrive.Location = New System.Drawing.Point(522, 85)
+        Me.cmdUploadToGoogleDrive.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.cmdUploadToGoogleDrive.Name = "cmdUploadToGoogleDrive"
+        Me.cmdUploadToGoogleDrive.Size = New System.Drawing.Size(265, 40)
+        Me.cmdUploadToGoogleDrive.TabIndex = 43
+        Me.cmdUploadToGoogleDrive.Text = "Upload To Google Drive"
+        Me.cmdUploadToGoogleDrive.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdUploadToGoogleDrive.UseVisualStyleBackColor = False
         '
         'frmClient
         '
@@ -3046,4 +3080,6 @@ Partial Class frmClient
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label62 As Label
     Friend WithEvents btnAddTimeline As Button
+    Friend WithEvents cmdEmailReports As Button
+    Friend WithEvents cmdUploadToGoogleDrive As Button
 End Class

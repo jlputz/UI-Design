@@ -45,4 +45,12 @@
             pnlAddTimeline.Visible = True
         End If
     End Sub
+
+    Private Sub cmdEmailReports_Click(sender As Object, e As EventArgs) Handles cmdEmailReports.Click
+        frmSendMail.ShowDialog()
+    End Sub
+
+    Private Sub cmdUploadToGoogleDrive_Click(sender As Object, e As EventArgs) Handles cmdUploadToGoogleDrive.Click
+        frmUploadReports.ShowDialog()
+    End Sub
 End Class
