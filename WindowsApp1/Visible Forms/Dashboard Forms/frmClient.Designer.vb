@@ -37,24 +37,26 @@ Partial Class frmClient
         Me.lblCustomerName = New System.Windows.Forms.Label()
         Me.lblCustomerInfo = New System.Windows.Forms.Label()
         Me.tpEventInfo = New System.Windows.Forms.TabPage()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.pnlEventInfo = New System.Windows.Forms.Panel()
-        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
+        Me.lblDateAvailable = New System.Windows.Forms.Label()
+        Me.chkValetServices = New System.Windows.Forms.CheckBox()
+        Me.chkCoatCheck = New System.Windows.Forms.CheckBox()
         Me.lblEventDate = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.Label31 = New System.Windows.Forms.Label()
+        Me.txtEventTimeframe = New System.Windows.Forms.TextBox()
+        Me.lblEventTimeframe = New System.Windows.Forms.Label()
         Me.lblGuestCount = New System.Windows.Forms.Label()
-        Me.MaskedTextBox9 = New System.Windows.Forms.MaskedTextBox()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
-        Me.Label30 = New System.Windows.Forms.Label()
+        Me.mtbFinalGuestCount = New System.Windows.Forms.MaskedTextBox()
+        Me.mtbEstimatedGuestCount = New System.Windows.Forms.MaskedTextBox()
+        Me.lblFinalGuestCount = New System.Windows.Forms.Label()
         Me.dtpEventDate = New System.Windows.Forms.DateTimePicker()
+        Me.lblEventInformationSpecialNotes = New System.Windows.Forms.Label()
+        Me.txtEventInformationSpecialNotes = New System.Windows.Forms.TextBox()
         Me.txtEventType = New System.Windows.Forms.TextBox()
         Me.chkCeremonyEvent = New System.Windows.Forms.CheckBox()
         Me.lblEventType = New System.Windows.Forms.Label()
         Me.lblEventInfo = New System.Windows.Forms.Label()
         Me.pnlCeremony = New System.Windows.Forms.Panel()
+        Me.lblCeremonyDateAvailability = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
@@ -213,6 +215,8 @@ Partial Class frmClient
         Me.Button2 = New System.Windows.Forms.Button()
         Me.VISIO = New System.Windows.Forms.Button()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.cmdUploadBEO = New System.Windows.Forms.Button()
+        Me.cmdEmailReports = New System.Windows.Forms.Button()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.btnPrintInvoice = New System.Windows.Forms.Button()
         Me.btnPrintBEO = New System.Windows.Forms.Button()
@@ -438,9 +442,9 @@ Partial Class frmClient
         'tpEventInfo
         '
         Me.tpEventInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.tpEventInfo.Controls.Add(Me.Label36)
-        Me.tpEventInfo.Controls.Add(Me.TextBox13)
         Me.tpEventInfo.Controls.Add(Me.pnlEventInfo)
+        Me.tpEventInfo.Controls.Add(Me.lblEventInformationSpecialNotes)
+        Me.tpEventInfo.Controls.Add(Me.txtEventInformationSpecialNotes)
         Me.tpEventInfo.Controls.Add(Me.txtEventType)
         Me.tpEventInfo.Controls.Add(Me.chkCeremonyEvent)
         Me.tpEventInfo.Controls.Add(Me.lblEventType)
@@ -454,72 +458,60 @@ Partial Class frmClient
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.ForeColor = System.Drawing.Color.Wheat
-        Me.Label36.Location = New System.Drawing.Point(711, 102)
-        Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(110, 18)
-        Me.Label36.TabIndex = 50
-        Me.Label36.Text = "Special Notes:"
-        '
-        'TextBox13
-        '
-        Me.TextBox13.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox13.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox13.Location = New System.Drawing.Point(714, 130)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox13.Multiline = True
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(308, 434)
-        Me.TextBox13.TabIndex = 49
-        '
         'pnlEventInfo
         '
-        Me.pnlEventInfo.Controls.Add(Me.CheckBox14)
-        Me.pnlEventInfo.Controls.Add(Me.CheckBox13)
+        Me.pnlEventInfo.Controls.Add(Me.lblDateAvailable)
+        Me.pnlEventInfo.Controls.Add(Me.chkValetServices)
+        Me.pnlEventInfo.Controls.Add(Me.chkCoatCheck)
         Me.pnlEventInfo.Controls.Add(Me.lblEventDate)
-        Me.pnlEventInfo.Controls.Add(Me.TextBox9)
-        Me.pnlEventInfo.Controls.Add(Me.Label31)
+        Me.pnlEventInfo.Controls.Add(Me.txtEventTimeframe)
+        Me.pnlEventInfo.Controls.Add(Me.lblEventTimeframe)
         Me.pnlEventInfo.Controls.Add(Me.lblGuestCount)
-        Me.pnlEventInfo.Controls.Add(Me.MaskedTextBox9)
-        Me.pnlEventInfo.Controls.Add(Me.MaskedTextBox1)
-        Me.pnlEventInfo.Controls.Add(Me.Label30)
+        Me.pnlEventInfo.Controls.Add(Me.mtbFinalGuestCount)
+        Me.pnlEventInfo.Controls.Add(Me.mtbEstimatedGuestCount)
+        Me.pnlEventInfo.Controls.Add(Me.lblFinalGuestCount)
         Me.pnlEventInfo.Controls.Add(Me.dtpEventDate)
         Me.pnlEventInfo.Location = New System.Drawing.Point(13, 136)
         Me.pnlEventInfo.Name = "pnlEventInfo"
-        Me.pnlEventInfo.Size = New System.Drawing.Size(671, 226)
+        Me.pnlEventInfo.Size = New System.Drawing.Size(671, 312)
         Me.pnlEventInfo.TabIndex = 35
         '
-        'CheckBox14
+        'lblDateAvailable
         '
-        Me.CheckBox14.AutoSize = True
-        Me.CheckBox14.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox14.ForeColor = System.Drawing.Color.Wheat
-        Me.CheckBox14.Location = New System.Drawing.Point(138, 185)
-        Me.CheckBox14.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(127, 22)
-        Me.CheckBox14.TabIndex = 36
-        Me.CheckBox14.Text = "Valet Services"
-        Me.CheckBox14.UseVisualStyleBackColor = True
+        Me.lblDateAvailable.AutoSize = True
+        Me.lblDateAvailable.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDateAvailable.ForeColor = System.Drawing.Color.Wheat
+        Me.lblDateAvailable.Location = New System.Drawing.Point(505, 24)
+        Me.lblDateAvailable.Name = "lblDateAvailable"
+        Me.lblDateAvailable.Size = New System.Drawing.Size(114, 15)
+        Me.lblDateAvailable.TabIndex = 37
+        Me.lblDateAvailable.Text = "Date is available"
         '
-        'CheckBox13
+        'chkValetServices
         '
-        Me.CheckBox13.AutoSize = True
-        Me.CheckBox13.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox13.ForeColor = System.Drawing.Color.Wheat
-        Me.CheckBox13.Location = New System.Drawing.Point(12, 185)
-        Me.CheckBox13.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(110, 22)
-        Me.CheckBox13.TabIndex = 35
-        Me.CheckBox13.Text = "Coat Check"
-        Me.CheckBox13.UseVisualStyleBackColor = True
+        Me.chkValetServices.AutoSize = True
+        Me.chkValetServices.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkValetServices.ForeColor = System.Drawing.Color.Wheat
+        Me.chkValetServices.Location = New System.Drawing.Point(138, 185)
+        Me.chkValetServices.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.chkValetServices.Name = "chkValetServices"
+        Me.chkValetServices.Size = New System.Drawing.Size(127, 22)
+        Me.chkValetServices.TabIndex = 36
+        Me.chkValetServices.Text = "Valet Services"
+        Me.chkValetServices.UseVisualStyleBackColor = True
+        '
+        'chkCoatCheck
+        '
+        Me.chkCoatCheck.AutoSize = True
+        Me.chkCoatCheck.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkCoatCheck.ForeColor = System.Drawing.Color.Wheat
+        Me.chkCoatCheck.Location = New System.Drawing.Point(12, 185)
+        Me.chkCoatCheck.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.chkCoatCheck.Name = "chkCoatCheck"
+        Me.chkCoatCheck.Size = New System.Drawing.Size(110, 22)
+        Me.chkCoatCheck.TabIndex = 35
+        Me.chkCoatCheck.Text = "Coat Check"
+        Me.chkCoatCheck.UseVisualStyleBackColor = True
         '
         'lblEventDate
         '
@@ -533,29 +525,29 @@ Partial Class frmClient
         Me.lblEventDate.TabIndex = 19
         Me.lblEventDate.Text = "Event Date:"
         '
-        'TextBox9
+        'txtEventTimeframe
         '
-        Me.TextBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.ForeColor = System.Drawing.Color.Wheat
-        Me.TextBox9.Location = New System.Drawing.Point(235, 61)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(184, 26)
-        Me.TextBox9.TabIndex = 34
+        Me.txtEventTimeframe.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtEventTimeframe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtEventTimeframe.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEventTimeframe.ForeColor = System.Drawing.Color.Wheat
+        Me.txtEventTimeframe.Location = New System.Drawing.Point(235, 61)
+        Me.txtEventTimeframe.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtEventTimeframe.Name = "txtEventTimeframe"
+        Me.txtEventTimeframe.Size = New System.Drawing.Size(265, 26)
+        Me.txtEventTimeframe.TabIndex = 34
         '
-        'Label31
+        'lblEventTimeframe
         '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.ForeColor = System.Drawing.Color.Wheat
-        Me.Label31.Location = New System.Drawing.Point(8, 63)
-        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(129, 18)
-        Me.Label31.TabIndex = 33
-        Me.Label31.Text = "Event Timeframe:"
+        Me.lblEventTimeframe.AutoSize = True
+        Me.lblEventTimeframe.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEventTimeframe.ForeColor = System.Drawing.Color.Wheat
+        Me.lblEventTimeframe.Location = New System.Drawing.Point(8, 63)
+        Me.lblEventTimeframe.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblEventTimeframe.Name = "lblEventTimeframe"
+        Me.lblEventTimeframe.Size = New System.Drawing.Size(129, 18)
+        Me.lblEventTimeframe.TabIndex = 33
+        Me.lblEventTimeframe.Text = "Event Timeframe:"
         '
         'lblGuestCount
         '
@@ -569,43 +561,45 @@ Partial Class frmClient
         Me.lblGuestCount.TabIndex = 21
         Me.lblGuestCount.Text = "Estimated Guest Count:"
         '
-        'MaskedTextBox9
+        'mtbFinalGuestCount
         '
-        Me.MaskedTextBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.MaskedTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MaskedTextBox9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox9.ForeColor = System.Drawing.Color.Wheat
-        Me.MaskedTextBox9.Location = New System.Drawing.Point(233, 139)
-        Me.MaskedTextBox9.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.MaskedTextBox9.Name = "MaskedTextBox9"
-        Me.MaskedTextBox9.Size = New System.Drawing.Size(48, 26)
-        Me.MaskedTextBox9.TabIndex = 32
-        Me.MaskedTextBox9.ValidatingType = GetType(Integer)
+        Me.mtbFinalGuestCount.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.mtbFinalGuestCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.mtbFinalGuestCount.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mtbFinalGuestCount.ForeColor = System.Drawing.Color.Wheat
+        Me.mtbFinalGuestCount.Location = New System.Drawing.Point(233, 139)
+        Me.mtbFinalGuestCount.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.mtbFinalGuestCount.Mask = "999"
+        Me.mtbFinalGuestCount.Name = "mtbFinalGuestCount"
+        Me.mtbFinalGuestCount.Size = New System.Drawing.Size(48, 26)
+        Me.mtbFinalGuestCount.TabIndex = 32
+        Me.mtbFinalGuestCount.ValidatingType = GetType(Integer)
         '
-        'MaskedTextBox1
+        'mtbEstimatedGuestCount
         '
-        Me.MaskedTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.MaskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MaskedTextBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox1.ForeColor = System.Drawing.Color.Wheat
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(235, 98)
-        Me.MaskedTextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(48, 26)
-        Me.MaskedTextBox1.TabIndex = 22
-        Me.MaskedTextBox1.ValidatingType = GetType(Integer)
+        Me.mtbEstimatedGuestCount.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.mtbEstimatedGuestCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.mtbEstimatedGuestCount.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mtbEstimatedGuestCount.ForeColor = System.Drawing.Color.Wheat
+        Me.mtbEstimatedGuestCount.Location = New System.Drawing.Point(235, 98)
+        Me.mtbEstimatedGuestCount.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.mtbEstimatedGuestCount.Mask = "999"
+        Me.mtbEstimatedGuestCount.Name = "mtbEstimatedGuestCount"
+        Me.mtbEstimatedGuestCount.Size = New System.Drawing.Size(48, 26)
+        Me.mtbEstimatedGuestCount.TabIndex = 22
+        Me.mtbEstimatedGuestCount.ValidatingType = GetType(Integer)
         '
-        'Label30
+        'lblFinalGuestCount
         '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.ForeColor = System.Drawing.Color.Wheat
-        Me.Label30.Location = New System.Drawing.Point(9, 141)
-        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(136, 18)
-        Me.Label30.TabIndex = 31
-        Me.Label30.Text = "Final Guest Count:"
+        Me.lblFinalGuestCount.AutoSize = True
+        Me.lblFinalGuestCount.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFinalGuestCount.ForeColor = System.Drawing.Color.Wheat
+        Me.lblFinalGuestCount.Location = New System.Drawing.Point(9, 141)
+        Me.lblFinalGuestCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblFinalGuestCount.Name = "lblFinalGuestCount"
+        Me.lblFinalGuestCount.Size = New System.Drawing.Size(136, 18)
+        Me.lblFinalGuestCount.TabIndex = 31
+        Me.lblFinalGuestCount.Text = "Final Guest Count:"
         '
         'dtpEventDate
         '
@@ -616,6 +610,32 @@ Partial Class frmClient
         Me.dtpEventDate.Name = "dtpEventDate"
         Me.dtpEventDate.Size = New System.Drawing.Size(263, 26)
         Me.dtpEventDate.TabIndex = 24
+        Me.dtpEventDate.Value = New Date(2019, 11, 23, 0, 0, 0, 0)
+        '
+        'lblEventInformationSpecialNotes
+        '
+        Me.lblEventInformationSpecialNotes.AutoSize = True
+        Me.lblEventInformationSpecialNotes.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEventInformationSpecialNotes.ForeColor = System.Drawing.Color.Wheat
+        Me.lblEventInformationSpecialNotes.Location = New System.Drawing.Point(711, 102)
+        Me.lblEventInformationSpecialNotes.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblEventInformationSpecialNotes.Name = "lblEventInformationSpecialNotes"
+        Me.lblEventInformationSpecialNotes.Size = New System.Drawing.Size(110, 18)
+        Me.lblEventInformationSpecialNotes.TabIndex = 50
+        Me.lblEventInformationSpecialNotes.Text = "Special Notes:"
+        '
+        'txtEventInformationSpecialNotes
+        '
+        Me.txtEventInformationSpecialNotes.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtEventInformationSpecialNotes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtEventInformationSpecialNotes.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEventInformationSpecialNotes.ForeColor = System.Drawing.Color.Wheat
+        Me.txtEventInformationSpecialNotes.Location = New System.Drawing.Point(714, 130)
+        Me.txtEventInformationSpecialNotes.Margin = New System.Windows.Forms.Padding(1)
+        Me.txtEventInformationSpecialNotes.Multiline = True
+        Me.txtEventInformationSpecialNotes.Name = "txtEventInformationSpecialNotes"
+        Me.txtEventInformationSpecialNotes.Size = New System.Drawing.Size(308, 434)
+        Me.txtEventInformationSpecialNotes.TabIndex = 49
         '
         'txtEventType
         '
@@ -669,6 +689,7 @@ Partial Class frmClient
         'pnlCeremony
         '
         Me.pnlCeremony.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.pnlCeremony.Controls.Add(Me.lblCeremonyDateAvailability)
         Me.pnlCeremony.Controls.Add(Me.Label37)
         Me.pnlCeremony.Controls.Add(Me.TextBox14)
         Me.pnlCeremony.Controls.Add(Me.TextBox12)
@@ -680,11 +701,22 @@ Partial Class frmClient
         Me.pnlCeremony.Controls.Add(Me.Label32)
         Me.pnlCeremony.Controls.Add(Me.lblRehearsalDate)
         Me.pnlCeremony.Controls.Add(Me.dtpRehearsalDate)
-        Me.pnlCeremony.Location = New System.Drawing.Point(12, 130)
+        Me.pnlCeremony.Location = New System.Drawing.Point(16, 130)
         Me.pnlCeremony.Name = "pnlCeremony"
         Me.pnlCeremony.Size = New System.Drawing.Size(671, 213)
         Me.pnlCeremony.TabIndex = 36
         Me.pnlCeremony.Visible = False
+        '
+        'lblCeremonyDateAvailability
+        '
+        Me.lblCeremonyDateAvailability.AutoSize = True
+        Me.lblCeremonyDateAvailability.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCeremonyDateAvailability.ForeColor = System.Drawing.Color.Wheat
+        Me.lblCeremonyDateAvailability.Location = New System.Drawing.Point(508, 87)
+        Me.lblCeremonyDateAvailability.Name = "lblCeremonyDateAvailability"
+        Me.lblCeremonyDateAvailability.Size = New System.Drawing.Size(100, 15)
+        Me.lblCeremonyDateAvailability.TabIndex = 42
+        Me.lblCeremonyDateAvailability.Text = "Date available"
         '
         'Label37
         '
@@ -815,6 +847,7 @@ Partial Class frmClient
         Me.dtpRehearsalDate.Name = "dtpRehearsalDate"
         Me.dtpRehearsalDate.Size = New System.Drawing.Size(268, 26)
         Me.dtpRehearsalDate.TabIndex = 25
+        Me.dtpRehearsalDate.Value = New Date(2019, 11, 22, 0, 0, 0, 0)
         '
         'tpTimeline
         '
@@ -913,6 +946,7 @@ Partial Class frmClient
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.Size = New System.Drawing.Size(714, 74)
         Me.TextBox15.TabIndex = 50
+        Me.TextBox15.Text = "- 2 guests in attendance require vegan meals."
         '
         'Label9
         '
@@ -939,6 +973,8 @@ Partial Class frmClient
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(714, 117)
         Me.TextBox5.TabIndex = 48
+        Me.TextBox5.Text = "-Pasta Station (Choose 2 - $10):" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & "-Fettucini & Alfredo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & "-Roasted Vegetable Lasa" &
+    "gna (with meat sauce)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "-2 Vegan Meals (Chef's Choice)"
         '
         'mtbCateringPhone
         '
@@ -952,6 +988,7 @@ Partial Class frmClient
         Me.mtbCateringPhone.Name = "mtbCateringPhone"
         Me.mtbCateringPhone.Size = New System.Drawing.Size(168, 26)
         Me.mtbCateringPhone.TabIndex = 45
+        Me.mtbCateringPhone.Text = "9894849040"
         '
         'txtCateringCompanyName
         '
@@ -964,6 +1001,7 @@ Partial Class frmClient
         Me.txtCateringCompanyName.Name = "txtCateringCompanyName"
         Me.txtCateringCompanyName.Size = New System.Drawing.Size(415, 26)
         Me.txtCateringCompanyName.TabIndex = 44
+        Me.txtCateringCompanyName.Text = "From Scratch Catering"
         '
         'txtCateringCompanyEmail
         '
@@ -976,6 +1014,7 @@ Partial Class frmClient
         Me.txtCateringCompanyEmail.Name = "txtCateringCompanyEmail"
         Me.txtCateringCompanyEmail.Size = New System.Drawing.Size(415, 26)
         Me.txtCateringCompanyEmail.TabIndex = 43
+        Me.txtCateringCompanyEmail.Text = "jeff@cateredfromscratch.com"
         '
         'lblSpecialNotes
         '
@@ -2711,6 +2750,8 @@ Partial Class frmClient
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TabPage1.Controls.Add(Me.cmdUploadBEO)
+        Me.TabPage1.Controls.Add(Me.cmdEmailReports)
         Me.TabPage1.Controls.Add(Me.WebBrowser1)
         Me.TabPage1.Controls.Add(Me.btnPrintInvoice)
         Me.TabPage1.Controls.Add(Me.btnPrintBEO)
@@ -2721,12 +2762,42 @@ Partial Class frmClient
         Me.TabPage1.TabIndex = 8
         Me.TabPage1.Text = "Payments & Reports"
         '
+        'cmdUploadBEO
+        '
+        Me.cmdUploadBEO.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdUploadBEO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdUploadBEO.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdUploadBEO.ForeColor = System.Drawing.Color.Wheat
+        Me.cmdUploadBEO.Location = New System.Drawing.Point(305, 85)
+        Me.cmdUploadBEO.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.cmdUploadBEO.Name = "cmdUploadBEO"
+        Me.cmdUploadBEO.Size = New System.Drawing.Size(265, 40)
+        Me.cmdUploadBEO.TabIndex = 46
+        Me.cmdUploadBEO.Text = "Upload to Google Drive"
+        Me.cmdUploadBEO.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdUploadBEO.UseVisualStyleBackColor = False
+        '
+        'cmdEmailReports
+        '
+        Me.cmdEmailReports.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdEmailReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdEmailReports.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdEmailReports.ForeColor = System.Drawing.Color.Wheat
+        Me.cmdEmailReports.Location = New System.Drawing.Point(32, 85)
+        Me.cmdEmailReports.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.cmdEmailReports.Name = "cmdEmailReports"
+        Me.cmdEmailReports.Size = New System.Drawing.Size(265, 40)
+        Me.cmdEmailReports.TabIndex = 43
+        Me.cmdEmailReports.Text = "Email a Report"
+        Me.cmdEmailReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdEmailReports.UseVisualStyleBackColor = False
+        '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(32, 108)
+        Me.WebBrowser1.Location = New System.Drawing.Point(32, 131)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(768, 502)
+        Me.WebBrowser1.Size = New System.Drawing.Size(811, 479)
         Me.WebBrowser1.TabIndex = 42
         Me.WebBrowser1.Url = New System.Uri("", System.UriKind.Relative)
         '
@@ -2751,7 +2822,7 @@ Partial Class frmClient
         Me.btnPrintBEO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrintBEO.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrintBEO.ForeColor = System.Drawing.Color.Wheat
-        Me.btnPrintBEO.Location = New System.Drawing.Point(522, 39)
+        Me.btnPrintBEO.Location = New System.Drawing.Point(305, 39)
         Me.btnPrintBEO.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnPrintBEO.Name = "btnPrintBEO"
         Me.btnPrintBEO.Size = New System.Drawing.Size(265, 40)
@@ -2852,18 +2923,18 @@ Partial Class frmClient
     Friend WithEvents lblCustomerName As Label
     Friend WithEvents lblCustomerInfo As Label
     Friend WithEvents tpEventInfo As TabPage
-    Friend WithEvents Label36 As Label
-    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents lblEventInformationSpecialNotes As Label
+    Friend WithEvents txtEventInformationSpecialNotes As TextBox
     Friend WithEvents pnlEventInfo As Panel
-    Friend WithEvents CheckBox14 As CheckBox
-    Friend WithEvents CheckBox13 As CheckBox
+    Friend WithEvents chkValetServices As CheckBox
+    Friend WithEvents chkCoatCheck As CheckBox
     Friend WithEvents lblEventDate As Label
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents Label31 As Label
+    Friend WithEvents txtEventTimeframe As TextBox
+    Friend WithEvents lblEventTimeframe As Label
     Friend WithEvents lblGuestCount As Label
-    Friend WithEvents MaskedTextBox9 As MaskedTextBox
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents Label30 As Label
+    Friend WithEvents mtbFinalGuestCount As MaskedTextBox
+    Friend WithEvents mtbEstimatedGuestCount As MaskedTextBox
+    Friend WithEvents lblFinalGuestCount As Label
     Friend WithEvents dtpEventDate As DateTimePicker
     Friend WithEvents txtEventType As TextBox
     Friend WithEvents chkCeremonyEvent As CheckBox
@@ -3033,4 +3104,8 @@ Partial Class frmClient
     Friend WithEvents btnPrintBEO As Button
     Friend WithEvents btnLoadClient As Button
     Friend WithEvents btnNewClient As Button
+    Friend WithEvents lblDateAvailable As Label
+    Friend WithEvents lblCeremonyDateAvailability As Label
+    Friend WithEvents cmdUploadBEO As Button
+    Friend WithEvents cmdEmailReports As Button
 End Class

@@ -40,4 +40,22 @@
     Private Sub cmdAfterglow_Click(sender As Object, e As EventArgs) Handles cmdAfterglow.Click
         frmAfterglow.ShowDialog()
     End Sub
+
+    Private Sub chkCeremonyEvent_CheckedChanged(sender As Object, e As EventArgs) Handles chkCeremonyEvent.CheckedChanged
+        If chkCeremonyEvent.Checked = True Then
+            pnlCeremony.Visible = True
+            pnlEventInfo.Top = pnlCeremony.Bottom + 3
+        Else
+            pnlCeremony.Visible = False
+            pnlEventInfo.Top = chkCeremonyEvent.Bottom + 3
+        End If
+    End Sub
+
+    Private Sub cmdEmailReports_Click(sender As Object, e As EventArgs) Handles cmdEmailReports.Click
+        frmSendMail.ShowDialog()
+    End Sub
+
+    Private Sub cmdUploadBEO_Click(sender As Object, e As EventArgs) Handles cmdUploadBEO.Click
+        frmUploadReports.ShowDialog()
+    End Sub
 End Class

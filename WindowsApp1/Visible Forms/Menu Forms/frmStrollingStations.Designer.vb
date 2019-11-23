@@ -47,12 +47,12 @@ Partial Class frmStrollingStations
         Me.cboBBQSidesItems = New System.Windows.Forms.ComboBox()
         Me.chkBBQSidesItems = New System.Windows.Forms.Label()
         Me.chkBBQSides = New System.Windows.Forms.CheckBox()
-        Me.lstStrollingDinnerSelections = New System.Windows.Forms.ListBox()
         Me.lblStationsSelected = New System.Windows.Forms.Label()
         Me.lblPastaAddons = New System.Windows.Forms.Label()
         Me.cboPastaAddons = New System.Windows.Forms.ComboBox()
         Me.cmdAddPastaAddons = New System.Windows.Forms.Button()
         Me.cmdAddStrollingDinnerItems = New System.Windows.Forms.Button()
+        Me.txtStrollingDinnerItemsAdded = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblStrollingStations
@@ -342,20 +342,6 @@ Partial Class frmStrollingStations
         Me.chkBBQSides.Text = "BBQ and Sides"
         Me.chkBBQSides.UseVisualStyleBackColor = True
         '
-        'lstStrollingDinnerSelections
-        '
-        Me.lstStrollingDinnerSelections.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lstStrollingDinnerSelections.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lstStrollingDinnerSelections.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lstStrollingDinnerSelections.ForeColor = System.Drawing.Color.Wheat
-        Me.lstStrollingDinnerSelections.FormattingEnabled = True
-        Me.lstStrollingDinnerSelections.ItemHeight = 18
-        Me.lstStrollingDinnerSelections.Items.AddRange(New Object() {"Pasta Station (Choose 2 - $10):", "" & Global.Microsoft.VisualBasic.ChrW(9) & "-Fettucini & Alfredo", "" & Global.Microsoft.VisualBasic.ChrW(9) & "-Traditional Lasagna"})
-        Me.lstStrollingDinnerSelections.Location = New System.Drawing.Point(345, 87)
-        Me.lstStrollingDinnerSelections.Name = "lstStrollingDinnerSelections"
-        Me.lstStrollingDinnerSelections.Size = New System.Drawing.Size(455, 506)
-        Me.lstStrollingDinnerSelections.TabIndex = 28
-        '
         'lblStationsSelected
         '
         Me.lblStationsSelected.AutoSize = True
@@ -414,18 +400,30 @@ Partial Class frmStrollingStations
         Me.cmdAddStrollingDinnerItems.Text = "Save Food Selections"
         Me.cmdAddStrollingDinnerItems.UseVisualStyleBackColor = False
         '
+        'txtStrollingDinnerItemsAdded
+        '
+        Me.txtStrollingDinnerItemsAdded.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtStrollingDinnerItemsAdded.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtStrollingDinnerItemsAdded.ForeColor = System.Drawing.Color.Wheat
+        Me.txtStrollingDinnerItemsAdded.Location = New System.Drawing.Point(345, 86)
+        Me.txtStrollingDinnerItemsAdded.Multiline = True
+        Me.txtStrollingDinnerItemsAdded.Name = "txtStrollingDinnerItemsAdded"
+        Me.txtStrollingDinnerItemsAdded.Size = New System.Drawing.Size(455, 507)
+        Me.txtStrollingDinnerItemsAdded.TabIndex = 36
+        Me.txtStrollingDinnerItemsAdded.Text = "Pasta Station (Choose 2 - $10):" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & "-Fettucini & Alfredo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & "-Traditional Lasagna"
+        '
         'frmStrollingStations
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(812, 646)
+        Me.Controls.Add(Me.txtStrollingDinnerItemsAdded)
         Me.Controls.Add(Me.cmdAddStrollingDinnerItems)
         Me.Controls.Add(Me.cmdAddPastaAddons)
         Me.Controls.Add(Me.cboPastaAddons)
         Me.Controls.Add(Me.lblPastaAddons)
         Me.Controls.Add(Me.lblStationsSelected)
-        Me.Controls.Add(Me.lstStrollingDinnerSelections)
         Me.Controls.Add(Me.cmdAddBBQSidesItems)
         Me.Controls.Add(Me.cboBBQSidesItems)
         Me.Controls.Add(Me.chkBBQSidesItems)
@@ -485,10 +483,10 @@ Partial Class frmStrollingStations
     Friend WithEvents cboBBQSidesItems As ComboBox
     Friend WithEvents chkBBQSidesItems As Label
     Friend WithEvents chkBBQSides As CheckBox
-    Friend WithEvents lstStrollingDinnerSelections As ListBox
     Friend WithEvents lblStationsSelected As Label
     Friend WithEvents lblPastaAddons As Label
     Friend WithEvents cboPastaAddons As ComboBox
     Friend WithEvents cmdAddPastaAddons As Button
     Friend WithEvents cmdAddStrollingDinnerItems As Button
+    Friend WithEvents txtStrollingDinnerItemsAdded As TextBox
 End Class

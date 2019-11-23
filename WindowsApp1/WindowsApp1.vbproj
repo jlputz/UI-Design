@@ -107,6 +107,18 @@
       <DependentUpon>BeverageService.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmSendMail.Designer.vb">
+      <DependentUpon>frmSendMail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmSendMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmUploadReports.Designer.vb">
+      <DependentUpon>frmUploadReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmUploadReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Visible Forms\Menu Forms\frmAfterglow.Designer.vb">
       <DependentUpon>frmAfterglow.vb</DependentUpon>
     </Compile>
@@ -246,6 +258,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Reference Forms %28OLD%29\BeverageService.resx">
       <DependentUpon>BeverageService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmSendMail.resx">
+      <DependentUpon>frmSendMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmUploadReports.resx">
+      <DependentUpon>frmUploadReports.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visible Forms\Menu Forms\frmAfterglow.resx">
       <DependentUpon>frmAfterglow.vb</DependentUpon>
