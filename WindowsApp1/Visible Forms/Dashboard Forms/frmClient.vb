@@ -13,9 +13,6 @@
 
     End Sub
 
-    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
-
-    End Sub
 
     Private Sub btnPrintInvoice_Click(sender As Object, e As EventArgs) Handles btnPrintInvoice.Click
 
@@ -41,21 +38,11 @@
         frmAfterglow.ShowDialog()
     End Sub
 
-    Private Sub chkCeremonyEvent_CheckedChanged(sender As Object, e As EventArgs) Handles chkCeremonyEvent.CheckedChanged
-        If chkCeremonyEvent.Checked = True Then
-            pnlCeremony.Visible = True
-            pnlEventInfo.Top = pnlCeremony.Bottom + 3
+    Private Sub btnAddTimeline_Click(sender As Object, e As EventArgs) Handles btnAddTimeline.Click
+        If pnlAddTimeline.Visible = True Then
+            pnlAddTimeline.Visible = False
         Else
-            pnlCeremony.Visible = False
-            pnlEventInfo.Top = chkCeremonyEvent.Bottom + 3
+            pnlAddTimeline.Visible = True
         End If
-    End Sub
-
-    Private Sub cmdEmailReports_Click(sender As Object, e As EventArgs) Handles cmdEmailReports.Click
-        frmSendMail.ShowDialog()
-    End Sub
-
-    Private Sub cmdUploadBEO_Click(sender As Object, e As EventArgs) Handles cmdUploadBEO.Click
-        frmUploadReports.ShowDialog()
     End Sub
 End Class

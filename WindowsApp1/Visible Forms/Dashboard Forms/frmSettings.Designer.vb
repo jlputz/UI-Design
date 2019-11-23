@@ -25,16 +25,18 @@ Partial Class frmSettings
         Me.pnlSettings = New System.Windows.Forms.Panel()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.cbTheme = New System.Windows.Forms.CheckBox()
         Me.pnlSettings.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlSettings
         '
+        Me.pnlSettings.Controls.Add(Me.cbTheme)
         Me.pnlSettings.Controls.Add(Me.Button9)
         Me.pnlSettings.Controls.Add(Me.Button4)
         Me.pnlSettings.Location = New System.Drawing.Point(24, 12)
         Me.pnlSettings.Name = "pnlSettings"
-        Me.pnlSettings.Size = New System.Drawing.Size(608, 100)
+        Me.pnlSettings.Size = New System.Drawing.Size(608, 152)
         Me.pnlSettings.TabIndex = 34
         '
         'Button9
@@ -67,7 +69,19 @@ Partial Class frmSettings
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button4.UseVisualStyleBackColor = False
         '
-        'SettingsForm
+        'cbTheme
+        '
+        Me.cbTheme.AutoSize = True
+        Me.cbTheme.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!)
+        Me.cbTheme.ForeColor = System.Drawing.Color.Wheat
+        Me.cbTheme.Location = New System.Drawing.Point(16, 101)
+        Me.cbTheme.Name = "cbTheme"
+        Me.cbTheme.Size = New System.Drawing.Size(141, 30)
+        Me.cbTheme.TabIndex = 35
+        Me.cbTheme.Text = "Light Theme"
+        Me.cbTheme.UseVisualStyleBackColor = True
+        '
+        'frmSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -75,9 +89,10 @@ Partial Class frmSettings
         Me.ClientSize = New System.Drawing.Size(1008, 681)
         Me.Controls.Add(Me.pnlSettings)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "SettingsForm"
+        Me.Name = "frmSettings"
         Me.Text = "SettingsForm"
         Me.pnlSettings.ResumeLayout(False)
+        Me.pnlSettings.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -85,4 +100,5 @@ Partial Class frmSettings
     Friend WithEvents pnlSettings As Panel
     Friend WithEvents Button9 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents cbTheme As CheckBox
 End Class
