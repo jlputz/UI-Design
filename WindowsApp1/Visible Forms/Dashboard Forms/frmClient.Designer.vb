@@ -40,6 +40,7 @@ Partial Class frmClient
         Me.Label36 = New System.Windows.Forms.Label()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.pnlEventInfo = New System.Windows.Forms.Panel()
+        Me.lblEventDateAvailability = New System.Windows.Forms.Label()
         Me.CheckBox14 = New System.Windows.Forms.CheckBox()
         Me.CheckBox13 = New System.Windows.Forms.CheckBox()
         Me.lblEventDate = New System.Windows.Forms.Label()
@@ -55,6 +56,7 @@ Partial Class frmClient
         Me.lblEventType = New System.Windows.Forms.Label()
         Me.lblEventInfo = New System.Windows.Forms.Label()
         Me.pnlCeremony = New System.Windows.Forms.Panel()
+        Me.lblRehearsalDateAvailability = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
@@ -216,14 +218,12 @@ Partial Class frmClient
         Me.Button2 = New System.Windows.Forms.Button()
         Me.VISIO = New System.Windows.Forms.Button()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.cmdUploadToGoogleDrive = New System.Windows.Forms.Button()
+        Me.cmdEmailReports = New System.Windows.Forms.Button()
         Me.btnPrintInvoice = New System.Windows.Forms.Button()
         Me.btnPrintBEO = New System.Windows.Forms.Button()
         Me.btnLoadClient = New System.Windows.Forms.Button()
         Me.btnNewClient = New System.Windows.Forms.Button()
-        Me.cmdEmailReports = New System.Windows.Forms.Button()
-        Me.cmdUploadToGoogleDrive = New System.Windows.Forms.Button()
-        Me.lblEventDateAvailability = New System.Windows.Forms.Label()
-        Me.lblRehearsalDateAvailability = New System.Windows.Forms.Label()
         Me.tbpCustomer.SuspendLayout()
         Me.tpCustomerInfo.SuspendLayout()
         Me.tpEventInfo.SuspendLayout()
@@ -248,9 +248,7 @@ Partial Class frmClient
         '
         'tbpCustomer
         '
-        Me.tbpCustomer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tbpCustomer.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.tbpCustomer.CausesValidation = False
         Me.tbpCustomer.Controls.Add(Me.tpCustomerInfo)
         Me.tbpCustomer.Controls.Add(Me.tpEventInfo)
@@ -266,7 +264,7 @@ Partial Class frmClient
         Me.tbpCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpCustomer.Name = "tbpCustomer"
         Me.tbpCustomer.SelectedIndex = 0
-        Me.tbpCustomer.Size = New System.Drawing.Size(1087, 610)
+        Me.tbpCustomer.Size = New System.Drawing.Size(1108, 610)
         Me.tbpCustomer.TabIndex = 5
         '
         'tpCustomerInfo
@@ -288,7 +286,7 @@ Partial Class frmClient
         Me.tpCustomerInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpCustomerInfo.Name = "tpCustomerInfo"
         Me.tpCustomerInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpCustomerInfo.Size = New System.Drawing.Size(1079, 584)
+        Me.tpCustomerInfo.Size = New System.Drawing.Size(1100, 584)
         Me.tpCustomerInfo.TabIndex = 0
         Me.tpCustomerInfo.Text = "Customer Info"
         '
@@ -375,19 +373,19 @@ Partial Class frmClient
         Me.lblAlternatePhone.AutoSize = True
         Me.lblAlternatePhone.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAlternatePhone.ForeColor = System.Drawing.Color.Wheat
-        Me.lblAlternatePhone.Location = New System.Drawing.Point(0, 266)
+        Me.lblAlternatePhone.Location = New System.Drawing.Point(56, 265)
         Me.lblAlternatePhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAlternatePhone.Name = "lblAlternatePhone"
-        Me.lblAlternatePhone.Size = New System.Drawing.Size(182, 18)
+        Me.lblAlternatePhone.Size = New System.Drawing.Size(138, 18)
         Me.lblAlternatePhone.TabIndex = 21
-        Me.lblAlternatePhone.Text = "Alternate Phone Number:"
+        Me.lblAlternatePhone.Text = "Alt Phone Number:"
         '
         'lblPhoneNumber
         '
         Me.lblPhoneNumber.AutoSize = True
         Me.lblPhoneNumber.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPhoneNumber.ForeColor = System.Drawing.Color.Wheat
-        Me.lblPhoneNumber.Location = New System.Drawing.Point(66, 213)
+        Me.lblPhoneNumber.Location = New System.Drawing.Point(56, 212)
         Me.lblPhoneNumber.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPhoneNumber.Name = "lblPhoneNumber"
         Me.lblPhoneNumber.Size = New System.Drawing.Size(116, 18)
@@ -399,7 +397,7 @@ Partial Class frmClient
         Me.lblEmailAddress.AutoSize = True
         Me.lblEmailAddress.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEmailAddress.ForeColor = System.Drawing.Color.Wheat
-        Me.lblEmailAddress.Location = New System.Drawing.Point(63, 161)
+        Me.lblEmailAddress.Location = New System.Drawing.Point(56, 160)
         Me.lblEmailAddress.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEmailAddress.Name = "lblEmailAddress"
         Me.lblEmailAddress.Size = New System.Drawing.Size(119, 18)
@@ -411,7 +409,7 @@ Partial Class frmClient
         Me.lblStreetAddress.AutoSize = True
         Me.lblStreetAddress.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblStreetAddress.ForeColor = System.Drawing.Color.Wheat
-        Me.lblStreetAddress.Location = New System.Drawing.Point(56, 115)
+        Me.lblStreetAddress.Location = New System.Drawing.Point(56, 114)
         Me.lblStreetAddress.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStreetAddress.Name = "lblStreetAddress"
         Me.lblStreetAddress.Size = New System.Drawing.Size(74, 18)
@@ -423,7 +421,7 @@ Partial Class frmClient
         Me.lblCustomerName.AutoSize = True
         Me.lblCustomerName.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCustomerName.ForeColor = System.Drawing.Color.Wheat
-        Me.lblCustomerName.Location = New System.Drawing.Point(56, 69)
+        Me.lblCustomerName.Location = New System.Drawing.Point(56, 64)
         Me.lblCustomerName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomerName.Name = "lblCustomerName"
         Me.lblCustomerName.Size = New System.Drawing.Size(126, 18)
@@ -457,7 +455,7 @@ Partial Class frmClient
         Me.tpEventInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpEventInfo.Name = "tpEventInfo"
         Me.tpEventInfo.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tpEventInfo.Size = New System.Drawing.Size(1079, 584)
+        Me.tpEventInfo.Size = New System.Drawing.Size(1100, 584)
         Me.tpEventInfo.TabIndex = 1
         Me.tpEventInfo.Text = "Event Information"
         '
@@ -502,6 +500,17 @@ Partial Class frmClient
         Me.pnlEventInfo.Name = "pnlEventInfo"
         Me.pnlEventInfo.Size = New System.Drawing.Size(671, 226)
         Me.pnlEventInfo.TabIndex = 35
+        '
+        'lblEventDateAvailability
+        '
+        Me.lblEventDateAvailability.AutoSize = True
+        Me.lblEventDateAvailability.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEventDateAvailability.ForeColor = System.Drawing.Color.Wheat
+        Me.lblEventDateAvailability.Location = New System.Drawing.Point(505, 30)
+        Me.lblEventDateAvailability.Name = "lblEventDateAvailability"
+        Me.lblEventDateAvailability.Size = New System.Drawing.Size(115, 15)
+        Me.lblEventDateAvailability.TabIndex = 37
+        Me.lblEventDateAvailability.Text = "Date is Available"
         '
         'CheckBox14
         '
@@ -695,6 +704,17 @@ Partial Class frmClient
         Me.pnlCeremony.TabIndex = 36
         Me.pnlCeremony.Visible = False
         '
+        'lblRehearsalDateAvailability
+        '
+        Me.lblRehearsalDateAvailability.AutoSize = True
+        Me.lblRehearsalDateAvailability.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRehearsalDateAvailability.ForeColor = System.Drawing.Color.Wheat
+        Me.lblRehearsalDateAvailability.Location = New System.Drawing.Point(508, 87)
+        Me.lblRehearsalDateAvailability.Name = "lblRehearsalDateAvailability"
+        Me.lblRehearsalDateAvailability.Size = New System.Drawing.Size(115, 15)
+        Me.lblRehearsalDateAvailability.TabIndex = 42
+        Me.lblRehearsalDateAvailability.Text = "Date is Available"
+        '
         'Label37
         '
         Me.Label37.AutoSize = True
@@ -835,7 +855,7 @@ Partial Class frmClient
         Me.tpTimeline.Location = New System.Drawing.Point(4, 22)
         Me.tpTimeline.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpTimeline.Name = "tpTimeline"
-        Me.tpTimeline.Size = New System.Drawing.Size(1079, 584)
+        Me.tpTimeline.Size = New System.Drawing.Size(1100, 584)
         Me.tpTimeline.TabIndex = 2
         Me.tpTimeline.Text = "Timeline"
         '
@@ -970,7 +990,7 @@ Partial Class frmClient
         Me.tpFoodSelection.Location = New System.Drawing.Point(4, 22)
         Me.tpFoodSelection.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpFoodSelection.Name = "tpFoodSelection"
-        Me.tpFoodSelection.Size = New System.Drawing.Size(1079, 584)
+        Me.tpFoodSelection.Size = New System.Drawing.Size(1100, 584)
         Me.tpFoodSelection.TabIndex = 4
         Me.tpFoodSelection.Text = "Food Selection"
         '
@@ -1233,7 +1253,7 @@ Partial Class frmClient
         Me.tpDrinkService.Location = New System.Drawing.Point(4, 22)
         Me.tpDrinkService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpDrinkService.Name = "tpDrinkService"
-        Me.tpDrinkService.Size = New System.Drawing.Size(1079, 584)
+        Me.tpDrinkService.Size = New System.Drawing.Size(1100, 584)
         Me.tpDrinkService.TabIndex = 5
         Me.tpDrinkService.Text = "Drink Service"
         '
@@ -1552,7 +1572,7 @@ Partial Class frmClient
         Me.tpAudioLighting.Location = New System.Drawing.Point(4, 22)
         Me.tpAudioLighting.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpAudioLighting.Name = "tpAudioLighting"
-        Me.tpAudioLighting.Size = New System.Drawing.Size(1079, 584)
+        Me.tpAudioLighting.Size = New System.Drawing.Size(1100, 584)
         Me.tpAudioLighting.TabIndex = 3
         Me.tpAudioLighting.Text = "Audio and Uplighting"
         '
@@ -1785,7 +1805,7 @@ Partial Class frmClient
         Me.tpMiscInfo.Location = New System.Drawing.Point(4, 22)
         Me.tpMiscInfo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tpMiscInfo.Name = "tpMiscInfo"
-        Me.tpMiscInfo.Size = New System.Drawing.Size(1079, 584)
+        Me.tpMiscInfo.Size = New System.Drawing.Size(1100, 584)
         Me.tpMiscInfo.TabIndex = 6
         Me.tpMiscInfo.Text = "Linens"
         '
@@ -2060,7 +2080,7 @@ Partial Class frmClient
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1079, 584)
+        Me.TabPage2.Size = New System.Drawing.Size(1100, 584)
         Me.TabPage2.TabIndex = 9
         Me.TabPage2.Text = "Vendors"
         '
@@ -2676,7 +2696,7 @@ Partial Class frmClient
         Me.tpLayout.ForeColor = System.Drawing.Color.Wheat
         Me.tpLayout.Location = New System.Drawing.Point(4, 22)
         Me.tpLayout.Name = "tpLayout"
-        Me.tpLayout.Size = New System.Drawing.Size(1079, 584)
+        Me.tpLayout.Size = New System.Drawing.Size(1100, 584)
         Me.tpLayout.TabIndex = 7
         Me.tpLayout.Text = "Layout"
         '
@@ -2743,9 +2763,39 @@ Partial Class frmClient
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1079, 584)
+        Me.TabPage1.Size = New System.Drawing.Size(1100, 584)
         Me.TabPage1.TabIndex = 8
         Me.TabPage1.Text = "Payments & Reports"
+        '
+        'cmdUploadToGoogleDrive
+        '
+        Me.cmdUploadToGoogleDrive.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdUploadToGoogleDrive.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdUploadToGoogleDrive.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdUploadToGoogleDrive.ForeColor = System.Drawing.Color.Wheat
+        Me.cmdUploadToGoogleDrive.Location = New System.Drawing.Point(522, 85)
+        Me.cmdUploadToGoogleDrive.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.cmdUploadToGoogleDrive.Name = "cmdUploadToGoogleDrive"
+        Me.cmdUploadToGoogleDrive.Size = New System.Drawing.Size(265, 40)
+        Me.cmdUploadToGoogleDrive.TabIndex = 43
+        Me.cmdUploadToGoogleDrive.Text = "Upload To Google Drive"
+        Me.cmdUploadToGoogleDrive.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdUploadToGoogleDrive.UseVisualStyleBackColor = False
+        '
+        'cmdEmailReports
+        '
+        Me.cmdEmailReports.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.cmdEmailReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdEmailReports.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdEmailReports.ForeColor = System.Drawing.Color.Wheat
+        Me.cmdEmailReports.Location = New System.Drawing.Point(32, 85)
+        Me.cmdEmailReports.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.cmdEmailReports.Name = "cmdEmailReports"
+        Me.cmdEmailReports.Size = New System.Drawing.Size(265, 40)
+        Me.cmdEmailReports.TabIndex = 42
+        Me.cmdEmailReports.Text = "Email Reports"
+        Me.cmdEmailReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdEmailReports.UseVisualStyleBackColor = False
         '
         'btnPrintInvoice
         '
@@ -2789,7 +2839,6 @@ Partial Class frmClient
         Me.btnLoadClient.Size = New System.Drawing.Size(265, 40)
         Me.btnLoadClient.TabIndex = 43
         Me.btnLoadClient.Text = "Load Client"
-        Me.btnLoadClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnLoadClient.UseVisualStyleBackColor = False
         '
         'btnNewClient
@@ -2804,60 +2853,7 @@ Partial Class frmClient
         Me.btnNewClient.Size = New System.Drawing.Size(265, 40)
         Me.btnNewClient.TabIndex = 42
         Me.btnNewClient.Text = "New Client"
-        Me.btnNewClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnNewClient.UseVisualStyleBackColor = False
-        '
-        'cmdEmailReports
-        '
-        Me.cmdEmailReports.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdEmailReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdEmailReports.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdEmailReports.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdEmailReports.Location = New System.Drawing.Point(32, 85)
-        Me.cmdEmailReports.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdEmailReports.Name = "cmdEmailReports"
-        Me.cmdEmailReports.Size = New System.Drawing.Size(265, 40)
-        Me.cmdEmailReports.TabIndex = 42
-        Me.cmdEmailReports.Text = "Email Reports"
-        Me.cmdEmailReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdEmailReports.UseVisualStyleBackColor = False
-        '
-        'cmdUploadToGoogleDrive
-        '
-        Me.cmdUploadToGoogleDrive.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.cmdUploadToGoogleDrive.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdUploadToGoogleDrive.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdUploadToGoogleDrive.ForeColor = System.Drawing.Color.Wheat
-        Me.cmdUploadToGoogleDrive.Location = New System.Drawing.Point(522, 85)
-        Me.cmdUploadToGoogleDrive.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.cmdUploadToGoogleDrive.Name = "cmdUploadToGoogleDrive"
-        Me.cmdUploadToGoogleDrive.Size = New System.Drawing.Size(265, 40)
-        Me.cmdUploadToGoogleDrive.TabIndex = 43
-        Me.cmdUploadToGoogleDrive.Text = "Upload To Google Drive"
-        Me.cmdUploadToGoogleDrive.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdUploadToGoogleDrive.UseVisualStyleBackColor = False
-        '
-        'lblEventDateAvailability
-        '
-        Me.lblEventDateAvailability.AutoSize = True
-        Me.lblEventDateAvailability.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEventDateAvailability.ForeColor = System.Drawing.Color.Wheat
-        Me.lblEventDateAvailability.Location = New System.Drawing.Point(505, 30)
-        Me.lblEventDateAvailability.Name = "lblEventDateAvailability"
-        Me.lblEventDateAvailability.Size = New System.Drawing.Size(115, 15)
-        Me.lblEventDateAvailability.TabIndex = 37
-        Me.lblEventDateAvailability.Text = "Date is Available"
-        '
-        'lblRehearsalDateAvailability
-        '
-        Me.lblRehearsalDateAvailability.AutoSize = True
-        Me.lblRehearsalDateAvailability.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRehearsalDateAvailability.ForeColor = System.Drawing.Color.Wheat
-        Me.lblRehearsalDateAvailability.Location = New System.Drawing.Point(508, 87)
-        Me.lblRehearsalDateAvailability.Name = "lblRehearsalDateAvailability"
-        Me.lblRehearsalDateAvailability.Size = New System.Drawing.Size(115, 15)
-        Me.lblRehearsalDateAvailability.TabIndex = 42
-        Me.lblRehearsalDateAvailability.Text = "Date is Available"
         '
         'frmClient
         '

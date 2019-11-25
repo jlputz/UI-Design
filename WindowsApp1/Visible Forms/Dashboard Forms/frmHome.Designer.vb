@@ -24,6 +24,7 @@ Partial Class frmHome
     Private Sub InitializeComponent()
         Me.clndrHome = New System.Windows.Forms.MonthCalendar()
         Me.lblDayInfo = New System.Windows.Forms.Label()
+        Me.rtbUpcoming = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'clndrHome
@@ -36,23 +37,37 @@ Partial Class frmHome
         'lblDayInfo
         '
         Me.lblDayInfo.AutoSize = True
+        Me.lblDayInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDayInfo.ForeColor = System.Drawing.Color.Wheat
-        Me.lblDayInfo.Location = New System.Drawing.Point(15, 227)
+        Me.lblDayInfo.Location = New System.Drawing.Point(13, 203)
         Me.lblDayInfo.Name = "lblDayInfo"
-        Me.lblDayInfo.Size = New System.Drawing.Size(53, 13)
+        Me.lblDayInfo.Size = New System.Drawing.Size(186, 25)
         Me.lblDayInfo.TabIndex = 39
-        Me.lblDayInfo.Text = "Event at: "
+        Me.lblDayInfo.Text = "Upcoming Events:"
         '
-        'HomeForm
+        'rtbUpcoming
+        '
+        Me.rtbUpcoming.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.rtbUpcoming.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rtbUpcoming.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbUpcoming.ForeColor = System.Drawing.Color.Wheat
+        Me.rtbUpcoming.Location = New System.Drawing.Point(18, 251)
+        Me.rtbUpcoming.Name = "rtbUpcoming"
+        Me.rtbUpcoming.Size = New System.Drawing.Size(689, 390)
+        Me.rtbUpcoming.TabIndex = 40
+        Me.rtbUpcoming.Text = ""
+        '
+        'frmHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1095, 726)
+        Me.Controls.Add(Me.rtbUpcoming)
         Me.Controls.Add(Me.lblDayInfo)
         Me.Controls.Add(Me.clndrHome)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "HomeForm"
+        Me.Name = "frmHome"
         Me.Text = "HomeForm"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -61,4 +76,5 @@ Partial Class frmHome
 
     Friend WithEvents clndrHome As MonthCalendar
     Friend WithEvents lblDayInfo As Label
+    Friend WithEvents rtbUpcoming As RichTextBox
 End Class

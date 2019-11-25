@@ -5,24 +5,46 @@
         pnlButtonMover.Top = btnHome.Top
         lblDate.Text = Date.Now().DayOfWeek.ToString() & ", " & MonthName(Date.Now().Month) & " " & Date.Now.Day
 
-        btnHome.PerformClick()
+
+
+
+
+        frmHome.TopLevel = False
+
+        Me.pnlHome.Controls.Add(frmHome)
+        frmHome.Show()
+        pnlHome.Visible = True
+
+
+        frmClient.TopLevel = False
+
+        Me.pnlClient.Controls.Add(frmClient)
+        frmClient.Show()
+        pnlClient.Visible = False
+
+
+        frmSettings.TopLevel = False
+
+        Me.pnlSettings.Controls.Add(frmSettings)
+        frmSettings.Show()
+        pnlSettings.Visible = False
+
+
 
         Me.WindowState = FormWindowState.Maximized
-        frmGetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/7/2019", "Wedding", "Anderson", "Clyde", "999-999-9999", "888-888-8888", "clyde@internet.com", "123 Oak St"})
-        frmGetCustomerInContext.DataGridView1.Rows.Add(New String() {"11/8/2019", "Wedding", "Putz", "Jared", "999-999-9999", "888-888-8888", "jared@internet.com", "124 Oak St"})
-        'getDataFromDGV()
+
+
     End Sub
 
 
 
     Private Sub btnClient_Click(sender As Object, e As EventArgs) Handles btnClient.Click
-        frmSettings.Close()
-        frmHome.Close()
-        frmLayout.Close()
-        frmClient.TopLevel = False
-        frmClient.TopMost = True
-        Me.pnlForms.Controls.Add(frmClient)
-        frmClient.Show()
+
+
+
+
+        pnlClient.Visible = True
+        pnlHome.Visible = False
 
         pnlButtonMover.Height = btnClient.Height
         pnlButtonMover.Top = btnClient.Top
@@ -43,19 +65,13 @@
 
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
-        frmSettings.Close()
-        frmClient.Close()
-        frmLayout.Close()
-        frmHome.TopLevel = False
-        frmHome.TopMost = True
-        Me.pnlForms.Controls.Add(frmHome)
-        frmHome.Show()
+
+        pnlHome.Visible = True
+        pnlClient.Visible = False
+
 
 
     End Sub
-
-
-
 
 
 
@@ -67,7 +83,7 @@
         frmHome.Close()
         frmLayout.TopLevel = False
         frmClient.TopMost = True
-        Me.pnlForms.Controls.Add(frmLayout)
+        Me.pnlHome.Controls.Add(frmLayout)
         frmLayout.Show()
 
         pnlButtonMover.Height = btnLayout.Height
@@ -109,19 +125,14 @@
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
 
-    End Sub
 
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
 
-        frmClient.Close()
-        frmHome.Close()
-        frmLayout.Close()
-        frmSettings.TopLevel = False
-        frmSettings.TopMost = True
-        Me.pnlForms.Controls.Add(frmSettings)
-        frmSettings.Show()
+        pnlClient.Visible = False
+        pnlHome.Visible = False
+        pnlSettings.Visible = True
+
 
         pnlButtonMover.Height = btnSettings.Height
         pnlButtonMover.Top = btnSettings.Top
@@ -184,17 +195,9 @@
     End Sub
 
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs)
-        getDataFromDGV()
-    End Sub
 
-    Sub getDataFromDGV()
-        If (frmGetCustomerInContext.DataGridView1.CurrentRow.Selected) Then
 
-            '  txtCustomerName.Text = GetCustomerInContext.DataGridView1.SelectedCells(3).Value.ToString() + " " + GetCustomerInContext.DataGridView1.SelectedCells(2).Value.ToString()
 
-        End If
-    End Sub
 
     Private Sub btnPrintInvoice_Click(sender As Object, e As EventArgs)
         Process.Start("C:\TTInvoice.pdf")
@@ -206,7 +209,7 @@
 
     Private Sub btnLoadClient_Click(sender As Object, e As EventArgs)
         frmGetCustomerInContext.ShowDialog()
-        getDataFromDGV()
+
     End Sub
 
 
@@ -222,4 +225,6 @@
     Private Sub cmdDessert_Click(sender As Object, e As EventArgs)
         frmDesertSelections.ShowDialog()
     End Sub
+
+
 End Class

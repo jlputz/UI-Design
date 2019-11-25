@@ -1,7 +1,7 @@
 ﻿Public Class frmClient
     Private Sub ClientForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        tbpCustomer.Width = frmDashboard.pnlForms.Width
+        ' tbpCustomer.Width = frmDashboard.pnlClient.Width
     End Sub
 
 
@@ -10,7 +10,7 @@
     End Sub
 
     Private Sub btnLoadClient_Click(sender As Object, e As EventArgs) Handles btnLoadClient.Click
-
+        frmGetCustomerInContext.Show()
     End Sub
 
 
@@ -63,4 +63,6 @@
             pnlEventInfo.Top = chkCeremonyEvent.Bottom + 3
         End If
     End Sub
+
+
 End Class

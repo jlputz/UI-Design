@@ -36,7 +36,9 @@ Partial Class frmDashboard
         Me.lblNotifs = New System.Windows.Forms.Label()
         Me.pboxNotif = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.pnlForms = New System.Windows.Forms.Panel()
+        Me.pnlHome = New System.Windows.Forms.Panel()
+        Me.pnlClient = New System.Windows.Forms.Panel()
+        Me.pnlSettings = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -207,15 +209,37 @@ Partial Class frmDashboard
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
-        'pnlForms
+        'pnlHome
         '
-        Me.pnlForms.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.pnlHome.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlForms.Location = New System.Drawing.Point(155, 142)
-        Me.pnlForms.Name = "pnlForms"
-        Me.pnlForms.Size = New System.Drawing.Size(1246, 713)
-        Me.pnlForms.TabIndex = 42
+        Me.pnlHome.Location = New System.Drawing.Point(155, 142)
+        Me.pnlHome.Name = "pnlHome"
+        Me.pnlHome.Size = New System.Drawing.Size(1246, 713)
+        Me.pnlHome.TabIndex = 42
+        '
+        'pnlClient
+        '
+        Me.pnlClient.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlClient.Location = New System.Drawing.Point(138, 141)
+        Me.pnlClient.Name = "pnlClient"
+        Me.pnlClient.Size = New System.Drawing.Size(1293, 733)
+        Me.pnlClient.TabIndex = 43
+        Me.pnlClient.Visible = False
+        '
+        'pnlSettings
+        '
+        Me.pnlSettings.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlSettings.Location = New System.Drawing.Point(141, 141)
+        Me.pnlSettings.Name = "pnlSettings"
+        Me.pnlSettings.Size = New System.Drawing.Size(1293, 733)
+        Me.pnlSettings.TabIndex = 44
+        Me.pnlSettings.Visible = False
         '
         'frmDashboard
         '
@@ -224,6 +248,8 @@ Partial Class frmDashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1444, 881)
+        Me.Controls.Add(Me.pnlSettings)
+        Me.Controls.Add(Me.pnlClient)
         Me.Controls.Add(Me.pboxNotif)
         Me.Controls.Add(Me.lblNotifs)
         Me.Controls.Add(Me.lblDate)
@@ -232,7 +258,7 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.pnlForms)
+        Me.Controls.Add(Me.pnlHome)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -259,5 +285,7 @@ Partial Class frmDashboard
     Friend WithEvents lblDate As Label
     Friend WithEvents lblNotifs As Label
     Friend WithEvents pboxNotif As PictureBox
-    Friend WithEvents pnlForms As Panel
+    Friend WithEvents pnlHome As Panel
+    Friend WithEvents pnlClient As Panel
+    Friend WithEvents pnlSettings As Panel
 End Class
