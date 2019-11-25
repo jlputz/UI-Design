@@ -65,9 +65,10 @@
 
         pnlButtonMover.Height = btnHome.Height
         pnlButtonMover.Top = btnHome.Top
-
-        pnlHome.Visible = True
+        pnlSettings.Visible = False
         pnlClient.Visible = False
+        pnlHome.Visible = True
+
 
 
 

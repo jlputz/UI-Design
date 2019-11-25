@@ -71,6 +71,7 @@ Partial Class frmSendMail
         'txtRecipientEmail
         '
         Me.txtRecipientEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtRecipientEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtRecipientEmail.ForeColor = System.Drawing.Color.Wheat
         Me.txtRecipientEmail.Location = New System.Drawing.Point(128, 112)
         Me.txtRecipientEmail.Name = "txtRecipientEmail"

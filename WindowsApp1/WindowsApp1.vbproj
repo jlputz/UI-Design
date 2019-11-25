@@ -107,10 +107,28 @@
       <DependentUpon>BeverageService.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmEditAppetizerOptions.Designer.vb">
+      <DependentUpon>frmEditAppetizerOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmEditAppetizerOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmEditBuffetOptions.Designer.vb">
+      <DependentUpon>frmEditBuffetOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmEditBuffetOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Visible Forms\Dashboard Forms\frmSendMail.Designer.vb">
       <DependentUpon>frmSendMail.vb</DependentUpon>
     </Compile>
     <Compile Include="Visible Forms\Dashboard Forms\frmSendMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmTreausryEmail.Designer.vb">
+      <DependentUpon>frmTreausryEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visible Forms\Dashboard Forms\frmTreausryEmail.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Visible Forms\Dashboard Forms\frmUploadReports.Designer.vb">
@@ -259,8 +277,17 @@
     <EmbeddedResource Include="Reference Forms %28OLD%29\BeverageService.resx">
       <DependentUpon>BeverageService.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmEditAppetizerOptions.resx">
+      <DependentUpon>frmEditAppetizerOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmEditBuffetOptions.resx">
+      <DependentUpon>frmEditBuffetOptions.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmSendMail.resx">
       <DependentUpon>frmSendMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmTreausryEmail.resx">
+      <DependentUpon>frmTreausryEmail.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visible Forms\Dashboard Forms\frmUploadReports.resx">
       <DependentUpon>frmUploadReports.vb</DependentUpon>

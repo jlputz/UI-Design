@@ -214,7 +214,7 @@ Partial Class frmDashboard
         Me.pnlHome.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlHome.Location = New System.Drawing.Point(155, 142)
+        Me.pnlHome.Location = New System.Drawing.Point(141, 142)
         Me.pnlHome.Name = "pnlHome"
         Me.pnlHome.Size = New System.Drawing.Size(1246, 713)
         Me.pnlHome.TabIndex = 42
@@ -248,8 +248,6 @@ Partial Class frmDashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1444, 881)
-        Me.Controls.Add(Me.pnlSettings)
-        Me.Controls.Add(Me.pnlClient)
         Me.Controls.Add(Me.pboxNotif)
         Me.Controls.Add(Me.lblNotifs)
         Me.Controls.Add(Me.lblDate)
@@ -259,6 +257,8 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pnlHome)
+        Me.Controls.Add(Me.pnlSettings)
+        Me.Controls.Add(Me.pnlClient)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
