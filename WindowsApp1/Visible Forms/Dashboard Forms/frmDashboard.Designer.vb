@@ -39,6 +39,7 @@ Partial Class frmDashboard
         Me.pnlHome = New System.Windows.Forms.Panel()
         Me.pnlClient = New System.Windows.Forms.Panel()
         Me.pnlSettings = New System.Windows.Forms.Panel()
+        Me.pnlLayout = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -241,6 +242,16 @@ Partial Class frmDashboard
         Me.pnlSettings.TabIndex = 44
         Me.pnlSettings.Visible = False
         '
+        'pnlLayout
+        '
+        Me.pnlLayout.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlLayout.Location = New System.Drawing.Point(140, 144)
+        Me.pnlLayout.Name = "pnlLayout"
+        Me.pnlLayout.Size = New System.Drawing.Size(1246, 713)
+        Me.pnlLayout.TabIndex = 45
+        '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -248,6 +259,7 @@ Partial Class frmDashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1444, 881)
+        Me.Controls.Add(Me.pnlLayout)
         Me.Controls.Add(Me.pboxNotif)
         Me.Controls.Add(Me.lblNotifs)
         Me.Controls.Add(Me.lblDate)
@@ -288,4 +300,5 @@ Partial Class frmDashboard
     Friend WithEvents pnlHome As Panel
     Friend WithEvents pnlClient As Panel
     Friend WithEvents pnlSettings As Panel
+    Friend WithEvents pnlLayout As Panel
 End Class

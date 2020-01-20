@@ -13,11 +13,6 @@
         frmGetCustomerInContext.Show()
     End Sub
 
-
-    Private Sub btnPrintInvoice_Click(sender As Object, e As EventArgs) Handles btnPrintInvoice.Click
-
-    End Sub
-
     Private Sub cmdTraditionalBuffet_Click(sender As Object, e As EventArgs) Handles cmdTraditionalBuffet.Click
         frmBuffetStyle.ShowDialog()
     End Sub
@@ -64,5 +59,19 @@
         End If
     End Sub
 
+    Private Sub ChkOpenBar_CheckedChanged(sender As Object, e As EventArgs) Handles chkOpenBar.CheckedChanged
+        If chkOpenBar.Checked = True Then
+            pnlCashBar.Visible = False
+        Else
+            pnlCashBar.Visible = True
+        End If
+    End Sub
 
+    Private Sub ChkCashBar_CheckedChanged(sender As Object, e As EventArgs) Handles chkCashBar.CheckedChanged
+        If chkCashBar.Checked = True Then
+            pnlOpenBar.Visible = False
+        Else
+            pnlOpenBar.Visible = True
+        End If
+    End Sub
 End Class

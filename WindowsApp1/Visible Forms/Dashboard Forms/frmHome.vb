@@ -5,5 +5,11 @@
         rtbUpcoming.AppendText("11/25 - Event at 2pm - Putz Wedding" + vbCrLf)
         rtbUpcoming.AppendText("12/11 - Event at 4pm - Lovas Company Event" + vbCrLf)
 
+        clndrHome.MaxSelectionCount = 1
+
+
+
+
+
     End Sub
 End Class

@@ -22,35 +22,30 @@ Partial Class frmSettings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.pnlSettings = New System.Windows.Forms.Panel()
-        Me.cbTheme = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.btnEditBuffet = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnEditApps = New System.Windows.Forms.Button()
-        Me.pnlSettings.SuspendLayout()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'pnlSettings
+        'Button1
         '
-        Me.pnlSettings.Controls.Add(Me.Button1)
-        Me.pnlSettings.Controls.Add(Me.cbTheme)
-        Me.pnlSettings.Location = New System.Drawing.Point(24, 12)
-        Me.pnlSettings.Name = "pnlSettings"
-        Me.pnlSettings.Size = New System.Drawing.Size(964, 171)
-        Me.pnlSettings.TabIndex = 34
-        '
-        'cbTheme
-        '
-        Me.cbTheme.AutoSize = True
-        Me.cbTheme.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!)
-        Me.cbTheme.ForeColor = System.Drawing.Color.Wheat
-        Me.cbTheme.Location = New System.Drawing.Point(16, 101)
-        Me.cbTheme.Name = "cbTheme"
-        Me.cbTheme.Size = New System.Drawing.Size(141, 30)
-        Me.cbTheme.TabIndex = 35
-        Me.cbTheme.Text = "Light Theme"
-        Me.cbTheme.UseVisualStyleBackColor = True
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Wheat
+        Me.Button1.Location = New System.Drawing.Point(19, 382)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(265, 40)
+        Me.Button1.TabIndex = 36
+        Me.Button1.Text = "Edit Treasury Email"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button9
         '
@@ -58,7 +53,7 @@ Partial Class frmSettings
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.Color.Wheat
-        Me.Button9.Location = New System.Drawing.Point(40, 629)
+        Me.Button9.Location = New System.Drawing.Point(712, 128)
         Me.Button9.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(265, 40)
@@ -72,7 +67,7 @@ Partial Class frmSettings
         Me.btnEditBuffet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditBuffet.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEditBuffet.ForeColor = System.Drawing.Color.Wheat
-        Me.btnEditBuffet.Location = New System.Drawing.Point(40, 223)
+        Me.btnEditBuffet.Location = New System.Drawing.Point(7, 44)
         Me.btnEditBuffet.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnEditBuffet.Name = "btnEditBuffet"
         Me.btnEditBuffet.Size = New System.Drawing.Size(265, 40)
@@ -80,27 +75,13 @@ Partial Class frmSettings
         Me.btnEditBuffet.Text = "Edit Buffet Options"
         Me.btnEditBuffet.UseVisualStyleBackColor = False
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Wheat
-        Me.Button1.Location = New System.Drawing.Point(16, 26)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(265, 40)
-        Me.Button1.TabIndex = 36
-        Me.Button1.Text = "Edit Treasury Email"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'btnEditApps
         '
         Me.btnEditApps.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.btnEditApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditApps.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEditApps.ForeColor = System.Drawing.Color.Wheat
-        Me.btnEditApps.Location = New System.Drawing.Point(40, 304)
+        Me.btnEditApps.Location = New System.Drawing.Point(7, 128)
         Me.btnEditApps.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnEditApps.Name = "btnEditApps"
         Me.btnEditApps.Size = New System.Drawing.Size(265, 40)
@@ -108,29 +89,86 @@ Partial Class frmSettings
         Me.btnEditApps.Text = "Edit Appetizer Options"
         Me.btnEditApps.UseVisualStyleBackColor = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.btnEditApps)
+        Me.GroupBox1.Controls.Add(Me.btnEditBuffet)
+        Me.GroupBox1.Controls.Add(Me.Button9)
+        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GroupBox1.ForeColor = System.Drawing.Color.Wheat
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(984, 190)
+        Me.GroupBox1.TabIndex = 37
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Catering Settings"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Wheat
+        Me.Button2.Location = New System.Drawing.Point(303, 44)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(265, 40)
+        Me.Button2.TabIndex = 36
+        Me.Button2.Text = "Edit Buffet Options"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.Wheat
+        Me.Button3.Location = New System.Drawing.Point(303, 128)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(265, 40)
+        Me.Button3.TabIndex = 37
+        Me.Button3.Text = "Edit Buffet Options"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Franklin Gothic Medium", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.Wheat
+        Me.Button4.Location = New System.Drawing.Point(19, 264)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(265, 40)
+        Me.Button4.TabIndex = 38
+        Me.Button4.Text = "Edit Vendors"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
         'frmSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1008, 681)
-        Me.Controls.Add(Me.btnEditApps)
-        Me.Controls.Add(Me.pnlSettings)
-        Me.Controls.Add(Me.btnEditBuffet)
-        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmSettings"
         Me.Text = "SettingsForm"
-        Me.pnlSettings.ResumeLayout(False)
-        Me.pnlSettings.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents pnlSettings As Panel
     Friend WithEvents Button9 As Button
     Friend WithEvents btnEditBuffet As Button
-    Friend WithEvents cbTheme As CheckBox
     Friend WithEvents Button1 As Button
     Friend WithEvents btnEditApps As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button4 As Button
 End Class
