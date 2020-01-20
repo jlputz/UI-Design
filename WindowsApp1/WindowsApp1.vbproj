@@ -100,7 +100,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modules\Theme.vb" />
+    <Compile Include="Modules\mdlTheme.vb" />
     <Compile Include="Reference Forms %28OLD%29\BeverageService.vb">
       <SubType>Form</SubType>
     </Compile>

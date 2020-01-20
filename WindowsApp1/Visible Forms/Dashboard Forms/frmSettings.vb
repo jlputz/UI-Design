@@ -1,6 +1,5 @@
 ﻿Public Class frmSettings
 
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         frmTreausryEmail.ShowDialog()
     End Sub
@@ -13,8 +12,15 @@
         frmEditAppetizerOptions.ShowDialog()
     End Sub
 
-    Private Sub FrmSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+#Region "Theme Code"
+    Private Sub cbTheme_CheckedChanged(sender As Object, e As EventArgs) Handles cbTheme.CheckedChanged
+        If cbTheme.Checked Then
+            ApplyLightTheme()
+        Else
+            ApplyDarkTheme()
+        End If
     End Sub
+#End Region
 
 End Class
