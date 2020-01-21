@@ -43,7 +43,6 @@ Partial Class frmDashboard
         Me.Panel1.SuspendLayout()
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlHome.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -216,7 +215,6 @@ Partial Class frmDashboard
         Me.pnlHome.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlHome.Controls.Add(Me.pnlLayout)
         Me.pnlHome.Location = New System.Drawing.Point(141, 142)
         Me.pnlHome.Name = "pnlHome"
         Me.pnlHome.Size = New System.Drawing.Size(1246, 713)
@@ -249,11 +247,10 @@ Partial Class frmDashboard
         Me.pnlLayout.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlLayout.Location = New System.Drawing.Point(-1, 1)
+        Me.pnlLayout.Location = New System.Drawing.Point(140, 144)
         Me.pnlLayout.Name = "pnlLayout"
         Me.pnlLayout.Size = New System.Drawing.Size(1246, 713)
-        Me.pnlLayout.TabIndex = 43
-        Me.pnlLayout.Visible = False
+        Me.pnlLayout.TabIndex = 45
         '
         'frmDashboard
         '
@@ -262,6 +259,7 @@ Partial Class frmDashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1444, 881)
+        Me.Controls.Add(Me.pnlLayout)
         Me.Controls.Add(Me.pboxNotif)
         Me.Controls.Add(Me.lblNotifs)
         Me.Controls.Add(Me.lblDate)
@@ -282,7 +280,6 @@ Partial Class frmDashboard
         Me.Panel1.ResumeLayout(False)
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlHome.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

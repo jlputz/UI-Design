@@ -100,6 +100,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\mdlTheme.vb" />
     <Compile Include="Reference Forms %28OLD%29\BeverageService.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -405,8 +406,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modules\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
