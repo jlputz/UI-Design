@@ -39,9 +39,11 @@ Partial Class frmDashboard
         Me.pnlHome = New System.Windows.Forms.Panel()
         Me.pnlClient = New System.Windows.Forms.Panel()
         Me.pnlSettings = New System.Windows.Forms.Panel()
+        Me.pnlLayout = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlHome.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -214,6 +216,7 @@ Partial Class frmDashboard
         Me.pnlHome.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlHome.Controls.Add(Me.pnlLayout)
         Me.pnlHome.Location = New System.Drawing.Point(141, 142)
         Me.pnlHome.Name = "pnlHome"
         Me.pnlHome.Size = New System.Drawing.Size(1246, 713)
@@ -240,6 +243,17 @@ Partial Class frmDashboard
         Me.pnlSettings.Size = New System.Drawing.Size(1293, 733)
         Me.pnlSettings.TabIndex = 44
         Me.pnlSettings.Visible = False
+        '
+        'pnlLayout
+        '
+        Me.pnlLayout.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlLayout.Location = New System.Drawing.Point(-1, 1)
+        Me.pnlLayout.Name = "pnlLayout"
+        Me.pnlLayout.Size = New System.Drawing.Size(1246, 713)
+        Me.pnlLayout.TabIndex = 43
+        Me.pnlLayout.Visible = False
         '
         'frmDashboard
         '
@@ -268,6 +282,7 @@ Partial Class frmDashboard
         Me.Panel1.ResumeLayout(False)
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlHome.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -288,4 +303,5 @@ Partial Class frmDashboard
     Friend WithEvents pnlHome As Panel
     Friend WithEvents pnlClient As Panel
     Friend WithEvents pnlSettings As Panel
+    Friend WithEvents pnlLayout As Panel
 End Class
