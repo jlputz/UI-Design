@@ -27,6 +27,9 @@ Partial Class frmLayout
         Me.Button7 = New System.Windows.Forms.Button()
         Me.cmbNew = New System.Windows.Forms.ComboBox()
         Me.cmbExisting = New System.Windows.Forms.ComboBox()
+        Me.AxDrawingControl1 = New AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl()
+        Me.btnLoad = New System.Windows.Forms.Button()
+        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button6
@@ -90,6 +93,23 @@ Partial Class frmLayout
         Me.cmbExisting.Size = New System.Drawing.Size(326, 33)
         Me.cmbExisting.TabIndex = 87
         '
+        'AxDrawingControl1
+        '
+        Me.AxDrawingControl1.Enabled = True
+        Me.AxDrawingControl1.Location = New System.Drawing.Point(25, 168)
+        Me.AxDrawingControl1.Name = "AxDrawingControl1"
+        Me.AxDrawingControl1.Size = New System.Drawing.Size(1040, 507)
+        Me.AxDrawingControl1.TabIndex = 88
+        '
+        'btnLoad
+        '
+        Me.btnLoad.Location = New System.Drawing.Point(484, 79)
+        Me.btnLoad.Name = "btnLoad"
+        Me.btnLoad.Size = New System.Drawing.Size(140, 58)
+        Me.btnLoad.TabIndex = 89
+        Me.btnLoad.Text = "Load File"
+        Me.btnLoad.UseVisualStyleBackColor = True
+        '
         'frmLayout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -97,6 +117,8 @@ Partial Class frmLayout
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1077, 687)
+        Me.Controls.Add(Me.btnLoad)
+        Me.Controls.Add(Me.AxDrawingControl1)
         Me.Controls.Add(Me.cmbExisting)
         Me.Controls.Add(Me.cmbNew)
         Me.Controls.Add(Me.Button7)
@@ -105,6 +127,7 @@ Partial Class frmLayout
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmLayout"
         Me.Text = "LayoutForm"
+        CType(Me.AxDrawingControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -114,4 +137,6 @@ Partial Class frmLayout
     Friend WithEvents Button7 As Button
     Friend WithEvents cmbNew As ComboBox
     Friend WithEvents cmbExisting As ComboBox
+    Friend WithEvents AxDrawingControl1 As AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl
+    Friend WithEvents btnLoad As Button
 End Class
