@@ -14,13 +14,13 @@
 
 
 #Region "Theme Code"
-    Private Sub cbTheme_CheckedChanged(sender As Object, e As EventArgs) Handles cbTheme.CheckedChanged
-        If cbTheme.Checked Then
-            ApplyLightTheme()
-        Else
-            ApplyDarkTheme()
-        End If
-    End Sub
+    ' Private Sub cbTheme_CheckedChanged(sender As Object, e As EventArgs) Handles cbTheme.CheckedChanged
+    '   '    If cbTheme.Checked Then
+    '  ApplyLightTheme()
+    '   Else
+    '   ApplyDarkTheme()
+    '  End If
+    ' End Sub
 #End Region
 
 End Class
