@@ -25,7 +25,8 @@ Partial Class frmLayout
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.cmbNew = New System.Windows.Forms.ComboBox()
+        Me.cmbExisting = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Button6
@@ -71,32 +72,38 @@ Partial Class frmLayout
         Me.Button7.Text = "Select Layout"
         Me.Button7.UseVisualStyleBackColor = False
         '
-        'Button10
+        'cmbNew
         '
-        Me.Button10.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button10.Location = New System.Drawing.Point(25, 96)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(1019, 564)
-        Me.Button10.TabIndex = 85
-        Me.Button10.Text = "Button10"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.cmbNew.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbNew.FormattingEnabled = True
+        Me.cmbNew.Location = New System.Drawing.Point(25, 90)
+        Me.cmbNew.Name = "cmbNew"
+        Me.cmbNew.Size = New System.Drawing.Size(326, 33)
+        Me.cmbNew.TabIndex = 86
         '
-        'LayoutForm
+        'cmbExisting
+        '
+        Me.cmbExisting.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbExisting.FormattingEnabled = True
+        Me.cmbExisting.Location = New System.Drawing.Point(739, 90)
+        Me.cmbExisting.Name = "cmbExisting"
+        Me.cmbExisting.Size = New System.Drawing.Size(326, 33)
+        Me.cmbExisting.TabIndex = 87
+        '
+        'frmLayout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1077, 687)
-        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.cmbExisting)
+        Me.Controls.Add(Me.cmbNew)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button8)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "LayoutForm"
+        Me.Name = "frmLayout"
         Me.Text = "LayoutForm"
         Me.ResumeLayout(False)
 
@@ -105,5 +112,6 @@ Partial Class frmLayout
     Friend WithEvents Button6 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
-    Private WithEvents Button10 As Button
+    Friend WithEvents cmbNew As ComboBox
+    Friend WithEvents cmbExisting As ComboBox
 End Class
