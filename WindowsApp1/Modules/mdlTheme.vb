@@ -4,8 +4,8 @@
     Dim darkFormBackColor = frmDashboard.BackColor
     Dim darkGeneralBtnForeColor = frmDashboard.btnExit.ForeColor
     Dim darkGeneralBtnBackColor = frmDashboard.btnExit.BackColor
-    Dim darkPanelBtnForeColor = frmDashboard.btnHome.ForeColor
-    Dim darkPanelBtnBackColor = frmDashboard.btnHome.BackColor
+    'Dim darkPanelBtnForeColor = frmDashboard.btnHome.ForeColor
+    'Dim darkPanelBtnBackColor = frmDashboard.btnHome.BackColor
     Dim darkLblForeColor = frmDashboard.lblNotifs.ForeColor
     Dim darkLblBackColor = frmDashboard.lblNotifs.BackColor
 

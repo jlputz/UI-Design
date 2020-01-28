@@ -95,6 +95,9 @@ Partial Class frmLayout
         '
         'AxDrawingControl1
         '
+        Me.AxDrawingControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.AxDrawingControl1.Enabled = True
         Me.AxDrawingControl1.Location = New System.Drawing.Point(25, 168)
         Me.AxDrawingControl1.Name = "AxDrawingControl1"
