@@ -56,6 +56,7 @@
         Else
             pnlCeremony.Visible = False
             pnlEventInfo.Top = chkCeremonyEvent.Bottom + 3
+
         End If
     End Sub
 

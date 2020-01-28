@@ -18,6 +18,12 @@ Public Class frmLayout
         For Each FileInfo In arrFileInfo
             cmbExisting.Items.Add(Strings.Left(FileInfo.Name, FileInfo.Name.Length - 5))
         Next
+
+        AxDrawingControl1.Left = Me.Left - 50
+
+        AxDrawingControl1.Top = Me.Top - 50
+        AxDrawingControl1.Width = Me.Width - 50
+        AxDrawingControl1.Height = Me.Height - 50
     End Sub
 
     Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
@@ -61,5 +67,9 @@ Public Class frmLayout
             MsgBox("Please select a layout")
             cmbNew.DroppedDown = True
         End If
+    End Sub
+
+    Private Sub AxDrawingControl1_ClientSizeChanged(sender As Object, e As EventArgs) Handles AxDrawingControl1.ClientSizeChanged
+
     End Sub
 End Class

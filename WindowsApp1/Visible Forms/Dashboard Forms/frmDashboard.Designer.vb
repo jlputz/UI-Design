@@ -74,7 +74,7 @@ Partial Class frmDashboard
         Me.btnClient.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClient.ForeColor = System.Drawing.Color.White
         Me.btnClient.Image = CType(resources.GetObject("btnClient.Image"), System.Drawing.Image)
-        Me.btnClient.Location = New System.Drawing.Point(0, 105)
+        Me.btnClient.Location = New System.Drawing.Point(0, 104)
         Me.btnClient.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnClient.Name = "btnClient"
         Me.btnClient.Size = New System.Drawing.Size(137, 99)
@@ -227,7 +227,7 @@ Partial Class frmDashboard
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlClient.Location = New System.Drawing.Point(138, 141)
         Me.pnlClient.Name = "pnlClient"
-        Me.pnlClient.Size = New System.Drawing.Size(1293, 733)
+        Me.pnlClient.Size = New System.Drawing.Size(1293, 716)
         Me.pnlClient.TabIndex = 43
         Me.pnlClient.Visible = False
         '
@@ -238,18 +238,15 @@ Partial Class frmDashboard
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlSettings.Location = New System.Drawing.Point(141, 141)
         Me.pnlSettings.Name = "pnlSettings"
-        Me.pnlSettings.Size = New System.Drawing.Size(1293, 733)
+        Me.pnlSettings.Size = New System.Drawing.Size(1293, 716)
         Me.pnlSettings.TabIndex = 44
         Me.pnlSettings.Visible = False
         '
         'pnlLayout
         '
-        Me.pnlLayout.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlLayout.Location = New System.Drawing.Point(140, 144)
         Me.pnlLayout.Name = "pnlLayout"
-        Me.pnlLayout.Size = New System.Drawing.Size(1246, 713)
+        Me.pnlLayout.Size = New System.Drawing.Size(1294, 713)
         Me.pnlLayout.TabIndex = 45
         '
         'frmDashboard

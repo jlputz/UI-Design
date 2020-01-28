@@ -105,4 +105,7 @@
 
     End Sub
 
+    Private Sub pnlLayout_Paint(sender As Object, e As PaintEventArgs) Handles pnlLayout.Paint
+
+    End Sub
 End Class
