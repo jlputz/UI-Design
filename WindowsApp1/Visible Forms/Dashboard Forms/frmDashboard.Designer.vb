@@ -36,10 +36,6 @@ Partial Class frmDashboard
         Me.lblNotifs = New System.Windows.Forms.Label()
         Me.pboxNotif = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.pnlHome = New System.Windows.Forms.Panel()
-        Me.pnlClient = New System.Windows.Forms.Panel()
-        Me.pnlSettings = New System.Windows.Forms.Panel()
-        Me.pnlLayout = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.pboxNotif, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -176,7 +172,7 @@ Partial Class frmDashboard
         Me.lblDate.ForeColor = System.Drawing.Color.Wheat
         Me.lblDate.Location = New System.Drawing.Point(166, 16)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(21, 31)
+        Me.lblDate.Size = New System.Drawing.Size(26, 39)
         Me.lblDate.TabIndex = 30
         Me.lblDate.Text = " "
         '
@@ -187,7 +183,7 @@ Partial Class frmDashboard
         Me.lblNotifs.ForeColor = System.Drawing.Color.Wheat
         Me.lblNotifs.Location = New System.Drawing.Point(205, 68)
         Me.lblNotifs.Name = "lblNotifs"
-        Me.lblNotifs.Size = New System.Drawing.Size(207, 24)
+        Me.lblNotifs.Size = New System.Drawing.Size(263, 29)
         Me.lblNotifs.TabIndex = 35
         Me.lblNotifs.Text = " Event Today at 5:00pm"
         '
@@ -210,56 +206,13 @@ Partial Class frmDashboard
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
-        'pnlHome
-        '
-        Me.pnlHome.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlHome.Location = New System.Drawing.Point(141, 142)
-        Me.pnlHome.Name = "pnlHome"
-        Me.pnlHome.Size = New System.Drawing.Size(1246, 713)
-        Me.pnlHome.TabIndex = 42
-        '
-        'pnlClient
-        '
-        Me.pnlClient.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlClient.Location = New System.Drawing.Point(138, 141)
-        Me.pnlClient.Name = "pnlClient"
-        Me.pnlClient.Size = New System.Drawing.Size(1293, 733)
-        Me.pnlClient.TabIndex = 43
-        Me.pnlClient.Visible = False
-        '
-        'pnlSettings
-        '
-        Me.pnlSettings.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlSettings.Location = New System.Drawing.Point(141, 141)
-        Me.pnlSettings.Name = "pnlSettings"
-        Me.pnlSettings.Size = New System.Drawing.Size(1293, 733)
-        Me.pnlSettings.TabIndex = 44
-        Me.pnlSettings.Visible = False
-        '
-        'pnlLayout
-        '
-        Me.pnlLayout.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlLayout.Location = New System.Drawing.Point(140, 144)
-        Me.pnlLayout.Name = "pnlLayout"
-        Me.pnlLayout.Size = New System.Drawing.Size(1246, 713)
-        Me.pnlLayout.TabIndex = 45
-        '
         'frmDashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1444, 881)
-        Me.Controls.Add(Me.pnlLayout)
         Me.Controls.Add(Me.pboxNotif)
         Me.Controls.Add(Me.lblNotifs)
         Me.Controls.Add(Me.lblDate)
@@ -268,12 +221,10 @@ Partial Class frmDashboard
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.pnlHome)
-        Me.Controls.Add(Me.pnlSettings)
-        Me.Controls.Add(Me.pnlClient)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.IsMdiContainer = True
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frmDashboard"
         Me.Text = "The Treasury"
@@ -297,8 +248,4 @@ Partial Class frmDashboard
     Friend WithEvents lblDate As Label
     Friend WithEvents lblNotifs As Label
     Friend WithEvents pboxNotif As PictureBox
-    Friend WithEvents pnlHome As Panel
-    Friend WithEvents pnlClient As Panel
-    Friend WithEvents pnlSettings As Panel
-    Friend WithEvents pnlLayout As Panel
 End Class
